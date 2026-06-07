@@ -1,0 +1,14 @@
+[2026-06-04T07:12:21.476Z] 🚀 Starting DCA License Scraper
+[2026-06-04T07:12:21.481Z] 📍 Using IP: 51.81.155.236
+[2026-06-04T07:12:21.483Z] 🎯 Total keywords to search: 63
+[2026-06-04T07:12:22.676Z] 🌐 Opening DCA search page...
+[2026-06-04T07:12:31.572Z] Initial page check. Current URL: https://search.dca.ca.gov/
+[2026-06-04T07:13:01.592Z] 💥 Fatal error: Waiting for selector `#licenseType` failed: Waiting failed: 30000ms exceeded
+[2026-06-04T07:13:02.346Z] 🛑 Browser closed
+[2026-06-04T16:36:16.518Z] 🚀 Starting DCA License Scraper
+[2026-06-04T16:36:16.524Z] 📍 Using IP: 51.81.155.236
+[2026-06-04T16:36:16.526Z] 🎯 Total keywords to search: 63
+[2026-06-04T16:36:19.116Z] 🌐 Opening DCA search page...
+[2026-06-04T16:36:27.681Z] Initial page check. Current URL: https://search.dca.ca.gov/
+[2026-06-04T16:36:28.667Z] 💥 Fatal error: Waiting for selector `#licenseType` failed: Protocol error (Runtime.callFunctionOn): Target closed
+[2026-06-04T16:36:29.421Z] 🛑 Browser closed
