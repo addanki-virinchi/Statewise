@@ -25,22 +25,26 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 LANDING_URL = "https://www.pals.pa.gov/#!/page/search"
 WAIT_SECONDS = 45
-PAGE_LOAD_SLEEP = 1.8
+PAGE_LOAD_SLEEP = 1.5
 RESULT_WAIT_SECONDS = 40
-RESULT_SETTLE_SECONDS = 3.0
-EMPTY_STABLE_SECONDS = 12.0
-HEADLESS = False
-OUTPUT_FILE = "PA_Medicine.csv"
-ZIP_CSV = "zip_codes.csv"
-NUM_THREADS = 2
+RESULT_SETTLE_SECONDS = 2.0
+EMPTY_STABLE_SECONDS = 6.0
+# Interval between DOM polls — 1.0 s halves JS executions vs. the old 0.5 s.
+POLL_INTERVAL = 1.0
+HEADLESS = True           # Saves GPU/render CPU on headless servers.
+OUTPUT_FILE = "Ohio_Database.csv"
+ERROR_FILE = "scrape_errors.csv"
+ZIP_CSV = "zip_codes_oh.csv"
+NUM_THREADS = 1
 
 # Serializes appends to the shared CSV across worker threads.
 CSV_LOCK = threading.Lock()
+ERROR_LOCK = threading.Lock()
 
 KEYWORDS = [
-    #"State Board of Dentistry",
-    "State Board of Medicine",
-    "State Board of Nursing",
+     "State Board of Dentistry",
+     "State Board of Medicine",
+     "State Board of Nursing",
     "State Board of Occupational Therapy",
     "State Board of Optometry",
     "State Board of Osteopathic Medicine",
@@ -48,7 +52,7 @@ KEYWORDS = [
     "State Board of Physical Therapy",
     "State Board of Psychology",
     "Radiology Personnel",
-    "State Board of Examiners in Speech-Language Pathology and Audiology",
+   "State Board of Examiners in Speech-Language Pathology and Audiology",
 ]
 
 FIELDNAMES = [
@@ -60,6 +64,13 @@ FIELDNAMES = [
     "License Type",
     "Status",
     "Address",
+]
+
+ERROR_FIELDNAMES = [
+    "Searched Board/Commission",
+    "Searched Zip",
+    "Error Type",
+    "Error Message",
 ]
 
 
@@ -89,6 +100,25 @@ def build_driver(driver_path=None):
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-notifications")
+
+    # Server / low-CPU flags
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")   # avoids /dev/shm exhaustion
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-background-networking")
+    options.add_argument("--disable-sync")
+    options.add_argument("--disable-translate")
+    options.add_argument("--disable-default-apps")
+    options.add_argument("--mute-audio")
+    options.add_argument("--log-level=3")              # suppress Chrome console noise
+
+    # Block images — reduces bandwidth and render work for a data-only scraper.
+    options.add_experimental_option(
+        "prefs",
+        {"profile.default_content_setting_values.images": 2},
+    )
+
     if HEADLESS:
         options.add_argument("--headless=new")
 
@@ -247,7 +277,7 @@ def wait_for_results_or_empty(driver):
             state = get_table_state(driver)
             if state.get("processing"):
                 empty_since = None
-                time.sleep(0.5)
+                time.sleep(POLL_INTERVAL)
                 continue
 
             rows = state.get("rows") or []
@@ -263,7 +293,7 @@ def wait_for_results_or_empty(driver):
                 empty_since = None
         except (NoSuchElementException, StaleElementReferenceException):
             pass
-        time.sleep(0.5)
+        time.sleep(POLL_INTERVAL)
     return False
 
 
@@ -380,6 +410,22 @@ def append_csv(path, records):
             writer.writerows(records)
 
 
+def append_error_csv(path, board_name, zip_code, exc):
+    row = {
+        "Searched Board/Commission": board_name,
+        "Searched Zip": zip_code,
+        "Error Type": type(exc).__name__,
+        "Error Message": str(exc),
+    }
+    with ERROR_LOCK:
+        write_header = not os.path.exists(path) or os.path.getsize(path) == 0
+        with open(path, "a", newline="", encoding="utf-8-sig") as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=ERROR_FIELDNAMES, extrasaction="ignore")
+            if write_header:
+                writer.writeheader()
+            writer.writerow(row)
+
+
 def run_search(driver, wait, board_name, zip_code):
     open_search_page(driver, wait)
     select_board(driver, board_name)
@@ -412,6 +458,7 @@ def worker(thread_name, keywords, zip_codes, driver_path, stats, stats_lock):
                     records = run_search(driver, wait, board_name, zip_code)
                 except Exception as exc:
                     print(f"[{thread_name}] ERROR on {board_name} / {zip_code}: {exc}")
+                    append_error_csv(ERROR_FILE, board_name, zip_code, exc)
                     records = []
 
                 if records:
