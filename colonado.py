@@ -1,26 +1,24 @@
 import csv
 import time
 
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 
 URL = "https://apps2.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
 WAIT_SECONDS = 30
 OUTPUT_CSV = "Colorado_results.csv"
+CHROME_VERSION_MAIN = 149
 
 LICENSE_TYPE_ID = "ctl00_MainContentPlaceHolder_ucLicenseLookup_ctl03_lbMultipleCredentialTypePrefix"
 STATE_ID = "ctl00_MainContentPlaceHolder_ucLicenseLookup_ctl03_ddStates"
 RESULTS_TABLE_ID = "ctl00_MainContentPlaceHolder_ucLicenseLookup_gvSearchResults"
 
 KEYWORDS = [
-    #"Audiologists",
+    "Audiologists",
     "Dental",
     "Hearing Aid Providers",
     "Marriage and Family Therapists",
@@ -50,12 +48,16 @@ FIELDNAMES = [
 
 
 def build_driver():
-    options = ChromeOptions()
+    options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-notifications")
-    service = Service(ChromeDriverManager().install())
-    return webdriver.Chrome(service=service, options=options)
+    options.add_argument("--disable-popup-blocking")
+    return uc.Chrome(
+        options=options,
+        use_subprocess=True,
+        version_main=CHROME_VERSION_MAIN,
+    )
 
 
 def select_keyword(driver, keyword):
@@ -86,83 +88,83 @@ def state_options(driver):
         # ("BC", "British Columbia"),
         # ("CG", "Cairo Governorate"),
         # ("CA", "California"),
-        ("CU", "Cancun"),
+        # ("CU", "Cancun"),
         ("CO", "Colorado"),
-        ("CT", "Connecticut"),
-        ("DE", "Delaware"),
-        ("DC", "District of Columbia"),#---
-        ("EM", "East Midlands"),
-        ("EE", "East of England"),
-        ("FL", "Florida"),
-        ("FC", "Foreign Country"),
-        ("GA", "Georgia"),
-        ("GU", "Guam"),
-        ("HI", "Hawaii"),
-        ("ID", "Idaho"),
-        ("IL", "Illinois"),
-        ("IN", "Indiana"),
-        ("IA", "Iowa"),
-        ("KS", "Kansas"),
-        ("KY", "Kentucky"),
-        ("LO", "London"),
-        ("LA", "Louisiana"),
-        ("ME", "Maine"),
-        ("MB", "Manitoba"),
-        ("MD", "Maryland"),
-        ("MA", "Massachusetts"),
-        ("MX", "Mexico"),
-        ("MC", "Mexico City"),
-        ("MI", "Michigan"),
-        ("MN", "Minnesota"),
-        ("MS", "Mississippi"),
-        ("MO", "Missouri"),
-        ("MT", "Montana"),
-        ("NE", "Nebraska"),
-        ("NV", "Nevada"),
-        ("NB", "New Brunswick"),
-        ("NH", "New Hampshire"),
-        ("NJ", "New Jersey"),
-        ("NM", "New Mexico"),
-        ("NY", "New York"),
-        ("NF", "Newfoundland"),
-        ("NC", "North Carolina"),
-        ("ND", "North Dakota"),
-        ("NO", "North East"),
-        ("NW", "North West"),
-        ("MP", "Northern Mariana Island"),
-        ("NT", "Northwest Territories"),
-        ("NS", "Nova Scotia"),
-        ("NN", "Nunavut"),
-        ("OH", "Ohio"),
-        ("OK", "Oklahoma"),
-        ("ON", "Ontario"),
-        ("OR", "Oregon"),
-        ("OT", "Ottawa"),
-        ("PA", "Pennsylvania"),
-        ("PE", "Prince Edward Island"),
-        ("PR", "Puerto Rico"),
-        ("PQ", "Quebec"),
-        ("RI", "Rhode Island"),
-        ("SK", "Saskatchewan"),
-        ("SC", "South Carolina"),
-        ("SD", "South Dakota"),
-        ("SE", "South East"),
-        ("SW", "South West"),
-        ("TN", "Tennessee"),
-        ("TX", "Texas"),
-        ("TR", "U.S. Territory"),
-        ("UK", "Unknown"),
-        ("UT", "Utah"),
-        ("VT", "Vermont"),
-        ("VI", "Virgin Islands"),
-        ("VA", "Virginia"),
-        ("WA", "Washington"),
-        ("WM", "West Midlands"),
-        ("WV", "West Virginia"),
-        ("WI", "Wisconsin"),
-        ("WY", "Wyoming"),
-        ("YH", "Yorkshire and the Humber"),
-        ("YT", "Yukon"),
+        # ("CT", "Connecticut"),
+        # ("DE", "Delaware"),
+        # ("DC", "District of Columbia"),#---
+        # ("EM", "East Midlands"),
+        # ("EE", "East of England"),
+        # ("FL", "Florida"),
+        # ("FC", "Foreign Country"),
+        # ("GA", "Georgia"),
+        # ("GU", "Guam"),
+        # ("HI", "Hawaii"),
+        # ("ID", "Idaho"),
+        # ("IL", "Illinois"),
+        # ("IN", "Indiana"),
+        # ("IA", "Iowa"),
+        # ("KS", "Kansas"),
+        # ("KY", "Kentucky"),
+        # ("LO", "London"),
+        # ("LA", "Louisiana"),
+        # ("ME", "Maine"),
+        # ("MB", "Manitoba"),
+        # ("MD", "Maryland"),
+        # ("MA", "Massachusetts"),
+        # ("MX", "Mexico"),
+        # ("MC", "Mexico City"),
+        # ("MI", "Michigan"),
+        # ("MN", "Minnesota"),
+        # ("MS", "Mississippi"),
+        # ("MO", "Missouri"),
+        # ("MT", "Montana"),
+        # ("NE", "Nebraska"),
+        # ("NV", "Nevada"),
+        # ("NB", "New Brunswick"),
+        # ("NH", "New Hampshire"),
+        # ("NJ", "New Jersey"),
+        # ("NM", "New Mexico"),
+        # ("NY", "New York"),
+        # ("NF", "Newfoundland"),
+        # ("NC", "North Carolina"),
+        # ("ND", "North Dakota"),
+        # ("NO", "North East"),
+        # ("NW", "North West"),
+        # ("MP", "Northern Mariana Island"),
+        # ("NT", "Northwest Territories"),
+        # ("NS", "Nova Scotia"),
+        # ("NN", "Nunavut"),
+        # ("OH", "Ohio"),
+        # ("OK", "Oklahoma"),
+        # ("ON", "Ontario"),
+        # ("OR", "Oregon"),
+        # ("OT", "Ottawa"),
+        # ("PA", "Pennsylvania"),
+        # ("PE", "Prince Edward Island"),
+        # ("PR", "Puerto Rico"),
+        # ("PQ", "Quebec"),
+        # ("RI", "Rhode Island"),
+        # ("SK", "Saskatchewan"),
+        # ("SC", "South Carolina"),
+        # ("SD", "South Dakota"),
+        # ("SE", "South East"),
+        # ("SW", "South West"),
+        # ("TN", "Tennessee"),
+        # ("TX", "Texas"),
+        # ("TR", "U.S. Territory"),
+        # ("UK", "Unknown"),
+        # ("UT", "Utah"),
+        # ("VT", "Vermont"),
+        # ("VI", "Virgin Islands"),
+        # ("VA", "Virginia"),
+        # ("WA", "Washington"),
+        # ("WM", "West Midlands"),
+        # ("WV", "West Virginia"),
+        # ("WI", "Wisconsin"),
+        # ("WY", "Wyoming"),
+        # ("YH", "Yorkshire and the Humber"),
+        # ("YT", "Yukon"),
     ]
 
 def select_state(driver, value):
