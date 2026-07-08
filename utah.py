@@ -5,7 +5,13 @@ import re
 import string
 import time
 
-import nopecha
+try:
+	from selenium_recaptcha_solver import RecaptchaException, RecaptchaSolver
+except ImportError as exc:
+	raise RuntimeError(
+		"selenium-recaptcha-solver is required. Install it with "
+		"`python -m pip install selenium-recaptcha-solver`."
+	) from exc
 
 from selenium import webdriver
 from selenium.common.exceptions import (
@@ -29,17 +35,6 @@ SEARCH_RESULT_WAIT_SECONDS = 60
 CAPTCHA_RETRIES = 3
 HEADLESS = False  # keep False: reCAPTCHA v3 scores headless browsers poorly
 START_PREFIX = "ab"
-
-# A fresh search page shows no captcha. Clicking Search runs an invisible v3
-# that scores low, so the server re-renders the form with a reCAPTCHA v2
-# checkbox; we solve THAT via NopeCHA and resubmit.
-CAPTCHA_SOLVE_TIMEOUT = 180  # seconds to wait for a NopeCHA solve
-
-# Residential proxies (host:port:user:pass per line). Passed to NopeCHA so the
-# solve runs through a clean IP; optional -- the scraper still works without them.
-PROXY_FILE = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "Webshare 10 proxies.txt"
-)
 
 # Profession checkboxes to tick, matched against the label text next to each
 # input.licenseType checkbox (case-insensitive). Matching a category header
@@ -182,43 +177,15 @@ def click_search(driver, wait):
 		driver.execute_script("arguments[0].click();", button)
 
 
-def load_proxies():
-    """Parse the Webshare proxy list (host:port:user:pass per line) into NopeCHA
-    proxy dicts. Returns [] if the file is missing so the scraper still runs
-    (tokens will just be minted from NopeCHA's default IP and likely rejected)."""
-    proxies = []
-    try:
-        with open(PROXY_FILE, encoding="utf-8") as handle:
-            for line in handle:
-                parts = line.strip().split(":")
-                if len(parts) != 4:
-                    continue
-                host, port, user, password = parts
-                if not port.isdigit():
-                    continue
-                proxies.append(
-                    {
-                        "scheme": "http",
-                        "host": host,
-                        "port": int(port),
-                        "username": user,
-                        "password": password,
-                    }
-                )
-    except OSError:
-        pass
-    return proxies
-
-
 def get_v2_sitekey(driver):
-    """Read the sitekey of the visible reCAPTCHA v2 checkbox the server injects
-    after a search. The v2 widget is a `.g-recaptcha[data-sitekey]` div inside the
-    form (a different key than the page's invisible v3). Returns "" if absent."""
-    key = driver.execute_script(
-        "var el = document.querySelector('.g-recaptcha[data-sitekey]');"
-        "return el ? el.getAttribute('data-sitekey') : '';"
-    )
-    return (key or "").strip()
+	"""Read the sitekey of the visible reCAPTCHA v2 checkbox the server injects
+	after a search. The v2 widget is a `.g-recaptcha[data-sitekey]` div inside the
+	form (a different key than the page's invisible v3). Returns "" if absent."""
+	key = driver.execute_script(
+		"var el = document.querySelector('.g-recaptcha[data-sitekey]');"
+		"return el ? el.getAttribute('data-sitekey') : '';"
+	)
+	return (key or "").strip()
 
 
 def v2_challenge_present(driver):
@@ -233,74 +200,51 @@ def v2_challenge_present(driver):
         return False
 
 
-def solve_v2_challenge(driver, prefix, proxy=None):
-    """Solve the reCAPTCHA v2 checkbox the server shows after a search and submit.
+def get_recaptcha_iframe(driver):
+	try:
+		return driver.find_element(By.XPATH, '//iframe[@title="reCAPTCHA"]')
+	except NoSuchElementException:
+		pass
+	try:
+		return driver.find_element(By.XPATH, '//iframe[contains(@src, "recaptcha")]')
+	except NoSuchElementException:
+		return None
 
-    Flow: the fresh page has no captcha, so we click Search (v3 runs invisibly,
-    scores low), the server re-renders the form with a v2 checkbox, and THEN we
-    solve it. We fetch a v2 token from NopeCHA, write it into every
-    `g-recaptcha-response` textarea, re-fill the search fields (the re-rendered
-    form may have dropped them), and submit natively. On the challenge page the
-    v3 hidden field is gone, so no low-score token can overwrite ours.
 
-    Returns True if a token was obtained and the form submitted, else False."""
-    sitekey = get_v2_sitekey(driver)
-    if not sitekey:
-        return False
-    where = f" via {proxy['host']}" if proxy else ""
-    print(f"[captcha] solving reCAPTCHA v2 challenge via NopeCHA{where}...")
-    try:
-        token = nopecha.solve_recaptcha_v2(
-            sitekey,
-            driver.current_url,
-            proxy=proxy,
-            timeout=CAPTCHA_SOLVE_TIMEOUT,
-        )
-    except nopecha.NopechaError as exc:
-        print(f"[captcha] NopeCHA v2 failed ({exc})")
-        return False
-    if not token:
-        return False
+def solve_v2_challenge(driver, prefix):
+	"""Solve the reCAPTCHA v2 checkbox the server shows after a search and submit.
 
-    # Write the token into every g-recaptcha-response field and fire the widget
-    # callback so any JS listening on the checkbox sees it as solved.
-    driver.execute_script(
-        """
-        var token = arguments[0];
-        document.querySelectorAll("textarea[name='g-recaptcha-response']").forEach(
-            function (t) { t.value = token; t.innerHTML = token; }
-        );
-        try {
-            var cfg = window.___grecaptcha_cfg;
-            if (cfg && cfg.clients) {
-                for (var cid in cfg.clients) {
-                    var client = cfg.clients[cid];
-                    for (var ck in client) {
-                        var obj = client[ck];
-                        if (obj && typeof obj === 'object') {
-                            for (var k in obj) {
-                                var leaf = obj[k];
-                                if (leaf && typeof leaf.callback === 'function') {
-                                    leaf.callback(token);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        } catch (e) { /* token in the textarea is enough for the POST */ }
-        """,
-        token,
-    )
+	Flow: the fresh page has no captcha, so we click Search (v3 runs invisibly,
+	scores low), the server re-renders the form with a v2 checkbox, and THEN we
+	solve it through selenium-recaptcha-solver. After the solver completes, we
+	re-fill the search fields and submit natively.
 
-    # Re-fill name + professions (the challenge re-render may have cleared them),
-    # then submit the form natively -- the challenge page has no v3 hidden field,
-    # so this simply POSTs our v2 token with the search criteria.
-    prepare_form(driver, prefix)
-    driver.execute_script(
-        "var f = document.getElementById('searchByNameForm'); if (f) { f.submit(); }"
-    )
-    return True
+	Returns True if the challenge was solved and the form submitted, else False."""
+	if not v2_challenge_present(driver):
+		return False
+	iframe = get_recaptcha_iframe(driver)
+	if iframe is None:
+		return False
+	print("[captcha] solving reCAPTCHA v2 challenge via selenium-recaptcha-solver...")
+	try:
+		solver = RecaptchaSolver(driver=driver)
+		solver.click_recaptcha_v2(iframe=iframe)
+	except Exception as exc:
+		print(f"[captcha] selenium-recaptcha-solver failed ({exc})")
+		return False
+	finally:
+		try:
+			driver.switch_to.default_content()
+		except WebDriverException:
+			pass
+
+	# Re-fill name + professions (the challenge re-render may have cleared them),
+	# then submit the form natively.
+	prepare_form(driver, prefix)
+	driver.execute_script(
+		"var f = document.getElementById('searchByNameForm'); if (f) { f.submit(); }"
+	)
+	return True
 
 
 def get_results_table(driver):
@@ -504,16 +448,14 @@ def generate_prefixes():
 	]
 
 
-def run_search(driver, wait, result_wait, prefix, first_run, proxies):
+def run_search(driver, wait, result_wait, prefix, first_run):
 	"""Load the form, fill it, search, and clear the v2 captcha it triggers.
 
 	The fresh page has no visible captcha, so we click Search directly. The
 	invisible v3 scores low and the server re-renders the form with a v2 checkbox;
-	we then solve that via NopeCHA and resubmit. ``proxies`` rotates per retry so
-	one flagged IP doesn't sink every attempt. Returns the outcome string."""
+	we then solve that with selenium-recaptcha-solver and resubmit. Returns the
+	outcome string."""
 	for attempt in range(1, CAPTCHA_RETRIES + 1):
-		proxy = proxies[(attempt - 1) % len(proxies)] if proxies else None
-
 		open_search_page(driver, wait)
 		prepare_form(driver, prefix, verbose=first_run and attempt == 1)
 		click_search(driver, wait)
@@ -526,7 +468,7 @@ def run_search(driver, wait, result_wait, prefix, first_run, proxies):
 
 		# A v2 checkbox appeared: solve it, resubmit, then read the real outcome.
 		if outcome == "challenge":
-			if not solve_v2_challenge(driver, prefix, proxy):
+			if not solve_v2_challenge(driver, prefix):
 				print(f"[{prefix}] could not solve v2 captcha (attempt {attempt}), retrying")
 				time.sleep(2 * attempt)
 				continue
@@ -539,7 +481,7 @@ def run_search(driver, wait, result_wait, prefix, first_run, proxies):
 		if outcome in ("results", "empty"):
 			return outcome
 
-		# Still challenged or rejected -- retry with a fresh page and proxy.
+		# Still challenged or rejected -- retry with a fresh page.
 		print(f"[{prefix}] captcha not cleared (attempt {attempt}), retrying")
 		time.sleep(2 * attempt)
 
@@ -552,18 +494,12 @@ def run():
 	result_wait = WebDriverWait(driver, SEARCH_RESULT_WAIT_SECONDS, poll_frequency=0.5)
 	total = 0
 
-	proxies = load_proxies()
-	if proxies:
-		print(f"Loaded {len(proxies)} proxies for NopeCHA solving")
-	else:
-		print("No proxies loaded -- solving via NopeCHA's default IP")
-
 	try:
 		prefixes = generate_prefixes()
 		for index, prefix in enumerate(prefixes):
 			print(f"Running prefix: {prefix}")
 			outcome = run_search(
-				driver, wait, result_wait, prefix, first_run=index == 0, proxies=proxies
+				driver, wait, result_wait, prefix, first_run=index == 0
 			)
 
 			if outcome == "results":

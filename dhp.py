@@ -1,22 +1,27 @@
 import csv
+import logging
 import os
+import random
 import re
+import shutil
 import time
+import tempfile
+from string import ascii_uppercase
 from urllib.parse import urljoin
 
-from selenium import webdriver
 from selenium.common.exceptions import (
     ElementClickInterceptedException,
     NoSuchElementException,
     StaleElementReferenceException,
     TimeoutException,
 )
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
+import undetected_chromedriver as uc
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -24,11 +29,25 @@ BASE_URL = "https://dhp.virginiainteractive.org"
 SEARCH_URL = "https://dhp.virginiainteractive.org/Lookup/Index"
 URLS_FILE = "dhp_detail_urls.txt"
 OUTPUT_FILE = "dhp_details.csv"
+LOG_FILE = "dhp.log"
 
-WAIT_SECONDS = 30
+WAIT_SECONDS = 180
 PAGE_LOAD_SLEEP = 1.0
 RESULT_WAIT_SECONDS = 20
 HEADLESS = False
+PAGE_LOAD_TIMEOUT = 300
+SEARCH_BUTTON_WAIT_SECONDS = 180
+CHROME_VERSION_MAIN = 148
+CHROME_DRIVER_VERSION = "148.0.7778.179"
+
+# Human-mimic timing ranges (seconds). Kept randomized/jittered rather than
+# fixed so request cadence doesn't look robotic.
+TYPE_DELAY_RANGE = (0.06, 0.22)
+CLICK_SETTLE_RANGE = (0.25, 0.7)
+BETWEEN_SEARCH_RANGE = (0.9, 2.4)
+BETWEEN_PAGE_RANGE = (0.6, 1.5)
+LONG_BREAK_EVERY = 40          # take a longer pause every N searches
+LONG_BREAK_RANGE = (5.0, 12.0)
 
 KEYWORDS = [
     "Pharmacy",
@@ -52,57 +71,63 @@ KEYWORDS = [
 ]
 
 STATES = [
-    "Alabama",
-    "Alaska",
-    "Arizona",
-    "Arkansas",
-    "California",
-    "Colorado",
-    "Connecticut",
-    "Delaware",
-    "District of Columbia",
-    "Florida",
-    "Georgia",
-    "Hawaii",
-    "Idaho",
-    "Illinois",
-    "Indiana",
-    "Iowa",
-    "Kansas",
-    "Kentucky",
-    "Louisiana",
-    "Maine",
-    "Maryland",
-    "Massachusetts",
-    "Michigan",
-    "Minnesota",
-    "Mississippi",
-    "Missouri",
-    "Montana",
-    "Nebraska",
-    "Nevada",
-    "New Hampshire",
-    "New Jersey",
-    "New Mexico",
-    "New York",
-    "North Carolina",
-    "North Dakota",
-    "Ohio",
-    "Oklahoma",
-    "Oregon",
-    "Pennsylvania",
-    "Rhode Island",
-    "South Carolina",
-    "South Dakota",
-    "Tennessee",
-    "Texas",
-    "Utah",
-    "Vermont",
+    # "Alabama",
+    # "Alaska",
+    # "Arizona",
+    # "Arkansas",
+    # "California",
+    # "Colorado",
+    # "Connecticut",
+    # "Delaware",
+    # "District of Columbia",
+    # "Florida",
+    # "Georgia",
+    # "Hawaii",
+    # "Idaho",
+    # "Illinois",
+    # "Indiana",
+    # "Iowa",
+    # "Kansas",
+    # "Kentucky",
+    # "Louisiana",
+    # "Maine",
+    # "Maryland",
+    # "Massachusetts",
+    # "Michigan",
+    # "Minnesota",
+    # "Mississippi",
+    # "Missouri",
+    # "Montana",
+    # "Nebraska",
+    # "Nevada",
+    # "New Hampshire",
+    # "New Jersey",
+    # "New Mexico",
+    # "New York",
+    # "North Carolina",
+    # "North Dakota",
+    # "Ohio",
+    # "Oklahoma",
+    # "Oregon",
+    # "Pennsylvania",
+    # "Rhode Island",
+    # "South Carolina",
+    # "South Dakota",
+    # "Tennessee",
+    # "Texas",
+    # "Utah",
+    # "Vermont",
     "Virginia",
-    "Washington",
-    "West Virginia",
-    "Wisconsin",
-    "Wyoming",
+    # "Washington",
+    # "West Virginia",
+    # "Wisconsin",
+    # "Wyoming",
+]
+
+FIRST_NAME_PREFIXES = [
+    f"{first}{second}"
+    for first in ascii_uppercase
+    for second in ascii_uppercase
 ]
 
 FIELDNAMES = [
@@ -118,31 +143,122 @@ FIELDNAMES = [
 ]
 
 
+def setup_logger() -> logging.Logger:
+    logger = logging.getLogger("dhp_scraper")
+    if logger.handlers:
+        return logger
+
+    logger.setLevel(logging.INFO)
+    logger.propagate = False
+
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+
+    file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+    logger.addHandler(stream_handler)
+
+    return logger
+
+
+LOGGER = setup_logger()
+
+
 def normalize(text):
     return re.sub(r"\s+", " ", text or "").strip().upper()
 
 
 def build_driver():
-    options = ChromeOptions()
+    profile_dir = tempfile.mkdtemp(prefix="dhp_profile_")
+    options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-notifications")
+    options.add_argument("--disable-application-cache")
+    options.add_argument("--disk-cache-size=0")
+    options.add_argument("--media-cache-size=0")
+    options.add_argument("--disable-cache")
+    options.add_argument(f"--user-data-dir={profile_dir}")
+    # options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # options.add_experimental_option("useAutomationExtension", False)
     if HEADLESS:
         options.add_argument("--headless=new")
 
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
-    driver.set_page_load_timeout(120)
+    driver = uc.Chrome(
+        options=options,
+        driver_executable_path=ChromeDriverManager(
+            driver_version=CHROME_DRIVER_VERSION
+        ).install(),
+        version_main=CHROME_VERSION_MAIN,
+        use_subprocess=True,
+    )
+    driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
+    driver._dhp_profile_dir = profile_dir
     return driver
+
+
+def close_driver(driver):
+    profile_dir = getattr(driver, "_dhp_profile_dir", None)
+    try:
+        driver.quit()
+    finally:
+        if profile_dir:
+            shutil.rmtree(profile_dir, ignore_errors=True)
+
+
+def human_sleep(min_seconds, max_seconds):
+    time.sleep(random.uniform(min_seconds, max_seconds))
+
+
+def human_mouse_move(driver, element=None):
+    """Move the mouse toward an element (with a small random offset) or to a
+    random point on the page, so cursor motion isn't a straight teleport."""
+    try:
+        actions = ActionChains(driver)
+        if element is not None:
+            actions.move_to_element_with_offset(
+                element, random.randint(-4, 4), random.randint(-4, 4)
+            )
+        else:
+            actions.move_by_offset(random.randint(-120, 120), random.randint(-120, 120))
+        actions.perform()
+    except Exception:
+        pass
+
+
+def human_click(driver, element):
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+    human_sleep(0.2, 0.5)
+    human_mouse_move(driver, element)
+    human_sleep(0.1, 0.35)
+    try:
+        element.click()
+    except ElementClickInterceptedException:
+        driver.execute_script("arguments[0].click();", element)
+    human_sleep(*CLICK_SETTLE_RANGE)
+
+
+def human_type(element, text):
+    for char in text:
+        element.send_keys(char)
+        time.sleep(random.uniform(*TYPE_DELAY_RANGE))
 
 
 def wait_for_page_ready(driver, wait):
     wait.until(lambda d: d.execute_script("return document.readyState") == "complete")
-    time.sleep(PAGE_LOAD_SLEEP)
+    human_sleep(PAGE_LOAD_SLEEP, PAGE_LOAD_SLEEP + 0.6)
 
 
 def open_search_page(driver, wait):
-    driver.get(SEARCH_URL)
+    try:
+        driver.get(SEARCH_URL)
+    except TimeoutException:
+        # The site can take a long time to finish loading. Stop the navigation
+        # and continue once the form is reachable in the DOM.
+        driver.execute_script("window.stop();")
     wait_for_page_ready(driver, wait)
     wait.until(EC.presence_of_element_located((By.ID, "OccupationId")))
 
@@ -156,11 +272,11 @@ def select_option_by_text(driver, element_id, target_text):
     select = get_select(driver, element_id)
     for option in select.options:
         if normalize(option.text) == target and (option.get_attribute("value") or "").strip():
-            option.click()
-            time.sleep(0.4)
+            human_click(driver, option)
+            human_sleep(0.3, 0.7)
             return
     select.select_by_visible_text(target_text)
-    time.sleep(0.4)
+    human_sleep(0.3, 0.7)
 
 
 def select_occupation(driver, occupation_name):
@@ -171,21 +287,79 @@ def select_state(driver, state_name):
     select_option_by_text(driver, "State", state_name)
 
 
+def set_text_input(driver, element_id, value):
+    element = WebDriverWait(driver, WAIT_SECONDS).until(
+        EC.presence_of_element_located((By.ID, element_id))
+    )
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+    human_mouse_move(driver, element)
+    human_sleep(0.15, 0.4)
+    try:
+        element.click()
+    except Exception:
+        pass
+
+    try:
+        element.clear()
+    except Exception:
+        pass
+
+    try:
+        element.send_keys(Keys.CONTROL, "a")
+        element.send_keys(Keys.DELETE)
+        human_type(element, value)
+    except Exception:
+        driver.execute_script(
+            """
+            const el = arguments[0];
+            const value = arguments[1];
+            el.value = value;
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+            el.dispatchEvent(new Event('change', { bubbles: true }));
+            """,
+            element,
+            value,
+        )
+    human_sleep(0.25, 0.55)
+
+
+def set_first_name_prefix(driver, prefix):
+    set_text_input(driver, "FName", prefix)
+
+
 def select_current_licensees(driver):
     select_option_by_text(driver, "LicStatus", "Current Licensees")
 
 
 def click_search(driver, wait):
-    button = wait.until(
-        EC.element_to_be_clickable(
-            (By.XPATH, "//input[@type='submit' and @name='submitBtn' and @value='Search']")
-        )
-    )
-    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", button)
+    search_xpath = "(//input[@type='submit' and @name='submitBtn' and @value='Search'])[3]"
     try:
-        button.click()
-    except ElementClickInterceptedException:
-        driver.execute_script("arguments[0].click();", button)
+        button = WebDriverWait(driver, SEARCH_BUTTON_WAIT_SECONDS).until(
+            EC.presence_of_element_located((By.XPATH, search_xpath))
+        )
+        WebDriverWait(driver, SEARCH_BUTTON_WAIT_SECONDS).until(
+            EC.element_to_be_clickable((By.XPATH, search_xpath))
+        )
+        human_click(driver, button)
+        return True
+    except TimeoutException:
+        LOGGER.warning(
+            "Automatic Search click was not reliable on this page load. "
+            "Please click Search manually in the browser, then press Enter here."
+        )
+        try:
+            input()
+        except EOFError:
+            return False
+        return True
+    except Exception as exc:
+        LOGGER.error("Automatic Search click failed: %s", exc)
+        LOGGER.warning("Please click Search manually in the browser, then press Enter here.")
+        try:
+            input()
+        except EOFError:
+            return False
+        return True
 
 
 def get_result_table(driver):
@@ -278,18 +452,14 @@ def click_next_page(driver, wait):
     rows = get_result_rows(driver)
     anchor = rows[0] if rows else None
 
-    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", next_button)
-    try:
-        next_button.click()
-    except ElementClickInterceptedException:
-        driver.execute_script("arguments[0].click();", next_button)
+    human_click(driver, next_button)
 
     if anchor is not None:
         try:
             wait.until(EC.staleness_of(anchor))
         except TimeoutException:
             pass
-    time.sleep(0.8)
+    human_sleep(*BETWEEN_PAGE_RANGE)
     return True
 
 
@@ -321,44 +491,90 @@ def read_lines(path):
         return [line.strip() for line in handle if line.strip()]
 
 
-def collect_urls():
-    driver = build_driver()
-    wait = WebDriverWait(driver, WAIT_SECONDS)
+def collect_urls_by_keyword():
     all_urls = []
     seen = set()
+    keyword_batches = []
+    search_count = 0
 
-    try:
-        for occupation in KEYWORDS:
+    for occupation in KEYWORDS:
+        driver = build_driver()
+        wait = WebDriverWait(driver, WAIT_SECONDS)
+        keyword_urls = []
+        try:
             for state_name in STATES:
-                try:
-                    open_search_page(driver, wait)
-                    select_occupation(driver, occupation)
-                    select_state(driver, state_name)
-                    select_current_licensees(driver)
-                    click_search(driver, wait)
+                for prefix in FIRST_NAME_PREFIXES:
+                    try:
+                        open_search_page(driver, wait)
+                        human_mouse_move(driver)
+                        select_occupation(driver, occupation)
+                        set_first_name_prefix(driver, prefix)
+                        select_state(driver, state_name)
+                        select_current_licensees(driver)
+                        if not click_search(driver, wait):
+                            LOGGER.warning(
+                                "%s | %s | %s: skipped because Search could not be submitted",
+                                occupation,
+                                state_name,
+                                prefix,
+                            )
+                            continue
 
-                    if not wait_for_results_or_empty(driver):
-                        print(f"{occupation} | {state_name}: 0 urls")
-                        continue
+                        if not wait_for_results_or_empty(driver):
+                            LOGGER.info("%s | %s | %s: 0 urls", occupation, state_name, prefix)
+                            write_lines(URLS_FILE, all_urls)
+                            continue
 
-                    page_urls = scrape_all_urls(driver, wait)
-                    new_urls = 0
-                    for url in page_urls:
-                        if url not in seen:
-                            seen.add(url)
-                            all_urls.append(url)
-                            new_urls += 1
+                        page_urls = scrape_all_urls(driver, wait)
+                        new_urls = 0
+                        for url in page_urls:
+                            if url not in seen:
+                                seen.add(url)
+                                all_urls.append(url)
+                                keyword_urls.append(url)
+                                new_urls += 1
 
-                    print(f"{occupation} | {state_name}: {new_urls} new urls")
-                except Exception as exc:
-                    print(f"ERROR on {occupation} / {state_name}: {exc}")
+                        # Persist after every single search so progress
+                        # survives a crash/restart instead of only being
+                        # written once the whole occupation/state finishes.
+                        write_lines(URLS_FILE, all_urls)
+                        LOGGER.info(
+                            "%s | %s | %s: %s new urls (%s total saved to %s)",
+                            occupation,
+                            state_name,
+                            prefix,
+                            new_urls,
+                            len(all_urls),
+                            URLS_FILE,
+                        )
+                    except Exception as exc:
+                        LOGGER.error(
+                            "ERROR on %s / %s / %s: %s",
+                            occupation,
+                            state_name,
+                            prefix,
+                            exc,
+                        )
+                        write_lines(URLS_FILE, all_urls)
+                    finally:
+                        search_count += 1
+                        if search_count % LONG_BREAK_EVERY == 0:
+                            human_sleep(*LONG_BREAK_RANGE)
+                        else:
+                            human_sleep(*BETWEEN_SEARCH_RANGE)
+        finally:
+            close_driver(driver)
 
-        write_lines(URLS_FILE, all_urls)
-        print(f"Saved {len(all_urls)} unique urls to {URLS_FILE}")
-    finally:
-        driver.quit()
+        LOGGER.info(
+            "%s: finished, %s unique urls saved so far in %s",
+            occupation,
+            len(all_urls),
+            URLS_FILE,
+        )
+        if keyword_urls:
+            keyword_batches.append((occupation, keyword_urls))
 
-    return all_urls
+    return keyword_batches
 
 
 def get_text(cell):
@@ -416,33 +632,36 @@ def scrape_details(urls):
             try:
                 record = parse_detail_page(driver, url)
                 records.append(record)
-                print(f"{index}/{len(urls)} scraped: {url}")
+                LOGGER.info("%s/%s scraped: %s", index, len(urls), url)
             except Exception as exc:
-                print(f"ERROR on detail page {url}: {exc}")
+                LOGGER.error("ERROR on detail page %s: %s", url, exc)
+            finally:
+                if index % LONG_BREAK_EVERY == 0:
+                    human_sleep(*LONG_BREAK_RANGE)
+                else:
+                    human_sleep(*BETWEEN_SEARCH_RANGE)
     finally:
-        driver.quit()
+        close_driver(driver)
     return records
 
 
-def write_csv(path, records):
-    with open(path, "w", newline="", encoding="utf-8-sig") as handle:
+def write_csv(path, records, append=False):
+    file_exists = os.path.exists(path)
+    mode = "a" if append else "w"
+    with open(path, mode, newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDNAMES, extrasaction="ignore")
-        writer.writeheader()
+        if not append or not file_exists:
+            writer.writeheader()
         writer.writerows(records)
 
 
+def initialize_csv(path):
+    write_csv(path, [], append=False)
+
+
 def main():
-    urls = collect_urls()
-    if not urls and os.path.exists(URLS_FILE):
-        urls = read_lines(URLS_FILE)
-
-    if not urls:
-        print("No detail URLs collected; skipping detail scrape.")
-        return
-
-    records = scrape_details(urls)
-    write_csv(OUTPUT_FILE, records)
-    print(f"Saved {len(records)} rows to {OUTPUT_FILE}")
+    collect_urls_by_keyword()
+    LOGGER.info("Phase 1 complete. URL list written to %s", URLS_FILE)
 
 
 if __name__ == "__main__":
