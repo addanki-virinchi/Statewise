@@ -257,6 +257,57 @@ window.__scraper = (function () {
     const numbered = buttons.filter(b => /^\d+$/.test(norm(b.innerText)));
     return { totalButtons: buttons.length, numberedButtons: numbered.length };
   }
+  function currentPageNumber() {
+    const buttons = paginationButtons();
+    for (const b of buttons) {
+      const text = norm(b.innerText);
+      if (!/^\d+$/.test(text)) continue;
+      const host = b.closest && b.closest('lightning-button');
+      const cls = ((host && host.className) || b.className || '').toLowerCase();
+      const pressed = norm(b.getAttribute('aria-current')).toLowerCase();
+      if (cls.indexOf('active') !== -1 || pressed === 'page' || pressed === 'true') {
+        return parseInt(text, 10);
+      }
+    }
+    return null;
+  }
+  function numberedPageButtons() {
+    const out = [];
+    for (const b of paginationButtons()) {
+      const text = norm(b.innerText);
+      if (!/^\d+$/.test(text)) continue;
+      out.push({ page: parseInt(text, 10), button: b });
+    }
+    return out;
+  }
+  function pageButtonFor(page) {
+    page = parseInt(page, 10);
+    if (!page) return null;
+    for (const item of numberedPageButtons()) {
+      if (item.page === page) return item.button;
+    }
+    return null;
+  }
+  function nearestResumePage(targetPage) {
+    targetPage = parseInt(targetPage, 10);
+    if (!targetPage || targetPage < 1) return null;
+    const current = currentPageNumber();
+    if (current === null) return null;
+    if (current === targetPage) return { page: current, delta: 0 };
+    const movingForward = current < targetPage;
+    let best = null;
+    for (const item of numberedPageButtons()) {
+      if (item.page === current) continue;
+      if (movingForward) {
+        if (item.page <= current || item.page > targetPage) continue;
+        if (!best || item.page > best.page) best = { page: item.page, delta: targetPage - item.page };
+      } else {
+        if (item.page >= current || item.page < targetPage) continue;
+        if (!best || item.page < best.page) best = { page: item.page, delta: item.page - targetPage };
+      }
+    }
+    return best;
+  }
   function nextButton() {
     const buttons = paginationButtons();
     for (const b of buttons) {
@@ -342,9 +393,10 @@ window.__scraper = (function () {
     }));
   }
   return { deepOne, deepAll, norm, resolveCombo, comboValueOf, comboInput,
-           visibleOptions, visibleOptionEl, searchButton,
-           paginationInfo, nextButton, isDisabled, rows, resultsState, labelValue, findControl,
-           captchaDetected, describeCombos };
+            visibleOptions, visibleOptionEl, searchButton,
+            paginationInfo, currentPageNumber, numberedPageButtons, pageButtonFor, nearestResumePage,
+            nextButton, isDisabled, rows, resultsState, labelValue, findControl,
+            captchaDetected, describeCombos };
 })();
 """
 
@@ -630,6 +682,48 @@ def wait_table_refresh(driver, previous_signature: str, timeout=RESULTS_WAIT) ->
     return False
 
 
+def jump_to_resume_page(driver, target_page: int, profession: str = "", license_type: str = "") -> int:
+    target_page = max(1, int(target_page or 1))
+    if target_page <= 1:
+        return 1
+
+    while True:
+        current_page = js(driver, "return window.__scraper.currentPageNumber();")
+        current_page = int(current_page or 1)
+        if current_page == target_page:
+            return current_page
+
+        nearest = js(driver, "return window.__scraper.nearestResumePage(arguments[0]);", target_page) or {}
+        jump_page = int(nearest.get("page") or 0)
+        if not jump_page or jump_page == current_page:
+            save_checkpoint(profession, license_type, current_page, "resume_jump_stalled")
+            raise PaginationBlocked(
+                f"Resume jump stalled at page {current_page} while targeting page {target_page}"
+            )
+
+        jump_button = js(driver, "return window.__scraper.pageButtonFor(arguments[0]);", jump_page)
+        if jump_button is None:
+            save_checkpoint(profession, license_type, current_page, "resume_jump_button_missing")
+            raise PaginationBlocked(
+                f"Resume jump could not find button for page {jump_page} while targeting page {target_page}"
+            )
+
+        previous_signature = "|".join(
+            r.get("license_number", "")
+            for r in (js(driver, "return window.__scraper.rows();") or [])
+        )
+        print(f"    resume jump target {target_page}; page {current_page} -> {jump_page}")
+        human_scroll(driver)
+        if not robust_click(driver, jump_button):
+            save_checkpoint(profession, license_type, current_page, "resume_jump_click_failed")
+            raise PaginationBlocked(f"Could not jump to page {jump_page} while resuming toward page {target_page}")
+        human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
+        if not wait_table_refresh(driver, previous_signature):
+            reason = "captcha_or_blocked_refresh" if captcha_detected(driver) else "page_jump_refresh_timeout"
+            save_checkpoint(profession, license_type, jump_page, reason)
+            raise PaginationBlocked(f"Jump to page {jump_page} did not refresh in time: {reason}")
+
+
 # ─── SCRAPE ───────────────────────────────────────────────────────────────────
 
 def captcha_detected(driver) -> bool:
@@ -714,7 +808,8 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
     written, visited_signatures, current = 0, set(), 1
     start_page = max(1, int(start_page or 1))
     if start_page > 1:
-        print(f"    resuming at page {start_page}; advancing with Next")
+        current = jump_to_resume_page(driver, start_page, profession, license_type)
+        print(f"    resuming at page {start_page}; landed on page {current}")
 
     while True:
         rows = js(driver, "return window.__scraper.rows();") or []
@@ -772,13 +867,10 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
 
 def build_driver() -> uc.Chrome:
     options = uc.ChromeOptions()
-    options.add_argument("--start-maximized")
+    options.add_argument("--start-minimized")
     options.add_argument("--disable-notifications")
     options.add_argument("--disable-popup-blocking")
-
-    profile_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chrome_profile")
-    os.makedirs(profile_dir, exist_ok=True)
-    options.add_argument(f"--user-data-dir={profile_dir}")
+    options.add_argument("--incognito")
 
     kwargs = {"options": options, "headless": HEADLESS}
     if CHROMEDRIVER_MAJOR:
@@ -788,7 +880,6 @@ def build_driver() -> uc.Chrome:
     driver.set_page_load_timeout(PAGE_TIMEOUT)
     driver.set_script_timeout(PAGE_TIMEOUT)
     return driver
-
 
 def load_search_page(driver) -> bool:
     driver.get(SEARCH_URL)
