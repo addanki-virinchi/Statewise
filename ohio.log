@@ -1,0 +1,2628 @@
+2026-06-08 17:13:16,130 INFO Selecting state: OH
+2026-06-08 17:13:17,442 INFO   Board: Medical Board
+2026-06-08 17:13:21,177 INFO     License type: Acupuncturist (ACU)
+2026-06-08 17:14:05,545 INFO       Records collected: 150
+2026-06-08 17:14:05,551 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 17:14:47,026 INFO       Records collected: 151
+2026-06-08 17:14:47,029 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 17:15:08,840 INFO       Records collected: 75
+2026-06-08 17:15:08,842 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 17:15:30,614 INFO       Records collected: 77
+2026-06-08 17:15:30,616 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 17:16:11,513 INFO       Records collected: 151
+2026-06-08 17:16:11,525 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 17:16:53,535 INFO       Records collected: 151
+2026-06-08 17:16:53,537 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 17:17:33,240 INFO       Records collected: 150
+2026-06-08 17:17:33,242 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 17:17:52,118 INFO       Records collected: 62
+2026-06-08 17:17:52,119 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 17:18:31,874 INFO       Records collected: 150
+2026-06-08 17:18:31,877 INFO     License type: Genetic Counselor (GC)
+2026-06-08 17:19:16,841 INFO       Records collected: 150
+2026-06-08 17:19:16,845 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 17:19:20,232 INFO       Records collected: 1
+2026-06-08 17:19:20,234 INFO     License type: L1 Limited Permit
+2026-06-08 17:20:03,388 INFO       Records collected: 150
+2026-06-08 17:20:03,390 INFO     License type: L2 Limited Permit
+2026-06-08 17:20:50,037 INFO       Records collected: 150
+2026-06-08 17:20:50,039 INFO     License type: Licensed Dietitian
+2026-06-08 17:21:32,523 INFO       Records collected: 150
+2026-06-08 17:21:32,526 INFO     License type: Limited Permit
+2026-06-08 17:22:13,876 INFO       Records collected: 150
+2026-06-08 17:22:13,879 INFO     License type: Massage Therapist (MT)
+2026-06-08 17:22:55,664 INFO       Records collected: 150
+2026-06-08 17:22:55,667 INFO     License type: Mechanotherapist
+2026-06-08 17:23:38,746 INFO       Records collected: 150
+2026-06-08 17:23:38,749 INFO     License type: Naprapath
+2026-06-08 17:23:43,306 INFO       Records collected: 4
+2026-06-08 17:23:43,307 INFO     License type: Physician Assistant (PA)
+2026-06-08 17:25:03,520 INFO       Records collected: 300
+2026-06-08 17:25:03,525 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 17:25:12,441 INFO       Records collected: 25
+2026-06-08 17:25:12,443 INFO     License type: Respiratory Care Professional
+2026-06-08 17:25:52,500 INFO       Records collected: 150
+2026-06-08 17:25:52,502 INFO     License type: Special Activity Certificate
+2026-06-08 17:26:14,508 INFO       Records collected: 76
+2026-06-08 17:26:14,510 INFO     License type: Training Certificate (DO)
+2026-06-08 17:26:54,351 INFO       Records collected: 150
+2026-06-08 17:26:54,355 INFO     License type: Training Certificate (DPM)
+2026-06-08 17:27:34,350 INFO       Records collected: 150
+2026-06-08 17:27:34,352 INFO     License type: Training Certificate (MD)
+2026-06-08 17:28:14,553 INFO       Records collected: 150
+2026-06-08 17:28:14,556 INFO     License type: Treatment Provider
+2026-06-08 17:28:17,124 INFO       Records collected: 0
+2026-06-08 17:28:17,124 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 17:28:20,477 INFO       Records collected: 3
+2026-06-08 17:28:20,478 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 17:28:48,951 INFO       Records collected: 103
+2026-06-08 17:28:48,954 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 17:28:52,227 INFO       Records collected: 1
+2026-06-08 17:28:52,228 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 17:28:59,052 INFO       Records collected: 18
+2026-06-08 17:28:59,053 INFO   Board: Nursing Board
+2026-06-08 17:29:00,681 INFO     License type: Acupuncturist (ACU)
+2026-06-08 17:30:06,099 INFO       Records collected: 167
+2026-06-08 17:30:06,102 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 17:30:09,339 WARNING     Skipping license type 'Anesthesiologist Assistant (AA)' (not found after refresh)
+2026-06-08 17:30:09,339 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 17:30:12,586 WARNING     Skipping license type 'Certificate of Conceded Eminence' (not found after refresh)
+2026-06-08 17:30:12,586 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 17:30:15,834 WARNING     Skipping license type 'Clinical Research Faculty Certificate' (not found after refresh)
+2026-06-08 17:30:15,834 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 17:30:19,091 WARNING     Skipping license type 'Doctor of Medicine (MD)' (not found after refresh)
+2026-06-08 17:30:19,092 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 17:30:22,321 WARNING     Skipping license type 'Doctor of Medicine (MD) Compact' (not found after refresh)
+2026-06-08 17:30:22,321 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 17:30:25,553 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO)' (not found after refresh)
+2026-06-08 17:30:25,553 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 17:30:28,756 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO) Compact' (not found after refresh)
+2026-06-08 17:30:28,756 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 17:30:31,991 WARNING     Skipping license type 'Doctor of Podiatric Medicine (DPM)' (not found after refresh)
+2026-06-08 17:30:31,991 INFO     License type: Genetic Counselor (GC)
+2026-06-08 17:30:35,232 WARNING     Skipping license type 'Genetic Counselor (GC)' (not found after refresh)
+2026-06-08 17:30:35,232 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 17:30:38,480 WARNING     Skipping license type 'Genetic Counselor (GC) - Special Activity Certificate' (not found after refresh)
+2026-06-08 17:30:38,480 INFO     License type: L1 Limited Permit
+2026-06-08 17:30:41,676 WARNING     Skipping license type 'L1 Limited Permit' (not found after refresh)
+2026-06-08 17:30:41,676 INFO     License type: L2 Limited Permit
+2026-06-08 17:30:44,917 WARNING     Skipping license type 'L2 Limited Permit' (not found after refresh)
+2026-06-08 17:30:44,918 INFO     License type: Licensed Dietitian
+2026-06-08 17:30:48,152 WARNING     Skipping license type 'Licensed Dietitian' (not found after refresh)
+2026-06-08 17:30:48,152 INFO     License type: Limited Permit
+2026-06-08 17:30:51,389 WARNING     Skipping license type 'Limited Permit' (not found after refresh)
+2026-06-08 17:30:51,390 INFO     License type: Massage Therapist (MT)
+2026-06-08 17:30:54,629 WARNING     Skipping license type 'Massage Therapist (MT)' (not found after refresh)
+2026-06-08 17:30:54,629 INFO     License type: Mechanotherapist
+2026-06-08 17:30:57,837 WARNING     Skipping license type 'Mechanotherapist' (not found after refresh)
+2026-06-08 17:30:57,837 INFO     License type: Naprapath
+2026-06-08 17:31:01,054 WARNING     Skipping license type 'Naprapath' (not found after refresh)
+2026-06-08 17:31:01,054 INFO     License type: Physician Assistant (PA)
+2026-06-08 17:31:04,271 WARNING     Skipping license type 'Physician Assistant (PA)' (not found after refresh)
+2026-06-08 17:31:04,271 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 17:31:07,518 WARNING     Skipping license type 'Radiologist Assistant (RA)' (not found after refresh)
+2026-06-08 17:31:07,519 INFO     License type: Respiratory Care Professional
+2026-06-08 17:31:10,737 WARNING     Skipping license type 'Respiratory Care Professional' (not found after refresh)
+2026-06-08 17:31:10,738 INFO     License type: Special Activity Certificate
+2026-06-08 17:31:13,996 WARNING     Skipping license type 'Special Activity Certificate' (not found after refresh)
+2026-06-08 17:31:13,996 INFO     License type: Training Certificate (DO)
+2026-06-08 17:31:17,238 WARNING     Skipping license type 'Training Certificate (DO)' (not found after refresh)
+2026-06-08 17:31:17,238 INFO     License type: Training Certificate (DPM)
+2026-06-08 17:31:20,486 WARNING     Skipping license type 'Training Certificate (DPM)' (not found after refresh)
+2026-06-08 17:31:20,486 INFO     License type: Training Certificate (MD)
+2026-06-08 17:31:23,735 WARNING     Skipping license type 'Training Certificate (MD)' (not found after refresh)
+2026-06-08 17:31:23,735 INFO     License type: Treatment Provider
+2026-06-08 17:31:26,967 WARNING     Skipping license type 'Treatment Provider' (not found after refresh)
+2026-06-08 17:31:26,967 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 17:31:30,206 WARNING     Skipping license type 'Visiting Clinical Professional Development Certificate' (not found after refresh)
+2026-06-08 17:31:30,207 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 17:31:33,452 WARNING     Skipping license type 'Visiting Medical Faculty Certification' (not found after refresh)
+2026-06-08 17:31:33,452 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 17:31:36,694 WARNING     Skipping license type 'Visiting Podiatric Faculty Certificate' (not found after refresh)
+2026-06-08 17:31:36,695 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 17:31:39,942 WARNING     Skipping license type 'Volunteer Certificate (M-VC)' (not found after refresh)
+2026-06-08 17:31:39,943 INFO   Board: Psychology Board
+2026-06-08 17:31:41,679 INFO     License type: Community Health Worker (CHW)
+2026-06-08 17:32:22,264 INFO       Records collected: 150
+2026-06-08 17:32:22,267 INFO     License type: Dialysis Technician (DT)
+2026-06-08 17:32:25,500 WARNING     Skipping license type 'Dialysis Technician (DT)' (not found after refresh)
+2026-06-08 17:32:25,501 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 17:32:28,773 WARNING     Skipping license type 'Licensed Practical Nurse (LPN)' (not found after refresh)
+2026-06-08 17:32:28,773 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 17:32:32,016 WARNING     Skipping license type 'Licensed Practical Nurse - Temporary (IP)' (not found after refresh)
+2026-06-08 17:32:32,016 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 17:32:35,251 WARNING     Skipping license type 'Non - OH MSL RN Seeking OH APRN License' (not found after refresh)
+2026-06-08 17:32:35,252 INFO     License type: Registered Nurse (RN)
+2026-06-08 17:32:38,474 WARNING     Skipping license type 'Registered Nurse (RN)' (not found after refresh)
+2026-06-08 17:32:38,474 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 17:32:41,709 WARNING     Skipping license type 'Registered Nurse - Temporary (IR)' (not found after refresh)
+2026-06-08 17:32:41,709 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 17:32:44,939 WARNING     Skipping license type 'Volunteer Certificate (VC)' (not found after refresh)
+2026-06-08 17:32:44,939 INFO     License type: State of Ohio Certified Doula
+2026-06-08 17:32:48,203 WARNING     Skipping license type 'State of Ohio Certified Doula' (not found after refresh)
+2026-06-08 17:32:48,203 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 17:32:51,431 WARNING     Skipping license type 'Certified Medication Aide (CMA)' (not found after refresh)
+2026-06-08 17:32:51,431 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 17:32:54,649 WARNING     Skipping license type 'Certified Medication Aide - Temporary (ICMA)' (not found after refresh)
+2026-06-08 17:32:54,650 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 17:32:57,879 WARNING     Skipping license type 'Certified Registered Nurse Anesthetist' (not found after refresh)
+2026-06-08 17:32:57,879 INFO     License type: Certified Nurse Midwife
+2026-06-08 17:33:01,131 WARNING     Skipping license type 'Certified Nurse Midwife' (not found after refresh)
+2026-06-08 17:33:01,131 INFO     License type: Certified Nurse Practitioner
+2026-06-08 17:33:04,379 WARNING     Skipping license type 'Certified Nurse Practitioner' (not found after refresh)
+2026-06-08 17:33:04,379 INFO     License type: Clinical Nurse Specialist
+2026-06-08 17:33:07,624 WARNING     Skipping license type 'Clinical Nurse Specialist' (not found after refresh)
+2026-06-08 17:33:07,624 INFO   Board: Speech and Hearing Professionals Board
+2026-06-08 17:33:09,308 INFO     License type: Certified Ohio Behavior Analyst
+2026-06-08 17:33:49,625 INFO       Records collected: 150
+2026-06-08 17:33:49,628 INFO     License type: Non-resident Temporary Permit
+2026-06-08 17:33:52,853 WARNING     Skipping license type 'Non-resident Temporary Permit' (not found after refresh)
+2026-06-08 17:33:52,853 INFO     License type: Psychologist
+2026-06-08 17:33:56,063 WARNING     Skipping license type 'Psychologist' (not found after refresh)
+2026-06-08 17:33:56,063 INFO     License type: Licensed School Psychologist
+2026-06-08 17:33:59,290 WARNING     Skipping license type 'Licensed School Psychologist' (not found after refresh)
+2026-06-08 17:33:59,290 INFO     License type: Independent School Psychologist
+2026-06-08 17:34:02,526 WARNING     Skipping license type 'Independent School Psychologist' (not found after refresh)
+2026-06-08 17:34:02,526 INFO   Board: Board of Pharmacy
+2026-06-08 17:34:04,244 INFO     License type: Audiologist
+2026-06-08 17:34:44,508 INFO       Records collected: 150
+2026-06-08 17:34:44,510 INFO     License type: Audiologist - Temporary
+2026-06-08 17:34:47,759 WARNING     Skipping license type 'Audiologist - Temporary' (not found after refresh)
+2026-06-08 17:34:47,759 INFO     License type: Audiology Aide
+2026-06-08 17:34:50,983 WARNING     Skipping license type 'Audiology Aide' (not found after refresh)
+2026-06-08 17:34:50,984 INFO     License type: Hearing Aid Fitter
+2026-06-08 17:34:54,216 WARNING     Skipping license type 'Hearing Aid Fitter' (not found after refresh)
+2026-06-08 17:34:54,216 INFO     License type: Speech-Language Pathologist
+2026-06-08 17:34:57,457 WARNING     Skipping license type 'Speech-Language Pathologist' (not found after refresh)
+2026-06-08 17:34:57,458 INFO     License type: Speech-Language Pathologist - Temporary
+2026-06-08 17:35:00,687 WARNING     Skipping license type 'Speech-Language Pathologist - Temporary' (not found after refresh)
+2026-06-08 17:35:00,687 INFO     License type: Speech-Language Pathology Aide
+2026-06-08 17:35:03,918 WARNING     Skipping license type 'Speech-Language Pathology Aide' (not found after refresh)
+2026-06-08 17:35:03,919 INFO     License type: Speech-Language Pathology Conditional License
+2026-06-08 17:35:07,151 WARNING     Skipping license type 'Speech-Language Pathology Conditional License' (not found after refresh)
+2026-06-08 17:35:07,151 INFO     License type: Training Permit
+2026-06-08 17:35:10,449 WARNING     Skipping license type 'Training Permit' (not found after refresh)
+2026-06-08 17:35:10,449 INFO     License type: Audiologist Compact
+2026-06-08 17:35:13,695 WARNING     Skipping license type 'Audiologist Compact' (not found after refresh)
+2026-06-08 17:35:13,695 INFO     License type: Speech-Language Pathologist Compact
+2026-06-08 17:35:16,924 WARNING     Skipping license type 'Speech-Language Pathologist Compact' (not found after refresh)
+2026-06-08 17:35:16,925 INFO   Board: Department of Behavioral Health
+2026-06-08 17:35:18,614 INFO     License type: Pharmacist
+2026-06-08 17:35:58,947 INFO       Records collected: 150
+2026-06-08 17:35:58,950 INFO     License type: Pharmacy Intern
+2026-06-08 17:36:02,191 WARNING     Skipping license type 'Pharmacy Intern' (not found after refresh)
+2026-06-08 17:36:02,191 INFO     License type: Pharmacy Intern - Foreign Graduate
+2026-06-08 17:36:05,419 WARNING     Skipping license type 'Pharmacy Intern - Foreign Graduate' (not found after refresh)
+2026-06-08 17:36:05,421 INFO     License type: Pharmacy Intern - Graduate
+2026-06-08 17:36:08,653 WARNING     Skipping license type 'Pharmacy Intern - Graduate' (not found after refresh)
+2026-06-08 17:36:08,653 INFO     License type: Pharmacy Technician Trainee
+2026-06-08 17:36:11,881 WARNING     Skipping license type 'Pharmacy Technician Trainee' (not found after refresh)
+2026-06-08 17:36:11,881 INFO     License type: Registered Pharmacy Technician
+2026-06-08 17:36:15,109 WARNING     Skipping license type 'Registered Pharmacy Technician' (not found after refresh)
+2026-06-08 17:36:15,109 INFO     License type: Certified Pharmacy Technician
+2026-06-08 17:36:18,352 WARNING     Skipping license type 'Certified Pharmacy Technician' (not found after refresh)
+2026-06-08 17:36:18,352 INFO Selecting state: AA
+2026-06-08 17:36:19,566 INFO   Board: Medical Board
+2026-06-08 17:36:21,234 INFO     License type: Certified Family Peer Supporter
+2026-06-08 17:36:55,204 INFO       Records collected: 10
+2026-06-08 17:36:55,205 INFO     License type: Certified Peer Recovery Supporter
+2026-06-08 17:36:58,454 WARNING     Skipping license type 'Certified Peer Recovery Supporter' (not found after refresh)
+2026-06-08 17:36:58,455 INFO     License type: Certified Youth Peer Supporter
+2026-06-08 17:37:01,683 WARNING     Skipping license type 'Certified Youth Peer Supporter' (not found after refresh)
+2026-06-08 17:37:01,684 INFO   Board: Nursing Board
+2026-06-08 17:37:03,506 INFO     License type: Community Health Worker (CHW)
+2026-06-08 17:37:07,067 INFO       Records collected: 0
+2026-06-08 17:37:07,067 INFO     License type: Dialysis Technician (DT)
+2026-06-08 17:37:39,263 INFO       Records collected: 0
+2026-06-08 17:37:39,264 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 17:38:11,512 INFO       Records collected: 0
+2026-06-08 17:38:11,514 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 17:38:43,750 INFO       Records collected: 0
+2026-06-08 17:38:43,750 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 17:39:15,628 INFO       Records collected: 0
+2026-06-08 17:39:15,630 INFO     License type: Registered Nurse (RN)
+2026-06-08 17:39:47,954 INFO       Records collected: 0
+2026-06-08 17:39:47,954 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 17:39:56,366 INFO       Records collected: 3
+2026-06-08 17:39:56,367 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 17:39:58,843 INFO       Records collected: 0
+2026-06-08 17:39:58,843 INFO     License type: State of Ohio Certified Doula
+2026-06-08 17:40:31,016 INFO       Records collected: 0
+2026-06-08 17:40:31,016 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 17:41:03,223 INFO       Records collected: 0
+2026-06-08 17:41:03,223 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 17:41:35,437 INFO       Records collected: 0
+2026-06-08 17:41:35,437 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 17:42:07,603 INFO       Records collected: 0
+2026-06-08 17:42:07,603 INFO     License type: Certified Nurse Midwife
+2026-06-08 17:42:39,835 INFO       Records collected: 0
+2026-06-08 17:42:39,836 INFO     License type: Certified Nurse Practitioner
+2026-06-08 17:43:12,112 INFO       Records collected: 0
+2026-06-08 17:43:12,112 INFO     License type: Clinical Nurse Specialist
+2026-06-08 17:43:44,525 INFO       Records collected: 0
+2026-06-08 17:43:44,525 INFO   Board: Psychology Board
+2026-06-08 17:43:46,152 INFO     License type: Community Health Worker (CHW)
+2026-06-08 17:44:18,416 INFO       Records collected: 0
+2026-06-08 17:44:18,416 INFO     License type: Dialysis Technician (DT)
+2026-06-08 17:44:51,728 INFO       Records collected: 0
+2026-06-08 17:44:51,729 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 17:45:24,969 INFO       Records collected: 0
+2026-06-08 17:45:24,969 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 17:45:58,091 INFO       Records collected: 0
+2026-06-08 17:45:58,091 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 17:46:31,399 INFO       Records collected: 0
+2026-06-08 17:46:31,399 INFO     License type: Registered Nurse (RN)
+2026-06-08 17:47:04,547 INFO       Records collected: 0
+2026-06-08 17:47:04,547 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 17:47:37,718 INFO       Records collected: 0
+2026-06-08 17:47:37,719 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 17:48:10,920 INFO       Records collected: 0
+2026-06-08 17:48:10,920 INFO     License type: State of Ohio Certified Doula
+2026-06-08 17:48:44,265 INFO       Records collected: 0
+2026-06-08 17:48:44,266 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 17:49:17,251 INFO       Records collected: 0
+2026-06-08 17:49:17,251 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 17:49:50,481 INFO       Records collected: 0
+2026-06-08 17:49:50,481 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 17:49:53,709 WARNING     Skipping license type 'Certified Registered Nurse Anesthetist' (not found after refresh)
+2026-06-08 17:49:53,710 INFO     License type: Certified Nurse Midwife
+2026-06-08 17:49:57,015 WARNING     Skipping license type 'Certified Nurse Midwife' (not found after refresh)
+2026-06-08 17:49:57,015 INFO     License type: Certified Nurse Practitioner
+2026-06-08 17:50:00,243 WARNING     Skipping license type 'Certified Nurse Practitioner' (not found after refresh)
+2026-06-08 17:50:00,243 INFO     License type: Clinical Nurse Specialist
+2026-06-08 17:50:03,473 WARNING     Skipping license type 'Clinical Nurse Specialist' (not found after refresh)
+2026-06-08 17:50:03,474 INFO   Board: Speech and Hearing Professionals Board
+2026-06-08 17:50:05,144 INFO     License type: Community Health Worker (CHW)
+2026-06-08 17:50:37,380 INFO       Records collected: 0
+2026-06-08 17:50:37,380 INFO     License type: Dialysis Technician (DT)
+2026-06-08 17:50:40,627 WARNING     Skipping license type 'Dialysis Technician (DT)' (not found after refresh)
+2026-06-08 17:50:40,627 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 17:50:43,855 WARNING     Skipping license type 'Licensed Practical Nurse (LPN)' (not found after refresh)
+2026-06-08 17:50:43,855 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 17:50:47,087 WARNING     Skipping license type 'Licensed Practical Nurse - Temporary (IP)' (not found after refresh)
+2026-06-08 17:50:47,088 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 17:50:50,318 WARNING     Skipping license type 'Non - OH MSL RN Seeking OH APRN License' (not found after refresh)
+2026-06-08 17:50:50,318 INFO     License type: Registered Nurse (RN)
+2026-06-08 17:50:53,531 WARNING     Skipping license type 'Registered Nurse (RN)' (not found after refresh)
+2026-06-08 17:50:53,531 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 17:50:56,745 WARNING     Skipping license type 'Registered Nurse - Temporary (IR)' (not found after refresh)
+2026-06-08 17:50:56,745 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 17:50:59,981 WARNING     Skipping license type 'Volunteer Certificate (VC)' (not found after refresh)
+2026-06-08 17:50:59,982 INFO     License type: State of Ohio Certified Doula
+2026-06-08 17:51:03,214 WARNING     Skipping license type 'State of Ohio Certified Doula' (not found after refresh)
+2026-06-08 17:51:03,215 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 17:51:06,446 WARNING     Skipping license type 'Certified Medication Aide (CMA)' (not found after refresh)
+2026-06-08 17:51:06,447 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 17:51:09,684 WARNING     Skipping license type 'Certified Medication Aide - Temporary (ICMA)' (not found after refresh)
+2026-06-08 17:51:09,684 INFO   Board: Board of Pharmacy
+2026-06-08 17:51:11,346 INFO     License type: Audiologist
+2026-06-08 17:51:43,578 INFO       Records collected: 0
+2026-06-08 17:51:43,578 INFO     License type: Audiologist - Temporary
+2026-06-08 17:51:46,824 WARNING     Skipping license type 'Audiologist - Temporary' (not found after refresh)
+2026-06-08 17:51:46,825 INFO     License type: Audiology Aide
+2026-06-08 17:51:50,056 WARNING     Skipping license type 'Audiology Aide' (not found after refresh)
+2026-06-08 17:51:50,057 INFO     License type: Hearing Aid Fitter
+2026-06-08 17:51:53,318 WARNING     Skipping license type 'Hearing Aid Fitter' (not found after refresh)
+2026-06-08 17:51:53,318 INFO     License type: Speech-Language Pathologist
+2026-06-08 17:51:56,568 WARNING     Skipping license type 'Speech-Language Pathologist' (not found after refresh)
+2026-06-08 17:51:56,568 INFO     License type: Speech-Language Pathologist - Temporary
+2026-06-08 17:51:59,786 WARNING     Skipping license type 'Speech-Language Pathologist - Temporary' (not found after refresh)
+2026-06-08 17:51:59,786 INFO     License type: Speech-Language Pathology Aide
+2026-06-08 17:52:03,017 WARNING     Skipping license type 'Speech-Language Pathology Aide' (not found after refresh)
+2026-06-08 17:52:03,017 INFO     License type: Speech-Language Pathology Conditional License
+2026-06-08 17:52:06,239 WARNING     Skipping license type 'Speech-Language Pathology Conditional License' (not found after refresh)
+2026-06-08 17:52:06,240 INFO     License type: Training Permit
+2026-06-08 17:52:09,453 WARNING     Skipping license type 'Training Permit' (not found after refresh)
+2026-06-08 17:52:09,453 INFO     License type: Audiologist Compact
+2026-06-08 17:52:12,681 WARNING     Skipping license type 'Audiologist Compact' (not found after refresh)
+2026-06-08 17:52:12,681 INFO     License type: Speech-Language Pathologist Compact
+2026-06-08 17:52:15,909 WARNING     Skipping license type 'Speech-Language Pathologist Compact' (not found after refresh)
+2026-06-08 17:52:15,909 INFO   Board: Department of Behavioral Health
+2026-06-08 17:52:17,539 INFO     License type: Pharmacist
+2026-06-08 17:52:49,831 INFO       Records collected: 0
+2026-06-08 17:52:49,831 INFO     License type: Pharmacy Intern
+2026-06-08 17:52:53,075 WARNING     Skipping license type 'Pharmacy Intern' (not found after refresh)
+2026-06-08 17:52:53,075 INFO     License type: Pharmacy Intern - Foreign Graduate
+2026-06-08 17:52:56,295 WARNING     Skipping license type 'Pharmacy Intern - Foreign Graduate' (not found after refresh)
+2026-06-08 17:52:56,295 INFO     License type: Pharmacy Intern - Graduate
+2026-06-08 17:52:59,530 WARNING     Skipping license type 'Pharmacy Intern - Graduate' (not found after refresh)
+2026-06-08 17:52:59,530 INFO     License type: Pharmacy Technician Trainee
+2026-06-08 17:53:02,779 WARNING     Skipping license type 'Pharmacy Technician Trainee' (not found after refresh)
+2026-06-08 17:53:02,779 INFO     License type: Registered Pharmacy Technician
+2026-06-08 17:53:06,015 WARNING     Skipping license type 'Registered Pharmacy Technician' (not found after refresh)
+2026-06-08 17:53:06,015 INFO     License type: Certified Pharmacy Technician
+2026-06-08 17:53:09,254 WARNING     Skipping license type 'Certified Pharmacy Technician' (not found after refresh)
+2026-06-08 17:53:09,254 INFO Selecting state: AB
+2026-06-08 17:53:10,445 INFO   Board: Medical Board
+2026-06-08 17:53:12,101 INFO     License type: Acupuncturist (ACU)
+2026-06-08 17:53:44,332 INFO       Records collected: 0
+2026-06-08 17:53:44,333 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 17:54:17,561 INFO       Records collected: 0
+2026-06-08 17:54:17,561 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 17:54:50,758 INFO       Records collected: 0
+2026-06-08 17:54:50,758 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 17:55:23,910 INFO       Records collected: 0
+2026-06-08 17:55:23,910 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 17:55:57,171 INFO       Records collected: 0
+2026-06-08 17:55:57,171 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 17:56:30,417 INFO       Records collected: 0
+2026-06-08 17:56:30,419 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 17:57:03,669 INFO       Records collected: 0
+2026-06-08 17:57:03,669 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 17:57:36,860 INFO       Records collected: 0
+2026-06-08 17:57:36,860 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 17:58:10,169 INFO       Records collected: 0
+2026-06-08 17:58:10,169 INFO     License type: Genetic Counselor (GC)
+2026-06-08 17:58:43,518 INFO       Records collected: 0
+2026-06-08 17:58:43,518 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 17:59:16,417 INFO       Records collected: 0
+2026-06-08 17:59:16,417 INFO     License type: L1 Limited Permit
+2026-06-08 17:59:49,681 INFO       Records collected: 0
+2026-06-08 17:59:49,681 INFO     License type: L2 Limited Permit
+2026-06-08 18:00:23,044 INFO       Records collected: 0
+2026-06-08 18:00:23,045 INFO     License type: Licensed Dietitian
+2026-06-08 18:00:56,300 INFO       Records collected: 0
+2026-06-08 18:00:56,301 INFO     License type: Limited Permit
+2026-06-08 18:01:29,559 INFO       Records collected: 0
+2026-06-08 18:01:29,560 INFO     License type: Massage Therapist (MT)
+2026-06-08 18:02:02,859 INFO       Records collected: 0
+2026-06-08 18:02:02,860 INFO     License type: Mechanotherapist
+2026-06-08 18:02:36,150 INFO       Records collected: 0
+2026-06-08 18:02:36,150 INFO     License type: Naprapath
+2026-06-08 18:03:09,452 INFO       Records collected: 0
+2026-06-08 18:03:09,452 INFO     License type: Physician Assistant (PA)
+2026-06-08 18:03:42,709 INFO       Records collected: 0
+2026-06-08 18:03:42,709 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 18:04:16,022 INFO       Records collected: 0
+2026-06-08 18:04:16,022 INFO     License type: Respiratory Care Professional
+2026-06-08 18:04:49,293 INFO       Records collected: 0
+2026-06-08 18:04:49,294 INFO     License type: Special Activity Certificate
+2026-06-08 18:05:22,524 INFO       Records collected: 0
+2026-06-08 18:05:22,524 INFO     License type: Training Certificate (DO)
+2026-06-08 18:05:55,521 INFO       Records collected: 0
+2026-06-08 18:05:55,522 INFO     License type: Training Certificate (DPM)
+2026-06-08 18:06:28,777 INFO       Records collected: 0
+2026-06-08 18:06:28,777 INFO     License type: Training Certificate (MD)
+2026-06-08 18:07:02,019 INFO       Records collected: 0
+2026-06-08 18:07:02,020 INFO     License type: Treatment Provider
+2026-06-08 18:07:35,178 INFO       Records collected: 0
+2026-06-08 18:07:35,180 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 18:08:08,466 INFO       Records collected: 0
+2026-06-08 18:08:08,466 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 18:08:41,677 INFO       Records collected: 0
+2026-06-08 18:08:41,677 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 18:09:14,644 INFO       Records collected: 0
+2026-06-08 18:09:14,645 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 18:09:48,060 INFO       Records collected: 0
+2026-06-08 18:09:48,061 INFO   Board: Nursing Board
+2026-06-08 18:09:49,717 INFO     License type: Acupuncturist (ACU)
+2026-06-08 18:10:22,024 INFO       Records collected: 0
+2026-06-08 18:10:22,024 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 18:10:25,265 WARNING     Skipping license type 'Anesthesiologist Assistant (AA)' (not found after refresh)
+2026-06-08 18:10:25,266 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 18:10:28,525 WARNING     Skipping license type 'Certificate of Conceded Eminence' (not found after refresh)
+2026-06-08 18:10:28,525 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 18:10:31,777 WARNING     Skipping license type 'Clinical Research Faculty Certificate' (not found after refresh)
+2026-06-08 18:10:31,777 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 18:10:35,015 WARNING     Skipping license type 'Doctor of Medicine (MD)' (not found after refresh)
+2026-06-08 18:10:35,015 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 18:10:38,240 WARNING     Skipping license type 'Doctor of Medicine (MD) Compact' (not found after refresh)
+2026-06-08 18:10:38,241 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 18:10:41,468 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO)' (not found after refresh)
+2026-06-08 18:10:41,468 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 18:10:44,711 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO) Compact' (not found after refresh)
+2026-06-08 18:10:44,712 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 18:10:47,945 WARNING     Skipping license type 'Doctor of Podiatric Medicine (DPM)' (not found after refresh)
+2026-06-08 18:10:47,945 INFO     License type: Genetic Counselor (GC)
+2026-06-08 18:10:51,178 WARNING     Skipping license type 'Genetic Counselor (GC)' (not found after refresh)
+2026-06-08 18:10:51,178 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 18:10:54,421 WARNING     Skipping license type 'Genetic Counselor (GC) - Special Activity Certificate' (not found after refresh)
+2026-06-08 18:10:54,421 INFO     License type: L1 Limited Permit
+2026-06-08 18:10:57,654 WARNING     Skipping license type 'L1 Limited Permit' (not found after refresh)
+2026-06-08 18:10:57,654 INFO     License type: L2 Limited Permit
+2026-06-08 18:11:00,912 WARNING     Skipping license type 'L2 Limited Permit' (not found after refresh)
+2026-06-08 18:11:00,912 INFO     License type: Licensed Dietitian
+2026-06-08 18:11:04,160 WARNING     Skipping license type 'Licensed Dietitian' (not found after refresh)
+2026-06-08 18:11:04,160 INFO     License type: Limited Permit
+2026-06-08 18:11:07,396 WARNING     Skipping license type 'Limited Permit' (not found after refresh)
+2026-06-08 18:11:07,396 INFO     License type: Massage Therapist (MT)
+2026-06-08 18:11:10,614 WARNING     Skipping license type 'Massage Therapist (MT)' (not found after refresh)
+2026-06-08 18:11:10,615 INFO     License type: Mechanotherapist
+2026-06-08 18:11:13,823 WARNING     Skipping license type 'Mechanotherapist' (not found after refresh)
+2026-06-08 18:11:13,825 INFO     License type: Naprapath
+2026-06-08 18:11:17,031 WARNING     Skipping license type 'Naprapath' (not found after refresh)
+2026-06-08 18:11:17,032 INFO     License type: Physician Assistant (PA)
+2026-06-08 18:11:20,265 WARNING     Skipping license type 'Physician Assistant (PA)' (not found after refresh)
+2026-06-08 18:11:20,265 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 18:11:23,496 WARNING     Skipping license type 'Radiologist Assistant (RA)' (not found after refresh)
+2026-06-08 18:11:23,497 INFO     License type: Respiratory Care Professional
+2026-06-08 18:11:26,719 WARNING     Skipping license type 'Respiratory Care Professional' (not found after refresh)
+2026-06-08 18:11:26,719 INFO     License type: Special Activity Certificate
+2026-06-08 18:11:29,975 WARNING     Skipping license type 'Special Activity Certificate' (not found after refresh)
+2026-06-08 18:11:29,976 INFO     License type: Training Certificate (DO)
+2026-06-08 18:11:33,251 WARNING     Skipping license type 'Training Certificate (DO)' (not found after refresh)
+2026-06-08 18:11:33,251 INFO     License type: Training Certificate (DPM)
+2026-06-08 18:11:36,498 WARNING     Skipping license type 'Training Certificate (DPM)' (not found after refresh)
+2026-06-08 18:11:36,499 INFO     License type: Training Certificate (MD)
+2026-06-08 18:11:39,749 WARNING     Skipping license type 'Training Certificate (MD)' (not found after refresh)
+2026-06-08 18:11:39,750 INFO     License type: Treatment Provider
+2026-06-08 18:11:42,978 WARNING     Skipping license type 'Treatment Provider' (not found after refresh)
+2026-06-08 18:11:42,978 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 18:11:46,213 WARNING     Skipping license type 'Visiting Clinical Professional Development Certificate' (not found after refresh)
+2026-06-08 18:11:46,214 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 18:11:49,437 WARNING     Skipping license type 'Visiting Medical Faculty Certification' (not found after refresh)
+2026-06-08 18:11:49,437 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 18:11:52,689 WARNING     Skipping license type 'Visiting Podiatric Faculty Certificate' (not found after refresh)
+2026-06-08 18:11:52,689 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 18:11:55,962 WARNING     Skipping license type 'Volunteer Certificate (M-VC)' (not found after refresh)
+2026-06-08 18:11:55,963 INFO   Board: Psychology Board
+2026-06-08 18:11:57,641 INFO     License type: Community Health Worker (CHW)
+2026-06-08 18:12:30,283 INFO       Records collected: 0
+2026-06-08 18:12:30,284 INFO     License type: Dialysis Technician (DT)
+2026-06-08 18:12:33,524 WARNING     Skipping license type 'Dialysis Technician (DT)' (not found after refresh)
+2026-06-08 18:12:33,524 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 18:12:36,743 WARNING     Skipping license type 'Licensed Practical Nurse (LPN)' (not found after refresh)
+2026-06-08 18:12:36,743 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 18:12:39,982 WARNING     Skipping license type 'Licensed Practical Nurse - Temporary (IP)' (not found after refresh)
+2026-06-08 18:12:39,983 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 18:12:43,210 WARNING     Skipping license type 'Non - OH MSL RN Seeking OH APRN License' (not found after refresh)
+2026-06-08 18:12:43,211 INFO     License type: Registered Nurse (RN)
+2026-06-08 18:12:46,439 WARNING     Skipping license type 'Registered Nurse (RN)' (not found after refresh)
+2026-06-08 18:12:46,439 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 18:12:49,699 WARNING     Skipping license type 'Registered Nurse - Temporary (IR)' (not found after refresh)
+2026-06-08 18:12:49,700 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 18:12:52,932 WARNING     Skipping license type 'Volunteer Certificate (VC)' (not found after refresh)
+2026-06-08 18:12:52,933 INFO     License type: State of Ohio Certified Doula
+2026-06-08 18:12:56,178 WARNING     Skipping license type 'State of Ohio Certified Doula' (not found after refresh)
+2026-06-08 18:12:56,178 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 18:12:59,397 WARNING     Skipping license type 'Certified Medication Aide (CMA)' (not found after refresh)
+2026-06-08 18:12:59,397 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 18:13:02,636 WARNING     Skipping license type 'Certified Medication Aide - Temporary (ICMA)' (not found after refresh)
+2026-06-08 18:13:02,636 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 18:13:05,869 WARNING     Skipping license type 'Certified Registered Nurse Anesthetist' (not found after refresh)
+2026-06-08 18:13:05,869 INFO     License type: Certified Nurse Midwife
+2026-06-08 18:13:09,117 WARNING     Skipping license type 'Certified Nurse Midwife' (not found after refresh)
+2026-06-08 18:13:09,118 INFO     License type: Certified Nurse Practitioner
+2026-06-08 18:13:12,351 WARNING     Skipping license type 'Certified Nurse Practitioner' (not found after refresh)
+2026-06-08 18:13:12,351 INFO     License type: Clinical Nurse Specialist
+2026-06-08 18:13:15,583 WARNING     Skipping license type 'Clinical Nurse Specialist' (not found after refresh)
+2026-06-08 18:13:15,583 INFO   Board: Speech and Hearing Professionals Board
+2026-06-08 18:13:17,268 INFO     License type: Certified Ohio Behavior Analyst
+2026-06-08 18:13:49,517 INFO       Records collected: 0
+2026-06-08 18:13:49,517 INFO     License type: Non-resident Temporary Permit
+2026-06-08 18:13:52,744 WARNING     Skipping license type 'Non-resident Temporary Permit' (not found after refresh)
+2026-06-08 18:13:52,744 INFO     License type: Psychologist
+2026-06-08 18:13:55,945 WARNING     Skipping license type 'Psychologist' (not found after refresh)
+2026-06-08 18:13:55,945 INFO     License type: Licensed School Psychologist
+2026-06-08 18:13:59,173 WARNING     Skipping license type 'Licensed School Psychologist' (not found after refresh)
+2026-06-08 18:13:59,173 INFO     License type: Independent School Psychologist
+2026-06-08 18:14:02,417 WARNING     Skipping license type 'Independent School Psychologist' (not found after refresh)
+2026-06-08 18:14:02,418 INFO   Board: Board of Pharmacy
+2026-06-08 18:14:04,063 INFO     License type: Audiologist
+2026-06-08 18:14:36,338 INFO       Records collected: 0
+2026-06-08 18:14:36,338 INFO     License type: Audiologist - Temporary
+2026-06-08 18:14:39,568 WARNING     Skipping license type 'Audiologist - Temporary' (not found after refresh)
+2026-06-08 18:14:39,569 INFO     License type: Audiology Aide
+2026-06-08 18:14:42,804 WARNING     Skipping license type 'Audiology Aide' (not found after refresh)
+2026-06-08 18:14:42,804 INFO     License type: Hearing Aid Fitter
+2026-06-08 18:14:46,019 WARNING     Skipping license type 'Hearing Aid Fitter' (not found after refresh)
+2026-06-08 18:14:46,019 INFO     License type: Speech-Language Pathologist
+2026-06-08 18:14:49,241 WARNING     Skipping license type 'Speech-Language Pathologist' (not found after refresh)
+2026-06-08 18:14:49,242 INFO     License type: Speech-Language Pathologist - Temporary
+2026-06-08 18:14:52,473 WARNING     Skipping license type 'Speech-Language Pathologist - Temporary' (not found after refresh)
+2026-06-08 18:14:52,473 INFO     License type: Speech-Language Pathology Aide
+2026-06-08 18:14:55,690 WARNING     Skipping license type 'Speech-Language Pathology Aide' (not found after refresh)
+2026-06-08 18:14:55,690 INFO     License type: Speech-Language Pathology Conditional License
+2026-06-08 18:14:58,928 WARNING     Skipping license type 'Speech-Language Pathology Conditional License' (not found after refresh)
+2026-06-08 18:14:58,929 INFO     License type: Training Permit
+2026-06-08 18:15:02,153 WARNING     Skipping license type 'Training Permit' (not found after refresh)
+2026-06-08 18:15:02,153 INFO     License type: Audiologist Compact
+2026-06-08 18:15:05,393 WARNING     Skipping license type 'Audiologist Compact' (not found after refresh)
+2026-06-08 18:15:05,394 INFO     License type: Speech-Language Pathologist Compact
+2026-06-08 18:15:08,611 WARNING     Skipping license type 'Speech-Language Pathologist Compact' (not found after refresh)
+2026-06-08 18:15:08,611 INFO   Board: Department of Behavioral Health
+2026-06-08 18:15:10,248 INFO     License type: Pharmacist
+2026-06-08 18:15:13,473 WARNING     Skipping license type 'Pharmacist' (not found after refresh)
+2026-06-08 18:15:13,473 INFO     License type: Pharmacy Intern
+2026-06-08 18:15:16,704 WARNING     Skipping license type 'Pharmacy Intern' (not found after refresh)
+2026-06-08 18:15:16,704 INFO     License type: Pharmacy Intern - Foreign Graduate
+2026-06-08 18:15:19,920 WARNING     Skipping license type 'Pharmacy Intern - Foreign Graduate' (not found after refresh)
+2026-06-08 18:15:19,920 INFO     License type: Pharmacy Intern - Graduate
+2026-06-08 18:15:23,141 WARNING     Skipping license type 'Pharmacy Intern - Graduate' (not found after refresh)
+2026-06-08 18:15:23,142 INFO     License type: Pharmacy Technician Trainee
+2026-06-08 18:15:26,372 WARNING     Skipping license type 'Pharmacy Technician Trainee' (not found after refresh)
+2026-06-08 18:15:26,373 INFO     License type: Registered Pharmacy Technician
+2026-06-08 18:15:29,601 WARNING     Skipping license type 'Registered Pharmacy Technician' (not found after refresh)
+2026-06-08 18:15:29,602 INFO     License type: Certified Pharmacy Technician
+2026-06-08 18:15:32,834 WARNING     Skipping license type 'Certified Pharmacy Technician' (not found after refresh)
+2026-06-08 18:15:32,836 INFO Selecting state: AE
+2026-06-08 18:15:34,033 INFO   Board: Medical Board
+2026-06-08 18:15:35,695 INFO     License type: Certified Family Peer Supporter
+2026-06-08 18:16:07,925 INFO       Records collected: 0
+2026-06-08 18:16:07,926 INFO     License type: Certified Peer Recovery Supporter
+2026-06-08 18:16:11,141 WARNING     Skipping license type 'Certified Peer Recovery Supporter' (not found after refresh)
+2026-06-08 18:16:11,141 INFO     License type: Certified Youth Peer Supporter
+2026-06-08 18:16:14,382 WARNING     Skipping license type 'Certified Youth Peer Supporter' (not found after refresh)
+2026-06-08 18:16:14,382 INFO   Board: Nursing Board
+2026-06-08 18:16:17,077 INFO     License type: Community Health Worker (CHW)
+2026-06-08 18:16:49,233 INFO       Records collected: 0
+2026-06-08 18:16:49,233 INFO     License type: Dialysis Technician (DT)
+2026-06-08 18:17:22,521 INFO       Records collected: 0
+2026-06-08 18:17:22,521 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 18:17:55,740 INFO       Records collected: 0
+2026-06-08 18:17:55,740 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 18:18:28,922 INFO       Records collected: 0
+2026-06-08 18:18:28,923 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 18:19:02,166 INFO       Records collected: 0
+2026-06-08 18:19:02,167 INFO     License type: Registered Nurse (RN)
+2026-06-08 18:19:35,556 INFO       Records collected: 0
+2026-06-08 18:19:35,556 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 18:20:08,730 INFO       Records collected: 0
+2026-06-08 18:20:08,731 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 18:20:41,934 INFO       Records collected: 0
+2026-06-08 18:20:41,936 INFO     License type: State of Ohio Certified Doula
+2026-06-08 18:21:15,042 INFO       Records collected: 0
+2026-06-08 18:21:15,042 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 18:21:48,264 INFO       Records collected: 0
+2026-06-08 18:21:48,264 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 18:22:21,377 INFO       Records collected: 0
+2026-06-08 18:22:21,378 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 18:22:54,599 INFO       Records collected: 0
+2026-06-08 18:22:54,599 INFO     License type: Certified Nurse Midwife
+2026-06-08 18:23:27,982 INFO       Records collected: 0
+2026-06-08 18:23:27,983 INFO     License type: Certified Nurse Practitioner
+2026-06-08 18:24:01,119 INFO       Records collected: 0
+2026-06-08 18:24:01,119 INFO     License type: Clinical Nurse Specialist
+2026-06-08 18:24:34,454 INFO       Records collected: 0
+2026-06-08 18:24:34,454 INFO   Board: Psychology Board
+2026-06-08 18:24:36,108 INFO     License type: Community Health Worker (CHW)
+2026-06-08 18:25:08,291 INFO       Records collected: 0
+2026-06-08 18:25:08,292 INFO     License type: Dialysis Technician (DT)
+2026-06-08 18:25:41,462 INFO       Records collected: 0
+2026-06-08 18:25:41,462 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 18:26:14,689 INFO       Records collected: 0
+2026-06-08 18:26:14,689 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 18:26:47,914 INFO       Records collected: 0
+2026-06-08 18:26:47,914 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 18:27:21,120 INFO       Records collected: 0
+2026-06-08 18:27:21,121 INFO     License type: Registered Nurse (RN)
+2026-06-08 18:27:54,439 INFO       Records collected: 0
+2026-06-08 18:27:54,439 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 18:28:27,721 INFO       Records collected: 0
+2026-06-08 18:28:27,721 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 18:29:00,979 INFO       Records collected: 0
+2026-06-08 18:29:00,979 INFO     License type: State of Ohio Certified Doula
+2026-06-08 18:29:34,011 INFO       Records collected: 0
+2026-06-08 18:29:34,012 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 18:30:07,219 INFO       Records collected: 0
+2026-06-08 18:30:07,219 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 18:30:40,445 INFO       Records collected: 0
+2026-06-08 18:30:40,446 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 18:30:43,682 WARNING     Skipping license type 'Certified Registered Nurse Anesthetist' (not found after refresh)
+2026-06-08 18:30:43,682 INFO     License type: Certified Nurse Midwife
+2026-06-08 18:30:46,991 WARNING     Skipping license type 'Certified Nurse Midwife' (not found after refresh)
+2026-06-08 18:30:46,991 INFO     License type: Certified Nurse Practitioner
+2026-06-08 18:30:50,194 WARNING     Skipping license type 'Certified Nurse Practitioner' (not found after refresh)
+2026-06-08 18:30:50,195 INFO     License type: Clinical Nurse Specialist
+2026-06-08 18:30:53,439 WARNING     Skipping license type 'Clinical Nurse Specialist' (not found after refresh)
+2026-06-08 18:30:53,440 INFO   Board: Speech and Hearing Professionals Board
+2026-06-08 18:30:55,095 INFO     License type: Community Health Worker (CHW)
+2026-06-08 18:31:27,345 INFO       Records collected: 0
+2026-06-08 18:31:27,345 INFO     License type: Dialysis Technician (DT)
+2026-06-08 18:31:30,574 WARNING     Skipping license type 'Dialysis Technician (DT)' (not found after refresh)
+2026-06-08 18:31:30,575 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 18:31:33,802 WARNING     Skipping license type 'Licensed Practical Nurse (LPN)' (not found after refresh)
+2026-06-08 18:31:33,803 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 18:31:37,032 WARNING     Skipping license type 'Licensed Practical Nurse - Temporary (IP)' (not found after refresh)
+2026-06-08 18:31:37,032 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 18:31:40,267 WARNING     Skipping license type 'Non - OH MSL RN Seeking OH APRN License' (not found after refresh)
+2026-06-08 18:31:40,267 INFO     License type: Registered Nurse (RN)
+2026-06-08 18:31:43,523 WARNING     Skipping license type 'Registered Nurse (RN)' (not found after refresh)
+2026-06-08 18:31:43,523 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 18:31:46,740 WARNING     Skipping license type 'Registered Nurse - Temporary (IR)' (not found after refresh)
+2026-06-08 18:31:46,740 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 18:31:49,976 WARNING     Skipping license type 'Volunteer Certificate (VC)' (not found after refresh)
+2026-06-08 18:31:49,976 INFO     License type: State of Ohio Certified Doula
+2026-06-08 18:31:53,211 WARNING     Skipping license type 'State of Ohio Certified Doula' (not found after refresh)
+2026-06-08 18:31:53,211 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 18:31:56,441 WARNING     Skipping license type 'Certified Medication Aide (CMA)' (not found after refresh)
+2026-06-08 18:31:56,442 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 18:31:59,665 WARNING     Skipping license type 'Certified Medication Aide - Temporary (ICMA)' (not found after refresh)
+2026-06-08 18:31:59,666 INFO   Board: Board of Pharmacy
+2026-06-08 18:32:01,319 INFO     License type: Audiologist
+2026-06-08 18:32:33,483 INFO       Records collected: 0
+2026-06-08 18:32:33,484 INFO     License type: Audiologist - Temporary
+2026-06-08 18:32:36,727 WARNING     Skipping license type 'Audiologist - Temporary' (not found after refresh)
+2026-06-08 18:32:36,727 INFO     License type: Audiology Aide
+2026-06-08 18:32:39,978 WARNING     Skipping license type 'Audiology Aide' (not found after refresh)
+2026-06-08 18:32:39,979 INFO     License type: Hearing Aid Fitter
+2026-06-08 18:32:43,195 WARNING     Skipping license type 'Hearing Aid Fitter' (not found after refresh)
+2026-06-08 18:32:43,196 INFO     License type: Speech-Language Pathologist
+2026-06-08 18:32:46,434 WARNING     Skipping license type 'Speech-Language Pathologist' (not found after refresh)
+2026-06-08 18:32:46,435 INFO     License type: Speech-Language Pathologist - Temporary
+2026-06-08 18:32:49,678 WARNING     Skipping license type 'Speech-Language Pathologist - Temporary' (not found after refresh)
+2026-06-08 18:32:49,679 INFO     License type: Speech-Language Pathology Aide
+2026-06-08 18:32:52,926 WARNING     Skipping license type 'Speech-Language Pathology Aide' (not found after refresh)
+2026-06-08 18:32:52,926 INFO     License type: Speech-Language Pathology Conditional License
+2026-06-08 18:32:56,156 WARNING     Skipping license type 'Speech-Language Pathology Conditional License' (not found after refresh)
+2026-06-08 18:32:56,157 INFO     License type: Training Permit
+2026-06-08 18:32:59,372 WARNING     Skipping license type 'Training Permit' (not found after refresh)
+2026-06-08 18:32:59,372 INFO     License type: Audiologist Compact
+2026-06-08 18:33:02,600 WARNING     Skipping license type 'Audiologist Compact' (not found after refresh)
+2026-06-08 18:33:02,600 INFO     License type: Speech-Language Pathologist Compact
+2026-06-08 18:33:05,833 WARNING     Skipping license type 'Speech-Language Pathologist Compact' (not found after refresh)
+2026-06-08 18:33:05,834 INFO   Board: Department of Behavioral Health
+2026-06-08 18:33:07,499 INFO     License type: Pharmacist
+2026-06-08 18:33:39,786 INFO       Records collected: 0
+2026-06-08 18:33:39,786 INFO     License type: Pharmacy Intern
+2026-06-08 18:33:43,019 WARNING     Skipping license type 'Pharmacy Intern' (not found after refresh)
+2026-06-08 18:33:43,019 INFO     License type: Pharmacy Intern - Foreign Graduate
+2026-06-08 18:33:46,248 WARNING     Skipping license type 'Pharmacy Intern - Foreign Graduate' (not found after refresh)
+2026-06-08 18:33:46,248 INFO     License type: Pharmacy Intern - Graduate
+2026-06-08 18:33:49,491 WARNING     Skipping license type 'Pharmacy Intern - Graduate' (not found after refresh)
+2026-06-08 18:33:49,492 INFO     License type: Pharmacy Technician Trainee
+2026-06-08 18:33:52,722 WARNING     Skipping license type 'Pharmacy Technician Trainee' (not found after refresh)
+2026-06-08 18:33:52,723 INFO     License type: Registered Pharmacy Technician
+2026-06-08 18:33:55,952 WARNING     Skipping license type 'Registered Pharmacy Technician' (not found after refresh)
+2026-06-08 18:33:55,952 INFO     License type: Certified Pharmacy Technician
+2026-06-08 18:33:59,196 WARNING     Skipping license type 'Certified Pharmacy Technician' (not found after refresh)
+2026-06-08 18:33:59,196 INFO Selecting state: AK
+2026-06-08 18:34:00,377 INFO   Board: Medical Board
+2026-06-08 18:34:03,082 INFO     License type: Acupuncturist (ACU)
+2026-06-08 18:34:35,299 INFO       Records collected: 0
+2026-06-08 18:34:35,300 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 18:35:08,674 INFO       Records collected: 0
+2026-06-08 18:35:08,674 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 18:35:42,028 INFO       Records collected: 0
+2026-06-08 18:35:42,028 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 18:36:15,326 INFO       Records collected: 0
+2026-06-08 18:36:15,326 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 18:36:48,579 INFO       Records collected: 0
+2026-06-08 18:36:48,579 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 18:37:21,858 INFO       Records collected: 0
+2026-06-08 18:37:21,858 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 18:37:55,074 INFO       Records collected: 0
+2026-06-08 18:37:55,074 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 18:38:28,370 INFO       Records collected: 0
+2026-06-08 18:38:28,370 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 18:39:01,595 INFO       Records collected: 0
+2026-06-08 18:39:01,596 INFO     License type: Genetic Counselor (GC)
+2026-06-08 18:39:35,007 INFO       Records collected: 0
+2026-06-08 18:39:35,007 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 18:40:08,275 INFO       Records collected: 0
+2026-06-08 18:40:08,275 INFO     License type: L1 Limited Permit
+2026-06-08 18:40:41,604 INFO       Records collected: 0
+2026-06-08 18:40:41,604 INFO     License type: L2 Limited Permit
+2026-06-08 18:41:14,893 INFO       Records collected: 0
+2026-06-08 18:41:14,893 INFO     License type: Licensed Dietitian
+2026-06-08 18:41:48,143 INFO       Records collected: 0
+2026-06-08 18:41:48,144 INFO     License type: Limited Permit
+2026-06-08 18:42:21,341 INFO       Records collected: 0
+2026-06-08 18:42:21,342 INFO     License type: Massage Therapist (MT)
+2026-06-08 18:42:54,613 INFO       Records collected: 0
+2026-06-08 18:42:54,613 INFO     License type: Mechanotherapist
+2026-06-08 18:43:27,850 INFO       Records collected: 0
+2026-06-08 18:43:27,850 INFO     License type: Naprapath
+2026-06-08 18:44:01,143 INFO       Records collected: 0
+2026-06-08 18:44:01,143 INFO     License type: Physician Assistant (PA)
+2026-06-08 18:44:34,388 INFO       Records collected: 0
+2026-06-08 18:44:34,388 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 18:45:07,700 INFO       Records collected: 0
+2026-06-08 18:45:07,702 INFO     License type: Respiratory Care Professional
+2026-06-08 18:45:41,075 INFO       Records collected: 0
+2026-06-08 18:45:41,075 INFO     License type: Special Activity Certificate
+2026-06-08 18:46:14,303 INFO       Records collected: 0
+2026-06-08 18:46:14,303 INFO     License type: Training Certificate (DO)
+2026-06-08 18:46:47,606 INFO       Records collected: 0
+2026-06-08 18:46:47,606 INFO     License type: Training Certificate (DPM)
+2026-06-08 18:47:20,852 INFO       Records collected: 0
+2026-06-08 18:47:20,852 INFO     License type: Training Certificate (MD)
+2026-06-08 18:47:54,108 INFO       Records collected: 0
+2026-06-08 18:47:54,108 INFO     License type: Treatment Provider
+2026-06-08 18:48:27,316 INFO       Records collected: 0
+2026-06-08 18:48:27,316 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 18:49:00,638 INFO       Records collected: 0
+2026-06-08 18:49:00,638 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 18:49:33,642 INFO       Records collected: 0
+2026-06-08 18:49:33,642 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 18:50:06,882 INFO       Records collected: 0
+2026-06-08 18:50:06,882 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 18:50:40,091 INFO       Records collected: 0
+2026-06-08 18:50:40,092 INFO   Board: Nursing Board
+2026-06-08 18:50:41,758 INFO     License type: Acupuncturist (ACU)
+2026-06-08 18:51:13,966 INFO       Records collected: 0
+2026-06-08 18:51:13,966 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 18:51:17,189 WARNING     Skipping license type 'Anesthesiologist Assistant (AA)' (not found after refresh)
+2026-06-08 18:51:17,189 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 18:51:20,450 WARNING     Skipping license type 'Certificate of Conceded Eminence' (not found after refresh)
+2026-06-08 18:51:20,450 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 18:51:23,724 WARNING     Skipping license type 'Clinical Research Faculty Certificate' (not found after refresh)
+2026-06-08 18:51:23,724 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 18:51:26,956 WARNING     Skipping license type 'Doctor of Medicine (MD)' (not found after refresh)
+2026-06-08 18:51:26,957 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 18:51:30,189 WARNING     Skipping license type 'Doctor of Medicine (MD) Compact' (not found after refresh)
+2026-06-08 18:51:30,189 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 18:51:33,414 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO)' (not found after refresh)
+2026-06-08 18:51:33,414 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 18:51:36,656 WARNING     Skipping license type 'Doctor of Osteopathic Medicine (DO) Compact' (not found after refresh)
+2026-06-08 18:51:36,656 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 18:51:39,887 WARNING     Skipping license type 'Doctor of Podiatric Medicine (DPM)' (not found after refresh)
+2026-06-08 18:51:39,888 INFO     License type: Genetic Counselor (GC)
+2026-06-08 18:51:43,114 WARNING     Skipping license type 'Genetic Counselor (GC)' (not found after refresh)
+2026-06-08 18:51:43,115 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 18:51:46,370 WARNING     Skipping license type 'Genetic Counselor (GC) - Special Activity Certificate' (not found after refresh)
+2026-06-08 18:51:46,370 INFO     License type: L1 Limited Permit
+2026-06-08 18:51:49,623 WARNING     Skipping license type 'L1 Limited Permit' (not found after refresh)
+2026-06-08 18:51:49,624 INFO     License type: L2 Limited Permit
+2026-06-08 18:51:52,853 WARNING     Skipping license type 'L2 Limited Permit' (not found after refresh)
+2026-06-08 18:51:52,853 INFO     License type: Licensed Dietitian
+2026-06-08 18:51:56,087 WARNING     Skipping license type 'Licensed Dietitian' (not found after refresh)
+2026-06-08 18:51:56,088 INFO     License type: Limited Permit
+2026-06-08 18:51:59,335 WARNING     Skipping license type 'Limited Permit' (not found after refresh)
+2026-06-08 18:51:59,335 INFO     License type: Massage Therapist (MT)
+2026-06-08 18:52:02,566 WARNING     Skipping license type 'Massage Therapist (MT)' (not found after refresh)
+2026-06-08 18:52:02,566 INFO     License type: Mechanotherapist
+2026-06-08 18:52:05,760 WARNING     Skipping license type 'Mechanotherapist' (not found after refresh)
+2026-06-08 18:52:05,760 INFO     License type: Naprapath
+2026-06-08 18:52:08,957 WARNING     Skipping license type 'Naprapath' (not found after refresh)
+2026-06-08 18:52:08,957 INFO     License type: Physician Assistant (PA)
+2026-06-08 18:52:12,195 WARNING     Skipping license type 'Physician Assistant (PA)' (not found after refresh)
+2026-06-08 18:52:12,195 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 18:52:15,448 WARNING     Skipping license type 'Radiologist Assistant (RA)' (not found after refresh)
+2026-06-08 18:52:15,448 INFO     License type: Respiratory Care Professional
+2026-06-08 18:52:18,703 WARNING     Skipping license type 'Respiratory Care Professional' (not found after refresh)
+2026-06-08 18:52:18,703 INFO     License type: Special Activity Certificate
+2026-06-08 18:52:21,958 WARNING     Skipping license type 'Special Activity Certificate' (not found after refresh)
+2026-06-08 18:52:21,959 INFO     License type: Training Certificate (DO)
+2026-06-08 18:52:25,195 WARNING     Skipping license type 'Training Certificate (DO)' (not found after refresh)
+2026-06-08 18:52:25,195 INFO     License type: Training Certificate (DPM)
+2026-06-08 18:52:28,465 WARNING     Skipping license type 'Training Certificate (DPM)' (not found after refresh)
+2026-06-08 18:52:28,465 INFO     License type: Training Certificate (MD)
+2026-06-08 18:52:31,708 WARNING     Skipping license type 'Training Certificate (MD)' (not found after refresh)
+2026-06-08 18:52:31,708 INFO     License type: Treatment Provider
+2026-06-08 18:52:34,965 WARNING     Skipping license type 'Treatment Provider' (not found after refresh)
+2026-06-08 18:52:34,966 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 18:52:38,181 WARNING     Skipping license type 'Visiting Clinical Professional Development Certificate' (not found after refresh)
+2026-06-08 18:52:38,186 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 18:52:41,732 WARNING     Skipping license type 'Visiting Medical Faculty Certification' (not found after refresh)
+2026-06-08 18:52:41,732 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 18:52:45,091 WARNING     Skipping license type 'Visiting Podiatric Faculty Certificate' (not found after refresh)
+2026-06-08 18:52:45,091 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 18:52:48,399 WARNING     Skipping license type 'Volunteer Certificate (M-VC)' (not found after refresh)
+2026-06-08 18:52:48,399 INFO   Board: Psychology Board
+2026-06-08 18:52:50,167 INFO     License type: Community Health Worker (CHW)
+2026-06-08 18:53:22,189 INFO       Records collected: 0
+2026-06-08 18:53:22,190 INFO     License type: Dialysis Technician (DT)
+2026-06-08 18:53:25,430 WARNING     Skipping license type 'Dialysis Technician (DT)' (not found after refresh)
+2026-06-08 18:53:25,430 INFO     License type: Licensed Practical Nurse (LPN)
+2026-06-08 18:53:28,687 WARNING     Skipping license type 'Licensed Practical Nurse (LPN)' (not found after refresh)
+2026-06-08 18:53:28,687 INFO     License type: Licensed Practical Nurse - Temporary (IP)
+2026-06-08 18:53:31,942 WARNING     Skipping license type 'Licensed Practical Nurse - Temporary (IP)' (not found after refresh)
+2026-06-08 18:53:31,942 INFO     License type: Non - OH MSL RN Seeking OH APRN License
+2026-06-08 18:53:35,177 WARNING     Skipping license type 'Non - OH MSL RN Seeking OH APRN License' (not found after refresh)
+2026-06-08 18:53:35,178 INFO     License type: Registered Nurse (RN)
+2026-06-08 18:53:38,431 WARNING     Skipping license type 'Registered Nurse (RN)' (not found after refresh)
+2026-06-08 18:53:38,431 INFO     License type: Registered Nurse - Temporary (IR)
+2026-06-08 18:53:41,682 WARNING     Skipping license type 'Registered Nurse - Temporary (IR)' (not found after refresh)
+2026-06-08 18:53:41,682 INFO     License type: Volunteer Certificate (VC)
+2026-06-08 18:53:44,924 WARNING     Skipping license type 'Volunteer Certificate (VC)' (not found after refresh)
+2026-06-08 18:53:44,925 INFO     License type: State of Ohio Certified Doula
+2026-06-08 18:53:48,200 WARNING     Skipping license type 'State of Ohio Certified Doula' (not found after refresh)
+2026-06-08 18:53:48,200 INFO     License type: Certified Medication Aide (CMA)
+2026-06-08 18:53:51,460 WARNING     Skipping license type 'Certified Medication Aide (CMA)' (not found after refresh)
+2026-06-08 18:53:51,460 INFO     License type: Certified Medication Aide - Temporary (ICMA)
+2026-06-08 18:53:54,707 WARNING     Skipping license type 'Certified Medication Aide - Temporary (ICMA)' (not found after refresh)
+2026-06-08 18:53:54,707 INFO     License type: Certified Registered Nurse Anesthetist
+2026-06-08 18:53:57,931 WARNING     Skipping license type 'Certified Registered Nurse Anesthetist' (not found after refresh)
+2026-06-08 18:53:57,931 INFO     License type: Certified Nurse Midwife
+2026-06-08 18:54:09,336 WARNING     Skipping license type 'Certified Nurse Midwife' (not found after refresh)
+2026-06-08 18:54:09,336 INFO     License type: Certified Nurse Practitioner
+2026-06-08 18:54:12,562 WARNING     Skipping license type 'Certified Nurse Practitioner' (not found after refresh)
+2026-06-08 18:54:12,562 INFO     License type: Clinical Nurse Specialist
+2026-06-08 18:54:15,803 WARNING     Skipping license type 'Clinical Nurse Specialist' (not found after refresh)
+2026-06-08 18:54:15,803 INFO   Board: Speech and Hearing Professionals Board
+2026-06-08 18:54:19,394 INFO     License type: Audiologist
+2026-06-08 18:54:22,892 INFO       Records collected: 0
+2026-06-08 18:54:22,893 INFO     License type: Audiologist - Temporary
+2026-06-08 18:54:27,371 INFO       Records collected: 5
+2026-06-08 18:54:27,373 INFO     License type: Audiology Aide
+2026-06-08 19:05:00,208 INFO   Board: Medical Board
+2026-06-08 19:05:00,209 INFO Processing states batch 1 for Medical Board: AA, AB, AE
+2026-06-08 19:10:51,092 INFO   Board: Medical Board
+2026-06-08 19:10:51,092 INFO Processing states batch 1 for Medical Board: AA, AB, AE
+2026-06-08 19:11:22,518 INFO   Board: Medical Board
+2026-06-08 19:11:22,518 INFO Processing states batch 1 for Medical Board: OH, AA, AB
+2026-06-08 19:11:37,890 INFO Selecting state: OH
+2026-06-08 19:11:42,598 INFO     License type: Acupuncturist (ACU)
+2026-06-08 19:12:24,476 INFO       Records collected: 150
+2026-06-08 19:12:24,481 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 19:13:07,780 INFO       Records collected: 151
+2026-06-08 19:13:07,783 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 19:13:30,581 INFO       Records collected: 75
+2026-06-08 19:13:30,583 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 19:13:54,053 INFO       Records collected: 77
+2026-06-08 19:13:54,055 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 19:14:37,455 INFO       Records collected: 151
+2026-06-08 19:14:37,458 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 19:15:21,808 INFO       Records collected: 151
+2026-06-08 19:15:21,811 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 19:16:04,358 INFO       Records collected: 150
+2026-06-08 19:16:04,361 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 19:16:24,898 INFO       Records collected: 62
+2026-06-08 19:16:24,900 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 19:17:07,477 INFO       Records collected: 150
+2026-06-08 19:17:07,479 INFO     License type: Genetic Counselor (GC)
+2026-06-08 19:17:50,041 INFO       Records collected: 150
+2026-06-08 19:17:50,043 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 19:17:53,318 INFO       Records collected: 1
+2026-06-08 19:17:53,320 INFO     License type: L1 Limited Permit
+2026-06-08 19:18:35,478 INFO       Records collected: 150
+2026-06-08 19:18:35,481 INFO     License type: L2 Limited Permit
+2026-06-08 19:19:18,019 INFO       Records collected: 150
+2026-06-08 19:19:18,022 INFO     License type: Licensed Dietitian
+2026-06-08 19:20:00,395 INFO       Records collected: 150
+2026-06-08 19:20:00,398 INFO     License type: Limited Permit
+2026-06-08 19:20:42,670 INFO       Records collected: 150
+2026-06-08 19:20:42,672 INFO     License type: Massage Therapist (MT)
+2026-06-08 19:21:25,191 INFO       Records collected: 150
+2026-06-08 19:21:25,193 INFO     License type: Mechanotherapist
+2026-06-08 19:22:07,683 INFO       Records collected: 150
+2026-06-08 19:22:07,686 INFO     License type: Naprapath
+2026-06-08 19:22:11,567 INFO       Records collected: 4
+2026-06-08 19:22:11,568 INFO     License type: Physician Assistant (PA)
+2026-06-08 19:23:33,588 INFO       Records collected: 300
+2026-06-08 19:23:33,592 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 19:23:42,919 INFO       Records collected: 25
+2026-06-08 19:23:42,921 INFO     License type: Respiratory Care Professional
+2026-06-08 19:24:25,134 INFO       Records collected: 150
+2026-06-08 19:24:25,137 INFO     License type: Special Activity Certificate
+2026-06-08 19:24:48,416 INFO       Records collected: 76
+2026-06-08 19:24:48,418 INFO     License type: Training Certificate (DO)
+2026-06-08 19:25:30,598 INFO       Records collected: 150
+2026-06-08 19:25:30,601 INFO     License type: Training Certificate (DPM)
+2026-06-08 19:26:12,888 INFO       Records collected: 150
+2026-06-08 19:26:12,892 INFO     License type: Training Certificate (MD)
+2026-06-08 19:26:55,566 INFO       Records collected: 150
+2026-06-08 19:26:55,568 INFO     License type: Treatment Provider
+2026-06-08 19:26:58,190 INFO       Records collected: 0
+2026-06-08 19:26:58,190 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 19:27:01,768 INFO       Records collected: 3
+2026-06-08 19:27:01,769 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 19:27:32,034 INFO       Records collected: 103
+2026-06-08 19:27:32,037 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 19:27:35,339 INFO       Records collected: 1
+2026-06-08 19:27:35,340 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 19:27:42,466 INFO       Records collected: 18
+2026-06-08 19:27:42,468 INFO Selecting state: AA
+2026-06-08 19:27:45,181 INFO     License type: Acupuncturist (ACU)
+2026-06-08 19:27:48,294 INFO       Records collected: 0
+2026-06-08 19:27:48,295 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 19:28:20,717 INFO       Records collected: 0
+2026-06-08 19:28:20,719 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 19:28:52,642 INFO       Records collected: 0
+2026-06-08 19:28:52,642 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 19:29:24,616 INFO       Records collected: 0
+2026-06-08 19:29:24,616 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 19:29:57,029 INFO       Records collected: 0
+2026-06-08 19:29:57,029 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 19:30:28,980 INFO       Records collected: 0
+2026-06-08 19:30:28,980 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 19:30:34,627 INFO       Records collected: 2
+2026-06-08 19:30:34,628 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 19:30:38,179 INFO       Records collected: 0
+2026-06-08 19:30:38,179 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 19:31:10,112 INFO       Records collected: 0
+2026-06-08 19:31:10,113 INFO     License type: Genetic Counselor (GC)
+2026-06-08 19:31:42,056 INFO       Records collected: 0
+2026-06-08 19:31:42,056 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 19:32:14,054 INFO       Records collected: 0
+2026-06-08 19:32:14,054 INFO     License type: L1 Limited Permit
+2026-06-08 19:32:46,453 INFO       Records collected: 0
+2026-06-08 19:32:46,454 INFO     License type: L2 Limited Permit
+2026-06-08 19:33:18,420 INFO       Records collected: 0
+2026-06-08 19:33:18,420 INFO     License type: Licensed Dietitian
+2026-06-08 19:33:50,376 INFO       Records collected: 0
+2026-06-08 19:33:50,376 INFO     License type: Limited Permit
+2026-06-08 19:34:22,332 INFO       Records collected: 0
+2026-06-08 19:34:22,332 INFO     License type: Massage Therapist (MT)
+2026-06-08 19:34:54,276 INFO       Records collected: 0
+2026-06-08 19:34:54,276 INFO     License type: Mechanotherapist
+2026-06-08 19:35:26,244 INFO       Records collected: 0
+2026-06-08 19:35:26,244 INFO     License type: Naprapath
+2026-06-08 19:35:58,228 INFO       Records collected: 0
+2026-06-08 19:35:58,228 INFO     License type: Physician Assistant (PA)
+2026-06-08 19:36:30,173 INFO       Records collected: 0
+2026-06-08 19:36:30,173 INFO     License type: Radiologist Assistant (RA)
+2026-06-08 19:37:02,128 INFO       Records collected: 0
+2026-06-08 19:37:02,129 INFO     License type: Respiratory Care Professional
+2026-06-08 19:37:34,410 INFO       Records collected: 0
+2026-06-08 19:37:34,410 INFO     License type: Special Activity Certificate
+2026-06-08 19:38:06,831 INFO       Records collected: 0
+2026-06-08 19:38:06,832 INFO     License type: Training Certificate (DO)
+2026-06-08 19:38:13,934 INFO       Records collected: 1
+2026-06-08 19:38:13,936 INFO     License type: Training Certificate (DPM)
+2026-06-08 19:38:16,965 INFO       Records collected: 0
+2026-06-08 19:38:16,965 INFO     License type: Training Certificate (MD)
+2026-06-08 19:38:48,909 INFO       Records collected: 0
+2026-06-08 19:38:48,909 INFO     License type: Treatment Provider
+2026-06-08 19:39:21,344 INFO       Records collected: 0
+2026-06-08 19:39:21,344 INFO     License type: Visiting Clinical Professional Development Certificate
+2026-06-08 19:39:53,649 INFO       Records collected: 0
+2026-06-08 19:39:53,649 INFO     License type: Visiting Medical Faculty Certification
+2026-06-08 19:40:25,591 INFO       Records collected: 0
+2026-06-08 19:40:25,592 INFO     License type: Visiting Podiatric Faculty Certificate
+2026-06-08 19:40:57,550 INFO       Records collected: 0
+2026-06-08 19:40:57,551 INFO     License type: Volunteer Certificate (M-VC)
+2026-06-08 19:41:29,875 INFO       Records collected: 0
+2026-06-08 19:41:29,875 INFO Selecting state: AB
+2026-06-08 19:41:32,651 INFO     License type: Acupuncturist (ACU)
+2026-06-08 19:42:04,557 INFO       Records collected: 0
+2026-06-08 19:42:04,557 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 19:42:37,884 INFO       Records collected: 0
+2026-06-08 19:42:37,886 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 19:43:11,464 INFO       Records collected: 0
+2026-06-08 19:43:11,465 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 19:43:45,176 INFO       Records collected: 0
+2026-06-08 19:43:45,177 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 19:44:18,809 INFO       Records collected: 0
+2026-06-08 19:44:18,810 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 19:44:52,233 INFO       Records collected: 0
+2026-06-08 19:44:52,234 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 19:45:25,799 INFO       Records collected: 0
+2026-06-08 19:45:25,800 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 19:45:59,428 INFO       Records collected: 0
+2026-06-08 19:45:59,428 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 19:46:59,509 INFO       Records collected: 0
+2026-06-08 19:46:59,510 INFO     License type: Genetic Counselor (GC)
+2026-06-08 19:47:27,458 WARNING     Skipping license type 'Genetic Counselor (GC)' (not found after refresh)
+2026-06-08 19:47:27,460 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 19:47:30,859 WARNING     Skipping license type 'Genetic Counselor (GC) - Special Activity Certificate' (not found after refresh)
+2026-06-08 19:47:30,860 INFO     License type: L1 Limited Permit
+2026-06-08 19:47:34,257 WARNING     Skipping license type 'L1 Limited Permit' (not found after refresh)
+2026-06-08 19:47:34,257 INFO     License type: L2 Limited Permit
+2026-06-08 19:47:37,679 WARNING     Skipping license type 'L2 Limited Permit' (not found after refresh)
+2026-06-08 19:47:37,680 INFO     License type: Licensed Dietitian
+2026-06-08 19:49:23,565 INFO   Board: Medical Board
+2026-06-08 19:49:23,565 INFO Processing states batch 1 for Medical Board: AA
+2026-06-08 19:49:42,112 INFO Selecting state: AA
+2026-06-08 19:49:47,401 INFO     License type: Acupuncturist (ACU)
+2026-06-08 19:49:50,540 INFO       Records collected: 0
+2026-06-08 19:49:50,540 INFO     License type: Anesthesiologist Assistant (AA)
+2026-06-08 19:50:23,075 INFO       Records collected: 0
+2026-06-08 19:50:23,076 INFO     License type: Certificate of Conceded Eminence
+2026-06-08 19:50:55,379 INFO       Records collected: 0
+2026-06-08 19:50:55,380 INFO     License type: Clinical Research Faculty Certificate
+2026-06-08 19:51:27,642 INFO       Records collected: 0
+2026-06-08 19:51:27,643 INFO     License type: Doctor of Medicine (MD)
+2026-06-08 19:51:59,852 INFO       Records collected: 0
+2026-06-08 19:51:59,853 INFO     License type: Doctor of Medicine (MD) Compact
+2026-06-08 19:52:32,280 INFO       Records collected: 0
+2026-06-08 19:52:32,281 INFO     License type: Doctor of Osteopathic Medicine (DO)
+2026-06-08 19:52:38,892 INFO       Records collected: 2
+2026-06-08 19:52:38,899 INFO     License type: Doctor of Osteopathic Medicine (DO) Compact
+2026-06-08 19:52:42,144 INFO       Records collected: 0
+2026-06-08 19:52:42,145 INFO     License type: Doctor of Podiatric Medicine (DPM)
+2026-06-08 19:53:14,404 INFO       Records collected: 0
+2026-06-08 19:53:14,404 INFO     License type: Genetic Counselor (GC)
+2026-06-08 19:53:46,897 INFO       Records collected: 0
+2026-06-08 19:53:46,897 INFO     License type: Genetic Counselor (GC) - Special Activity Certificate
+2026-06-08 19:54:19,283 INFO       Records collected: 0
+2026-06-08 19:54:19,285 INFO     License type: L1 Limited Permit
+2026-06-08 19:54:51,568 INFO       Records collected: 0
+2026-06-08 19:54:51,569 INFO     License type: L2 Limited Permit
+2026-06-08 19:55:23,884 INFO       Records collected: 0
+2026-06-08 19:55:23,885 INFO     License type: Licensed Dietitian
+2026-06-08 19:55:56,203 INFO       Records collected: 0
+2026-06-08 19:55:56,204 INFO     License type: Limited Permit
+2026-06-08 19:56:28,637 INFO       Records collected: 0
+2026-06-08 19:56:28,637 INFO     License type: Massage Therapist (MT)
+2026-06-08 19:57:01,105 INFO       Records collected: 0
+2026-06-08 19:57:01,106 INFO     License type: Mechanotherapist
+2026-06-08 20:15:34,042 INFO   Board: Medical Board
+2026-06-08 20:15:34,043 INFO Processing states batch 1 for Medical Board: AA
+2026-06-08 20:16:15,362 INFO   Board: Medical Board
+2026-06-08 20:16:15,363 INFO Processing states batch 1 for Medical Board: OH
+2026-06-08 20:16:35,270 INFO Selecting state: OH
+2026-06-08 20:18:26,355 INFO       Records collected: 275
+2026-06-08 20:18:29,163 INFO Processing states batch 2 for Medical Board: AA
+2026-06-08 20:18:48,056 INFO Selecting state: AA
+2026-06-08 20:19:40,481 INFO       Records collected: 3
+2026-06-08 20:19:43,198 INFO Processing states batch 3 for Medical Board: AB
+2026-06-08 20:20:06,530 INFO Selecting state: AB
+2026-06-08 20:20:14,435 INFO       Records collected: 0
+2026-06-08 20:20:17,106 INFO Processing states batch 4 for Medical Board: AE
+2026-06-08 20:20:42,779 INFO Selecting state: AE
+2026-06-08 20:21:23,923 INFO       Records collected: 32
+2026-06-08 20:21:26,762 INFO Processing states batch 5 for Medical Board: AK
+2026-06-08 20:23:03,667 INFO   Board: Medical Board
+2026-06-08 20:23:03,668 INFO Processing states batch 1 for Medical Board: OH, AA, AB, AE
+2026-06-08 20:23:21,018 INFO Selecting state: OH
+2026-06-08 20:25:13,128 INFO       Records collected: 275
+2026-06-08 20:25:13,138 INFO Selecting state: AA
+2026-06-08 20:25:49,903 INFO       Records collected: 5
+2026-06-08 20:25:49,905 INFO Selecting state: AB
+2026-06-08 20:26:04,668 INFO       Records collected: 3
+2026-06-08 20:26:04,671 INFO Selecting state: AE
+2026-06-08 20:26:40,139 INFO       Records collected: 3
+2026-06-08 20:26:42,859 INFO Processing states batch 2 for Medical Board: AK, AL, AP, AR
+2026-06-08 20:27:16,194 INFO Selecting state: AK
+2026-06-08 20:28:39,087 INFO       Records collected: 152
+2026-06-08 20:28:39,093 INFO Selecting state: AL
+2026-06-08 20:29:52,319 INFO       Records collected: 156
+2026-06-08 20:29:52,323 INFO Selecting state: AP
+2026-06-08 20:30:27,266 INFO       Records collected: 21
+2026-06-08 20:30:27,269 INFO Selecting state: AR
+2026-06-08 20:31:02,307 INFO       Records collected: 1
+2026-06-08 20:31:05,031 INFO Processing states batch 3 for Medical Board: AZ, BC, CA, CO
+2026-06-08 20:31:25,202 INFO Selecting state: AZ
+2026-06-08 20:32:45,517 INFO       Records collected: 177
+2026-06-08 20:32:45,521 INFO Selecting state: BC
+2026-06-08 20:33:17,861 INFO       Records collected: 16
+2026-06-08 20:33:17,864 INFO Selecting state: CA
+2026-06-08 20:35:24,347 INFO       Records collected: 281
+2026-06-08 20:35:24,354 INFO Selecting state: CO
+2026-06-08 20:36:59,350 INFO       Records collected: 176
+2026-06-08 20:37:02,166 INFO Processing states batch 4 for Medical Board: CT, DC, DE, FL
+2026-06-08 20:37:19,375 INFO Selecting state: CT
+2026-06-08 20:37:26,677 INFO       Records collected: 0
+2026-06-08 20:37:26,678 INFO Selecting state: DC
+2026-06-08 20:38:01,874 INFO       Records collected: 0
+2026-06-08 20:38:01,874 INFO Selecting state: DE
+2026-06-08 20:46:21,454 INFO   Board: Medical Board
+2026-06-08 20:46:21,455 INFO Processing states batch 1 for Medical Board: OH, AA, AB, AE
+2026-06-08 20:49:17,693 INFO   Board: Medical Board
+2026-06-08 20:49:17,695 INFO Processing states batch 1 for Medical Board: CO, CT, DC, DE
+2026-06-08 20:49:34,424 INFO Selecting state: CO
+2026-06-08 20:50:58,989 INFO       Records collected: 176
+2026-06-08 20:50:58,996 INFO Selecting state: CT
+2026-06-08 20:51:34,496 INFO       Records collected: 6
+2026-06-08 20:51:34,497 INFO Selecting state: DC
+2026-06-08 20:53:10,527 INFO       Records collected: 216
+2026-06-08 20:53:10,532 INFO Selecting state: DE
+2026-06-08 20:53:46,097 INFO       Records collected: 3
+2026-06-08 20:53:48,946 INFO Processing states batch 2 for Medical Board: FL, GA, GU, HI
+2026-06-08 20:54:07,005 INFO Selecting state: FL
+2026-06-08 20:55:34,826 INFO       Records collected: 263
+2026-06-08 20:55:34,831 INFO Selecting state: GA
+2026-06-08 20:56:55,000 INFO       Records collected: 178
+2026-06-08 20:56:55,004 INFO Selecting state: GU
+2026-06-08 20:57:31,896 INFO       Records collected: 8
+2026-06-08 20:57:31,898 INFO Selecting state: HI
+2026-06-08 20:58:46,863 INFO       Records collected: 152
+2026-06-08 20:58:49,727 INFO Processing states batch 3 for Medical Board: IA, ID, IL, IN
+2026-06-08 20:59:07,233 INFO Selecting state: IA
+2026-06-08 21:00:29,853 INFO       Records collected: 156
+2026-06-08 21:00:29,857 INFO Selecting state: ID
+2026-06-08 21:01:05,691 INFO       Records collected: 6
+2026-06-08 21:01:05,693 INFO Selecting state: IL
+2026-06-08 21:03:07,391 INFO   Board: Medical Board
+2026-06-08 21:03:07,392 INFO Processing states batch 1 for Medical Board: IL, IN, KS, KY
+2026-06-08 21:03:25,384 INFO Selecting state: IL
+2026-06-08 21:05:00,089 INFO       Records collected: 184
+2026-06-08 21:05:00,097 INFO Selecting state: IN
+2026-06-08 21:06:30,865 INFO       Records collected: 220
+2026-06-08 21:06:30,868 INFO Selecting state: KS
+2026-06-08 21:07:51,546 INFO       Records collected: 153
+2026-06-08 21:07:51,550 INFO Selecting state: KY
+2026-06-08 21:09:41,144 INFO       Records collected: 264
+2026-06-08 21:09:43,880 INFO Processing states batch 2 for Medical Board: LA, MA, MB, MD
+2026-06-08 21:10:01,388 INFO Selecting state: LA
+2026-06-08 21:11:19,518 INFO       Records collected: 150
+2026-06-08 21:11:19,522 INFO Selecting state: MA
+2026-06-08 21:12:36,589 INFO       Records collected: 168
+2026-06-08 21:12:36,598 INFO Selecting state: MB
+2026-06-08 21:13:13,814 INFO       Records collected: 8
+2026-06-08 21:13:13,815 INFO Selecting state: MD
+2026-06-08 21:13:17,882 INFO       Records collected: 0
+2026-06-08 21:13:20,612 INFO Processing states batch 3 for Medical Board: ME, MI, MN, MO
+2026-06-08 21:13:38,758 INFO Selecting state: ME
+2026-06-08 21:14:55,902 INFO       Records collected: 154
+2026-06-08 21:14:55,905 INFO Selecting state: MI
+2026-06-08 21:16:45,849 INFO       Records collected: 267
+2026-06-08 21:16:45,855 INFO Selecting state: MN
+2026-06-08 21:18:00,702 INFO       Records collected: 161
+2026-06-08 21:18:00,710 INFO Selecting state: MO
+2026-06-08 21:19:14,998 INFO       Records collected: 159
+2026-06-08 21:19:17,887 INFO Processing states batch 4 for Medical Board: MS, MT, NB, NC
+2026-06-08 21:19:36,419 INFO Selecting state: MS
+2026-06-08 21:20:52,345 INFO       Records collected: 153
+2026-06-08 21:20:52,352 INFO Selecting state: MT
+2026-06-08 21:22:16,132 INFO       Records collected: 154
+2026-06-08 21:22:16,137 INFO Selecting state: NB
+2026-06-08 21:22:45,271 INFO       Records collected: 2
+2026-06-08 21:22:45,274 INFO Selecting state: NC
+2026-06-08 21:24:16,961 INFO       Records collected: 218
+2026-06-08 21:24:19,811 INFO Processing states batch 5 for Medical Board: ND, NE, NH, NJ
+2026-06-08 21:24:37,629 INFO Selecting state: ND
+2026-06-08 21:26:05,433 INFO       Records collected: 152
+2026-06-08 21:26:05,437 INFO Selecting state: NE
+2026-06-08 21:27:27,018 INFO       Records collected: 151
+2026-06-08 21:27:27,025 INFO Selecting state: NH
+2026-06-08 21:28:46,226 INFO       Records collected: 155
+2026-06-08 21:28:46,231 INFO Selecting state: NJ
+2026-06-08 21:30:20,493 INFO       Records collected: 211
+2026-06-08 21:30:23,226 INFO Processing states batch 6 for Medical Board: NL, NM, NS, NT
+2026-06-08 21:30:42,252 INFO Selecting state: NL
+2026-06-08 21:30:49,006 INFO       Records collected: 0
+2026-06-08 21:30:49,006 INFO Selecting state: NM
+2026-06-08 21:47:34,957 INFO   Board: Medical Board
+2026-06-08 21:47:34,958 INFO Processing states batch 1 for Medical Board: NM, NS, NT, NU
+2026-06-08 21:47:56,914 INFO Selecting state: NM
+2026-06-08 21:49:31,763 INFO       Records collected: 154
+2026-06-08 21:49:31,770 INFO Selecting state: NS
+2026-06-08 21:50:03,580 INFO       Records collected: 3
+2026-06-08 21:50:03,582 INFO Selecting state: NT
+2026-06-08 21:53:59,040 INFO   Board: Medical Board
+2026-06-08 21:53:59,041 INFO Processing states batch 1 for Medical Board: OH, AA, AB, AE
+2026-06-08 21:54:17,214 INFO Selecting state: OH
+2026-06-08 21:56:14,707 INFO       Records collected: 275
+2026-06-08 21:56:14,715 INFO Selecting state: AA
+2026-06-08 21:56:51,123 INFO       Records collected: 5
+2026-06-08 21:56:51,126 INFO Selecting state: AB
+2026-06-08 21:57:06,825 INFO       Records collected: 3
+2026-06-08 21:57:06,828 INFO Selecting state: AE
+2026-06-08 21:57:43,752 INFO       Records collected: 13
+2026-06-08 21:57:46,573 INFO Processing states batch 2 for Medical Board: AK, AL, AP, AR
+2026-06-08 21:58:04,680 INFO Selecting state: AK
+2026-06-08 21:59:34,526 INFO       Records collected: 152
+2026-06-08 21:59:34,531 INFO Selecting state: AL
+2026-06-08 22:00:51,398 INFO       Records collected: 156
+2026-06-08 22:00:51,402 INFO Selecting state: AP
+2026-06-08 22:01:27,905 INFO       Records collected: 6
+2026-06-08 22:01:27,908 INFO Selecting state: AR
+2026-06-08 22:02:40,917 INFO       Records collected: 148
+2026-06-08 22:02:43,767 INFO Processing states batch 3 for Medical Board: AZ, BC, CA, CO
+2026-06-08 22:03:02,132 INFO Selecting state: AZ
+2026-06-08 22:04:24,094 INFO       Records collected: 177
+2026-06-08 22:04:24,098 INFO Selecting state: BC
+2026-06-08 22:05:03,441 INFO       Records collected: 16
+2026-06-08 22:05:03,443 INFO Selecting state: CA
+2026-06-08 22:07:05,933 INFO       Records collected: 281
+2026-06-08 22:07:05,941 INFO Selecting state: CO
+2026-06-08 22:08:28,313 INFO       Records collected: 176
+2026-06-08 22:08:31,233 INFO Processing states batch 4 for Medical Board: CT, DC, DE, FL
+2026-06-08 22:08:50,141 INFO Selecting state: CT
+2026-06-08 22:10:25,727 INFO       Records collected: 157
+2026-06-08 22:10:25,730 INFO Selecting state: DC
+2026-06-08 22:11:02,094 INFO       Records collected: 7
+2026-06-08 22:11:02,096 INFO Selecting state: DE
+2026-06-08 22:12:41,071 INFO       Records collected: 222
+2026-06-08 22:12:41,078 INFO Selecting state: FL
+2026-06-08 22:14:39,329 INFO       Records collected: 263
+2026-06-08 22:14:42,053 INFO Processing states batch 5 for Medical Board: GA, GU, HI, IA
+2026-06-08 22:14:59,961 INFO Selecting state: GA
+2026-06-08 22:16:25,774 INFO       Records collected: 178
+2026-06-08 22:16:25,779 INFO Selecting state: GU
+2026-06-08 22:17:03,032 INFO       Records collected: 8
+2026-06-08 22:17:03,035 INFO Selecting state: HI
+2026-06-08 22:18:32,044 INFO       Records collected: 153
+2026-06-08 22:18:32,050 INFO Selecting state: IA
+2026-06-08 22:20:07,959 INFO       Records collected: 156
+2026-06-08 22:20:10,932 INFO Processing states batch 6 for Medical Board: ID, IL, IN, KS
+2026-06-08 22:20:28,172 INFO Selecting state: ID
+2026-06-08 22:21:53,940 INFO       Records collected: 157
+2026-06-08 22:21:53,945 INFO Selecting state: IL
+2026-06-08 22:23:13,850 INFO       Records collected: 184
+2026-06-08 22:23:13,857 INFO Selecting state: IN
+2026-06-08 22:24:47,223 INFO       Records collected: 220
+2026-06-08 22:24:47,227 INFO Selecting state: KS
+2026-06-08 22:25:24,493 INFO       Records collected: 10
+2026-06-08 22:25:27,241 INFO Processing states batch 7 for Medical Board: KY, LA, MA, MB
+2026-06-08 22:25:46,098 INFO Selecting state: KY
+2026-06-08 22:28:14,947 INFO       Records collected: 264
+2026-06-08 22:28:14,960 INFO Selecting state: LA
+2026-06-08 22:30:07,923 INFO       Records collected: 150
+2026-06-08 22:30:07,929 INFO Selecting state: MA
+2026-06-08 22:31:48,269 INFO       Records collected: 168
+2026-06-08 22:31:48,278 INFO Selecting state: MB
+2026-06-08 22:32:26,721 INFO       Records collected: 8
+2026-06-08 22:32:29,788 INFO Processing states batch 8 for Medical Board: MD, ME, MI, MN
+2026-06-08 22:32:50,890 INFO Selecting state: MD
+2026-06-08 22:34:52,640 INFO       Records collected: 167
+2026-06-08 22:34:52,646 INFO Selecting state: ME
+2026-06-08 22:36:39,218 INFO       Records collected: 154
+2026-06-08 22:36:39,225 INFO Selecting state: MI
+2026-06-08 22:39:16,742 INFO       Records collected: 267
+2026-06-08 22:39:16,753 INFO Selecting state: MN
+2026-06-08 22:43:43,081 INFO   Board: Medical Board
+2026-06-08 22:43:43,081 INFO Processing states batch 1 for Medical Board: MN, MO, MS, MT
+2026-06-08 22:44:05,603 INFO Selecting state: MN
+2026-06-08 22:45:53,941 INFO       Records collected: 161
+2026-06-08 22:45:53,952 INFO Selecting state: MO
+2026-06-08 22:47:39,923 INFO       Records collected: 159
+2026-06-08 22:47:39,931 INFO Selecting state: MS
+2026-06-08 22:48:18,112 INFO       Records collected: 9
+2026-06-08 22:48:18,115 INFO Selecting state: MT
+2026-06-08 22:53:02,818 INFO   Board: Medical Board
+2026-06-08 22:53:02,819 INFO Processing states batch 1 for Medical Board: MT, NB, NC, ND
+2026-06-08 22:53:23,893 INFO Selecting state: MT
+2026-06-08 22:55:05,240 INFO       Records collected: 154
+2026-06-08 22:55:05,251 INFO Selecting state: NB
+2026-06-08 22:55:41,253 INFO       Records collected: 2
+2026-06-08 22:55:41,255 INFO Selecting state: NC
+2026-06-08 22:57:11,011 INFO       Records collected: 218
+2026-06-08 22:57:11,014 INFO Selecting state: ND
+2026-06-08 22:57:46,396 INFO       Records collected: 8
+2026-06-08 22:57:48,928 INFO Processing states batch 2 for Medical Board: NE, NH, NJ, NL
+2026-06-08 22:58:04,681 INFO Selecting state: NE
+2026-06-08 22:59:02,885 INFO       Records collected: 151
+2026-06-08 22:59:02,888 INFO Selecting state: NH
+2026-06-08 22:59:36,839 INFO       Records collected: 1
+2026-06-08 22:59:36,840 INFO Selecting state: NJ
+2026-06-08 23:00:52,272 INFO       Records collected: 211
+2026-06-08 23:00:52,276 INFO Selecting state: NL
+2026-06-08 23:01:25,953 INFO       Records collected: 0
+2026-06-08 23:01:28,427 INFO Processing states batch 3 for Medical Board: NM, NS, NT, NU
+2026-06-08 23:01:43,319 INFO Selecting state: NM
+2026-06-08 23:02:44,460 INFO       Records collected: 154
+2026-06-08 23:02:44,464 INFO Selecting state: NS
+2026-06-08 23:03:14,092 INFO       Records collected: 3
+2026-06-08 23:03:14,094 INFO Selecting state: NT
+2026-06-08 23:03:39,814 INFO       Records collected: 1
+2026-06-08 23:03:39,815 INFO Selecting state: NU
+2026-06-08 23:04:13,666 INFO       Records collected: 1
+2026-06-08 23:04:16,187 INFO Processing states batch 4 for Medical Board: NV, NY, OK, ON
+2026-06-08 23:04:30,971 INFO Selecting state: NV
+2026-06-08 23:05:27,320 INFO       Records collected: 154
+2026-06-08 23:05:27,323 INFO Selecting state: NY
+2026-06-08 23:06:45,210 INFO       Records collected: 269
+2026-06-08 23:06:45,213 INFO Selecting state: OK
+2026-06-08 23:07:35,365 INFO       Records collected: 159
+2026-06-08 23:07:35,368 INFO Selecting state: ON
+2026-06-08 23:08:34,199 INFO       Records collected: 96
+2026-06-08 23:08:36,707 INFO Processing states batch 5 for Medical Board: OR, PA, PE, PR
+2026-06-08 23:08:51,034 INFO Selecting state: OR
+2026-06-08 23:10:00,233 INFO       Records collected: 155
+2026-06-08 23:10:00,236 INFO Selecting state: PA
+2026-06-08 23:11:20,154 INFO       Records collected: 275
+2026-06-08 23:11:20,159 INFO Selecting state: PE
+2026-06-08 23:11:45,864 INFO       Records collected: 0
+2026-06-08 23:11:45,864 INFO Selecting state: PR
+2026-06-08 23:12:19,490 INFO       Records collected: 0
+2026-06-08 23:12:22,005 INFO Processing states batch 6 for Medical Board: QC, RI, SC, SD
+2026-06-08 23:12:36,222 INFO Selecting state: QC
+2026-06-08 23:13:23,188 INFO       Records collected: 2
+2026-06-08 23:13:23,189 INFO Selecting state: RI
+2026-06-08 23:14:23,094 INFO       Records collected: 152
+2026-06-08 23:14:23,098 INFO Selecting state: SC
+2026-06-08 23:15:22,551 INFO       Records collected: 163
+2026-06-08 23:15:22,553 INFO Selecting state: SD
+2026-06-08 23:16:33,218 INFO       Records collected: 150
+2026-06-08 23:16:35,961 INFO Processing states batch 7 for Medical Board: SK, TN, TX, UT
+2026-06-08 23:16:51,512 INFO Selecting state: SK
+2026-06-08 23:17:30,410 INFO       Records collected: 4
+2026-06-08 23:17:30,414 INFO Selecting state: TN
+2026-06-08 23:18:45,325 INFO       Records collected: 195
+2026-06-08 23:18:45,329 INFO Selecting state: TX
+2026-06-08 23:20:01,946 INFO       Records collected: 217
+2026-06-08 23:20:01,949 INFO Selecting state: UT
+2026-06-08 23:21:10,093 INFO       Records collected: 165
+2026-06-08 23:21:12,724 INFO Processing states batch 8 for Medical Board: VA, VT, WA, WI
+2026-06-08 23:21:26,881 INFO Selecting state: VA
+2026-06-08 23:22:28,677 INFO       Records collected: 174
+2026-06-08 23:22:28,679 INFO Selecting state: VT
+2026-06-08 23:23:03,566 INFO       Records collected: 4
+2026-06-08 23:23:03,568 INFO Selecting state: WA
+2026-06-08 23:24:04,921 INFO       Records collected: 166
+2026-06-08 23:24:04,924 INFO Selecting state: WI
+2026-06-08 23:24:56,994 INFO       Records collected: 158
+2026-06-08 23:24:59,583 INFO Processing states batch 9 for Medical Board: WV, WY, YT, AS
+2026-06-08 23:25:14,094 INFO Selecting state: WV
+2026-06-08 23:26:42,238 INFO       Records collected: 264
+2026-06-08 23:26:42,243 INFO Selecting state: WY
+2026-06-08 23:27:16,827 INFO       Records collected: 4
+2026-06-08 23:27:16,829 INFO Selecting state: YT
+2026-06-08 23:27:56,685 INFO       Records collected: 90
+2026-06-08 23:27:56,687 INFO Selecting state: AS
+2026-06-08 23:28:30,391 INFO       Records collected: 0
+2026-06-08 23:28:32,953 INFO Processing states batch 10 for Medical Board: MP, VI, MH, NF
+2026-06-08 23:28:47,679 INFO Selecting state: MP
+2026-06-08 23:29:14,454 INFO       Records collected: 2
+2026-06-08 23:29:14,456 INFO Selecting state: VI
+2026-06-08 23:29:48,479 INFO       Records collected: 2
+2026-06-08 23:29:48,479 INFO Selecting state: MH
+2026-06-08 23:30:06,636 INFO       Records collected: 12
+2026-06-08 23:30:06,638 INFO Selecting state: NF
+2026-06-08 23:30:26,512 INFO       Records collected: 0
+2026-06-08 23:30:29,020 INFO Processing states batch 11 for Medical Board: PQ, UK
+2026-06-08 23:30:44,006 INFO Selecting state: PQ
+2026-06-08 23:31:16,317 INFO       Records collected: 18
+2026-06-08 23:31:16,318 INFO Selecting state: UK
+2026-06-08 23:31:41,642 INFO       Records collected: 1
+2026-06-08 23:31:44,207 INFO   Board: Nursing Board
+2026-06-08 23:31:44,208 INFO Processing states batch 1 for Nursing Board: MT, NB, NC, ND
+2026-06-08 23:31:58,803 INFO Selecting state: MT
+2026-06-08 23:33:38,409 INFO       Records collected: 163
+2026-06-08 23:33:38,412 INFO Selecting state: NB
+2026-06-08 23:34:12,809 INFO       Records collected: 3
+2026-06-08 23:34:12,810 INFO Selecting state: NC
+2026-06-08 23:34:49,923 INFO       Records collected: 32
+2026-06-08 23:34:49,925 INFO Selecting state: ND
+2026-06-08 23:35:24,516 INFO       Records collected: 3
+2026-06-08 23:35:27,082 INFO Processing states batch 2 for Nursing Board: NE, NH, NJ, NL
+2026-06-08 23:35:42,241 INFO Selecting state: NE
+2026-06-08 23:36:59,557 INFO       Records collected: 174
+2026-06-08 23:36:59,561 INFO Selecting state: NH
+2026-06-08 23:38:15,769 INFO       Records collected: 183
+2026-06-08 23:38:15,772 INFO Selecting state: NJ
+2026-06-08 23:38:49,922 INFO       Records collected: 3
+2026-06-08 23:38:49,923 INFO Selecting state: NL
+2026-06-08 23:39:35,318 INFO       Records collected: 149
+2026-06-08 23:39:37,832 INFO Processing states batch 3 for Nursing Board: NM, NS, NT, NU
+2026-06-08 23:39:53,164 INFO Selecting state: NM
+2026-06-08 23:41:38,968 INFO       Records collected: 178
+2026-06-08 23:41:38,971 INFO Selecting state: NS
+2026-06-08 23:42:14,541 INFO       Records collected: 8
+2026-06-08 23:42:14,543 INFO Selecting state: NT
+2026-06-08 23:42:43,499 INFO       Records collected: 3
+2026-06-08 23:42:43,501 INFO Selecting state: NU
+2026-06-08 23:42:50,700 INFO       Records collected: 2
+2026-06-08 23:42:53,258 INFO Processing states batch 4 for Nursing Board: NV, NY, OK, ON
+2026-06-08 23:43:07,821 INFO Selecting state: NV
+2026-06-08 23:44:16,356 INFO       Records collected: 162
+2026-06-08 23:44:16,359 INFO Selecting state: NY
+2026-06-08 23:44:50,335 INFO       Records collected: 2
+2026-06-08 23:44:50,338 INFO Selecting state: OK
+2026-06-08 23:45:59,460 INFO       Records collected: 228
+2026-06-08 23:45:59,465 INFO Selecting state: ON
+2026-06-08 23:46:33,811 INFO       Records collected: 4
+2026-06-08 23:46:36,431 INFO Processing states batch 5 for Nursing Board: OR, PA, PE, PR
+2026-06-08 23:46:50,935 INFO Selecting state: OR
+2026-06-08 23:48:03,247 INFO       Records collected: 163
+2026-06-08 23:48:03,251 INFO Selecting state: PA
+2026-06-08 23:49:12,929 INFO       Records collected: 164
+2026-06-08 23:49:12,931 INFO Selecting state: PE
+2026-06-08 23:49:46,294 INFO       Records collected: 1
+2026-06-08 23:49:46,295 INFO Selecting state: PR
+2026-06-08 23:50:20,467 INFO       Records collected: 1
+2026-06-08 23:50:22,994 INFO Processing states batch 6 for Nursing Board: QC, RI, SC, SD
+2026-06-08 23:50:37,422 INFO Selecting state: QC
+2026-06-08 23:51:15,701 INFO       Records collected: 0
+2026-06-08 23:51:15,702 INFO Selecting state: RI
+2026-06-08 23:51:49,516 INFO       Records collected: 0
+2026-06-08 23:51:49,516 INFO Selecting state: SC
+2026-06-08 23:52:53,627 INFO       Records collected: 207
+2026-06-08 23:52:53,630 INFO Selecting state: SD
+2026-06-08 23:54:08,109 INFO       Records collected: 176
+2026-06-08 23:54:10,717 INFO Processing states batch 7 for Nursing Board: SK, TN, TX, UT
+2026-06-08 23:54:25,363 INFO Selecting state: SK
+2026-06-08 23:55:30,662 INFO       Records collected: 0
+2026-06-08 23:55:30,662 INFO Selecting state: TN
+2026-06-08 23:55:34,938 INFO       Records collected: 1
+2026-06-08 23:55:34,940 INFO Selecting state: TX
+2026-06-08 23:56:08,630 INFO       Records collected: 1
+2026-06-08 23:56:08,631 INFO Selecting state: UT
+2026-06-09 00:13:58,928 INFO   Board: Medical Board
+2026-06-09 00:13:58,928 INFO Processing states batch 1 for Medical Board: VA, VT, WA, WI
+2026-06-09 00:14:30,371 INFO Selecting state: VA
+2026-06-09 00:16:00,266 INFO       Records collected: 174
+2026-06-09 00:16:00,274 INFO Selecting state: VT
+2026-06-09 00:16:35,548 INFO       Records collected: 4
+2026-06-09 00:16:35,549 INFO Selecting state: WA
+2026-06-09 00:18:07,420 INFO       Records collected: 226
+2026-06-09 00:18:07,426 INFO Selecting state: WI
+2026-06-09 00:19:16,171 INFO       Records collected: 158
+2026-06-09 00:19:19,060 INFO Processing states batch 2 for Medical Board: WV, WY, YT, AS
+2026-06-09 00:19:36,888 INFO Selecting state: WV
+2026-06-09 00:21:15,196 INFO       Records collected: 264
+2026-06-09 00:21:15,199 INFO Selecting state: WY
+2026-06-09 00:29:28,531 INFO   Board: Medical Board
+2026-06-09 00:29:28,532 INFO Processing states batch 1 for Medical Board: WY, YT, AS, MP
+2026-06-09 00:29:53,951 INFO Selecting state: WY
+2026-06-09 00:30:59,639 INFO       Records collected: 0
+2026-06-09 00:30:59,639 INFO Selecting state: YT
+2026-06-09 00:32:04,621 INFO       Records collected: 0
+2026-06-09 00:32:04,622 INFO Selecting state: AS
+2026-06-09 00:33:10,657 INFO       Records collected: 0
+2026-06-09 00:33:10,657 INFO Selecting state: MP
+2026-06-09 00:34:16,324 INFO       Records collected: 0
+2026-06-09 00:34:19,427 INFO Processing states batch 2 for Medical Board: VI, MH, NF, PQ
+2026-06-09 00:34:41,124 INFO Selecting state: VI
+2026-06-09 00:35:33,330 INFO       Records collected: 12
+2026-06-09 00:35:33,339 INFO Selecting state: MH
+2026-06-09 00:36:08,680 INFO       Records collected: 2
+2026-06-09 00:36:08,682 INFO Selecting state: NF
+2026-06-09 00:36:13,829 INFO       Records collected: 0
+2026-06-09 00:36:13,829 INFO Selecting state: PQ
+2026-06-09 00:36:35,114 INFO       Records collected: 1
+2026-06-09 00:36:38,038 INFO Processing states batch 3 for Medical Board: UK
+2026-06-09 00:37:01,278 INFO Selecting state: UK
+2026-06-09 00:37:38,549 INFO       Records collected: 1
+2026-06-09 00:37:41,340 INFO   Board: Nursing Board
+2026-06-09 00:37:41,340 INFO Processing states batch 1 for Nursing Board: WY, YT, AS, MP
+2026-06-09 00:38:01,774 INFO Selecting state: WY
+2026-06-09 00:39:54,591 INFO       Records collected: 122
+2026-06-09 00:39:54,604 INFO Selecting state: YT
+2026-06-09 00:40:30,111 INFO       Records collected: 2
+2026-06-09 00:40:30,113 INFO Selecting state: AS
+2026-06-09 00:40:59,053 INFO       Records collected: 1
+2026-06-09 00:40:59,055 INFO Selecting state: MP
+2026-06-09 00:41:33,839 INFO       Records collected: 1
+2026-06-09 00:41:36,651 INFO Processing states batch 2 for Nursing Board: VI, MH, NF, PQ
+2026-06-09 00:41:59,274 INFO Selecting state: VI
+2026-06-09 00:42:43,841 INFO       Records collected: 20
+2026-06-09 00:42:43,844 INFO Selecting state: MH
+2026-06-09 00:43:17,670 INFO       Records collected: 0
+2026-06-09 00:43:17,670 INFO Selecting state: NF
+2026-06-09 00:43:52,111 INFO       Records collected: 0
+2026-06-09 00:43:52,112 INFO Selecting state: PQ
+2026-06-09 00:44:27,628 INFO       Records collected: 0
+2026-06-09 00:44:30,456 INFO Processing states batch 3 for Nursing Board: UK
+2026-06-09 00:44:52,459 INFO Selecting state: UK
+2026-06-09 00:45:28,640 INFO       Records collected: 4
+2026-06-09 00:45:31,396 INFO   Board: Psychology Board
+2026-06-09 00:45:31,397 INFO Processing states batch 1 for Psychology Board: WY, YT, AS, MP
+2026-06-09 00:45:59,385 INFO Selecting state: WY
+2026-06-09 00:46:11,378 INFO       Records collected: 7
+2026-06-09 00:46:11,380 INFO Selecting state: YT
+2026-06-09 00:46:17,683 INFO       Records collected: 0
+2026-06-09 00:46:17,683 INFO Selecting state: AS
+2026-06-09 00:46:51,870 INFO       Records collected: 0
+2026-06-09 00:46:51,871 INFO Selecting state: MP
+2026-06-09 00:47:26,343 INFO       Records collected: 0
+2026-06-09 00:47:29,013 INFO Processing states batch 2 for Psychology Board: VI, MH, NF, PQ
+2026-06-09 00:47:47,899 INFO Selecting state: VI
+2026-06-09 00:47:56,233 INFO       Records collected: 1
+2026-06-09 00:47:56,235 INFO Selecting state: MH
+2026-06-09 00:48:04,921 INFO       Records collected: 0
+2026-06-09 00:48:04,921 INFO Selecting state: NF
+2026-06-09 00:48:39,087 INFO       Records collected: 0
+2026-06-09 00:48:39,087 INFO Selecting state: PQ
+2026-06-09 00:49:13,900 INFO       Records collected: 0
+2026-06-09 00:49:16,787 INFO Processing states batch 3 for Psychology Board: UK
+2026-06-09 00:49:39,729 INFO Selecting state: UK
+2026-06-09 00:49:47,231 INFO       Records collected: 0
+2026-06-09 00:49:50,115 INFO   Board: Speech and Hearing Professionals Board
+2026-06-09 00:49:50,116 INFO Processing states batch 1 for Speech and Hearing Professionals Board: WY, YT, AS, MP
+2026-06-09 00:50:11,440 INFO Selecting state: WY
+2026-06-09 00:50:23,585 INFO       Records collected: 1
+2026-06-09 00:50:23,587 INFO Selecting state: YT
+2026-06-09 00:50:37,331 INFO       Records collected: 0
+2026-06-09 00:50:37,332 INFO Selecting state: AS
+2026-06-09 00:51:11,793 INFO       Records collected: 0
+2026-06-09 00:51:11,793 INFO Selecting state: MP
+2026-06-09 00:51:46,131 INFO       Records collected: 0
+2026-06-09 00:51:49,085 INFO Processing states batch 2 for Speech and Hearing Professionals Board: VI, MH, NF, PQ
+2026-06-09 01:00:27,056 INFO   Board: Medical Board
+2026-06-09 01:00:27,057 INFO Processing states batch 1 for Medical Board: OH, AA, AB, AE
+2026-06-09 01:00:49,731 INFO Selecting state: OH
+2026-06-09 01:01:27,544 INFO       Records collected: 275
+2026-06-09 01:01:27,558 INFO Selecting state: AA
+2026-06-09 01:02:01,831 INFO       Records collected: 5
+2026-06-09 01:02:01,837 INFO Selecting state: AB
+2026-06-09 01:02:14,333 INFO       Records collected: 3
+2026-06-09 01:02:14,337 INFO Selecting state: AE
+2026-06-09 01:02:28,699 INFO       Records collected: 13
+2026-06-09 01:02:31,682 INFO Processing states batch 2 for Medical Board: AK, AL, AP, AR
+2026-06-09 01:02:55,177 INFO Selecting state: AK
+2026-06-09 01:04:00,559 INFO       Records collected: 0
+2026-06-09 01:04:00,564 INFO Selecting state: AL
+2026-06-09 01:05:06,110 INFO       Records collected: 0
+2026-06-09 01:05:06,113 INFO Selecting state: AP
+2026-06-09 01:06:11,083 INFO       Records collected: 0
+2026-06-09 01:06:11,085 INFO Selecting state: AR
+2026-06-09 01:06:47,440 INFO       Records collected: 153
+2026-06-09 01:06:50,029 INFO Processing states batch 3 for Medical Board: AZ, BC, CA, CO
+2026-06-09 01:07:06,489 INFO Selecting state: AZ
+2026-06-09 01:07:41,727 INFO       Records collected: 177
+2026-06-09 01:07:41,730 INFO Selecting state: BC
+2026-06-09 01:08:16,146 INFO       Records collected: 16
+2026-06-09 01:08:16,148 INFO Selecting state: CA
+2026-06-09 01:08:46,962 INFO       Records collected: 281
+2026-06-09 01:08:46,967 INFO Selecting state: CO
+2026-06-09 01:09:09,975 INFO       Records collected: 176
+2026-06-09 01:09:12,540 INFO Processing states batch 4 for Medical Board: CT, DC, DE, FL
+2026-06-09 01:09:28,098 INFO Selecting state: CT
+2026-06-09 01:09:58,644 INFO       Records collected: 157
+2026-06-09 01:09:58,648 INFO Selecting state: DC
+2026-06-09 01:10:36,837 INFO       Records collected: 153
+2026-06-09 01:10:36,840 INFO Selecting state: DE
+2026-06-09 01:11:13,419 INFO       Records collected: 152
+2026-06-09 01:11:13,423 INFO Selecting state: FL
+2026-06-09 01:11:46,790 INFO       Records collected: 262
+2026-06-09 01:11:49,453 INFO Processing states batch 5 for Medical Board: GA, GU, HI, IA
+2026-06-09 01:12:05,019 INFO Selecting state: GA
+2026-06-09 01:12:29,595 INFO       Records collected: 178
+2026-06-09 01:12:29,599 INFO Selecting state: GU
+2026-06-09 01:13:03,510 INFO       Records collected: 8
+2026-06-09 01:13:03,512 INFO Selecting state: HI
+2026-06-09 01:13:45,644 INFO       Records collected: 153
+2026-06-09 01:13:45,649 INFO Selecting state: IA
+2026-06-09 01:14:14,243 INFO       Records collected: 156
+2026-06-09 01:14:16,825 INFO Processing states batch 6 for Medical Board: ID, IL, IN, KS
+2026-06-09 01:14:32,233 INFO Selecting state: ID
+2026-06-09 01:15:06,412 INFO       Records collected: 157
+2026-06-09 01:15:06,416 INFO Selecting state: IL
+2026-06-09 01:15:30,354 INFO       Records collected: 184
+2026-06-09 01:15:30,358 INFO Selecting state: IN
+2026-06-09 01:15:57,908 INFO       Records collected: 220
+2026-06-09 01:15:57,912 INFO Selecting state: KS
+2026-06-09 01:16:31,937 INFO       Records collected: 10
+2026-06-09 01:16:34,544 INFO Processing states batch 7 for Medical Board: KY, LA, MA, MB
+2026-06-09 01:16:50,050 INFO Selecting state: KY
+2026-06-09 01:17:21,504 INFO       Records collected: 264
+2026-06-09 01:17:21,508 INFO Selecting state: LA
+2026-06-09 01:17:51,830 INFO       Records collected: 150
+2026-06-09 01:17:51,833 INFO Selecting state: MA
+2026-06-09 01:18:15,814 INFO       Records collected: 168
+2026-06-09 01:18:15,818 INFO Selecting state: MB
+2026-06-09 01:18:49,706 INFO       Records collected: 8
+2026-06-09 01:18:52,279 INFO Processing states batch 8 for Medical Board: MD, ME, MI, MN
+2026-06-09 01:19:07,814 INFO Selecting state: MD
+2026-06-09 01:19:51,812 INFO       Records collected: 167
+2026-06-09 01:19:51,817 INFO Selecting state: ME
+2026-06-09 01:20:23,818 INFO       Records collected: 154
+2026-06-09 01:20:23,822 INFO Selecting state: MI
+2026-06-09 01:20:53,700 INFO       Records collected: 267
+2026-06-09 01:20:53,704 INFO Selecting state: MN
+2026-06-09 01:21:18,330 INFO       Records collected: 161
+2026-06-09 01:21:20,889 INFO Processing states batch 9 for Medical Board: MO, MS, MT, NB
+2026-06-09 01:21:36,484 INFO Selecting state: MO
+2026-06-09 01:22:15,871 INFO       Records collected: 159
+2026-06-09 01:22:15,876 INFO Selecting state: MS
+2026-06-09 01:22:49,093 INFO       Records collected: 153
+2026-06-09 01:22:49,097 INFO Selecting state: MT
+2026-06-09 01:23:22,600 INFO       Records collected: 154
+2026-06-09 01:23:22,604 INFO Selecting state: NB
+2026-06-09 01:23:53,426 INFO       Records collected: 2
+2026-06-09 01:23:56,006 INFO Processing states batch 10 for Medical Board: NC, ND, NE, NH
+2026-06-09 01:24:11,524 INFO Selecting state: NC
+2026-06-09 01:24:39,787 INFO       Records collected: 218
+2026-06-09 01:24:39,792 INFO Selecting state: ND
+2026-06-09 01:25:26,687 INFO       Records collected: 152
+2026-06-09 01:25:26,690 INFO Selecting state: NE
+2026-06-09 01:26:04,178 INFO       Records collected: 151
+2026-06-09 01:26:04,182 INFO Selecting state: NH
+2026-06-09 01:26:33,766 INFO       Records collected: 155
+2026-06-09 01:26:36,320 INFO Processing states batch 11 for Medical Board: NJ, NL, NM, NS
+2026-06-09 01:26:52,661 INFO Selecting state: NJ
+2026-06-09 01:27:25,430 INFO       Records collected: 211
+2026-06-09 01:27:25,435 INFO Selecting state: NL
+2026-06-09 01:27:58,981 INFO       Records collected: 1
+2026-06-09 01:27:58,983 INFO Selecting state: NM
+2026-06-09 01:28:12,812 INFO       Records collected: 0
+2026-06-09 01:28:12,814 INFO Selecting state: NS
+2026-06-09 01:28:32,563 INFO       Records collected: 154
+2026-06-09 01:28:35,035 INFO Processing states batch 12 for Medical Board: NT, NU, NV, NY
+2026-06-09 01:28:50,271 INFO Selecting state: NT
+2026-06-09 01:29:16,240 INFO       Records collected: 1
+2026-06-09 01:29:16,243 INFO Selecting state: NU
+2026-06-09 01:29:39,405 INFO       Records collected: 0
+2026-06-09 01:29:39,407 INFO Selecting state: NV
+2026-06-09 01:30:03,890 INFO       Records collected: 154
+2026-06-09 01:30:03,894 INFO Selecting state: NY
+2026-06-09 01:30:33,059 INFO       Records collected: 269
+2026-06-09 01:30:35,606 INFO Processing states batch 13 for Medical Board: OK, ON, OR, PA
+2026-06-09 01:30:50,513 INFO Selecting state: OK
+2026-06-09 01:31:15,077 INFO       Records collected: 159
+2026-06-09 01:31:15,081 INFO Selecting state: ON
+2026-06-09 01:31:49,468 INFO       Records collected: 96
+2026-06-09 01:31:51,569 INFO Selecting state: OR
+2026-06-09 01:32:37,137 INFO       Records collected: 155
+2026-06-09 01:32:37,141 INFO Selecting state: PA
+2026-06-09 01:33:06,484 INFO       Records collected: 275
+2026-06-09 01:33:09,086 INFO Processing states batch 14 for Medical Board: PE, PR, QC, RI
+2026-06-09 01:33:24,465 INFO Selecting state: PE
+2026-06-09 01:33:31,337 INFO       Records collected: 0
+2026-06-09 01:33:31,339 INFO Selecting state: PR
+2026-06-09 01:34:07,297 INFO       Records collected: 10
+2026-06-09 01:34:07,299 INFO Selecting state: QC
+2026-06-09 01:34:34,372 INFO       Records collected: 2
+2026-06-09 01:34:34,375 INFO Selecting state: RI
+2026-06-09 01:35:16,233 INFO       Records collected: 10
+2026-06-09 01:35:18,755 INFO Processing states batch 15 for Medical Board: SC, SD, SK, TN
+2026-06-09 01:35:34,380 INFO Selecting state: SC
+2026-06-09 01:36:09,818 INFO       Records collected: 163
+2026-06-09 01:36:09,822 INFO Selecting state: SD
+2026-06-09 01:36:55,467 INFO       Records collected: 150
+2026-06-09 01:36:55,470 INFO Selecting state: SK
+2026-06-09 01:37:25,407 INFO       Records collected: 4
+2026-06-09 01:37:25,409 INFO Selecting state: TN
+2026-06-09 01:37:49,832 INFO       Records collected: 195
+2026-06-09 01:37:52,385 INFO Processing states batch 16 for Medical Board: TX, UT, VA, VT
+2026-06-09 01:38:07,962 INFO Selecting state: TX
+2026-06-09 01:38:34,260 INFO       Records collected: 217
+2026-06-09 01:38:34,264 INFO Selecting state: UT
+2026-06-09 01:39:11,550 INFO       Records collected: 165
+2026-06-09 01:39:11,554 INFO Selecting state: VA
+2026-06-09 01:39:34,701 INFO       Records collected: 174
+2026-06-09 01:39:34,705 INFO Selecting state: VT
+2026-06-09 01:40:08,273 INFO       Records collected: 4
+2026-06-09 01:40:10,808 INFO Processing states batch 17 for Medical Board: WA, WI, WV, WY
+2026-06-09 01:40:25,937 INFO Selecting state: WA
+2026-06-09 01:40:51,118 INFO       Records collected: 166
+2026-06-09 01:40:51,121 INFO Selecting state: WI
+2026-06-09 01:41:16,276 INFO       Records collected: 158
+2026-06-09 01:41:16,279 INFO Selecting state: WV
+2026-06-09 01:41:45,721 INFO       Records collected: 264
+2026-06-09 01:41:45,725 INFO Selecting state: WY
+2026-06-09 01:42:28,413 INFO       Records collected: 121
+2026-06-09 01:42:31,007 INFO Processing states batch 18 for Medical Board: YT, AS, MP, VI
+2026-06-09 01:42:45,954 INFO Selecting state: YT
+2026-06-09 01:43:10,229 INFO       Records collected: 0
+2026-06-09 01:43:10,230 INFO Selecting state: AS
+2026-06-09 01:43:44,200 INFO       Records collected: 0
+2026-06-09 01:43:44,201 INFO Selecting state: MP
+2026-06-09 01:44:08,433 INFO       Records collected: 2
+2026-06-09 01:44:08,435 INFO Selecting state: VI
+2026-06-09 01:44:33,064 INFO       Records collected: 12
+2026-06-09 01:44:35,577 INFO Processing states batch 19 for Medical Board: MH, NF, PQ, UK
+2026-06-09 01:44:51,632 INFO Selecting state: MH
+2026-06-09 01:44:58,046 INFO       Records collected: 0
+2026-06-09 01:44:58,047 INFO Selecting state: NF
+2026-06-09 01:45:24,898 INFO       Records collected: 1
+2026-06-09 01:45:24,900 INFO Selecting state: PQ
+2026-06-09 01:46:08,435 INFO       Records collected: 10
+2026-06-09 01:46:08,438 INFO Selecting state: UK
+2026-06-09 01:46:38,365 INFO       Records collected: 1
+2026-06-09 01:46:41,003 INFO   Board: Nursing Board
+2026-06-09 01:46:41,004 INFO Processing states batch 1 for Nursing Board: OH, AA, AB, AE
+2026-06-09 01:46:55,551 INFO Selecting state: OH
+2026-06-09 01:47:56,982 INFO       Records collected: 167
+2026-06-09 01:47:56,986 INFO Selecting state: AA
+2026-06-09 01:48:31,031 INFO       Records collected: 7
+2026-06-09 01:48:31,035 INFO Selecting state: AB
+2026-06-09 01:48:59,980 INFO       Records collected: 3
+2026-06-09 01:48:59,982 INFO Selecting state: AE
+2026-06-09 01:49:05,126 INFO       Records collected: 8
+2026-06-09 01:49:07,659 INFO Processing states batch 2 for Nursing Board: AK, AL, AP, AR
+2026-06-09 01:49:23,253 INFO Selecting state: AK
+2026-06-09 01:50:35,049 INFO       Records collected: 159
+2026-06-09 01:50:35,053 INFO Selecting state: AL
+2026-06-09 01:51:08,760 INFO       Records collected: 9
+2026-06-09 01:51:08,762 INFO Selecting state: AP
+2026-06-09 01:51:37,588 INFO       Records collected: 159
+2026-06-09 01:51:37,592 INFO Selecting state: AR
+2026-06-09 01:51:49,992 INFO       Records collected: 37
+2026-06-09 01:51:52,521 INFO Processing states batch 3 for Nursing Board: AZ, BC, CA, CO
+2026-06-09 01:52:07,360 INFO Selecting state: AZ
+2026-06-09 01:52:47,741 INFO       Records collected: 157
+2026-06-09 01:52:47,745 INFO Selecting state: BC
+2026-06-09 01:53:21,378 INFO       Records collected: 7
+2026-06-09 01:53:21,380 INFO Selecting state: CA
+2026-06-09 01:54:01,592 INFO       Records collected: 165
+2026-06-09 01:54:01,595 INFO Selecting state: CO
+2026-06-09 01:54:42,825 INFO       Records collected: 163
+2026-06-09 01:54:45,347 INFO Processing states batch 4 for Nursing Board: CT, DC, DE, FL
+2026-06-09 01:55:00,518 INFO Selecting state: CT
+2026-06-09 01:55:42,583 INFO       Records collected: 159
+2026-06-09 01:55:42,587 INFO Selecting state: DC
+2026-06-09 01:56:27,424 INFO       Records collected: 137
+2026-06-09 01:56:27,428 INFO Selecting state: DE
+2026-06-09 01:57:01,517 INFO       Records collected: 7
+2026-06-09 01:57:01,519 INFO Selecting state: FL
+2026-06-09 01:57:20,333 INFO       Records collected: 165
+2026-06-09 01:57:22,910 INFO Processing states batch 5 for Nursing Board: GA, GU, HI, IA
+2026-06-09 01:57:38,648 INFO Selecting state: GA
+2026-06-09 01:58:18,916 INFO       Records collected: 156
+2026-06-09 01:58:18,919 INFO Selecting state: GU
+2026-06-09 01:58:52,628 INFO       Records collected: 6
+2026-06-09 01:58:52,631 INFO Selecting state: HI
+2026-06-09 01:59:14,111 INFO       Records collected: 14
+2026-06-09 01:59:14,114 INFO Selecting state: IA
+2026-06-09 01:59:40,031 INFO       Records collected: 164
+2026-06-09 01:59:42,592 INFO Processing states batch 6 for Nursing Board: ID, IL, IN, KS
+2026-06-09 01:59:58,084 INFO Selecting state: ID
+2026-06-09 02:00:44,616 INFO       Records collected: 176
+2026-06-09 02:00:44,621 INFO Selecting state: IL
+2026-06-09 02:01:25,474 INFO       Records collected: 163
+2026-06-09 02:01:25,477 INFO Selecting state: IN
+2026-06-09 02:01:59,148 INFO       Records collected: 3
+2026-06-09 02:01:59,151 INFO Selecting state: KS
+2026-06-09 02:02:42,848 INFO       Records collected: 310
+2026-06-09 02:02:45,422 INFO Processing states batch 7 for Nursing Board: KY, LA, MA, MB
+2026-06-09 02:03:00,558 INFO Selecting state: KY
+2026-06-09 02:03:42,709 INFO       Records collected: 163
+2026-06-09 02:03:42,712 INFO Selecting state: LA
+2026-06-09 02:04:22,934 INFO       Records collected: 152
+2026-06-09 02:04:22,938 INFO Selecting state: MA
+2026-06-09 02:05:05,710 INFO       Records collected: 164
+2026-06-09 02:05:05,714 INFO Selecting state: MB
+2026-06-09 02:05:39,401 INFO       Records collected: 4
+2026-06-09 02:05:42,018 INFO Processing states batch 8 for Nursing Board: MD, ME, MI, MN
+2026-06-09 02:05:57,306 INFO Selecting state: MD
+2026-06-09 02:06:42,177 INFO       Records collected: 161
+2026-06-09 02:06:42,181 INFO Selecting state: ME
+2026-06-09 02:07:16,048 INFO       Records collected: 1
+2026-06-09 02:07:16,051 INFO Selecting state: MI
+2026-06-09 02:07:55,746 INFO       Records collected: 189
+2026-06-09 02:07:55,750 INFO Selecting state: MN
+2026-06-09 02:08:36,342 INFO       Records collected: 157
+2026-06-09 02:08:38,882 INFO Processing states batch 9 for Nursing Board: MO, MS, MT, NB
+2026-06-09 02:08:54,920 INFO Selecting state: MO
+2026-06-09 02:09:53,270 INFO       Records collected: 156
+2026-06-09 02:09:53,275 INFO Selecting state: MS
+2026-06-09 02:10:32,853 INFO       Records collected: 155
+2026-06-09 02:10:32,856 INFO Selecting state: MT
+2026-06-09 02:11:06,504 INFO       Records collected: 5
+2026-06-09 02:11:06,507 INFO Selecting state: NB
+2026-06-09 02:11:29,490 INFO       Records collected: 163
+2026-06-09 02:11:32,042 INFO Processing states batch 10 for Nursing Board: NC, ND, NE, NH
+2026-06-09 02:11:47,272 INFO Selecting state: NC
+2026-06-09 02:12:27,497 INFO       Records collected: 159
+2026-06-09 02:12:27,502 INFO Selecting state: ND
+2026-06-09 02:13:11,103 INFO       Records collected: 123
+2026-06-09 02:13:11,106 INFO Selecting state: NE
+2026-06-09 02:13:54,408 INFO       Records collected: 174
+2026-06-09 02:13:54,411 INFO Selecting state: NH
+2026-06-09 02:14:28,229 INFO       Records collected: 5
+2026-06-09 02:14:30,876 INFO Processing states batch 11 for Nursing Board: NJ, NL, NM, NS
+2026-06-09 02:14:46,455 INFO Selecting state: NJ
+2026-06-09 02:15:27,760 INFO       Records collected: 155
+2026-06-09 02:15:27,765 INFO Selecting state: NL
+2026-06-09 02:16:01,582 INFO       Records collected: 5
+2026-06-09 02:16:01,584 INFO Selecting state: NM
+2026-06-09 02:16:11,121 INFO       Records collected: 0
+2026-06-09 02:16:11,122 INFO Selecting state: NS
+2026-06-09 02:16:48,961 INFO       Records collected: 178
+2026-06-09 02:16:51,517 INFO Processing states batch 12 for Nursing Board: NT, NU, NV, NY
+2026-06-09 02:17:06,464 INFO Selecting state: NT
+2026-06-09 02:18:11,951 INFO       Records collected: 2
+2026-06-09 02:18:11,954 INFO Selecting state: NU
+2026-06-09 02:18:45,625 INFO       Records collected: 2
+2026-06-09 02:18:45,626 INFO Selecting state: NV
+2026-06-09 02:18:52,267 INFO       Records collected: 0
+2026-06-09 02:18:52,269 INFO Selecting state: NY
+2026-06-09 02:19:18,016 ERROR Failed on Nursing Board / NY (will retry on next run): Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xd7b593+105d3]
+	chromedriver!GetHandleVerifier [0xd7b6c4+10704]
+	chromedriver!(No symbol) [0xb81ea0]
+	chromedriver!(No symbol) [0xb88c1e]
+	chromedriver!(No symbol) [0xb8afdd]
+	chromedriver!(No symbol) [0xc0b691]
+	chromedriver!(No symbol) [0xbed77c]
+	chromedriver!(No symbol) [0xc0a936]
+	chromedriver!(No symbol) [0xbed516]
+	chromedriver!(No symbol) [0xbc08e9]
+	chromedriver!(No symbol) [0xbc16a4]
+	chromedriver!GetHandleVerifier [0x1003014+298054]
+	chromedriver!GetHandleVerifier [0xffe603+293643]
+	chromedriver!GetHandleVerifier [0x101ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xd954e8+2a528]
+	chromedriver!GetHandleVerifier [0xd9cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xd83e68+18ea8]
+	chromedriver!GetHandleVerifier [0xd84015+19055]
+	chromedriver!GetHandleVerifier [0xd6d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x75e35d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76fbd83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76fbd7c1+231]
+Traceback (most recent call last):
+  File "C:\Users\91630\Downloads\Scrapers\ohio.py", line 153, in safe_click
+    element.click()
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 119, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xd7b593+105d3]
+	chromedriver!GetHandleVerifier [0xd7b6c4+10704]
+	chromedriver!(No symbol) [0xb81ea0]
+	chromedriver!(No symbol) [0xb88c1e]
+	chromedriver!(No symbol) [0xb8ad4a]
+	chromedriver!(No symbol) [0xb8add8]
+	chromedriver!(No symbol) [0xbccf52]
+	chromedriver!(No symbol) [0xbcc0c8]
+	chromedriver!(No symbol) [0xbc2660]
+	chromedriver!(No symbol) [0xbed77c]
+	chromedriver!(No symbol) [0xbc1da4]
+	chromedriver!(No symbol) [0xbed944]
+	chromedriver!(No symbol) [0xc0a936]
+	chromedriver!(No symbol) [0xbed516]
+	chromedriver!(No symbol) [0xbc08e9]
+	chromedriver!(No symbol) [0xbc16a4]
+	chromedriver!GetHandleVerifier [0x1003014+298054]
+	chromedriver!GetHandleVerifier [0xffe603+293643]
+	chromedriver!GetHandleVerifier [0x101ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xd954e8+2a528]
+	chromedriver!GetHandleVerifier [0xd9cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xd83e68+18ea8]
+	chromedriver!GetHandleVerifier [0xd84015+19055]
+	chromedriver!GetHandleVerifier [0xd6d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x75e35d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76fbd83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76fbd7c1+231]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91630\Downloads\Scrapers\ohio.py", line 595, in process_board_states
+    records = scrape_all_pages(driver, wait, state_code, board_name, "")
+  File "C:\Users\91630\Downloads\Scrapers\ohio.py", line 472, in scrape_all_pages
+    if not click_next_page(driver, wait):
+  File "C:\Users\91630\Downloads\Scrapers\ohio.py", line 433, in click_next_page
+    safe_click(driver, wait, By.ID, "results_next", timeout=10)
+  File "C:\Users\91630\Downloads\Scrapers\ohio.py", line 155, in safe_click
+    driver.execute_script("arguments[0].click();", element)
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 555, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\91630\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xd7b593+105d3]
+	chromedriver!GetHandleVerifier [0xd7b6c4+10704]
+	chromedriver!(No symbol) [0xb81ea0]
+	chromedriver!(No symbol) [0xb88c1e]
+	chromedriver!(No symbol) [0xb8afdd]
+	chromedriver!(No symbol) [0xc0b691]
+	chromedriver!(No symbol) [0xbed77c]
+	chromedriver!(No symbol) [0xc0a936]
+	chromedriver!(No symbol) [0xbed516]
+	chromedriver!(No symbol) [0xbc08e9]
+	chromedriver!(No symbol) [0xbc16a4]
+	chromedriver!GetHandleVerifier [0x1003014+298054]
+	chromedriver!GetHandleVerifier [0xffe603+293643]
+	chromedriver!GetHandleVerifier [0x101ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xd954e8+2a528]
+	chromedriver!GetHandleVerifier [0xd9cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xd83e68+18ea8]
+	chromedriver!GetHandleVerifier [0xd84015+19055]
+	chromedriver!GetHandleVerifier [0xd6d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x75e35d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76fbd83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76fbd7c1+231]
+
+2026-06-09 02:19:28,342 INFO Processing states batch 13 for Nursing Board: OK, ON, OR, PA
+2026-06-09 02:19:44,242 INFO Selecting state: OK
+2026-06-09 02:20:27,706 INFO       Records collected: 164
+2026-06-09 02:20:27,710 INFO Selecting state: ON
+2026-06-09 02:21:01,393 INFO       Records collected: 4
+2026-06-09 02:21:01,396 INFO Selecting state: OR
+2026-06-09 02:21:16,913 INFO       Records collected: 68
+2026-06-09 02:21:16,918 INFO Selecting state: PA
+2026-06-09 02:21:57,079 INFO       Records collected: 324
+2026-06-09 02:21:59,591 INFO Processing states batch 14 for Nursing Board: PE, PR, QC, RI
+2026-06-09 02:22:14,381 INFO Selecting state: PE
+2026-06-09 02:22:49,115 INFO       Records collected: 1
+2026-06-09 02:22:49,117 INFO Selecting state: PR
+2026-06-09 02:23:22,665 INFO       Records collected: 1
+2026-06-09 02:23:22,668 INFO Selecting state: QC
+2026-06-09 02:24:04,068 INFO       Records collected: 47
+2026-06-09 02:24:04,071 INFO Selecting state: RI
+2026-06-09 02:24:14,148 INFO       Records collected: 0
+2026-06-09 02:24:16,660 INFO Processing states batch 15 for Nursing Board: SC, SD, SK, TN
+2026-06-09 02:24:32,181 INFO Selecting state: SC
+2026-06-09 02:25:12,354 INFO       Records collected: 159
+2026-06-09 02:25:12,357 INFO Selecting state: SD
+2026-06-09 02:25:57,397 INFO       Records collected: 176
+2026-06-09 02:25:57,400 INFO Selecting state: SK
+2026-06-09 02:26:31,187 INFO       Records collected: 6
+2026-06-09 02:26:31,189 INFO Selecting state: TN
+2026-06-09 02:26:36,867 INFO       Records collected: 1
+2026-06-09 02:26:39,415 INFO Processing states batch 16 for Nursing Board: TX, UT, VA, VT
+2026-06-09 02:26:54,509 INFO Selecting state: TX
+2026-06-09 02:27:34,586 INFO       Records collected: 158
+2026-06-09 02:27:34,590 INFO Selecting state: UT
+2026-06-09 02:28:17,849 INFO       Records collected: 174
+2026-06-09 02:28:17,854 INFO Selecting state: VA
+2026-06-09 02:28:57,291 INFO       Records collected: 159
+2026-06-09 02:28:57,295 INFO Selecting state: VT
+2026-06-09 02:29:31,109 INFO       Records collected: 9
+2026-06-09 02:29:33,919 INFO Processing states batch 17 for Nursing Board: WA, WI, WV, WY
+2026-06-09 02:29:49,270 INFO Selecting state: WA
+2026-06-09 02:30:30,692 INFO       Records collected: 158
+2026-06-09 02:30:30,695 INFO Selecting state: WI
+2026-06-09 02:31:16,773 INFO       Records collected: 164
+2026-06-09 02:31:16,775 INFO Selecting state: WV
+2026-06-09 02:31:56,176 INFO       Records collected: 158
+2026-06-09 02:31:56,179 INFO Selecting state: WY
+2026-06-09 02:32:30,166 INFO       Records collected: 8
+2026-06-09 02:32:32,688 INFO Processing states batch 18 for Nursing Board: YT, AS, MP, VI
+2026-06-09 02:32:48,117 INFO Selecting state: YT
+2026-06-09 02:33:35,444 INFO       Records collected: 1
+2026-06-09 02:33:35,446 INFO Selecting state: AS
+2026-06-09 02:34:09,049 INFO       Records collected: 1
+2026-06-09 02:34:09,051 INFO Selecting state: MP
+2026-06-09 02:34:18,524 INFO       Records collected: 0
+2026-06-09 02:34:18,525 INFO Selecting state: VI
+2026-06-09 02:34:42,750 INFO       Records collected: 2
+2026-06-09 02:34:45,279 INFO Processing states batch 19 for Nursing Board: MH, NF, PQ, UK
+2026-06-09 02:34:59,771 INFO Selecting state: MH
+2026-06-09 02:35:06,079 INFO       Records collected: 0
+2026-06-09 02:35:06,080 INFO Selecting state: NF
+2026-06-09 02:35:41,194 INFO       Records collected: 0
+2026-06-09 02:35:41,195 INFO Selecting state: PQ
+2026-06-09 02:36:15,186 INFO       Records collected: 1
+2026-06-09 02:36:15,189 INFO Selecting state: UK
+2026-06-09 02:36:49,404 INFO       Records collected: 4
+2026-06-09 02:36:52,055 INFO   Board: Psychology Board
+2026-06-09 02:36:52,055 INFO Processing states batch 1 for Psychology Board: OH, AA, AB, AE
+2026-06-09 02:37:07,262 INFO Selecting state: OH
+2026-06-09 02:37:26,106 INFO       Records collected: 150
+2026-06-09 02:37:26,111 INFO Selecting state: AA
+2026-06-09 02:37:33,138 INFO       Records collected: 0
+2026-06-09 02:37:33,139 INFO Selecting state: AB
+2026-06-09 02:38:07,162 INFO       Records collected: 0
+2026-06-09 02:38:07,164 INFO Selecting state: AE
+2026-06-09 02:38:15,700 INFO       Records collected: 8
+2026-06-09 02:38:18,260 INFO Processing states batch 2 for Psychology Board: AK, AL, AP, AR
+2026-06-09 02:38:34,317 INFO Selecting state: AK
+2026-06-09 02:38:41,239 INFO       Records collected: 4
+2026-06-09 02:38:41,241 INFO Selecting state: AL
+2026-06-09 02:38:50,731 INFO       Records collected: 18
+2026-06-09 02:38:50,735 INFO Selecting state: AP
+2026-06-09 02:38:56,575 INFO       Records collected: 2
+2026-06-09 02:38:56,578 INFO Selecting state: AR
+2026-06-09 02:39:01,789 INFO       Records collected: 7
+2026-06-09 02:39:04,419 INFO Processing states batch 3 for Psychology Board: AZ, BC, CA, CO
+2026-06-09 02:39:20,279 INFO Selecting state: AZ
+2026-06-09 02:39:30,844 INFO       Records collected: 43
+2026-06-09 02:39:30,849 INFO Selecting state: BC
+2026-06-09 02:39:36,061 INFO       Records collected: 0
+2026-06-09 02:39:36,063 INFO Selecting state: CA
+2026-06-09 02:39:54,079 INFO       Records collected: 150
+2026-06-09 02:39:54,083 INFO Selecting state: CO
+2026-06-09 02:40:05,852 INFO       Records collected: 69
+2026-06-09 02:40:08,580 INFO Processing states batch 4 for Psychology Board: CT, DC, DE, FL
+2026-06-09 02:40:24,085 INFO Selecting state: CT
+2026-06-09 02:40:34,418 INFO       Records collected: 46
+2026-06-09 02:40:34,421 INFO Selecting state: DC
+2026-06-09 02:40:41,846 INFO       Records collected: 29
+2026-06-09 02:40:41,849 INFO Selecting state: DE
+2026-06-09 02:40:55,182 INFO       Records collected: 15
+2026-06-09 02:40:55,185 INFO Selecting state: FL
+2026-06-09 02:41:13,469 INFO       Records collected: 150
+2026-06-09 02:41:16,213 INFO Processing states batch 5 for Psychology Board: GA, GU, HI, IA
+2026-06-09 02:41:31,947 INFO Selecting state: GA
+2026-06-09 02:41:47,031 INFO       Records collected: 83
+2026-06-09 02:41:47,034 INFO Selecting state: GU
+2026-06-09 02:41:52,769 INFO       Records collected: 0
+2026-06-09 02:41:52,770 INFO Selecting state: HI
+2026-06-09 02:42:00,466 INFO       Records collected: 23
+2026-06-09 02:42:00,468 INFO Selecting state: IA
+2026-06-09 02:42:06,238 INFO       Records collected: 10
+2026-06-09 02:42:08,775 INFO Processing states batch 6 for Psychology Board: ID, IL, IN, KS
+2026-06-09 02:42:23,947 INFO Selecting state: ID
+2026-06-09 02:42:30,751 INFO       Records collected: 6
+2026-06-09 02:42:30,753 INFO Selecting state: IL
+2026-06-09 02:42:49,186 INFO       Records collected: 150
+2026-06-09 02:42:49,191 INFO Selecting state: IN
+2026-06-09 02:43:07,815 INFO       Records collected: 150
+2026-06-09 02:43:07,819 INFO Selecting state: KS
+2026-06-09 02:43:14,433 INFO       Records collected: 15
+2026-06-09 02:43:16,939 INFO Processing states batch 7 for Psychology Board: KY, LA, MA, MB
+2026-06-09 02:43:31,689 INFO Selecting state: KY
+2026-06-09 02:43:52,212 INFO       Records collected: 150
+2026-06-09 02:43:52,217 INFO Selecting state: LA
+2026-06-09 02:43:59,027 INFO       Records collected: 19
+2026-06-09 02:43:59,030 INFO Selecting state: MA
+2026-06-09 02:44:17,111 INFO       Records collected: 148
+2026-06-09 02:44:17,116 INFO Selecting state: MB
+2026-06-09 02:44:22,410 INFO       Records collected: 0
+2026-06-09 02:44:24,963 INFO Processing states batch 8 for Psychology Board: MD, ME, MI, MN
+2026-06-09 02:44:40,428 INFO Selecting state: MD
+2026-06-09 02:44:54,102 INFO       Records collected: 82
+2026-06-09 02:44:54,106 INFO Selecting state: ME
+2026-06-09 02:45:00,650 INFO       Records collected: 12
+2026-06-09 02:45:00,653 INFO Selecting state: MI
+2026-06-09 02:45:18,228 INFO       Records collected: 150
+2026-06-09 02:45:18,232 INFO Selecting state: MN
+2026-06-09 02:45:26,593 INFO       Records collected: 40
+2026-06-09 02:45:29,119 INFO Processing states batch 9 for Psychology Board: MO, MS, MT, NB
+2026-06-09 02:45:44,729 INFO Selecting state: MO
+2026-06-09 02:45:54,799 INFO       Records collected: 31
+2026-06-09 02:45:54,803 INFO Selecting state: MS
+2026-06-09 02:46:00,532 INFO       Records collected: 10
+2026-06-09 02:46:00,534 INFO Selecting state: MT
+2026-06-09 02:46:07,201 INFO       Records collected: 12
+2026-06-09 02:46:07,203 INFO Selecting state: NB
+2026-06-09 02:46:12,951 INFO       Records collected: 0
+2026-06-09 02:46:15,449 INFO Processing states batch 10 for Psychology Board: NC, ND, NE, NH
+2026-06-09 02:46:29,953 INFO Selecting state: NC
+2026-06-09 02:46:46,286 INFO       Records collected: 106
+2026-06-09 02:46:46,292 INFO Selecting state: ND
+2026-06-09 02:46:51,789 INFO       Records collected: 9
+2026-06-09 02:46:51,791 INFO Selecting state: NE
+2026-06-09 02:46:58,299 INFO       Records collected: 11
+2026-06-09 02:46:58,302 INFO Selecting state: NH
+2026-06-09 02:47:04,830 INFO       Records collected: 12
+2026-06-09 02:47:07,387 INFO Processing states batch 11 for Psychology Board: NJ, NL, NM, NS
+2026-06-09 02:47:20,299 INFO Selecting state: NJ
+2026-06-09 02:47:35,307 INFO       Records collected: 100
+2026-06-09 02:47:35,311 INFO Selecting state: NL
+2026-06-09 02:47:41,079 INFO       Records collected: 0
+2026-06-09 02:47:41,080 INFO Selecting state: NM
+2026-06-09 02:47:47,762 INFO       Records collected: 17
+2026-06-09 02:47:47,765 INFO Selecting state: NS
+2026-06-09 02:47:53,474 INFO       Records collected: 0
+2026-06-09 02:47:55,980 INFO Processing states batch 12 for Psychology Board: NT, NU, NV, NY
+2026-06-09 02:48:11,457 INFO Selecting state: NT
+2026-06-09 02:48:17,793 INFO       Records collected: 0
+2026-06-09 02:48:17,794 INFO Selecting state: NU
+2026-06-09 02:48:51,365 INFO       Records collected: 0
+2026-06-09 02:48:51,367 INFO Selecting state: NV
+2026-06-09 02:48:59,341 INFO       Records collected: 25
+2026-06-09 02:48:59,344 INFO Selecting state: NY
+2026-06-09 02:49:17,155 INFO       Records collected: 150
+2026-06-09 02:49:19,682 INFO Processing states batch 13 for Psychology Board: OK, ON, OR, PA
+2026-06-09 02:49:34,376 INFO Selecting state: OK
+2026-06-09 02:49:42,591 INFO       Records collected: 14
+2026-06-09 02:49:42,593 INFO Selecting state: ON
+2026-06-09 02:49:47,737 INFO       Records collected: 0
+2026-06-09 02:49:47,738 INFO Selecting state: OR
+2026-06-09 02:49:57,781 INFO       Records collected: 58
+2026-06-09 02:49:57,784 INFO Selecting state: PA
+2026-06-09 02:50:15,309 INFO       Records collected: 150
+2026-06-09 02:50:17,825 INFO Processing states batch 14 for Psychology Board: PE, PR, QC, RI
+2026-06-09 02:50:33,826 INFO Selecting state: PE
+2026-06-09 02:50:40,697 INFO       Records collected: 0
+2026-06-09 02:50:40,698 INFO Selecting state: PR
+2026-06-09 02:50:46,544 INFO       Records collected: 10
+2026-06-09 02:50:46,546 INFO Selecting state: QC
+2026-06-09 02:50:51,737 INFO       Records collected: 0
+2026-06-09 02:50:51,740 INFO Selecting state: RI
+2026-06-09 02:50:58,429 INFO       Records collected: 19
+2026-06-09 02:51:01,118 INFO Processing states batch 15 for Psychology Board: SC, SD, SK, TN
+2026-06-09 02:51:17,809 INFO Selecting state: SC
+2026-06-09 02:51:28,183 INFO       Records collected: 45
+2026-06-09 02:51:28,186 INFO Selecting state: SD
+2026-06-09 02:51:33,937 INFO       Records collected: 8
+2026-06-09 02:51:33,939 INFO Selecting state: SK
+2026-06-09 02:51:39,145 INFO       Records collected: 0
+2026-06-09 02:51:39,146 INFO Selecting state: TN
+2026-06-09 02:51:49,256 INFO       Records collected: 52
+2026-06-09 02:51:51,966 INFO Processing states batch 16 for Psychology Board: TX, UT, VA, VT
+2026-06-09 02:52:06,754 INFO Selecting state: TX
+2026-06-09 02:52:25,980 INFO       Records collected: 141
+2026-06-09 02:52:25,983 INFO Selecting state: UT
+2026-06-09 02:52:32,100 INFO       Records collected: 19
+2026-06-09 02:52:32,102 INFO Selecting state: VA
+2026-06-09 02:52:47,211 INFO       Records collected: 116
+2026-06-09 02:52:47,214 INFO Selecting state: VT
+2026-06-09 02:52:54,581 INFO       Records collected: 16
+2026-06-09 02:52:57,105 INFO Processing states batch 17 for Psychology Board: WA, WI, WV, WY
+2026-06-09 02:53:14,256 INFO Selecting state: WA
+2026-06-09 02:53:25,591 INFO       Records collected: 52
+2026-06-09 02:53:25,594 INFO Selecting state: WI
+2026-06-09 02:53:33,433 INFO       Records collected: 39
+2026-06-09 02:53:33,435 INFO Selecting state: WV
+2026-06-09 02:53:51,316 INFO       Records collected: 150
+2026-06-09 02:53:51,319 INFO Selecting state: WY
+2026-06-09 02:53:56,572 INFO       Records collected: 7
+2026-06-09 02:53:59,030 INFO Processing states batch 18 for Psychology Board: YT, AS, MP, VI
+2026-06-09 02:54:14,271 INFO Selecting state: YT
+2026-06-09 02:54:21,034 INFO       Records collected: 0
+2026-06-09 02:54:21,035 INFO Selecting state: AS
+2026-06-09 02:54:55,013 INFO       Records collected: 0
+2026-06-09 02:54:55,015 INFO Selecting state: MP
+2026-06-09 02:55:28,911 INFO       Records collected: 0
+2026-06-09 02:55:28,912 INFO Selecting state: VI
+2026-06-09 02:55:34,633 INFO       Records collected: 1
+2026-06-09 02:55:37,196 INFO Processing states batch 19 for Psychology Board: MH, NF, PQ, UK
+2026-06-09 02:55:53,080 INFO Selecting state: MH
+2026-06-09 02:55:59,990 INFO       Records collected: 0
+2026-06-09 02:55:59,991 INFO Selecting state: NF
+2026-06-09 02:56:33,773 INFO       Records collected: 0
+2026-06-09 02:56:33,774 INFO Selecting state: PQ
+2026-06-09 02:57:07,790 INFO       Records collected: 0
+2026-06-09 02:57:07,791 INFO Selecting state: UK
+2026-06-09 02:57:41,689 INFO       Records collected: 0
+2026-06-09 02:57:44,197 INFO   Board: Speech and Hearing Professionals Board
+2026-06-09 02:57:44,197 INFO Processing states batch 1 for Speech and Hearing Professionals Board: OH, AA, AB, AE
+2026-06-09 02:57:59,481 INFO Selecting state: OH
+2026-06-09 02:58:18,169 INFO       Records collected: 150
+2026-06-09 02:58:18,173 INFO Selecting state: AA
+2026-06-09 02:58:28,353 INFO       Records collected: 0
+2026-06-09 02:58:28,354 INFO Selecting state: AB
+2026-06-09 02:59:02,313 INFO       Records collected: 0
+2026-06-09 02:59:02,315 INFO Selecting state: AE
+2026-06-09 02:59:13,075 INFO       Records collected: 4
+2026-06-09 02:59:15,568 INFO Processing states batch 2 for Speech and Hearing Professionals Board: AK, AL, AP, AR
+2026-06-09 02:59:32,154 INFO Selecting state: AK
+2026-06-09 02:59:40,094 INFO       Records collected: 6
+2026-06-09 02:59:40,096 INFO Selecting state: AL
+2026-06-09 02:59:48,087 INFO       Records collected: 28
+2026-06-09 02:59:48,090 INFO Selecting state: AP
+2026-06-09 02:59:54,414 INFO       Records collected: 4
+2026-06-09 02:59:54,416 INFO Selecting state: AR
+2026-06-09 03:00:06,946 INFO       Records collected: 15
+2026-06-09 03:00:09,433 INFO Processing states batch 3 for Speech and Hearing Professionals Board: AZ, BC, CA, CO
+2026-06-09 03:00:24,438 INFO Selecting state: AZ
+2026-06-09 03:00:37,996 INFO       Records collected: 64
+2026-06-09 03:00:37,998 INFO Selecting state: BC
+2026-06-09 03:00:44,195 INFO       Records collected: 0
+2026-06-09 03:00:44,197 INFO Selecting state: CA
+2026-06-09 03:00:58,611 INFO       Records collected: 93
+2026-06-09 03:00:58,614 INFO Selecting state: CO
+2026-06-09 03:01:12,084 INFO       Records collected: 83
+2026-06-09 03:01:14,577 INFO Processing states batch 4 for Speech and Hearing Professionals Board: CT, DC, DE, FL
+2026-06-09 03:01:30,276 INFO Selecting state: CT
+2026-06-09 03:01:43,256 INFO       Records collected: 17
+2026-06-09 03:01:43,260 INFO Selecting state: DC
+2026-06-09 03:01:49,529 INFO       Records collected: 9
+2026-06-09 03:01:49,531 INFO Selecting state: DE
+2026-06-09 03:01:55,840 INFO       Records collected: 7
+2026-06-09 03:01:55,841 INFO Selecting state: FL
+2026-06-09 03:02:13,525 INFO       Records collected: 150
+2026-06-09 03:02:16,054 INFO Processing states batch 5 for Speech and Hearing Professionals Board: GA, GU, HI, IA
+2026-06-09 03:02:30,707 INFO Selecting state: GA
+2026-06-09 03:02:43,756 INFO       Records collected: 64
+2026-06-09 03:02:43,759 INFO Selecting state: GU
+2026-06-09 03:02:49,980 INFO       Records collected: 0
+2026-06-09 03:02:49,982 INFO Selecting state: HI
+2026-06-09 03:02:56,241 INFO       Records collected: 8
+2026-06-09 03:02:56,243 INFO Selecting state: IA
+2026-06-09 03:03:03,423 INFO       Records collected: 16
+2026-06-09 03:03:05,910 INFO Processing states batch 6 for Speech and Hearing Professionals Board: ID, IL, IN, KS
+2026-06-09 03:03:21,068 INFO Selecting state: ID
+2026-06-09 03:03:28,880 INFO       Records collected: 7
+2026-06-09 03:03:28,882 INFO Selecting state: IL
+2026-06-09 03:03:47,065 INFO       Records collected: 150
+2026-06-09 03:03:47,069 INFO Selecting state: IN
+2026-06-09 03:04:05,026 INFO       Records collected: 150
+2026-06-09 03:04:05,031 INFO Selecting state: KS
+2026-06-09 03:04:12,390 INFO       Records collected: 20
+2026-06-09 03:04:14,965 INFO Processing states batch 7 for Speech and Hearing Professionals Board: KY, LA, MA, MB
+2026-06-09 03:04:31,097 INFO Selecting state: KY
+2026-06-09 03:04:50,443 INFO       Records collected: 149
+2026-06-09 03:04:50,446 INFO Selecting state: LA
+2026-06-09 03:04:59,525 INFO       Records collected: 26
+2026-06-09 03:04:59,527 INFO Selecting state: MA
+2026-06-09 03:05:08,900 INFO       Records collected: 31
+2026-06-09 03:05:08,902 INFO Selecting state: MB
+2026-06-09 03:05:15,127 INFO       Records collected: 0
+2026-06-09 03:05:17,612 INFO Processing states batch 8 for Speech and Hearing Professionals Board: MD, ME, MI, MN
+2026-06-09 03:05:32,653 INFO Selecting state: MD
+2026-06-09 03:05:44,770 INFO       Records collected: 55
+2026-06-09 03:05:44,772 INFO Selecting state: ME
+2026-06-09 03:05:51,012 INFO       Records collected: 6
+2026-06-09 03:05:51,014 INFO Selecting state: MI
+2026-06-09 03:06:09,179 INFO       Records collected: 150
+2026-06-09 03:06:09,182 INFO Selecting state: MN
+2026-06-09 03:06:18,048 INFO       Records collected: 38
+2026-06-09 03:06:20,531 INFO Processing states batch 9 for Speech and Hearing Professionals Board: MO, MS, MT, NB
+2026-06-09 03:06:35,112 INFO Selecting state: MO
+2026-06-09 03:06:44,693 INFO       Records collected: 29
+2026-06-09 03:06:44,696 INFO Selecting state: MS
+2026-06-09 03:06:51,717 INFO       Records collected: 9
+2026-06-09 03:06:51,719 INFO Selecting state: MT
+2026-06-09 03:06:58,034 INFO       Records collected: 10
+2026-06-09 03:06:58,038 INFO Selecting state: NB
+2026-06-09 03:07:04,328 INFO       Records collected: 0
+2026-06-09 03:07:06,853 INFO Processing states batch 10 for Speech and Hearing Professionals Board: NC, ND, NE, NH
+2026-06-09 03:07:28,479 INFO Selecting state: NC
+2026-06-09 03:07:45,729 INFO       Records collected: 120
+2026-06-09 03:07:45,732 INFO Selecting state: ND
+2026-06-09 03:07:52,179 INFO       Records collected: 3
+2026-06-09 03:07:52,182 INFO Selecting state: NE
+2026-06-09 03:07:59,244 INFO       Records collected: 11
+2026-06-09 03:07:59,245 INFO Selecting state: NH
+2026-06-09 03:08:06,315 INFO       Records collected: 11
+2026-06-09 03:08:08,804 INFO Processing states batch 11 for Speech and Hearing Professionals Board: NJ, NL, NM, NS
+2026-06-09 03:08:24,024 INFO Selecting state: NJ
+2026-06-09 03:08:34,778 INFO       Records collected: 44
+2026-06-09 03:08:34,780 INFO Selecting state: NL
+2026-06-09 03:08:41,569 INFO       Records collected: 0
+2026-06-09 03:08:41,570 INFO Selecting state: NM
+2026-06-09 03:08:49,170 INFO       Records collected: 13
+2026-06-09 03:08:49,172 INFO Selecting state: NS
+2026-06-09 03:08:55,376 INFO       Records collected: 0
+2026-06-09 03:08:57,968 INFO Processing states batch 12 for Speech and Hearing Professionals Board: NT, NU, NV, NY
+2026-06-09 03:09:13,126 INFO Selecting state: NT
+2026-06-09 03:09:20,426 INFO       Records collected: 0
+2026-06-09 03:09:20,427 INFO Selecting state: NU
+2026-06-09 03:09:54,411 INFO       Records collected: 0
+2026-06-09 03:09:54,413 INFO Selecting state: NV
+2026-06-09 03:10:01,569 INFO       Records collected: 11
+2026-06-09 03:10:01,571 INFO Selecting state: NY
+2026-06-09 03:10:17,931 INFO       Records collected: 106
+2026-06-09 03:10:20,400 INFO Processing states batch 13 for Speech and Hearing Professionals Board: OK, ON, OR, PA
+2026-06-09 03:10:35,727 INFO Selecting state: OK
+2026-06-09 03:10:43,293 INFO       Records collected: 7
+2026-06-09 03:10:43,295 INFO Selecting state: ON
+2026-06-09 03:10:49,535 INFO       Records collected: 0
+2026-06-09 03:10:49,536 INFO Selecting state: OR
+2026-06-09 03:10:56,824 INFO       Records collected: 14
+2026-06-09 03:10:56,826 INFO Selecting state: PA
+2026-06-09 03:11:14,522 INFO       Records collected: 150
+2026-06-09 03:11:17,028 INFO Processing states batch 14 for Speech and Hearing Professionals Board: PE, PR, QC, RI
+2026-06-09 03:11:32,529 INFO Selecting state: PE
+2026-06-09 03:11:39,913 INFO       Records collected: 0
+2026-06-09 03:11:39,915 INFO Selecting state: PR
+2026-06-09 03:11:46,116 INFO       Records collected: 2
+2026-06-09 03:11:46,119 INFO Selecting state: QC
+2026-06-09 03:11:52,889 INFO       Records collected: 0
+2026-06-09 03:11:52,890 INFO Selecting state: RI
+2026-06-09 03:12:00,211 INFO       Records collected: 10
+2026-06-09 03:12:02,700 INFO Processing states batch 15 for Speech and Hearing Professionals Board: SC, SD, SK, TN
+2026-06-09 03:12:17,451 INFO Selecting state: SC
+2026-06-09 03:12:32,843 INFO       Records collected: 71
+2026-06-09 03:12:32,846 INFO Selecting state: SD
+2026-06-09 03:12:39,767 INFO       Records collected: 7
+2026-06-09 03:12:39,770 INFO Selecting state: SK
+2026-06-09 03:12:46,043 INFO       Records collected: 0
+2026-06-09 03:12:46,045 INFO Selecting state: TN
+2026-06-09 03:13:01,199 INFO       Records collected: 100
+2026-06-09 03:13:03,683 INFO Processing states batch 16 for Speech and Hearing Professionals Board: TX, UT, VA, VT
+2026-06-09 03:13:19,169 INFO Selecting state: TX
+2026-06-09 03:13:38,462 INFO       Records collected: 132
+2026-06-09 03:13:38,465 INFO Selecting state: UT
+2026-06-09 03:13:45,621 INFO       Records collected: 17
+2026-06-09 03:13:45,624 INFO Selecting state: VA
+2026-06-09 03:13:59,557 INFO       Records collected: 78
+2026-06-09 03:13:59,560 INFO Selecting state: VT
+2026-06-09 03:14:05,936 INFO       Records collected: 3
+2026-06-09 03:14:08,433 INFO Processing states batch 17 for Speech and Hearing Professionals Board: WA, WI, WV, WY
+2026-06-09 03:14:24,079 INFO Selecting state: WA
+2026-06-09 03:14:33,826 INFO       Records collected: 24
+2026-06-09 03:14:33,828 INFO Selecting state: WI
+2026-06-09 03:14:44,046 INFO       Records collected: 43
+2026-06-09 03:14:44,049 INFO Selecting state: WV
+2026-06-09 03:15:01,562 INFO       Records collected: 150
+2026-06-09 03:15:01,566 INFO Selecting state: WY
+2026-06-09 03:15:07,998 INFO       Records collected: 1
+2026-06-09 03:15:10,630 INFO Processing states batch 18 for Speech and Hearing Professionals Board: YT, AS, MP, VI
+2026-06-09 03:15:25,841 INFO Selecting state: YT
+2026-06-09 03:15:33,680 INFO       Records collected: 0
+2026-06-09 03:15:33,681 INFO Selecting state: AS
+2026-06-09 03:16:07,692 INFO       Records collected: 0
+2026-06-09 03:16:07,693 INFO Selecting state: MP
+2026-06-09 03:16:41,189 INFO       Records collected: 0
+2026-06-09 03:16:41,190 INFO Selecting state: VI
+2026-06-09 03:17:14,686 INFO       Records collected: 0
+2026-06-09 03:17:17,213 INFO Processing states batch 19 for Speech and Hearing Professionals Board: MH, NF, PQ, UK
+2026-06-09 03:17:32,954 INFO Selecting state: MH
+2026-06-09 03:17:40,829 INFO       Records collected: 1
+2026-06-09 03:17:40,832 INFO Selecting state: NF
+2026-06-09 03:17:47,001 INFO       Records collected: 0
+2026-06-09 03:17:47,003 INFO Selecting state: PQ
+2026-06-09 03:18:20,466 INFO       Records collected: 0
+2026-06-09 03:18:20,467 INFO Selecting state: UK
+2026-06-09 03:18:54,448 INFO       Records collected: 0
+2026-06-09 03:18:56,946 INFO   Board: Board of Pharmacy
+2026-06-09 03:18:56,946 INFO Processing states batch 1 for Board of Pharmacy: OH, AA, AB, AE
+2026-06-09 03:19:13,066 INFO Selecting state: OH
+2026-06-09 03:19:31,398 INFO       Records collected: 150
+2026-06-09 03:19:31,402 INFO Selecting state: AA
+2026-06-09 03:20:05,037 INFO       Records collected: 0
+2026-06-09 03:20:05,038 INFO Selecting state: AB
+2026-06-09 03:20:32,550 INFO       Records collected: 2
+2026-06-09 03:20:32,552 INFO Selecting state: AE
+2026-06-09 03:20:50,598 INFO       Records collected: 17
+2026-06-09 03:20:53,146 INFO Processing states batch 2 for Board of Pharmacy: AK, AL, AP, AR
+2026-06-09 03:21:08,386 INFO Selecting state: AK
+2026-06-09 03:21:43,189 INFO       Records collected: 50
+2026-06-09 03:21:43,191 INFO Selecting state: AL
+2026-06-09 03:22:05,549 INFO       Records collected: 151
+2026-06-09 03:22:05,554 INFO Selecting state: AP
+2026-06-09 03:22:37,557 INFO       Records collected: 4
+2026-06-09 03:22:37,559 INFO Selecting state: AR
+2026-06-09 03:23:02,408 INFO       Records collected: 85
+2026-06-09 03:23:05,059 INFO Processing states batch 3 for Board of Pharmacy: AZ, BC, CA, CO
+2026-06-09 03:23:21,233 INFO Selecting state: AZ
+2026-06-09 03:23:52,248 INFO       Records collected: 150
+2026-06-09 03:23:52,251 INFO Selecting state: BC
+2026-06-09 03:24:11,444 INFO       Records collected: 2
+2026-06-09 03:24:11,446 INFO Selecting state: CA
+2026-06-09 03:24:30,659 INFO       Records collected: 150
+2026-06-09 03:24:30,663 INFO Selecting state: CO
+2026-06-09 03:24:51,192 INFO       Records collected: 150
+2026-06-09 03:24:53,806 INFO Processing states batch 4 for Board of Pharmacy: CT, DC, DE, FL
+2026-06-09 03:25:09,781 INFO Selecting state: CT
+2026-06-09 03:25:37,587 INFO       Records collected: 151
+2026-06-09 03:25:37,591 INFO Selecting state: DC
+2026-06-09 03:25:58,945 INFO       Records collected: 43
+2026-06-09 03:25:58,949 INFO Selecting state: DE
+2026-06-09 03:26:32,653 INFO       Records collected: 3
+2026-06-09 03:26:32,656 INFO Selecting state: FL
+2026-06-09 03:26:52,231 INFO       Records collected: 131
+2026-06-09 03:26:54,740 INFO Processing states batch 5 for Board of Pharmacy: GA, GU, HI, IA
+2026-06-09 03:27:11,223 INFO Selecting state: GA
+2026-06-09 03:27:33,587 INFO       Records collected: 150
+2026-06-09 03:27:33,591 INFO Selecting state: GU
+2026-06-09 03:27:51,361 INFO       Records collected: 2
+2026-06-09 03:27:51,363 INFO Selecting state: HI
+2026-06-09 03:28:16,289 INFO       Records collected: 40
+2026-06-09 03:28:16,292 INFO Selecting state: IA
+2026-06-09 03:28:46,732 INFO       Records collected: 132
+2026-06-09 03:28:49,226 INFO Processing states batch 6 for Board of Pharmacy: ID, IL, IN, KS
+2026-06-09 03:29:04,448 INFO Selecting state: ID
+2026-06-09 03:29:34,728 INFO       Records collected: 51
+2026-06-09 03:29:34,730 INFO Selecting state: IL
+2026-06-09 03:29:55,559 INFO       Records collected: 151
+2026-06-09 03:29:55,562 INFO Selecting state: IN
+2026-06-09 03:30:14,655 INFO       Records collected: 150
+2026-06-09 03:30:14,658 INFO Selecting state: KS
+2026-06-09 03:30:45,465 INFO       Records collected: 128
+2026-06-09 03:30:48,100 INFO Processing states batch 7 for Board of Pharmacy: KY, LA, MA, MB
+2026-06-09 03:31:03,076 INFO Selecting state: KY
+2026-06-09 03:31:22,638 INFO       Records collected: 150
+2026-06-09 03:31:22,643 INFO Selecting state: LA
+2026-06-09 03:31:59,900 INFO       Records collected: 142
+2026-06-09 03:31:59,904 INFO Selecting state: MA
+2026-06-09 03:32:21,630 INFO       Records collected: 150
+2026-06-09 03:32:21,633 INFO Selecting state: MB
+2026-06-09 03:32:39,743 INFO       Records collected: 0
+2026-06-09 03:32:42,255 INFO Processing states batch 8 for Board of Pharmacy: MD, ME, MI, MN
+2026-06-09 03:32:57,628 INFO Selecting state: MD
+2026-06-09 03:33:18,904 INFO       Records collected: 150
+2026-06-09 03:33:18,908 INFO Selecting state: ME
+2026-06-09 03:33:45,477 INFO       Records collected: 84
+2026-06-09 03:33:45,481 INFO Selecting state: MI
+2026-06-09 03:34:04,616 INFO       Records collected: 150
+2026-06-09 03:34:04,620 INFO Selecting state: MN
+2026-06-09 03:34:26,774 INFO       Records collected: 150
+2026-06-09 03:34:29,280 INFO Processing states batch 9 for Board of Pharmacy: MO, MS, MT, NB
+2026-06-09 03:34:43,864 INFO Selecting state: MO
+2026-06-09 03:35:07,672 INFO       Records collected: 151
+2026-06-09 03:35:07,676 INFO Selecting state: MS
+2026-06-09 03:35:39,696 INFO       Records collected: 98
+2026-06-09 03:35:39,699 INFO Selecting state: MT
+2026-06-09 03:36:02,721 INFO       Records collected: 33
+2026-06-09 03:36:02,724 INFO Selecting state: NB
+2026-06-09 03:36:24,459 INFO       Records collected: 0
+2026-06-09 03:36:27,098 INFO Processing states batch 10 for Board of Pharmacy: NC, ND, NE, NH
+2026-06-09 03:36:42,081 INFO Selecting state: NC
+2026-06-09 03:37:03,364 INFO       Records collected: 150
+2026-06-09 03:37:03,368 INFO Selecting state: ND
+2026-06-09 03:37:23,911 INFO       Records collected: 21
+2026-06-09 03:37:23,914 INFO Selecting state: NE
+2026-06-09 03:37:49,968 INFO       Records collected: 78
+2026-06-09 03:37:49,971 INFO Selecting state: NH
+2026-06-09 03:38:20,552 INFO       Records collected: 53
+2026-06-09 03:38:23,110 INFO Processing states batch 11 for Board of Pharmacy: NJ, NL, NM, NS
+2026-06-09 03:38:38,334 INFO Selecting state: NJ
+2026-06-09 03:38:58,966 INFO       Records collected: 150
+2026-06-09 03:38:58,970 INFO Selecting state: NL
+2026-06-09 03:39:15,543 INFO       Records collected: 0
+2026-06-09 03:39:15,544 INFO Selecting state: NM
+2026-06-09 03:39:41,880 INFO       Records collected: 106
+2026-06-09 03:39:41,882 INFO Selecting state: NS
+2026-06-09 03:39:59,903 INFO       Records collected: 0
+2026-06-09 03:40:02,543 INFO Processing states batch 12 for Board of Pharmacy: NT, NU, NV, NY
+2026-06-09 03:40:18,871 INFO Selecting state: NT
+2026-06-09 03:40:37,545 INFO       Records collected: 1
+2026-06-09 03:40:37,548 INFO Selecting state: NU
+2026-06-09 03:40:55,761 INFO       Records collected: 0
+2026-06-09 03:40:55,762 INFO Selecting state: NV
+2026-06-09 03:41:17,327 INFO       Records collected: 150
+2026-06-09 03:41:17,331 INFO Selecting state: NY
+2026-06-09 03:41:37,527 INFO       Records collected: 150
+2026-06-09 03:41:40,157 INFO Processing states batch 13 for Board of Pharmacy: OK, ON, OR, PA
+2026-06-09 03:41:55,671 INFO Selecting state: OK
+2026-06-09 03:42:23,906 INFO       Records collected: 94
+2026-06-09 03:42:23,910 INFO Selecting state: ON
+2026-06-09 03:42:43,283 INFO       Records collected: 34
+2026-06-09 03:42:43,286 INFO Selecting state: OR
+2026-06-09 03:43:09,612 INFO       Records collected: 150
+2026-06-09 03:43:09,616 INFO Selecting state: PA
+2026-06-09 03:43:28,653 INFO       Records collected: 150
+2026-06-09 03:43:31,165 INFO Processing states batch 14 for Board of Pharmacy: PE, PR, QC, RI
+2026-06-09 03:43:46,938 INFO Selecting state: PE
+2026-06-09 03:44:10,825 INFO       Records collected: 1
+2026-06-09 03:44:10,828 INFO Selecting state: PR
+2026-06-09 03:44:31,171 INFO       Records collected: 15
+2026-06-09 03:44:31,176 INFO Selecting state: QC
+2026-06-09 03:44:48,093 INFO       Records collected: 0
+2026-06-09 03:44:48,097 INFO Selecting state: RI
+2026-06-09 03:45:13,560 INFO       Records collected: 32
+2026-06-09 03:45:16,195 INFO Processing states batch 15 for Board of Pharmacy: SC, SD, SK, TN
+2026-06-09 03:45:31,370 INFO Selecting state: SC
+2026-06-09 03:45:52,335 INFO       Records collected: 150
+2026-06-09 03:45:52,338 INFO Selecting state: SD
+2026-06-09 03:46:11,863 INFO       Records collected: 30
+2026-06-09 03:46:11,867 INFO Selecting state: SK
+2026-06-09 03:46:29,677 INFO       Records collected: 2
+2026-06-09 03:46:29,680 INFO Selecting state: TN
+2026-06-09 03:46:49,520 INFO       Records collected: 150
+2026-06-09 03:46:52,041 INFO Processing states batch 16 for Board of Pharmacy: TX, UT, VA, VT
+2026-06-09 03:47:06,959 INFO Selecting state: TX
+2026-06-09 03:47:26,733 INFO       Records collected: 150
+2026-06-09 03:47:26,737 INFO Selecting state: UT
+2026-06-09 03:47:58,436 INFO       Records collected: 145
+2026-06-09 03:47:58,440 INFO Selecting state: VA
+2026-06-09 03:48:17,635 INFO       Records collected: 150
+2026-06-09 03:48:17,639 INFO Selecting state: VT
+2026-06-09 03:48:39,405 INFO       Records collected: 41
+2026-06-09 03:48:41,944 INFO Processing states batch 17 for Board of Pharmacy: WA, WI, WV, WY
+2026-06-09 03:48:57,822 INFO Selecting state: WA
+2026-06-09 03:49:20,209 INFO       Records collected: 150
+2026-06-09 03:49:20,214 INFO Selecting state: WI
+2026-06-09 03:49:41,160 INFO       Records collected: 150
+2026-06-09 03:49:41,164 INFO Selecting state: WV
+2026-06-09 03:49:59,760 INFO       Records collected: 150
+2026-06-09 03:49:59,764 INFO Selecting state: WY
+2026-06-09 03:50:26,462 INFO       Records collected: 24
+2026-06-09 03:50:28,986 INFO Processing states batch 18 for Board of Pharmacy: YT, AS, MP, VI
+2026-06-09 03:50:44,213 INFO Selecting state: YT
+2026-06-09 03:51:08,922 INFO       Records collected: 0
+2026-06-09 03:51:08,923 INFO Selecting state: AS
+2026-06-09 03:51:42,391 INFO       Records collected: 0
+2026-06-09 03:51:42,392 INFO Selecting state: MP
+2026-06-09 03:52:00,085 INFO       Records collected: 1
+2026-06-09 03:52:00,088 INFO Selecting state: VI
+2026-06-09 03:52:18,402 INFO       Records collected: 8
+2026-06-09 03:52:20,981 INFO Processing states batch 19 for Board of Pharmacy: MH, NF, PQ, UK
+2026-06-09 03:52:35,950 INFO Selecting state: MH
+2026-06-09 03:52:54,959 INFO       Records collected: 0
+2026-06-09 03:52:54,960 INFO Selecting state: NF
+2026-06-09 03:53:28,519 INFO       Records collected: 0
+2026-06-09 03:53:28,521 INFO Selecting state: PQ
+2026-06-09 03:53:51,772 INFO       Records collected: 4
+2026-06-09 03:53:51,774 INFO Selecting state: UK
+2026-06-09 03:54:09,081 INFO       Records collected: 1
+2026-06-09 03:54:11,577 INFO   Board: Department of Behavioral Health
+2026-06-09 03:54:11,577 INFO Processing states batch 1 for Department of Behavioral Health: OH, AA, AB, AE
+2026-06-09 03:54:26,829 INFO Selecting state: OH
+2026-06-09 03:54:45,738 INFO       Records collected: 150
+2026-06-09 03:54:45,741 INFO Selecting state: AA
+2026-06-09 03:54:51,102 INFO       Records collected: 0
+2026-06-09 03:54:51,103 INFO Selecting state: AB
+2026-06-09 03:55:24,689 INFO       Records collected: 0
+2026-06-09 03:55:24,691 INFO Selecting state: AE
+2026-06-09 03:55:58,314 INFO       Records collected: 0
+2026-06-09 03:56:00,804 INFO Processing states batch 2 for Department of Behavioral Health: AK, AL, AP, AR
+2026-06-09 03:56:15,928 INFO Selecting state: AK
+2026-06-09 03:56:22,802 INFO       Records collected: 1
+2026-06-09 03:56:22,806 INFO Selecting state: AL
+2026-06-09 03:56:28,320 INFO       Records collected: 0
+2026-06-09 03:56:28,321 INFO Selecting state: AP
+2026-06-09 03:57:02,030 INFO       Records collected: 0
+2026-06-09 03:57:02,032 INFO Selecting state: AR
+2026-06-09 03:57:35,992 INFO       Records collected: 0
+2026-06-09 03:57:38,520 INFO Processing states batch 3 for Department of Behavioral Health: AZ, BC, CA, CO
+2026-06-09 03:57:53,441 INFO Selecting state: AZ
+2026-06-09 03:57:59,744 INFO       Records collected: 2
+2026-06-09 03:57:59,747 INFO Selecting state: BC
+2026-06-09 03:58:05,517 INFO       Records collected: 0
+2026-06-09 03:58:05,518 INFO Selecting state: CA
+2026-06-09 03:58:10,690 INFO       Records collected: 3
+2026-06-09 03:58:10,692 INFO Selecting state: CO
+2026-06-09 03:58:15,843 INFO       Records collected: 0
+2026-06-09 03:58:18,475 INFO Processing states batch 4 for Department of Behavioral Health: CT, DC, DE, FL
+2026-06-09 03:58:33,834 INFO Selecting state: CT
+2026-06-09 03:58:40,176 INFO       Records collected: 3
+2026-06-09 03:58:40,178 INFO Selecting state: DC
+2026-06-09 03:58:45,415 INFO       Records collected: 0
+2026-06-09 03:58:45,417 INFO Selecting state: DE
+2026-06-09 03:59:18,945 INFO       Records collected: 0
+2026-06-09 03:59:18,946 INFO Selecting state: FL
+2026-06-09 03:59:24,289 INFO       Records collected: 6
+2026-06-09 03:59:26,890 INFO Processing states batch 5 for Department of Behavioral Health: GA, GU, HI, IA
+2026-06-09 03:59:43,738 INFO Selecting state: GA
+2026-06-09 03:59:50,262 INFO       Records collected: 2
+2026-06-09 03:59:50,265 INFO Selecting state: GU
+2026-06-09 03:59:55,422 INFO       Records collected: 0
+2026-06-09 03:59:55,423 INFO Selecting state: HI
+2026-06-09 04:00:28,942 INFO       Records collected: 0
+2026-06-09 04:00:28,943 INFO Selecting state: IA
+2026-06-09 04:01:02,655 INFO       Records collected: 0
+2026-06-09 04:01:05,250 INFO Processing states batch 6 for Department of Behavioral Health: ID, IL, IN, KS
+2026-06-09 04:01:21,320 INFO Selecting state: ID
+2026-06-09 04:01:27,564 INFO       Records collected: 1
+2026-06-09 04:01:27,565 INFO Selecting state: IL
+2026-06-09 04:01:32,628 INFO       Records collected: 0
+2026-06-09 04:01:32,629 INFO Selecting state: IN
+2026-06-09 04:01:38,331 INFO       Records collected: 4
+2026-06-09 04:01:38,332 INFO Selecting state: KS
+2026-06-09 04:01:43,489 INFO       Records collected: 0
+2026-06-09 04:01:46,002 INFO Processing states batch 7 for Department of Behavioral Health: KY, LA, MA, MB
+2026-06-09 04:02:01,479 INFO Selecting state: KY
+2026-06-09 04:02:18,182 INFO       Records collected: 115
+2026-06-09 04:02:18,185 INFO Selecting state: LA
+2026-06-09 04:02:23,342 INFO       Records collected: 0
+2026-06-09 04:02:23,344 INFO Selecting state: MA
+2026-06-09 04:02:28,488 INFO       Records collected: 1
+2026-06-09 04:02:28,492 INFO Selecting state: MB
+2026-06-09 04:02:33,604 INFO       Records collected: 0
+2026-06-09 04:02:36,081 INFO Processing states batch 8 for Department of Behavioral Health: MD, ME, MI, MN
+2026-06-09 04:02:52,321 INFO Selecting state: MD
+2026-06-09 04:02:58,733 INFO       Records collected: 0
+2026-06-09 04:02:58,734 INFO Selecting state: ME
+2026-06-09 04:03:32,457 INFO       Records collected: 0
+2026-06-09 04:03:32,459 INFO Selecting state: MI
+2026-06-09 04:03:38,520 INFO       Records collected: 15
+2026-06-09 04:03:38,522 INFO Selecting state: MN
+2026-06-09 04:03:43,713 INFO       Records collected: 1
+2026-06-09 04:03:46,261 INFO Processing states batch 9 for Department of Behavioral Health: MO, MS, MT, NB
+2026-06-09 04:04:02,168 INFO Selecting state: MO
+2026-06-09 04:04:08,482 INFO       Records collected: 1
+2026-06-09 04:04:08,485 INFO Selecting state: MS
+2026-06-09 04:04:13,738 INFO       Records collected: 0
+2026-06-09 04:04:13,740 INFO Selecting state: MT
+2026-06-09 04:04:47,616 INFO       Records collected: 0
+2026-06-09 04:04:47,619 INFO Selecting state: NB
+2026-06-09 04:05:21,580 INFO       Records collected: 0
+2026-06-09 04:05:24,057 INFO Processing states batch 10 for Department of Behavioral Health: NC, ND, NE, NH
+2026-06-09 04:05:39,221 INFO Selecting state: NC
+2026-06-09 04:05:45,526 INFO       Records collected: 8
+2026-06-09 04:05:45,536 INFO Selecting state: ND
+2026-06-09 04:05:50,697 INFO       Records collected: 0
+2026-06-09 04:05:50,698 INFO Selecting state: NE
+2026-06-09 04:06:24,148 INFO       Records collected: 0
+2026-06-09 04:06:24,149 INFO Selecting state: NH
+2026-06-09 04:06:57,712 INFO       Records collected: 0
+2026-06-09 04:07:00,244 INFO Processing states batch 11 for Department of Behavioral Health: NJ, NL, NM, NS
+2026-06-09 04:07:15,255 INFO Selecting state: NJ
+2026-06-09 04:07:22,526 INFO       Records collected: 0
+2026-06-09 04:07:22,528 INFO Selecting state: NL
+2026-06-09 04:07:56,046 INFO       Records collected: 0
+2026-06-09 04:07:56,047 INFO Selecting state: NM
+2026-06-09 04:08:30,011 INFO       Records collected: 0
+2026-06-09 04:08:30,012 INFO Selecting state: NS
+2026-06-09 04:09:03,529 INFO       Records collected: 0
+2026-06-09 04:09:06,041 INFO Processing states batch 12 for Department of Behavioral Health: NT, NU, NV, NY
+2026-06-09 04:09:20,696 INFO Selecting state: NT
+2026-06-09 04:09:27,090 INFO       Records collected: 0
+2026-06-09 04:09:27,092 INFO Selecting state: NU
+2026-06-09 04:10:01,095 INFO       Records collected: 0
+2026-06-09 04:10:01,097 INFO Selecting state: NV
+2026-06-09 04:10:06,355 INFO       Records collected: 2
+2026-06-09 04:10:06,357 INFO Selecting state: NY
+2026-06-09 04:10:11,535 INFO       Records collected: 3
+2026-06-09 04:10:14,135 INFO Processing states batch 13 for Department of Behavioral Health: OK, ON, OR, PA
+2026-06-09 04:10:29,229 INFO Selecting state: OK
+2026-06-09 04:10:36,085 INFO       Records collected: 0
+2026-06-09 04:10:36,087 INFO Selecting state: ON
+2026-06-09 04:11:10,049 INFO       Records collected: 0
+2026-06-09 04:11:10,050 INFO Selecting state: OR
+2026-06-09 04:11:15,279 INFO       Records collected: 3
+2026-06-09 04:11:15,282 INFO Selecting state: PA
+2026-06-09 04:11:21,289 INFO       Records collected: 14
+2026-06-09 04:11:23,774 INFO Processing states batch 14 for Department of Behavioral Health: PE, PR, QC, RI
+2026-06-09 04:11:38,867 INFO Selecting state: PE
+2026-06-09 04:11:45,195 INFO       Records collected: 0
+2026-06-09 04:11:45,196 INFO Selecting state: PR
+2026-06-09 04:12:18,702 INFO       Records collected: 0
+2026-06-09 04:12:18,704 INFO Selecting state: QC
+2026-06-09 04:12:52,693 INFO       Records collected: 0
+2026-06-09 04:12:52,694 INFO Selecting state: RI
+2026-06-09 04:13:26,580 INFO       Records collected: 0
+2026-06-09 04:13:29,094 INFO Processing states batch 15 for Department of Behavioral Health: SC, SD, SK, TN
+2026-06-09 04:13:44,348 INFO Selecting state: SC
+2026-06-09 04:13:50,570 INFO       Records collected: 0
+2026-06-09 04:13:50,571 INFO Selecting state: SD
+2026-06-09 04:14:24,561 INFO       Records collected: 0
+2026-06-09 04:14:24,569 INFO Selecting state: SK
+2026-06-09 04:14:58,480 INFO       Records collected: 0
+2026-06-09 04:14:58,481 INFO Selecting state: TN
+2026-06-09 04:15:32,354 INFO       Records collected: 0
+2026-06-09 04:15:34,913 INFO Processing states batch 16 for Department of Behavioral Health: TX, UT, VA, VT
+2026-06-09 04:15:49,801 INFO Selecting state: TX
+2026-06-09 04:15:56,632 INFO       Records collected: 2
+2026-06-09 04:15:56,635 INFO Selecting state: UT
+2026-06-09 04:16:01,741 INFO       Records collected: 0
+2026-06-09 04:16:01,743 INFO Selecting state: VA
+2026-06-09 04:16:35,690 INFO       Records collected: 0
+2026-06-09 04:16:35,692 INFO Selecting state: VT
+2026-06-09 04:17:09,181 INFO       Records collected: 0
+2026-06-09 04:17:11,664 INFO Processing states batch 17 for Department of Behavioral Health: WA, WI, WV, WY
+2026-06-09 04:17:27,227 INFO Selecting state: WA
+2026-06-09 04:17:34,080 INFO       Records collected: 4
+2026-06-09 04:17:34,082 INFO Selecting state: WI
+2026-06-09 04:17:39,202 INFO       Records collected: 1
+2026-06-09 04:17:39,204 INFO Selecting state: WV
+2026-06-09 04:17:50,919 INFO       Records collected: 75
+2026-06-09 04:17:50,921 INFO Selecting state: WY
+2026-06-09 04:17:56,026 INFO       Records collected: 0
+2026-06-09 04:17:58,507 INFO Processing states batch 18 for Department of Behavioral Health: YT, AS, MP, VI
+2026-06-09 04:18:14,656 INFO Selecting state: YT
+2026-06-09 04:18:21,032 INFO       Records collected: 0
+2026-06-09 04:18:21,033 INFO Selecting state: AS
+2026-06-09 04:18:54,930 INFO       Records collected: 0
+2026-06-09 04:18:54,932 INFO Selecting state: MP
+2026-06-09 04:19:28,872 INFO       Records collected: 0
+2026-06-09 04:19:28,873 INFO Selecting state: VI
+2026-06-09 04:20:02,775 INFO       Records collected: 0
+2026-06-09 04:20:05,277 INFO Processing states batch 19 for Department of Behavioral Health: MH, NF, PQ, UK
+2026-06-09 04:20:19,782 INFO Selecting state: MH
+2026-06-09 04:20:25,950 INFO       Records collected: 0
+2026-06-09 04:20:25,951 INFO Selecting state: NF
+2026-06-09 04:20:59,823 INFO       Records collected: 0
+2026-06-09 04:20:59,824 INFO Selecting state: PQ
+2026-06-09 04:21:33,851 INFO       Records collected: 0
+2026-06-09 04:21:33,853 INFO Selecting state: UK
+2026-06-09 04:22:07,723 INFO       Records collected: 0
+2026-06-09 04:22:10,261 INFO Finished. Wrote 27543 new rows to ohio_license_search.csv this run.

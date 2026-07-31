@@ -3,7 +3,7 @@ import os
 import re
 import time
 
-#The scraper will search for the following licensing boards across all U.S. states, territories, and jurisdictions: State Board of Dentistry, State Board of Medicine, State Board of Nursing, State Board of Occupational Therapy, State Board of Optometry, State Board of Osteopathic Medicine, State Board of Pharmacy, State Board of Physical Therapy, State Board of Psychology, Radiology Personnel, and State Board of Examiners in Speech-Language Pathology and Audiology. Searches will be performed for every jurisdiction, including AL, AK, AS, AZ, AR, CA, CO, CT, DE, DC, FL, GA, GU, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, MP, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, VI, UT, VT, VA, WA, WV, WI, WY, and OTHER.
+#The scraper will search for the following licensing boards across all U.S. states, territories, and jurisdictions: State Board of Dentistry, State Board of Medicine, State Board of Nursing, State Board of Occupational Therapy, State Board of Optometry, State Board of Osteopathic Medicine, State Board of Pharmacy, State Board of Physical Therapy, State Board of Psychology, Radiology Personnel, and State Board of Examiners in Speech-Language Pathology and Audiology. Searches are performed for each ZIP code listed in zip_codes.csv (column ZIP_Code).
 
 
 from selenium import webdriver
@@ -29,35 +29,26 @@ RESULT_WAIT_SECONDS = 40
 RESULT_SETTLE_SECONDS = 3.0
 EMPTY_STABLE_SECONDS = 12.0
 HEADLESS = False
-OUTPUT_FILE = "Pennsylvania.csv"
+OUTPUT_FILE = "PA_Medicine_left.csv"
+ZIP_CSV = "zip_codes_left_Med.csv"
 
 KEYWORDS = [
-    "State Board of Dentistry",
+   # "State Board of Dentistry",
     "State Board of Medicine",
-    "State Board of Nursing",
-    "State Board of Occupational Therapy",
-    "State Board of Optometry",
-    "State Board of Osteopathic Medicine",
-    "State Board of Pharmacy",
-    "State Board of Physical Therapy",
-    "State Board of Psychology",
-    "Radiology Personnel",
-    "State Board of Examiners in Speech-Language Pathology and Audiology",
-]
-
-STATES = [
-    "AL", "AK", "AS", "AZ", "AR", "CA", "CO", "CT", "DE", "DC",
-    "FL", "GA", "GU", "HI", "ID", "IL", "IN", "IA", "KS", "KY",
-    "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE",
-    "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "MP", "OH", "OK",
-    "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "VI", "UT",
-    "VT", "VA", "WA", "WV", "WI", "WY", "OTHER"
+    # "State Board of Nursing",
+    # "State Board of Occupational Therapy",
+    # "State Board of Optometry",
+    # "State Board of Osteopathic Medicine",
+    # "State Board of Pharmacy",
+    # "State Board of Physical Therapy",
+    # "State Board of Psychology",
+    # "Radiology Personnel",
+    # "State Board of Examiners in Speech-Language Pathology and Audiology",
 ]
 
 FIELDNAMES = [
     "Searched Board/Commission",
-    "Searched Country",
-    "Searched State",
+    "Searched Zip",
     "Full Name",
     "License Number",
     "Board/Commission",
@@ -69,6 +60,23 @@ FIELDNAMES = [
 
 def normalize(text):
     return re.sub(r"\s+", " ", text or "").strip().upper()
+
+
+def load_zip_codes(path):
+    zips = []
+    seen = set()
+    with open(path, newline="", encoding="utf-8-sig") as csv_file:
+        reader = csv.DictReader(csv_file)
+        for row in reader:
+            value = (row.get("ZIP_Code") or "").strip()
+            if not value:
+                continue
+            # Normalize to 5-digit zip; keep leading zeros.
+            value = value.split(".")[0].zfill(5)[:5]
+            if value not in seen:
+                seen.add(value)
+                zips.append(value)
+    return zips
 
 
 def build_driver():
@@ -119,28 +127,24 @@ def select_board(driver, board_name):
         raise last_error
 
 
-def select_country_united_states(driver):
+def enter_zip(driver, wait, zip_code):
     last_error = None
     for _ in range(3):
         try:
-            select = get_select(driver, (By.ID, "selFacCountry"))
-            select.select_by_visible_text("United States")
-            time.sleep(0.8)
-            return
-        except StaleElementReferenceException as exc:
-            last_error = exc
-            time.sleep(0.8)
-    if last_error:
-        raise last_error
-
-
-def select_state(driver, state_code):
-    last_error = None
-    for _ in range(3):
-        try:
-            select = get_select(driver, (By.ID, "selfacilitystate"))
-            select.select_by_visible_text(state_code)
-            time.sleep(0.8)
+            field = wait.until(EC.presence_of_element_located((By.ID, "zip")))
+            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", field)
+            field.clear()
+            field.send_keys(zip_code)
+            # Sync AngularJS model with the typed value.
+            driver.execute_script(
+                """
+                var el = arguments[0];
+                el.dispatchEvent(new Event('input', {bubbles: true}));
+                el.dispatchEvent(new Event('change', {bubbles: true}));
+                """,
+                field,
+            )
+            time.sleep(0.6)
             return
         except StaleElementReferenceException as exc:
             last_error = exc
@@ -367,11 +371,10 @@ def append_csv(path, records, write_header=False):
         writer.writerows(records)
 
 
-def run_search(driver, wait, board_name, state_code):
+def run_search(driver, wait, board_name, zip_code):
     open_search_page(driver, wait)
     select_board(driver, board_name)
-    select_country_united_states(driver)
-    select_state(driver, state_code)
+    enter_zip(driver, wait, zip_code)
     click_search(driver, wait)
 
     if not wait_for_results_or_empty(driver):
@@ -383,6 +386,9 @@ def run_search(driver, wait, board_name, state_code):
 
 
 def main():
+    zip_codes = load_zip_codes(ZIP_CSV)
+    print(f"Loaded {len(zip_codes)} ZIP codes from {ZIP_CSV}")
+
     driver = build_driver()
     wait = WebDriverWait(driver, WAIT_SECONDS)
     header_written = os.path.exists(OUTPUT_FILE) and os.path.getsize(OUTPUT_FILE) > 0
@@ -390,11 +396,11 @@ def main():
 
     try:
         for board_name in KEYWORDS:
-            for state_code in STATES:
+            for zip_code in zip_codes:
                 try:
-                    records = run_search(driver, wait, board_name, state_code)
+                    records = run_search(driver, wait, board_name, zip_code)
                 except Exception as exc:
-                    print(f"ERROR on {board_name} / {state_code}: {exc}")
+                    print(f"ERROR on {board_name} / {zip_code}: {exc}")
                     records = []
 
                 if records:
@@ -402,15 +408,14 @@ def main():
                     for record in records:
                         row = dict(record)
                         row["Searched Board/Commission"] = board_name
-                        row["Searched Country"] = "United States"
-                        row["Searched State"] = state_code
+                        row["Searched Zip"] = zip_code
                         output_rows.append(row)
 
                     append_csv(OUTPUT_FILE, output_rows, write_header=not header_written)
                     header_written = True
                     total_rows += len(records)
 
-                print(f"{board_name} | {state_code}: {len(records)} rows (total {total_rows})")
+                print(f"{board_name} | {zip_code}: {len(records)} rows (total {total_rows})")
     finally:
         driver.quit()
 

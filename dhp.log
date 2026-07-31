@@ -1,0 +1,2045 @@
+2026-06-24 15:00:22,760 INFO Pharmacy | Alabama: 0 urls
+2026-06-24 15:00:48,099 INFO Pharmacy | Alaska: 0 urls
+2026-06-24 15:01:14,582 INFO Pharmacy | Arizona: 0 urls
+2026-06-24 15:01:40,519 INFO Pharmacy | Arkansas: 0 urls
+2026-06-24 15:02:06,198 INFO Pharmacy | California: 0 urls
+2026-06-24 15:02:32,305 INFO Pharmacy | Colorado: 0 urls
+2026-06-24 15:02:58,060 INFO Pharmacy | Connecticut: 0 urls
+2026-06-24 15:03:23,911 INFO Pharmacy | Delaware: 0 urls
+2026-06-24 15:03:50,168 INFO Pharmacy | District of Columbia: 0 urls
+2026-06-24 15:04:16,380 INFO Pharmacy | Florida: 0 urls
+2026-06-24 15:04:42,656 INFO Pharmacy | Georgia: 0 urls
+2026-06-24 15:05:09,190 INFO Pharmacy | Hawaii: 0 urls
+2026-06-24 15:05:35,026 INFO Pharmacy | Idaho: 0 urls
+2026-06-24 15:05:59,994 INFO Pharmacy | Illinois: 0 urls
+2026-06-24 15:06:25,786 INFO Pharmacy | Indiana: 0 urls
+2026-06-24 15:06:52,141 INFO Pharmacy | Iowa: 0 urls
+2026-06-24 15:07:17,296 INFO Pharmacy | Kansas: 0 urls
+2026-06-24 15:07:43,858 INFO Pharmacy | Kentucky: 0 urls
+2026-06-24 15:08:09,574 INFO Pharmacy | Louisiana: 0 urls
+2026-06-24 15:08:35,541 INFO Pharmacy | Maine: 0 urls
+2026-06-24 15:09:00,475 INFO Pharmacy | Maryland: 0 urls
+2026-06-24 15:09:26,260 INFO Pharmacy | Massachusetts: 0 urls
+2026-06-24 15:09:51,720 INFO Pharmacy | Michigan: 0 urls
+2026-06-24 15:10:18,156 INFO Pharmacy | Minnesota: 0 urls
+2026-06-24 15:10:43,346 INFO Pharmacy | Mississippi: 0 urls
+2026-06-24 15:11:08,804 INFO Pharmacy | Missouri: 0 urls
+2026-06-24 15:11:34,726 INFO Pharmacy | Montana: 0 urls
+2026-06-24 15:11:59,896 INFO Pharmacy | Nebraska: 0 urls
+2026-06-24 15:12:25,761 INFO Pharmacy | Nevada: 0 urls
+2026-06-24 15:12:52,291 INFO Pharmacy | New Hampshire: 0 urls
+2026-06-24 15:13:19,552 INFO Pharmacy | New Jersey: 0 urls
+2026-06-24 15:13:44,589 INFO Pharmacy | New Mexico: 0 urls
+2026-06-24 15:14:10,293 INFO Pharmacy | New York: 0 urls
+2026-06-24 15:14:36,961 INFO Pharmacy | North Carolina: 0 urls
+2026-06-24 15:15:02,280 INFO Pharmacy | North Dakota: 0 urls
+2026-06-24 15:15:27,329 INFO Pharmacy | Ohio: 0 urls
+2026-06-24 15:15:53,826 INFO Pharmacy | Oklahoma: 0 urls
+2026-06-24 15:16:21,924 INFO Pharmacy | Oregon: 0 urls
+2026-06-24 15:16:49,520 INFO Pharmacy | Pennsylvania: 0 urls
+2026-06-24 15:17:18,969 INFO Pharmacy | Rhode Island: 0 urls
+2026-06-24 15:17:45,634 INFO Pharmacy | South Carolina: 0 urls
+2026-06-24 15:18:12,259 INFO Pharmacy | South Dakota: 0 urls
+2026-06-24 15:18:38,635 INFO Pharmacy | Tennessee: 0 urls
+2026-06-24 15:19:05,666 INFO Pharmacy | Texas: 0 urls
+2026-06-24 15:19:33,111 INFO Pharmacy | Utah: 0 urls
+2026-06-24 15:19:59,692 INFO Pharmacy | Vermont: 0 urls
+2026-06-24 15:20:26,267 INFO Pharmacy | Virginia: 0 urls
+2026-06-24 15:52:40,540 INFO Pharmacy | Alabama | AA: 0 urls
+2026-06-24 15:53:07,862 INFO Pharmacy | Alabama | AB: 0 urls
+2026-06-24 15:54:27,880 INFO Registered Nurse | Virginia | AA: 98 new urls
+2026-06-24 15:55:03,635 INFO Registered Nurse | Virginia | AB: 0 urls
+2026-06-24 15:55:14,138 INFO Registered Nurse | Virginia | AC: 11 new urls
+2026-06-24 15:56:06,263 INFO Registered Nurse | Virginia | AD: 0 urls
+2026-07-08 16:18:39,875 INFO Registered Nurse | Virginia | AA: 0 urls
+2026-07-08 16:18:59,034 ERROR Automatic Search click failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-08 16:18:59,034 WARNING Please click Search manually in the browser, then press Enter here.
+2026-07-08 16:21:33,145 INFO Registered Nurse | Virginia | AA: 0 urls
+2026-07-08 16:22:00,182 INFO Registered Nurse | Virginia | AB: 0 urls
+2026-07-08 16:22:27,857 INFO Registered Nurse | Virginia | AC: 0 urls
+2026-07-08 16:22:54,654 INFO Registered Nurse | Virginia | AD: 0 urls
+2026-07-08 16:23:12,152 INFO Registered Nurse | Virginia | AE: 10 new urls
+2026-07-08 16:23:50,444 INFO Registered Nurse | Virginia | AF: 0 urls
+2026-07-08 16:24:39,318 INFO Registered Nurse | Virginia | AG: 50 new urls
+2026-07-08 16:25:04,986 ERROR ERROR on Registered Nurse / Virginia / AH: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-08 17:39:25,405 INFO Pharmacy | Virginia | AA: 0 urls
+2026-07-08 17:40:01,198 INFO Pharmacy | Virginia | AB: 0 urls
+2026-07-08 17:40:18,469 INFO Pharmacy | Virginia | AC: 1 new urls (1 total saved to dhp_detail_urls.txt)
+2026-07-08 17:40:51,764 INFO Pharmacy | Virginia | AD: 0 urls
+2026-07-08 17:41:25,321 INFO Pharmacy | Virginia | AE: 0 urls
+2026-07-08 17:41:41,662 INFO Pharmacy | Virginia | AF: 1 new urls (2 total saved to dhp_detail_urls.txt)
+2026-07-08 17:41:58,160 INFO Pharmacy | Virginia | AG: 1 new urls (3 total saved to dhp_detail_urls.txt)
+2026-07-08 17:42:33,111 INFO Pharmacy | Virginia | AH: 0 urls
+2026-07-08 17:43:06,926 INFO Pharmacy | Virginia | AI: 0 urls
+2026-07-08 17:43:43,183 INFO Pharmacy | Virginia | AJ: 0 urls
+2026-07-08 17:43:59,316 INFO Pharmacy | Virginia | AK: 1 new urls (4 total saved to dhp_detail_urls.txt)
+2026-07-08 17:44:33,840 INFO Pharmacy | Virginia | AL: 0 urls
+2026-07-08 17:44:57,484 INFO Pharmacy | Virginia | AM: 6 new urls (10 total saved to dhp_detail_urls.txt)
+2026-07-08 17:45:35,030 INFO Pharmacy | Virginia | AN: 0 urls
+2026-07-08 17:46:12,150 INFO Pharmacy | Virginia | AO: 0 urls
+2026-07-08 17:46:31,035 INFO Pharmacy | Virginia | AP: 2 new urls (12 total saved to dhp_detail_urls.txt)
+2026-07-08 17:47:06,150 INFO Pharmacy | Virginia | AQ: 0 urls
+2026-07-08 17:47:26,799 INFO Pharmacy | Virginia | AR: 3 new urls (15 total saved to dhp_detail_urls.txt)
+2026-07-08 17:47:45,833 INFO Pharmacy | Virginia | AS: 2 new urls (17 total saved to dhp_detail_urls.txt)
+2026-07-08 17:48:23,721 INFO Pharmacy | Virginia | AT: 0 urls
+2026-07-08 17:48:44,096 INFO Pharmacy | Virginia | AU: 2 new urls (19 total saved to dhp_detail_urls.txt)
+2026-07-08 17:49:22,776 INFO Pharmacy | Virginia | AV: 0 urls
+2026-07-08 17:50:01,600 INFO Pharmacy | Virginia | AW: 0 urls
+2026-07-08 17:50:38,962 INFO Pharmacy | Virginia | AX: 0 urls
+2026-07-08 17:51:14,348 INFO Pharmacy | Virginia | AY: 0 urls
+2026-07-08 17:51:52,509 INFO Pharmacy | Virginia | AZ: 0 urls
+2026-07-08 17:52:24,706 INFO Pharmacy | Virginia | BA: 7 new urls (26 total saved to dhp_detail_urls.txt)
+2026-07-08 17:53:02,449 INFO Pharmacy | Virginia | BB: 0 urls
+2026-07-08 17:53:42,196 INFO Pharmacy | Virginia | BC: 0 urls
+2026-07-08 17:54:19,132 INFO Pharmacy | Virginia | BD: 0 urls
+2026-07-08 17:54:50,596 INFO Pharmacy | Virginia | BE: 10 new urls (36 total saved to dhp_detail_urls.txt)
+2026-07-08 17:55:27,160 INFO Pharmacy | Virginia | BF: 0 urls
+2026-07-08 17:56:05,640 INFO Pharmacy | Virginia | BG: 0 urls
+2026-07-08 17:56:24,261 INFO Pharmacy | Virginia | BH: 6 new urls (42 total saved to dhp_detail_urls.txt)
+2026-07-08 17:56:43,025 INFO Pharmacy | Virginia | BI: 3 new urls (45 total saved to dhp_detail_urls.txt)
+2026-07-08 17:57:15,025 INFO Pharmacy | Virginia | BJ: 0 urls
+2026-07-08 17:57:48,326 INFO Pharmacy | Virginia | BK: 0 urls
+2026-07-08 17:58:09,113 INFO Pharmacy | Virginia | BL: 7 new urls (52 total saved to dhp_detail_urls.txt)
+2026-07-08 17:58:41,790 INFO Pharmacy | Virginia | BM: 0 urls
+2026-07-08 17:59:16,877 INFO Pharmacy | Virginia | BN: 0 urls
+2026-07-08 17:59:40,553 INFO Pharmacy | Virginia | BO: 8 new urls (60 total saved to dhp_detail_urls.txt)
+2026-07-08 18:00:14,649 INFO Pharmacy | Virginia | BP: 0 urls
+2026-07-08 18:00:48,240 INFO Pharmacy | Virginia | BQ: 0 urls
+2026-07-08 18:01:21,914 INFO Pharmacy | Virginia | BR: 17 new urls (77 total saved to dhp_detail_urls.txt)
+2026-07-08 18:01:57,546 INFO Pharmacy | Virginia | BS: 0 urls
+2026-07-08 18:02:32,991 INFO Pharmacy | Virginia | BT: 0 urls
+2026-07-08 18:02:54,356 INFO Pharmacy | Virginia | BU: 5 new urls (82 total saved to dhp_detail_urls.txt)
+2026-07-08 18:03:31,426 INFO Pharmacy | Virginia | BV: 0 urls
+2026-07-08 18:04:08,166 INFO Pharmacy | Virginia | BW: 0 urls
+2026-07-08 18:04:44,210 INFO Pharmacy | Virginia | BX: 0 urls
+2026-07-08 18:05:17,871 INFO Pharmacy | Virginia | BY: 0 urls
+2026-07-08 18:05:53,146 INFO Pharmacy | Virginia | BZ: 0 urls
+2026-07-08 18:06:27,329 INFO Pharmacy | Virginia | CA: 20 new urls (102 total saved to dhp_detail_urls.txt)
+2026-07-08 18:07:00,790 INFO Pharmacy | Virginia | CB: 0 urls
+2026-07-08 18:07:35,579 INFO Pharmacy | Virginia | CC: 0 urls
+2026-07-08 18:08:11,461 INFO Pharmacy | Virginia | CD: 0 urls
+2026-07-08 18:08:31,536 INFO Pharmacy | Virginia | CE: 11 new urls (113 total saved to dhp_detail_urls.txt)
+2026-07-08 18:09:07,116 INFO Pharmacy | Virginia | CF: 0 urls
+2026-07-08 18:09:39,624 INFO Pharmacy | Virginia | CG: 0 urls
+2026-07-08 18:09:59,875 INFO Pharmacy | Virginia | CH: 13 new urls (126 total saved to dhp_detail_urls.txt)
+2026-07-08 18:10:18,143 INFO Pharmacy | Virginia | CI: 1 new urls (127 total saved to dhp_detail_urls.txt)
+2026-07-08 18:10:58,431 INFO Pharmacy | Virginia | CJ: 0 urls
+2026-07-08 18:11:36,578 INFO Pharmacy | Virginia | CK: 0 urls
+2026-07-08 18:12:00,601 INFO Pharmacy | Virginia | CL: 6 new urls (133 total saved to dhp_detail_urls.txt)
+2026-07-08 18:12:37,316 INFO Pharmacy | Virginia | CM: 0 urls
+2026-07-08 18:12:53,068 INFO Pharmacy | Virginia | CN: 1 new urls (134 total saved to dhp_detail_urls.txt)
+2026-07-08 18:13:33,809 INFO Pharmacy | Virginia | CO: 34 new urls (168 total saved to dhp_detail_urls.txt)
+2026-07-08 18:14:09,988 INFO Pharmacy | Virginia | CP: 0 urls
+2026-07-08 18:14:45,172 INFO Pharmacy | Virginia | CQ: 0 urls
+2026-07-08 18:15:09,718 INFO Pharmacy | Virginia | CR: 6 new urls (174 total saved to dhp_detail_urls.txt)
+2026-07-08 18:15:45,747 INFO Pharmacy | Virginia | CS: 0 urls
+2026-07-08 18:16:19,451 INFO Pharmacy | Virginia | CT: 0 urls
+2026-07-08 18:16:39,848 INFO Pharmacy | Virginia | CU: 2 new urls (176 total saved to dhp_detail_urls.txt)
+2026-07-08 18:18:53,531 INFO Pharmacy | Virginia | CV: 0 urls
+2026-07-08 18:19:26,444 INFO Pharmacy | Virginia | CW: 0 urls
+2026-07-08 18:19:58,649 INFO Pharmacy | Virginia | CX: 0 urls
+2026-07-08 18:20:34,631 INFO Pharmacy | Virginia | CY: 0 urls
+2026-07-08 18:21:10,758 INFO Pharmacy | Virginia | CZ: 0 urls
+2026-07-08 18:21:25,363 INFO Pharmacy | Virginia | DA: 4 new urls (180 total saved to dhp_detail_urls.txt)
+2026-07-08 18:22:00,615 INFO Pharmacy | Virginia | DB: 0 urls
+2026-07-08 18:22:46,936 INFO Pharmacy | Virginia | DC: 0 urls
+2026-07-08 18:23:19,969 INFO Pharmacy | Virginia | DD: 0 urls
+2026-07-08 18:23:37,839 INFO Pharmacy | Virginia | DE: 2 new urls (182 total saved to dhp_detail_urls.txt)
+2026-07-08 18:24:15,933 INFO Pharmacy | Virginia | DF: 0 urls
+2026-07-08 18:24:49,955 INFO Pharmacy | Virginia | DG: 0 urls
+2026-07-08 18:25:24,866 INFO Pharmacy | Virginia | DH: 0 urls
+2026-07-08 18:25:40,389 INFO Pharmacy | Virginia | DI: 1 new urls (183 total saved to dhp_detail_urls.txt)
+2026-07-08 18:26:15,349 INFO Pharmacy | Virginia | DJ: 0 urls
+2026-07-08 18:26:31,754 INFO Pharmacy | Virginia | DK: 1 new urls (184 total saved to dhp_detail_urls.txt)
+2026-07-08 18:27:06,547 INFO Pharmacy | Virginia | DL: 0 urls
+2026-07-08 18:27:39,917 INFO Pharmacy | Virginia | DM: 0 urls
+2026-07-08 18:28:15,325 INFO Pharmacy | Virginia | DN: 0 urls
+2026-07-08 18:28:31,459 INFO Pharmacy | Virginia | DO: 4 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-08 18:29:20,166 INFO Pharmacy | Virginia | DP: 0 urls
+2026-07-08 18:30:08,700 INFO Pharmacy | Virginia | DQ: 0 urls
+2026-07-08 18:30:57,532 INFO Pharmacy | Virginia | DR: 0 urls
+2026-07-08 18:31:45,667 INFO Pharmacy | Virginia | DS: 0 urls
+2026-07-08 18:32:34,470 INFO Pharmacy | Virginia | DT: 0 urls
+2026-07-08 18:33:23,323 INFO Pharmacy | Virginia | DU: 0 urls
+2026-07-08 18:34:12,857 INFO Pharmacy | Virginia | DV: 0 urls
+2026-07-08 18:35:01,869 INFO Pharmacy | Virginia | DW: 0 urls
+2026-07-08 18:35:49,722 INFO Pharmacy | Virginia | DX: 0 urls
+2026-07-08 18:36:33,933 INFO Pharmacy | Virginia | DY: 0 urls
+2026-07-08 18:37:17,858 INFO Pharmacy | Virginia | DZ: 0 urls
+2026-07-08 18:38:07,303 INFO Pharmacy | Virginia | EA: 0 urls
+2026-07-08 18:38:56,106 INFO Pharmacy | Virginia | EB: 0 urls
+2026-07-08 18:39:39,262 INFO Pharmacy | Virginia | EC: 0 urls
+2026-07-08 18:40:21,766 INFO Pharmacy | Virginia | ED: 0 urls
+2026-07-08 18:41:05,116 INFO Pharmacy | Virginia | EE: 0 urls
+2026-07-08 18:41:54,399 INFO Pharmacy | Virginia | EF: 0 urls
+2026-07-08 18:42:43,469 INFO Pharmacy | Virginia | EG: 0 urls
+2026-07-08 18:43:31,400 INFO Pharmacy | Virginia | EH: 0 urls
+2026-07-08 18:44:20,298 INFO Pharmacy | Virginia | EI: 0 urls
+2026-07-08 18:45:03,839 INFO Pharmacy | Virginia | EJ: 0 urls
+2026-07-08 18:45:53,259 INFO Pharmacy | Virginia | EK: 0 urls
+2026-07-08 18:46:36,092 INFO Pharmacy | Virginia | EL: 0 urls
+2026-07-08 18:47:24,598 INFO Pharmacy | Virginia | EM: 0 urls
+2026-07-08 18:48:13,413 INFO Pharmacy | Virginia | EN: 0 urls
+2026-07-08 18:49:03,338 INFO Pharmacy | Virginia | EO: 0 urls
+2026-07-08 18:49:45,951 INFO Pharmacy | Virginia | EP: 0 urls
+2026-07-08 18:50:44,597 INFO Pharmacy | Virginia | EQ: 0 urls
+2026-07-08 18:51:34,093 INFO Pharmacy | Virginia | ER: 0 urls
+2026-07-08 18:52:17,806 INFO Pharmacy | Virginia | ES: 0 urls
+2026-07-08 18:53:05,951 INFO Pharmacy | Virginia | ET: 0 urls
+2026-07-08 18:53:55,279 INFO Pharmacy | Virginia | EU: 0 urls
+2026-07-08 18:54:39,043 INFO Pharmacy | Virginia | EV: 0 urls
+2026-07-08 18:55:26,971 INFO Pharmacy | Virginia | EW: 0 urls
+2026-07-08 18:56:16,227 INFO Pharmacy | Virginia | EX: 0 urls
+2026-07-08 18:56:53,928 INFO Pharmacy | Virginia | EY: 0 urls
+2026-07-08 18:57:27,790 INFO Pharmacy | Virginia | EZ: 0 urls
+2026-07-08 18:58:00,036 INFO Pharmacy | Virginia | FA: 0 urls
+2026-07-08 18:58:05,827 ERROR ERROR on Pharmacy / Virginia / FB: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:07,928 ERROR ERROR on Pharmacy / Virginia / FC: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:10,201 ERROR ERROR on Pharmacy / Virginia / FD: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:11,621 ERROR ERROR on Pharmacy / Virginia / FE: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:13,769 ERROR ERROR on Pharmacy / Virginia / FF: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:15,874 ERROR ERROR on Pharmacy / Virginia / FG: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:18,110 ERROR ERROR on Pharmacy / Virginia / FH: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-08 18:58:19,573 ERROR ERROR on Pharmacy / Virginia / FI: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xdcb593+105d3]
+	chromedriver!GetHandleVerifier [0xdcb6c4+10704]
+	chromedriver!(No symbol) [0xbd1ea0]
+	chromedriver!(No symbol) [0xbb0933]
+	chromedriver!(No symbol) [0xc43aeb]
+	chromedriver!(No symbol) [0xc5a2a9]
+	chromedriver!(No symbol) [0xc3d516]
+	chromedriver!(No symbol) [0xc108e9]
+	chromedriver!(No symbol) [0xc116a4]
+	chromedriver!GetHandleVerifier [0x1053014+298054]
+	chromedriver!GetHandleVerifier [0x104e603+293643]
+	chromedriver!GetHandleVerifier [0x106ea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xde54e8+2a528]
+	chromedriver!GetHandleVerifier [0xdecd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xdd3e68+18ea8]
+	chromedriver!GetHandleVerifier [0xdd4015+19055]
+	chromedriver!GetHandleVerifier [0xdbd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76dd5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x771de12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x771de0b1+231]
+
+2026-07-15 19:50:50,645 ERROR ERROR on Pharmacy / Virginia / AA: Message: session not created: cannot connect to chrome at 127.0.0.1:1795
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:50:56,824 ERROR ERROR on Pharmacy / Virginia / AB: Message: session not created: cannot connect to chrome at 127.0.0.1:33107
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:51:03,706 ERROR ERROR on Pharmacy / Virginia / AC: Message: session not created: cannot connect to chrome at 127.0.0.1:23404
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:51:11,438 ERROR ERROR on Pharmacy / Virginia / AD: Message: session not created: cannot connect to chrome at 127.0.0.1:58108
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:51:18,101 ERROR ERROR on Pharmacy / Virginia / AE: Message: session not created: cannot connect to chrome at 127.0.0.1:38285
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:09,726 INFO Resuming URL collection from occupation #1, state #1, prefix #6 (188 existing urls loaded)
+2026-07-15 19:52:15,686 ERROR ERROR on Pharmacy / Virginia / AF: Message: session not created: cannot connect to chrome at 127.0.0.1:53870
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:23,339 ERROR ERROR on Pharmacy / Virginia / AG: Message: session not created: cannot connect to chrome at 127.0.0.1:35120
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:31,057 ERROR ERROR on Pharmacy / Virginia / AH: Message: session not created: cannot connect to chrome at 127.0.0.1:1972
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:37,656 ERROR ERROR on Pharmacy / Virginia / AI: Message: session not created: cannot connect to chrome at 127.0.0.1:60933
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:46,080 ERROR ERROR on Pharmacy / Virginia / AJ: Message: session not created: cannot connect to chrome at 127.0.0.1:6917
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:52:53,615 ERROR ERROR on Pharmacy / Virginia / AK: Message: session not created: cannot connect to chrome at 127.0.0.1:52959
+from session not created: This version of ChromeDriver only supports Chrome version 148
+Current browser version is 150.0.7871.115; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x44b593+105d3]
+	chromedriver!GetHandleVerifier [0x44b6c4+10704]
+	chromedriver!(No symbol) [0x251ea0]
+	chromedriver!(No symbol) [0x28dcf2]
+	chromedriver!(No symbol) [0x28cd2c]
+	chromedriver!(No symbol) [0x282e25]
+	chromedriver!(No symbol) [0x282c46]
+	chromedriver!(No symbol) [0x2c947f]
+	chromedriver!(No symbol) [0x2c8c97]
+	chromedriver!(No symbol) [0x2bd516]
+	chromedriver!(No symbol) [0x2908e9]
+	chromedriver!(No symbol) [0x2916a4]
+	chromedriver!GetHandleVerifier [0x6d3014+298054]
+	chromedriver!GetHandleVerifier [0x6ce603+293643]
+	chromedriver!GetHandleVerifier [0x6eea05+2b3a45]
+	chromedriver!GetHandleVerifier [0x4654e8+2a528]
+	chromedriver!GetHandleVerifier [0x46cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0x453e68+18ea8]
+	chromedriver!GetHandleVerifier [0x454015+19055]
+	chromedriver!GetHandleVerifier [0x43d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 19:53:29,771 INFO Resuming URL collection from occupation #1, state #1, prefix #12 (188 existing urls loaded)
+2026-07-15 19:55:15,373 INFO Pharmacy | Virginia | AL: 0 urls
+2026-07-15 19:57:22,353 ERROR ERROR on Pharmacy / Virginia / AM: HTTPConnectionPool(host='localhost', port=46782): Read timed out. (read timeout=120)
+2026-07-15 19:58:29,430 INFO Pharmacy | Virginia | AN: 0 urls
+2026-07-15 20:00:49,330 INFO Pharmacy | Virginia | AO: 0 urls
+2026-07-15 20:02:05,746 INFO Pharmacy | Virginia | AP: 0 urls
+2026-07-15 20:04:13,243 INFO Pharmacy | Virginia | AQ: 0 urls
+2026-07-15 20:05:25,968 INFO Pharmacy | Virginia | AR: 0 urls
+2026-07-15 20:06:32,738 INFO Pharmacy | Virginia | AS: 0 urls
+2026-07-15 20:07:39,200 INFO Pharmacy | Virginia | AT: 0 urls
+2026-07-15 20:08:49,996 INFO Pharmacy | Virginia | AU: 0 urls
+2026-07-15 20:10:49,170 INFO Pharmacy | Virginia | AV: 0 urls
+2026-07-15 20:12:59,985 INFO Pharmacy | Virginia | AW: 0 urls
+2026-07-15 20:14:09,050 INFO Pharmacy | Virginia | AX: 0 urls
+2026-07-15 20:15:15,482 INFO Pharmacy | Virginia | AY: 0 urls
+2026-07-15 20:16:20,404 INFO Pharmacy | Virginia | AZ: 0 urls
+2026-07-15 20:16:59,763 INFO Pharmacy | Virginia | BA: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:17:56,338 INFO Pharmacy | Virginia | BB: 0 urls
+2026-07-15 20:18:54,192 INFO Pharmacy | Virginia | BC: 0 urls
+2026-07-15 20:20:00,837 INFO Pharmacy | Virginia | BD: 0 urls
+2026-07-15 20:20:38,618 INFO Pharmacy | Virginia | BE: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:21:34,201 INFO Pharmacy | Virginia | BF: 0 urls
+2026-07-15 20:22:29,651 INFO Pharmacy | Virginia | BG: 0 urls
+2026-07-15 20:23:07,046 INFO Pharmacy | Virginia | BH: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:23:42,737 INFO Pharmacy | Virginia | BI: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:24:39,539 INFO Pharmacy | Virginia | BJ: 0 urls
+2026-07-15 20:25:36,984 INFO Pharmacy | Virginia | BK: 0 urls
+2026-07-15 20:26:13,669 INFO Pharmacy | Virginia | BL: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:27:09,093 INFO Pharmacy | Virginia | BM: 0 urls
+2026-07-15 20:28:05,610 INFO Pharmacy | Virginia | BN: 0 urls
+2026-07-15 20:28:58,216 INFO Pharmacy | Virginia | BO: 0 new urls (188 total saved to dhp_detail_urls.txt)
+2026-07-15 20:29:54,055 INFO Pharmacy | Virginia | BP: 0 urls
+2026-07-15 20:30:50,995 INFO Pharmacy | Virginia | BQ: 0 urls
+2026-07-15 20:31:29,298 INFO Pharmacy | Virginia | BR: 1 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:32:32,037 INFO Pharmacy | Virginia | BS: 0 urls
+2026-07-15 20:33:32,374 INFO Pharmacy | Virginia | BT: 0 urls
+2026-07-15 20:34:56,974 INFO Pharmacy | Virginia | BU: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:36:21,125 INFO Pharmacy | Virginia | BV: 0 urls
+2026-07-15 20:37:17,393 INFO Pharmacy | Virginia | BW: 0 urls
+2026-07-15 20:38:13,401 INFO Pharmacy | Virginia | BX: 0 urls
+2026-07-15 20:39:17,085 INFO Pharmacy | Virginia | BY: 0 urls
+2026-07-15 20:40:16,909 INFO Pharmacy | Virginia | BZ: 0 urls
+2026-07-15 20:40:55,493 INFO Pharmacy | Virginia | CA: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:42:02,689 INFO Pharmacy | Virginia | CB: 0 urls
+2026-07-15 20:43:37,074 INFO Pharmacy | Virginia | CC: 0 urls
+2026-07-15 20:44:38,263 INFO Pharmacy | Virginia | CD: 0 urls
+2026-07-15 20:45:18,325 INFO Pharmacy | Virginia | CE: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:46:24,009 INFO Pharmacy | Virginia | CF: 0 urls
+2026-07-15 20:47:37,358 INFO Pharmacy | Virginia | CG: 0 urls
+2026-07-15 20:48:16,857 INFO Pharmacy | Virginia | CH: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:48:54,161 INFO Pharmacy | Virginia | CI: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:49:50,157 INFO Pharmacy | Virginia | CJ: 0 urls
+2026-07-15 20:50:53,129 INFO Pharmacy | Virginia | CK: 0 urls
+2026-07-15 20:52:07,488 INFO Pharmacy | Virginia | CL: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:53:19,936 INFO Pharmacy | Virginia | CM: 0 urls
+2026-07-15 20:54:25,584 INFO Pharmacy | Virginia | CN: 0 urls
+2026-07-15 20:55:16,649 INFO Pharmacy | Virginia | CO: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:56:33,342 INFO Pharmacy | Virginia | CP: 0 urls
+2026-07-15 20:57:28,381 INFO Pharmacy | Virginia | CQ: 0 urls
+2026-07-15 20:58:14,094 INFO Pharmacy | Virginia | CR: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 20:59:28,147 INFO Pharmacy | Virginia | CS: 0 urls
+2026-07-15 21:00:41,789 INFO Pharmacy | Virginia | CT: 0 urls
+2026-07-15 21:01:59,461 INFO Pharmacy | Virginia | CU: 0 urls
+2026-07-15 21:03:07,974 INFO Pharmacy | Virginia | CV: 0 urls
+2026-07-15 21:04:00,795 INFO Pharmacy | Virginia | CW: 0 urls
+2026-07-15 21:04:59,858 INFO Pharmacy | Virginia | CX: 0 urls
+2026-07-15 21:06:02,353 INFO Pharmacy | Virginia | CY: 0 urls
+2026-07-15 21:07:24,577 INFO Pharmacy | Virginia | CZ: 0 urls
+2026-07-15 21:08:25,121 INFO Pharmacy | Virginia | DA: 0 urls
+2026-07-15 21:09:34,183 INFO Pharmacy | Virginia | DB: 0 urls
+2026-07-15 21:10:38,090 INFO Pharmacy | Virginia | DC: 0 urls
+2026-07-15 21:11:40,410 INFO Pharmacy | Virginia | DD: 0 urls
+2026-07-15 21:12:33,698 INFO Pharmacy | Virginia | DE: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 21:13:35,887 INFO Pharmacy | Virginia | DF: 0 urls
+2026-07-15 21:14:44,616 INFO Pharmacy | Virginia | DG: 0 urls
+2026-07-15 21:16:01,326 INFO Pharmacy | Virginia | DH: 0 urls
+2026-07-15 21:16:48,485 INFO Pharmacy | Virginia | DI: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 21:17:57,681 INFO Pharmacy | Virginia | DJ: 0 urls
+2026-07-15 21:18:58,739 INFO Pharmacy | Virginia | DK: 0 urls
+2026-07-15 21:20:06,540 INFO Pharmacy | Virginia | DL: 0 urls
+2026-07-15 21:21:11,874 INFO Pharmacy | Virginia | DM: 0 urls
+2026-07-15 21:22:16,187 INFO Pharmacy | Virginia | DN: 0 urls
+2026-07-15 21:22:59,199 INFO Pharmacy | Virginia | DO: 0 new urls (189 total saved to dhp_detail_urls.txt)
+2026-07-15 21:23:53,589 INFO Pharmacy | Virginia | DP: 0 urls
+2026-07-15 21:24:58,623 INFO Pharmacy | Virginia | DQ: 0 urls
+2026-07-15 21:25:52,318 INFO Pharmacy | Virginia | DR: 0 urls
+2026-07-15 21:26:50,897 INFO Pharmacy | Virginia | DS: 0 urls
+2026-07-15 21:27:49,666 INFO Pharmacy | Virginia | DT: 0 urls
+2026-07-15 21:28:54,032 INFO Pharmacy | Virginia | DU: 0 urls
+2026-07-15 21:29:54,719 INFO Pharmacy | Virginia | DV: 0 urls
+2026-07-15 21:30:58,981 INFO Pharmacy | Virginia | DW: 0 urls
+2026-07-15 21:31:58,108 INFO Pharmacy | Virginia | DX: 0 urls
+2026-07-15 21:32:57,375 INFO Pharmacy | Virginia | DY: 0 urls
+2026-07-15 21:33:56,076 INFO Pharmacy | Virginia | DZ: 0 urls
+2026-07-15 21:34:50,135 INFO Pharmacy | Virginia | EA: 0 urls
+2026-07-15 21:35:43,972 INFO Pharmacy | Virginia | EB: 0 urls
+2026-07-15 21:36:48,652 INFO Pharmacy | Virginia | EC: 0 urls
+2026-07-15 21:37:41,376 INFO Pharmacy | Virginia | ED: 0 urls
+2026-07-15 21:38:35,408 INFO Pharmacy | Virginia | EE: 0 urls
+2026-07-15 21:39:35,243 INFO Pharmacy | Virginia | EF: 0 urls
+2026-07-15 21:40:34,960 INFO Pharmacy | Virginia | EG: 0 urls
+2026-07-15 21:41:34,244 INFO Pharmacy | Virginia | EH: 0 urls
+2026-07-15 21:42:32,925 INFO Pharmacy | Virginia | EI: 0 urls
+2026-07-15 21:43:33,430 INFO Pharmacy | Virginia | EJ: 0 urls
+2026-07-15 21:44:34,252 INFO Pharmacy | Virginia | EK: 0 urls
+2026-07-15 21:45:33,033 INFO Pharmacy | Virginia | EL: 0 urls
+2026-07-15 21:46:38,316 INFO Pharmacy | Virginia | EM: 0 urls
+2026-07-15 21:47:39,104 INFO Pharmacy | Virginia | EN: 0 urls
+2026-07-15 21:48:40,184 INFO Pharmacy | Virginia | EO: 0 urls
+2026-07-15 21:49:34,668 INFO Pharmacy | Virginia | EP: 0 urls
+2026-07-15 21:50:27,264 INFO Pharmacy | Virginia | EQ: 0 urls
+2026-07-15 21:51:19,918 INFO Pharmacy | Virginia | ER: 0 urls
+2026-07-15 21:52:13,449 INFO Pharmacy | Virginia | ES: 0 urls
+2026-07-15 21:53:12,233 INFO Pharmacy | Virginia | ET: 0 urls
+2026-07-15 21:54:09,548 INFO Pharmacy | Virginia | EU: 0 urls
+2026-07-15 21:55:18,919 INFO Pharmacy | Virginia | EV: 0 urls
+2026-07-15 21:56:23,302 INFO Pharmacy | Virginia | EW: 0 urls
+2026-07-15 21:57:24,832 INFO Pharmacy | Virginia | EX: 0 urls
+2026-07-15 21:58:24,037 INFO Pharmacy | Virginia | EY: 0 urls
+2026-07-15 21:59:45,294 INFO Pharmacy | Virginia | EZ: 0 urls
+2026-07-15 22:00:47,465 INFO Pharmacy | Virginia | FA: 0 urls
+2026-07-15 22:01:59,715 INFO Pharmacy | Virginia | FB: 0 urls
+2026-07-15 22:03:10,966 INFO Pharmacy | Virginia | FC: 0 urls
+2026-07-15 22:04:24,971 INFO Pharmacy | Virginia | FD: 0 urls
+2026-07-15 22:05:33,420 INFO Pharmacy | Virginia | FE: 0 urls
+2026-07-15 22:07:04,351 INFO Pharmacy | Virginia | FF: 0 urls
+2026-07-15 22:08:11,555 INFO Pharmacy | Virginia | FG: 0 urls
+2026-07-15 22:09:28,310 INFO Pharmacy | Virginia | FH: 0 urls
+2026-07-15 22:13:05,153 ERROR ERROR on Pharmacy / Virginia / FI: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x12a5843+10883]
+	chromedriver!GetHandleVerifier [0x12a5884+108c4]
+	chromedriver!(No symbol) [0x10a90e0]
+	chromedriver!(No symbol) [0x10f316b]
+	chromedriver!(No symbol) [0x10f338b]
+	chromedriver!(No symbol) [0x1135942]
+	chromedriver!(No symbol) [0x11156b4]
+	chromedriver!(No symbol) [0x11331aa]
+	chromedriver!(No symbol) [0x1115406]
+	chromedriver!(No symbol) [0x10e8659]
+	chromedriver!(No symbol) [0x10e9424]
+	chromedriver!GetHandleVerifier [0x153ced6+2a7f16]
+	chromedriver!GetHandleVerifier [0x153847b+2a34bb]
+	chromedriver!GetHandleVerifier [0x15594eb+2c452b]
+	chromedriver!GetHandleVerifier [0x12bf566+2a5a6]
+	chromedriver!GetHandleVerifier [0x12c620d+3124d]
+	chromedriver!GetHandleVerifier [0x12ae318+19358]
+	chromedriver!GetHandleVerifier [0x12ae4c5+19505]
+	chromedriver!GetHandleVerifier [0x12970af+20ef]
+	KERNEL32!BaseThreadInitThunk [0x76d95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7760e12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7760e0b1+231]
+
+2026-07-15 22:14:14,948 INFO Pharmacy | Virginia | FJ: 0 urls
+2026-07-15 22:15:25,591 INFO Pharmacy | Virginia | FK: 0 urls
+2026-07-15 22:16:27,572 INFO Pharmacy | Virginia | FL: 0 urls
+2026-07-15 22:18:13,913 INFO Pharmacy | Virginia | FM: 0 urls
+2026-07-15 22:19:13,753 INFO Pharmacy | Virginia | FN: 0 urls
+2026-07-15 22:20:16,100 INFO Pharmacy | Virginia | FO: 0 urls
+2026-07-15 22:21:20,102 INFO Pharmacy | Virginia | FP: 0 urls
+2026-07-15 22:22:29,029 INFO Pharmacy | Virginia | FQ: 0 urls
+2026-07-15 22:23:37,575 INFO Pharmacy | Virginia | FR: 0 urls
+2026-07-15 22:25:07,814 INFO Pharmacy | Virginia | FS: 0 urls
+2026-07-15 22:27:15,378 INFO Pharmacy | Virginia | FT: 0 urls
+2026-07-15 22:28:43,745 INFO Pharmacy | Virginia | FU: 0 urls
+2026-07-15 22:29:53,984 INFO Pharmacy | Virginia | FV: 0 urls
+2026-07-15 22:31:58,219 INFO Pharmacy | Virginia | FW: 0 urls
+2026-07-15 22:33:00,606 INFO Pharmacy | Virginia | FX: 0 urls
+2026-07-15 22:34:13,709 INFO Pharmacy | Virginia | FY: 0 urls
+2026-07-15 22:35:54,027 INFO Pharmacy | Virginia | FZ: 0 urls
+2026-07-15 22:37:04,689 INFO Pharmacy | Virginia | GA: 0 urls
+2026-07-15 22:38:16,763 INFO Pharmacy | Virginia | GB: 0 urls
+2026-07-15 22:39:32,269 INFO Pharmacy | Virginia | GC: 0 urls
+2026-07-15 22:40:43,640 INFO Pharmacy | Virginia | GD: 0 urls
+2026-07-15 22:42:07,417 INFO Pharmacy | Virginia | GE: 0 urls
+2026-07-15 22:43:19,903 INFO Pharmacy | Virginia | GF: 0 urls
+2026-07-15 22:44:54,871 INFO Pharmacy | Virginia | GG: 0 urls
+2026-07-15 22:46:01,684 INFO Pharmacy | Virginia | GH: 0 urls
+2026-07-15 22:47:11,951 INFO Pharmacy | Virginia | GI: 0 urls
+2026-07-15 22:48:23,342 INFO Pharmacy | Virginia | GJ: 0 urls
+2026-07-15 22:49:32,480 INFO Pharmacy | Virginia | GK: 0 urls
+2026-07-15 22:50:39,588 INFO Pharmacy | Virginia | GL: 0 urls
+2026-07-15 22:52:01,677 INFO Pharmacy | Virginia | GM: 0 urls
+2026-07-15 22:53:13,544 INFO Pharmacy | Virginia | GN: 0 urls
+2026-07-15 22:54:27,155 INFO Pharmacy | Virginia | GO: 0 urls
+2026-07-15 22:55:37,423 INFO Pharmacy | Virginia | GP: 0 urls
+2026-07-15 22:56:49,609 INFO Pharmacy | Virginia | GQ: 0 urls
+2026-07-15 22:57:55,138 INFO Pharmacy | Virginia | GR: 0 urls
+2026-07-15 22:59:00,824 INFO Pharmacy | Virginia | GS: 0 urls
+2026-07-16 15:57:46,280 INFO Resuming URL collection from occupation #1, state #1, prefix #176 (189 existing urls loaded)
+2026-07-16 16:00:14,406 INFO Resuming URL collection from occupation #1, state #1, prefix #176 (189 existing urls loaded)
+2026-07-16 16:01:44,669 INFO Pharmacy | Virginia | GT: 0 urls
+2026-07-16 16:03:11,320 INFO Pharmacy | Virginia | GU: 0 urls
+2026-07-16 16:04:21,799 INFO Pharmacy | Virginia | GV: 0 urls
+2026-07-16 16:06:21,849 ERROR ERROR on Pharmacy / Virginia / GW: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=150.0.7871.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x745843+10883]
+	chromedriver!GetHandleVerifier [0x745884+108c4]
+	chromedriver!(No symbol) [0x5490e0]
+	chromedriver!(No symbol) [0x5396d3]
+	chromedriver!(No symbol) [0x539405]
+	chromedriver!(No symbol) [0x5375d8]
+	chromedriver!(No symbol) [0x537e26]
+	chromedriver!(No symbol) [0x544acb]
+	chromedriver!(No symbol) [0x5565de]
+	chromedriver!(No symbol) [0x55c656]
+	chromedriver!(No symbol) [0x5384ac]
+	chromedriver!(No symbol) [0x555e69]
+	chromedriver!(No symbol) [0x5d3493]
+	chromedriver!(No symbol) [0x5b5406]
+	chromedriver!(No symbol) [0x588659]
+	chromedriver!(No symbol) [0x589424]
+	chromedriver!GetHandleVerifier [0x9dced6+2a7f16]
+	chromedriver!GetHandleVerifier [0x9d847b+2a34bb]
+	chromedriver!GetHandleVerifier [0x9f94eb+2c452b]
+	chromedriver!GetHandleVerifier [0x75f566+2a5a6]
+	chromedriver!GetHandleVerifier [0x76620d+3124d]
+	chromedriver!GetHandleVerifier [0x74e318+19358]
+	chromedriver!GetHandleVerifier [0x74e4c5+19505]
+	chromedriver!GetHandleVerifier [0x7370af+20ef]
+	KERNEL32!BaseThreadInitThunk [0x75f05d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7742e00b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7742df91+231]
+
+2026-07-16 16:07:51,293 ERROR ERROR on Pharmacy / Virginia / GX: Message: session not created: cannot connect to chrome at 127.0.0.1:61283
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x6e5843+10883]
+	chromedriver!GetHandleVerifier [0x6e5884+108c4]
+	chromedriver!(No symbol) [0x4e8f1e]
+	chromedriver!(No symbol) [0x4dc918]
+	chromedriver!(No symbol) [0x524892]
+	chromedriver!(No symbol) [0x51ace5]
+	chromedriver!(No symbol) [0x51ab06]
+	chromedriver!(No symbol) [0x5616ef]
+	chromedriver!(No symbol) [0x560f07]
+	chromedriver!(No symbol) [0x555406]
+	chromedriver!(No symbol) [0x528659]
+	chromedriver!(No symbol) [0x529424]
+	chromedriver!GetHandleVerifier [0x97ced6+2a7f16]
+	chromedriver!GetHandleVerifier [0x97847b+2a34bb]
+	chromedriver!GetHandleVerifier [0x9994eb+2c452b]
+	chromedriver!GetHandleVerifier [0x6ff566+2a5a6]
+	chromedriver!GetHandleVerifier [0x70620d+3124d]
+	chromedriver!GetHandleVerifier [0x6ee318+19358]
+	chromedriver!GetHandleVerifier [0x6ee4c5+19505]
+	chromedriver!GetHandleVerifier [0x6d70af+20ef]
+	KERNEL32!BaseThreadInitThunk [0x75f05d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7742e00b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7742df91+231]
+
+2026-07-16 16:07:54,400 ERROR ERROR on Pharmacy / Virginia / GY: Unable to allocate output buffer.
+2026-07-16 16:07:58,861 ERROR ERROR on Pharmacy / Virginia / GZ: 
+2026-07-16 16:08:00,278 ERROR ERROR on Pharmacy / Virginia / HA: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:08:01,518 ERROR ERROR on Pharmacy / Virginia / HB: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:08:04,670 ERROR ERROR on Pharmacy / Virginia / HC: Unable to allocate output buffer.
+2026-07-16 16:08:05,895 ERROR ERROR on Pharmacy / Virginia / HD: [WinError 1450] Insufficient system resources exist to complete the requested service
+2026-07-16 16:08:07,864 ERROR ERROR on Pharmacy / Virginia / HE: [WinError 1450] Insufficient system resources exist to complete the requested service
+2026-07-16 16:08:09,503 ERROR ERROR on Pharmacy / Virginia / HF: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:08:10,669 ERROR ERROR on Pharmacy / Virginia / HG: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:08:12,209 ERROR ERROR on Pharmacy / Virginia / HH: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:08:14,763 ERROR ERROR on Pharmacy / Virginia / HI: [WinError 1455] The paging file is too small for this operation to complete
+2026-07-16 16:58:36,059 INFO Resuming URL collection from occupation #1, state #1, prefix #192 (189 existing urls loaded)
+2026-07-16 16:59:30,046 INFO Pharmacy | Virginia | HJ: 0 urls
+2026-07-16 17:00:21,246 INFO Pharmacy | Virginia | HK: 0 urls
+2026-07-16 17:01:23,886 INFO Pharmacy | Virginia | HL: 0 urls
+2026-07-16 17:02:10,657 INFO Pharmacy | Virginia | HM: 1 new urls (190 total saved to dhp_detail_urls.txt)
+2026-07-16 17:03:23,257 INFO Pharmacy | Virginia | HN: 0 urls
+2026-07-16 17:04:28,588 INFO Pharmacy | Virginia | HO: 0 urls
+2026-07-16 17:05:29,609 INFO Pharmacy | Virginia | HP: 0 urls
+2026-07-16 17:06:31,626 INFO Pharmacy | Virginia | HQ: 0 urls
+2026-07-16 17:07:32,614 INFO Pharmacy | Virginia | HR: 0 urls
+2026-07-16 17:08:32,943 INFO Pharmacy | Virginia | HS: 0 urls
+2026-07-16 17:09:33,598 INFO Pharmacy | Virginia | HT: 0 urls
+2026-07-16 17:10:36,564 INFO Pharmacy | Virginia | HU: 0 urls
+2026-07-16 17:11:38,840 INFO Pharmacy | Virginia | HV: 0 urls
+2026-07-16 17:12:41,374 INFO Pharmacy | Virginia | HW: 0 urls
+2026-07-16 17:13:38,834 INFO Pharmacy | Virginia | HX: 0 urls
+2026-07-16 17:14:39,736 INFO Pharmacy | Virginia | HY: 0 urls
+2026-07-16 17:15:40,829 INFO Pharmacy | Virginia | HZ: 0 urls
+2026-07-16 17:16:45,917 INFO Pharmacy | Virginia | IA: 0 urls
+2026-07-16 17:17:47,724 INFO Pharmacy | Virginia | IB: 0 urls
+2026-07-16 17:18:52,768 INFO Pharmacy | Virginia | IC: 0 urls
+2026-07-16 17:19:54,426 INFO Pharmacy | Virginia | ID: 0 urls
+2026-07-16 17:20:55,310 INFO Pharmacy | Virginia | IE: 0 urls
+2026-07-16 17:21:55,544 INFO Pharmacy | Virginia | IF: 0 urls
+2026-07-16 17:22:49,642 INFO Pharmacy | Virginia | IG: 0 urls
+2026-07-16 17:23:44,851 INFO Pharmacy | Virginia | IH: 0 urls
+2026-07-16 17:24:47,580 INFO Pharmacy | Virginia | II: 0 urls
+2026-07-16 17:25:48,374 INFO Pharmacy | Virginia | IJ: 0 urls
+2026-07-16 17:26:50,354 INFO Pharmacy | Virginia | IK: 0 urls
+2026-07-16 17:27:55,328 INFO Pharmacy | Virginia | IL: 0 urls
+2026-07-16 17:29:13,011 INFO Pharmacy | Virginia | IM: 0 urls
+2026-07-16 17:30:12,502 INFO Pharmacy | Virginia | IN: 0 urls
+2026-07-16 17:31:22,991 INFO Pharmacy | Virginia | IO: 0 urls
+2026-07-16 17:32:24,341 INFO Pharmacy | Virginia | IP: 0 urls
+2026-07-16 17:33:32,304 INFO Pharmacy | Virginia | IQ: 0 urls
+2026-07-16 17:34:28,552 INFO Pharmacy | Virginia | IR: 0 urls
+2026-07-16 17:36:24,694 INFO Pharmacy | Virginia | IS: 0 urls
+2026-07-16 17:37:45,050 INFO Pharmacy | Virginia | IT: 0 urls
+2026-07-16 17:38:46,852 INFO Pharmacy | Virginia | IU: 0 urls
+2026-07-16 17:39:41,914 INFO Pharmacy | Virginia | IV: 0 urls
+2026-07-16 17:40:43,356 INFO Pharmacy | Virginia | IW: 0 urls
+2026-07-16 17:41:56,286 INFO Pharmacy | Virginia | IX: 0 urls
+2026-07-16 17:42:58,063 INFO Pharmacy | Virginia | IY: 0 urls
+2026-07-16 17:44:06,792 INFO Pharmacy | Virginia | IZ: 0 urls
+2026-07-16 17:45:13,288 INFO Pharmacy | Virginia | JA: 0 urls
+2026-07-16 17:46:14,974 INFO Pharmacy | Virginia | JB: 0 urls
+2026-07-16 17:47:18,865 INFO Pharmacy | Virginia | JC: 0 urls
+2026-07-16 17:48:20,642 INFO Pharmacy | Virginia | JD: 0 urls
+2026-07-16 17:49:28,629 INFO Pharmacy | Virginia | JE: 0 urls
+2026-07-16 17:50:35,657 INFO Pharmacy | Virginia | JF: 0 urls
+2026-07-16 17:51:41,770 INFO Pharmacy | Virginia | JG: 0 urls
+2026-07-16 17:53:10,872 INFO Pharmacy | Virginia | JH: 0 urls
+2026-07-16 17:54:06,833 INFO Pharmacy | Virginia | JI: 0 urls
+2026-07-16 17:55:18,915 INFO Pharmacy | Virginia | JJ: 0 urls
+2026-07-16 17:57:42,355 INFO Pharmacy | Virginia | JK: 0 urls
+2026-07-16 17:58:51,600 INFO Pharmacy | Virginia | JL: 0 urls
+2026-07-16 18:00:49,092 INFO Pharmacy | Virginia | JM: 0 urls
+2026-07-16 18:01:59,263 INFO Pharmacy | Virginia | JN: 0 urls
+2026-07-16 18:03:24,375 INFO Pharmacy | Virginia | JO: 0 urls
+2026-07-16 18:04:26,704 INFO Pharmacy | Virginia | JP: 0 urls
+2026-07-16 18:05:29,379 INFO Pharmacy | Virginia | JQ: 0 urls
+2026-07-16 18:06:40,214 INFO Pharmacy | Virginia | JR: 0 urls
+2026-07-16 18:07:48,747 INFO Pharmacy | Virginia | JS: 0 urls
+2026-07-16 18:08:58,090 INFO Pharmacy | Virginia | JT: 0 urls
+2026-07-16 18:10:09,785 INFO Pharmacy | Virginia | JU: 0 urls
+2026-07-16 18:11:14,829 INFO Pharmacy | Virginia | JV: 0 urls
+2026-07-16 18:12:37,561 INFO Pharmacy | Virginia | JW: 0 urls
+2026-07-16 18:13:52,181 INFO Pharmacy | Virginia | JX: 0 urls
+2026-07-16 18:15:02,253 INFO Pharmacy | Virginia | JY: 0 urls
+2026-07-16 18:16:06,710 INFO Pharmacy | Virginia | JZ: 0 urls
+2026-07-16 18:17:15,433 INFO Pharmacy | Virginia | KA: 0 urls
+2026-07-16 18:18:17,355 INFO Pharmacy | Virginia | KB: 0 urls
+2026-07-16 18:19:21,417 INFO Pharmacy | Virginia | KC: 0 urls
+2026-07-16 18:20:22,988 INFO Pharmacy | Virginia | KD: 0 urls
+2026-07-16 18:21:26,230 INFO Pharmacy | Virginia | KE: 0 urls
+2026-07-16 18:22:30,762 INFO Pharmacy | Virginia | KF: 0 urls
+2026-07-16 18:23:57,712 INFO Pharmacy | Virginia | KG: 0 urls
+2026-07-16 18:25:01,558 INFO Pharmacy | Virginia | KH: 0 urls
+2026-07-16 18:26:04,654 INFO Pharmacy | Virginia | KI: 0 urls
+2026-07-16 18:27:17,599 INFO Pharmacy | Virginia | KJ: 0 urls
+2026-07-16 18:28:21,577 INFO Pharmacy | Virginia | KK: 0 urls
+2026-07-16 18:29:36,458 INFO Pharmacy | Virginia | KL: 0 urls
+2026-07-16 18:30:38,392 INFO Pharmacy | Virginia | KM: 0 urls
+2026-07-16 18:31:57,375 INFO Pharmacy | Virginia | KN: 0 urls
+2026-07-16 18:34:41,896 INFO Pharmacy | Virginia | KO: 0 urls
+2026-07-16 18:35:49,836 INFO Pharmacy | Virginia | KP: 0 urls
+2026-07-16 18:36:55,141 INFO Pharmacy | Virginia | KQ: 0 urls
+2026-07-16 18:38:00,904 INFO Pharmacy | Virginia | KR: 0 urls
+2026-07-16 18:39:02,113 INFO Pharmacy | Virginia | KS: 0 urls
+2026-07-16 18:40:28,723 INFO Pharmacy | Virginia | KT: 0 urls
+2026-07-16 18:41:33,037 INFO Pharmacy | Virginia | KU: 0 urls
+2026-07-16 18:42:35,462 INFO Pharmacy | Virginia | KV: 0 urls
+2026-07-16 18:43:44,453 INFO Pharmacy | Virginia | KW: 0 urls
+2026-07-16 18:44:54,095 INFO Pharmacy | Virginia | KX: 0 urls
+2026-07-16 18:45:58,091 INFO Pharmacy | Virginia | KY: 0 urls
+2026-07-16 18:47:05,138 INFO Pharmacy | Virginia | KZ: 0 urls
+2026-07-16 18:48:16,625 INFO Pharmacy | Virginia | LA: 0 urls
+2026-07-16 18:49:25,842 INFO Pharmacy | Virginia | LB: 0 urls
+2026-07-16 18:50:35,932 INFO Pharmacy | Virginia | LC: 0 urls
+2026-07-16 18:51:51,246 INFO Pharmacy | Virginia | LD: 0 urls
+2026-07-16 18:53:09,780 INFO Pharmacy | Virginia | LE: 0 urls
+2026-07-16 18:54:26,123 INFO Pharmacy | Virginia | LF: 0 urls
+2026-07-16 18:55:35,760 INFO Pharmacy | Virginia | LG: 0 urls
+2026-07-16 18:56:45,532 INFO Pharmacy | Virginia | LH: 0 urls
+2026-07-16 18:57:59,291 INFO Pharmacy | Virginia | LI: 0 urls
+2026-07-16 18:59:12,286 INFO Pharmacy | Virginia | LJ: 0 urls
+2026-07-16 19:00:35,361 INFO Pharmacy | Virginia | LK: 0 urls
+2026-07-16 19:02:29,675 INFO Pharmacy | Virginia | LL: 0 urls
+2026-07-16 19:03:45,386 INFO Pharmacy | Virginia | LM: 0 urls
+2026-07-16 19:05:10,270 INFO Pharmacy | Virginia | LN: 0 urls
+2026-07-16 19:06:27,765 INFO Pharmacy | Virginia | LO: 0 urls
+2026-07-16 19:07:44,845 INFO Pharmacy | Virginia | LP: 0 urls
+2026-07-16 19:09:34,994 INFO Pharmacy | Virginia | LQ: 0 urls
+2026-07-16 19:10:43,678 INFO Pharmacy | Virginia | LR: 0 urls
+2026-07-16 19:12:04,529 INFO Pharmacy | Virginia | LS: 0 urls
+2026-07-16 19:13:42,877 INFO Pharmacy | Virginia | LT: 0 urls
+2026-07-16 19:14:54,280 INFO Pharmacy | Virginia | LU: 0 urls
+2026-07-16 19:16:03,560 INFO Pharmacy | Virginia | LV: 0 urls
+2026-07-16 19:17:18,149 INFO Pharmacy | Virginia | LW: 0 urls
+2026-07-16 19:18:29,195 INFO Pharmacy | Virginia | LX: 0 urls
+2026-07-16 19:19:44,663 INFO Pharmacy | Virginia | LY: 0 urls
+2026-07-16 19:21:32,385 INFO Pharmacy | Virginia | LZ: 0 urls
+2026-07-16 19:22:49,585 INFO Pharmacy | Virginia | MA: 0 urls
+2026-07-16 19:24:05,117 INFO Pharmacy | Virginia | MB: 0 urls
+2026-07-16 19:25:14,279 INFO Pharmacy | Virginia | MC: 0 urls
+2026-07-16 19:26:27,838 INFO Pharmacy | Virginia | MD: 0 urls
+2026-07-16 19:27:41,125 INFO Pharmacy | Virginia | ME: 0 urls
+2026-07-16 19:28:56,782 INFO Pharmacy | Virginia | MF: 0 urls
+2026-07-16 19:29:58,939 INFO Pharmacy | Virginia | MG: 0 urls
+2026-07-16 19:31:19,516 INFO Pharmacy | Virginia | MH: 0 urls
+2026-07-16 19:32:07,454 INFO Pharmacy | Virginia | MI: 3 new urls (193 total saved to dhp_detail_urls.txt)
+2026-07-16 19:33:14,632 INFO Pharmacy | Virginia | MJ: 0 urls
+2026-07-16 19:34:14,744 INFO Pharmacy | Virginia | MK: 0 urls
+2026-07-16 19:35:31,411 INFO Pharmacy | Virginia | ML: 0 urls
+2026-07-16 19:36:33,275 INFO Pharmacy | Virginia | MM: 0 urls
+2026-07-16 19:37:41,629 INFO Pharmacy | Virginia | MN: 0 urls
+2026-07-16 19:39:49,290 INFO Pharmacy | Virginia | MO: 7 new urls (200 total saved to dhp_detail_urls.txt)
+2026-07-16 19:41:09,312 INFO Pharmacy | Virginia | MP: 0 urls
+2026-07-16 19:42:09,708 INFO Pharmacy | Virginia | MQ: 0 urls
+2026-07-16 19:43:17,240 INFO Pharmacy | Virginia | MR: 0 urls
+2026-07-16 19:44:26,863 INFO Pharmacy | Virginia | MS: 0 urls
+2026-07-16 19:45:46,687 INFO Pharmacy | Virginia | MT: 0 urls
+2026-07-16 19:47:18,157 INFO Pharmacy | Virginia | MU: 0 urls
+2026-07-16 19:48:49,096 INFO Pharmacy | Virginia | MV: 0 urls
+2026-07-16 19:49:56,831 INFO Pharmacy | Virginia | MW: 0 urls
+2026-07-16 19:52:02,476 ERROR ERROR on Pharmacy / Virginia / MX: HTTPConnectionPool(host='localhost', port=23871): Read timed out. (read timeout=120)
+2026-07-16 19:54:12,622 INFO Pharmacy | Virginia | MY: 4 new urls (204 total saved to dhp_detail_urls.txt)
+2026-07-16 19:55:12,819 INFO Pharmacy | Virginia | MZ: 0 urls
+2026-07-16 19:56:16,103 INFO Pharmacy | Virginia | NA: 0 urls
+2026-07-16 19:57:16,507 INFO Pharmacy | Virginia | NB: 0 urls
+2026-07-16 19:58:12,235 INFO Pharmacy | Virginia | NC: 0 urls
+2026-07-16 19:58:47,083 INFO Pharmacy | Virginia | ND: 1 new urls (205 total saved to dhp_detail_urls.txt)
+2026-07-16 19:59:29,481 INFO Pharmacy | Virginia | NE: 12 new urls (217 total saved to dhp_detail_urls.txt)
+2026-07-16 20:00:23,245 INFO Pharmacy | Virginia | NF: 0 urls
+2026-07-16 20:01:21,925 INFO Pharmacy | Virginia | NG: 0 urls
+2026-07-16 20:02:23,918 INFO Pharmacy | Virginia | NH: 0 urls
+2026-07-16 20:03:21,037 INFO Pharmacy | Virginia | NI: 0 urls
+2026-07-16 20:04:58,403 INFO Pharmacy | Virginia | NJ: 0 urls
+2026-07-16 20:06:12,916 INFO Pharmacy | Virginia | NK: 0 urls
+2026-07-16 20:07:06,450 INFO Pharmacy | Virginia | NL: 0 urls
+2026-07-16 20:08:00,745 INFO Pharmacy | Virginia | NM: 0 urls
+2026-07-16 20:09:09,734 INFO Pharmacy | Virginia | NN: 0 urls
+2026-07-16 20:09:53,857 INFO Pharmacy | Virginia | NO: 10 new urls (227 total saved to dhp_detail_urls.txt)
+2026-07-16 20:10:46,877 INFO Pharmacy | Virginia | NP: 0 urls
+2026-07-16 20:11:38,982 INFO Pharmacy | Virginia | NQ: 0 urls
+2026-07-16 20:12:33,690 INFO Pharmacy | Virginia | NR: 0 urls
+2026-07-16 20:13:26,819 INFO Pharmacy | Virginia | NS: 0 urls
+2026-07-16 20:14:29,763 INFO Pharmacy | Virginia | NT: 0 urls
+2026-07-16 20:15:02,160 INFO Pharmacy | Virginia | NU: 1 new urls (228 total saved to dhp_detail_urls.txt)
+2026-07-16 20:16:00,778 INFO Pharmacy | Virginia | NV: 0 urls
+2026-07-16 20:16:52,281 INFO Pharmacy | Virginia | NW: 0 urls
+2026-07-16 20:17:47,946 INFO Pharmacy | Virginia | NX: 0 urls
+2026-07-16 20:18:48,267 INFO Pharmacy | Virginia | NY: 0 urls
+2026-07-16 20:19:42,720 INFO Pharmacy | Virginia | NZ: 0 urls
+2026-07-16 20:20:28,836 INFO Pharmacy | Virginia | OA: 1 new urls (229 total saved to dhp_detail_urls.txt)
+2026-07-16 20:21:24,568 INFO Pharmacy | Virginia | OB: 0 urls
+2026-07-16 20:22:21,338 INFO Pharmacy | Virginia | OC: 0 urls
+2026-07-16 20:23:18,821 INFO Pharmacy | Virginia | OD: 0 urls
+2026-07-16 20:24:13,010 INFO Pharmacy | Virginia | OE: 0 urls
+2026-07-16 20:25:06,812 INFO Pharmacy | Virginia | OF: 0 urls
+2026-07-16 20:26:00,377 INFO Pharmacy | Virginia | OG: 0 urls
+2026-07-16 20:26:52,041 INFO Pharmacy | Virginia | OH: 0 urls
+2026-07-16 20:27:47,376 INFO Pharmacy | Virginia | OI: 0 urls
+2026-07-16 20:28:42,266 INFO Pharmacy | Virginia | OJ: 0 urls
+2026-07-16 20:29:56,599 INFO Pharmacy | Virginia | OK: 0 urls
+2026-07-16 20:30:30,174 INFO Pharmacy | Virginia | OL: 2 new urls (231 total saved to dhp_detail_urls.txt)
+2026-07-16 20:31:03,626 INFO Pharmacy | Virginia | OM: 2 new urls (233 total saved to dhp_detail_urls.txt)
+2026-07-16 20:31:37,107 INFO Pharmacy | Virginia | ON: 5 new urls (238 total saved to dhp_detail_urls.txt)
+2026-07-16 20:32:39,135 INFO Pharmacy | Virginia | OO: 0 urls
+2026-07-16 20:33:32,932 INFO Pharmacy | Virginia | OP: 0 urls
+2026-07-16 20:34:26,927 INFO Pharmacy | Virginia | OQ: 0 urls
+2026-07-16 20:35:00,070 INFO Pharmacy | Virginia | OR: 1 new urls (239 total saved to dhp_detail_urls.txt)
+2026-07-16 20:35:53,984 INFO Pharmacy | Virginia | OS: 0 urls
+2026-07-16 20:36:55,151 INFO Pharmacy | Virginia | OT: 0 urls
+2026-07-16 20:37:51,101 INFO Pharmacy | Virginia | OU: 0 urls
+2026-07-16 20:38:44,810 INFO Pharmacy | Virginia | OV: 0 urls
+2026-07-16 20:39:37,729 INFO Pharmacy | Virginia | OW: 0 urls
+2026-07-16 20:40:32,073 INFO Pharmacy | Virginia | OX: 0 urls
+2026-07-16 20:41:35,053 INFO Pharmacy | Virginia | OY: 0 urls
+2026-07-16 20:42:28,646 INFO Pharmacy | Virginia | OZ: 0 urls
+2026-07-16 20:43:12,266 INFO Pharmacy | Virginia | PA: 8 new urls (247 total saved to dhp_detail_urls.txt)
+2026-07-16 20:44:13,754 INFO Pharmacy | Virginia | PB: 0 urls
+2026-07-16 20:45:17,104 INFO Pharmacy | Virginia | PC: 0 urls
+2026-07-16 20:46:21,203 INFO Pharmacy | Virginia | PD: 0 urls
+2026-07-16 20:46:54,312 INFO Pharmacy | Virginia | PE: 4 new urls (251 total saved to dhp_detail_urls.txt)
+2026-07-16 20:47:51,238 INFO Pharmacy | Virginia | PF: 0 urls
+2026-07-16 20:48:43,817 INFO Pharmacy | Virginia | PG: 0 urls
+2026-07-16 20:49:18,099 INFO Pharmacy | Virginia | PH: 6 new urls (257 total saved to dhp_detail_urls.txt)
+2026-07-16 20:49:51,398 INFO Pharmacy | Virginia | PI: 8 new urls (265 total saved to dhp_detail_urls.txt)
+2026-07-16 20:50:43,794 INFO Pharmacy | Virginia | PJ: 0 urls
+2026-07-16 20:51:37,135 INFO Pharmacy | Virginia | PK: 0 urls
+2026-07-16 20:52:13,210 INFO Pharmacy | Virginia | PL: 1 new urls (266 total saved to dhp_detail_urls.txt)
+2026-07-16 20:53:09,953 INFO Pharmacy | Virginia | PM: 0 urls
+2026-07-16 20:54:01,737 INFO Pharmacy | Virginia | PN: 0 urls
+2026-07-16 20:54:36,458 INFO Pharmacy | Virginia | PO: 7 new urls (273 total saved to dhp_detail_urls.txt)
+2026-07-16 20:55:38,755 INFO Pharmacy | Virginia | PP: 0 urls
+2026-07-16 20:56:31,887 INFO Pharmacy | Virginia | PQ: 0 urls
+2026-07-16 20:57:06,297 INFO Pharmacy | Virginia | PR: 9 new urls (282 total saved to dhp_detail_urls.txt)
+2026-07-16 20:58:01,996 INFO Pharmacy | Virginia | PS: 0 urls
+2026-07-16 20:58:58,464 INFO Pharmacy | Virginia | PT: 0 urls
+2026-07-16 21:01:09,349 INFO Pharmacy | Virginia | PU: 26 new urls (308 total saved to dhp_detail_urls.txt)
+2026-07-16 21:02:12,497 INFO Pharmacy | Virginia | PV: 0 urls
+2026-07-16 21:03:09,857 INFO Pharmacy | Virginia | PW: 0 urls
+2026-07-16 21:04:10,342 INFO Pharmacy | Virginia | PX: 0 urls
+2026-07-16 21:05:10,026 INFO Pharmacy | Virginia | PY: 0 urls
+2026-07-16 21:06:09,503 INFO Pharmacy | Virginia | PZ: 0 urls
+2026-07-16 21:07:12,069 INFO Pharmacy | Virginia | QA: 0 urls
+2026-07-16 21:08:12,329 INFO Pharmacy | Virginia | QB: 0 urls
+2026-07-16 21:09:13,925 INFO Pharmacy | Virginia | QC: 0 urls
+2026-07-16 21:11:23,048 ERROR ERROR on Pharmacy / Virginia / QD: HTTPConnectionPool(host='localhost', port=55010): Read timed out. (read timeout=120)
+2026-07-16 21:12:21,848 INFO Pharmacy | Virginia | QE: 0 urls
+2026-07-16 21:13:19,718 INFO Pharmacy | Virginia | QF: 0 urls
+2026-07-16 21:14:21,067 INFO Pharmacy | Virginia | QG: 0 urls
+2026-07-16 21:16:31,050 ERROR ERROR on Pharmacy / Virginia / QH: HTTPConnectionPool(host='localhost', port=29795): Read timed out. (read timeout=120)
+2026-07-16 21:17:28,383 INFO Pharmacy | Virginia | QI: 0 urls
+2026-07-16 21:18:25,454 INFO Pharmacy | Virginia | QJ: 0 urls
+2026-07-16 21:19:28,692 INFO Pharmacy | Virginia | QK: 0 urls
+2026-07-16 21:20:34,113 INFO Pharmacy | Virginia | QL: 0 urls
+2026-07-21 15:56:51,546 INFO Resuming URL collection from occupation #1, state #1, prefix #429 (308 existing urls loaded)
+2026-07-21 15:57:50,745 INFO Pharmacy | Virginia | QM: 0 urls
+2026-07-21 15:58:47,578 INFO Pharmacy | Virginia | QN: 0 urls
+2026-07-21 16:00:06,352 INFO Pharmacy | Virginia | QO: 0 urls
+2026-07-21 16:01:43,135 INFO Pharmacy | Virginia | QP: 0 urls
+2026-07-21 16:03:01,691 INFO Pharmacy | Virginia | QQ: 0 urls
+2026-07-21 16:03:54,851 INFO Pharmacy | Virginia | QR: 0 urls
+2026-07-21 16:04:57,955 INFO Pharmacy | Virginia | QS: 0 urls
+2026-07-21 16:05:57,588 INFO Pharmacy | Virginia | QT: 0 urls
+2026-07-21 16:06:56,851 INFO Pharmacy | Virginia | QU: 0 urls
+2026-07-21 16:08:06,951 INFO Pharmacy | Virginia | QV: 0 urls
+2026-07-21 16:09:05,686 INFO Pharmacy | Virginia | QW: 0 urls
+2026-07-21 16:10:25,119 INFO Pharmacy | Virginia | QX: 0 urls
+2026-07-21 16:11:17,957 INFO Pharmacy | Virginia | QY: 0 urls
+2026-07-21 16:12:18,045 INFO Pharmacy | Virginia | QZ: 0 urls
+2026-07-21 16:13:24,045 INFO Pharmacy | Virginia | RA: 0 urls
+2026-07-21 16:14:27,934 INFO Pharmacy | Virginia | RB: 0 urls
+2026-07-21 16:15:22,247 INFO Pharmacy | Virginia | RC: 0 urls
+2026-07-21 16:16:26,961 INFO Pharmacy | Virginia | RD: 0 urls
+2026-07-21 16:17:27,871 INFO Pharmacy | Virginia | RE: 0 urls
+2026-07-21 16:18:24,004 INFO Pharmacy | Virginia | RF: 0 urls
+2026-07-21 16:19:23,622 INFO Pharmacy | Virginia | RG: 0 urls
+2026-07-21 16:20:29,638 INFO Pharmacy | Virginia | RH: 0 urls
+2026-07-21 16:21:10,421 INFO Pharmacy | Virginia | RI: 10 new urls (318 total saved to dhp_detail_urls.txt)
+2026-07-21 16:22:17,800 INFO Pharmacy | Virginia | RJ: 0 urls
+2026-07-21 16:23:22,623 INFO Pharmacy | Virginia | RK: 0 urls
+2026-07-21 16:24:17,081 INFO Pharmacy | Virginia | RL: 0 urls
+2026-07-21 16:25:16,180 INFO Pharmacy | Virginia | RM: 0 urls
+2026-07-21 16:26:16,223 INFO Pharmacy | Virginia | RN: 0 urls
+2026-07-21 16:27:21,696 INFO Pharmacy | Virginia | RO: 0 urls
+2026-07-21 16:28:32,653 INFO Pharmacy | Virginia | RP: 0 urls
+2026-07-21 16:29:39,775 INFO Pharmacy | Virginia | RQ: 0 urls
+2026-07-21 16:30:39,227 INFO Pharmacy | Virginia | RR: 0 urls
+2026-07-21 16:31:40,070 INFO Pharmacy | Virginia | RS: 0 urls
+2026-07-21 16:32:41,838 INFO Pharmacy | Virginia | RT: 0 urls
+2026-07-21 16:33:46,034 INFO Pharmacy | Virginia | RU: 0 urls
+2026-07-21 16:34:55,917 INFO Pharmacy | Virginia | RV: 0 urls
+2026-07-21 16:35:54,691 INFO Pharmacy | Virginia | RW: 0 urls
+2026-07-21 16:37:01,319 INFO Pharmacy | Virginia | RX: 0 urls
+2026-07-21 16:37:55,508 INFO Pharmacy | Virginia | RY: 0 urls
+2026-07-21 16:39:00,661 INFO Pharmacy | Virginia | RZ: 0 urls
+2026-07-21 16:40:10,208 INFO Pharmacy | Virginia | SA: 0 urls
+2026-07-21 16:41:20,361 INFO Pharmacy | Virginia | SB: 0 urls
+2026-07-21 16:42:18,584 INFO Pharmacy | Virginia | SC: 0 urls
+2026-07-21 16:43:16,951 INFO Pharmacy | Virginia | SD: 0 urls
+2026-07-21 16:44:23,063 INFO Pharmacy | Virginia | SE: 0 urls
+2026-07-21 16:45:21,817 INFO Pharmacy | Virginia | SF: 0 urls
+2026-07-21 16:46:22,179 INFO Pharmacy | Virginia | SG: 0 urls
+2026-07-21 16:47:28,901 INFO Pharmacy | Virginia | SH: 0 urls
+2026-07-21 16:48:22,490 INFO Pharmacy | Virginia | SI: 0 urls
+2026-07-21 16:49:21,169 INFO Pharmacy | Virginia | SJ: 0 urls
+2026-07-21 16:50:24,342 INFO Pharmacy | Virginia | SK: 0 urls
+2026-07-21 16:51:26,130 INFO Pharmacy | Virginia | SL: 0 urls
+2026-07-21 16:52:14,046 INFO Pharmacy | Virginia | SM: 2 new urls (320 total saved to dhp_detail_urls.txt)
+2026-07-21 16:53:13,698 INFO Pharmacy | Virginia | SN: 0 urls
+2026-07-21 16:54:26,409 INFO Pharmacy | Virginia | SO: 0 urls
+2026-07-21 16:55:30,350 INFO Pharmacy | Virginia | SP: 0 urls
+2026-07-21 16:56:35,306 INFO Pharmacy | Virginia | SQ: 0 urls
+2026-07-21 16:57:36,545 INFO Pharmacy | Virginia | SR: 0 urls
+2026-07-21 16:58:35,925 INFO Pharmacy | Virginia | SS: 0 urls
+2026-07-21 16:59:33,861 INFO Pharmacy | Virginia | ST: 0 urls
+2026-07-21 17:00:32,567 INFO Pharmacy | Virginia | SU: 0 urls
+2026-07-21 17:01:35,009 INFO Pharmacy | Virginia | SV: 0 urls
+2026-07-21 17:02:35,214 INFO Pharmacy | Virginia | SW: 0 urls
+2026-07-21 17:03:29,358 INFO Pharmacy | Virginia | SX: 0 urls
+2026-07-21 17:04:22,827 INFO Pharmacy | Virginia | SY: 0 urls
+2026-07-21 17:05:22,283 INFO Pharmacy | Virginia | SZ: 0 urls
+2026-07-21 17:06:21,663 INFO Pharmacy | Virginia | TA: 0 urls
+2026-07-21 17:07:30,927 INFO Pharmacy | Virginia | TB: 0 urls
+2026-07-21 17:08:23,946 INFO Pharmacy | Virginia | TC: 0 urls
+2026-07-21 17:09:23,042 INFO Pharmacy | Virginia | TD: 0 urls
+2026-07-21 17:10:32,763 INFO Pharmacy | Virginia | TE: 0 urls
+2026-07-21 17:11:38,300 INFO Pharmacy | Virginia | TF: 0 urls
+2026-07-21 17:12:40,037 INFO Pharmacy | Virginia | TG: 0 urls
+2026-07-21 17:13:38,590 INFO Pharmacy | Virginia | TH: 0 urls
+2026-07-21 17:14:37,132 INFO Pharmacy | Virginia | TI: 0 urls
+2026-07-21 17:15:41,364 INFO Pharmacy | Virginia | TJ: 0 urls
+2026-07-21 17:16:48,509 INFO Pharmacy | Virginia | TK: 0 urls
+2026-07-21 17:17:48,561 INFO Pharmacy | Virginia | TL: 0 urls
+2026-07-21 17:18:47,301 INFO Pharmacy | Virginia | TM: 0 urls
+2026-07-21 17:19:47,793 INFO Pharmacy | Virginia | TN: 0 urls
+2026-07-21 17:20:58,483 INFO Pharmacy | Virginia | TO: 0 urls
+2026-07-21 17:21:57,935 INFO Pharmacy | Virginia | TP: 0 urls
+2026-07-21 17:23:09,897 INFO Pharmacy | Virginia | TQ: 0 urls
+2026-07-21 17:24:03,884 INFO Pharmacy | Virginia | TR: 0 urls
+2026-07-21 17:25:34,106 INFO Pharmacy | Virginia | TS: 0 urls
+2026-07-21 17:26:37,892 INFO Pharmacy | Virginia | TT: 0 urls
+2026-07-21 17:27:44,860 INFO Pharmacy | Virginia | TU: 0 urls
+2026-07-21 17:28:47,738 INFO Pharmacy | Virginia | TV: 0 urls
+2026-07-21 17:29:27,571 INFO Pharmacy | Virginia | TW: 2 new urls (322 total saved to dhp_detail_urls.txt)
+2026-07-21 17:31:45,259 INFO Pharmacy | Virginia | TX: 0 urls
+2026-07-21 17:33:53,466 INFO Pharmacy | Virginia | TY: 0 urls
+2026-07-21 17:35:01,768 INFO Pharmacy | Virginia | TZ: 0 urls
+2026-07-21 17:36:04,807 INFO Pharmacy | Virginia | UA: 0 urls
+2026-07-21 17:37:06,040 INFO Pharmacy | Virginia | UB: 0 urls
+2026-07-21 17:38:08,685 INFO Pharmacy | Virginia | UC: 0 urls
+2026-07-21 17:39:21,478 INFO Pharmacy | Virginia | UD: 0 urls
+2026-07-21 17:40:41,436 INFO Pharmacy | Virginia | UE: 0 urls
+2026-07-21 17:41:44,535 INFO Pharmacy | Virginia | UF: 0 urls
+2026-07-21 17:42:46,103 INFO Pharmacy | Virginia | UG: 0 urls
+2026-07-21 17:44:00,175 INFO Pharmacy | Virginia | UH: 0 urls
+2026-07-21 17:45:45,312 INFO Pharmacy | Virginia | UI: 0 urls
+2026-07-21 17:47:01,256 INFO Pharmacy | Virginia | UJ: 0 urls
+2026-07-21 17:48:02,800 INFO Pharmacy | Virginia | UK: 0 urls
+2026-07-21 17:49:09,961 INFO Pharmacy | Virginia | UL: 0 urls
+2026-07-21 17:50:12,010 INFO Pharmacy | Virginia | UM: 0 urls
+2026-07-21 17:50:39,791 ERROR ERROR on Pharmacy / Virginia / UN: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=150.0.7871.127)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x11b5843+10883]
+	chromedriver!GetHandleVerifier [0x11b5884+108c4]
+	chromedriver!(No symbol) [0xfb90e0]
+	chromedriver!(No symbol) [0xfb666e]
+	chromedriver!(No symbol) [0xfa9934]
+	chromedriver!(No symbol) [0xfab330]
+	chromedriver!(No symbol) [0xfa9dbf]
+	chromedriver!(No symbol) [0xfa9705]
+	chromedriver!(No symbol) [0xfa9405]
+	chromedriver!(No symbol) [0xfa75d8]
+	chromedriver!(No symbol) [0xfa7cea]
+	chromedriver!(No symbol) [0xfbcb6e]
+	chromedriver!(No symbol) [0x1043cd4]
+	chromedriver!(No symbol) [0x102566c]
+	chromedriver!(No symbol) [0x10431aa]
+	chromedriver!(No symbol) [0x1025406]
+	chromedriver!(No symbol) [0xff8659]
+	chromedriver!(No symbol) [0xff9424]
+	chromedriver!GetHandleVerifier [0x144ced6+2a7f16]
+	chromedriver!GetHandleVerifier [0x144847b+2a34bb]
+	chromedriver!GetHandleVerifier [0x14694eb+2c452b]
+	chromedriver!GetHandleVerifier [0x11cf566+2a5a6]
+	chromedriver!GetHandleVerifier [0x11d620d+3124d]
+	chromedriver!GetHandleVerifier [0x11be318+19358]
+	chromedriver!GetHandleVerifier [0x11be4c5+19505]
+	chromedriver!GetHandleVerifier [0x11a70af+20ef]
+	KERNEL32!BaseThreadInitThunk [0x75f95d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76fce00b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76fcdf91+231]
+
+2026-07-21 17:51:44,187 INFO Pharmacy | Virginia | UO: 0 urls
+2026-07-21 17:52:46,220 INFO Pharmacy | Virginia | UP: 0 urls
+2026-07-21 17:53:55,091 INFO Pharmacy | Virginia | UQ: 0 urls
+2026-07-21 17:55:00,361 INFO Pharmacy | Virginia | UR: 0 urls
+2026-07-21 17:56:07,367 INFO Pharmacy | Virginia | US: 0 urls
+2026-07-21 17:57:10,020 INFO Pharmacy | Virginia | UT: 0 urls
+2026-07-21 17:58:12,973 INFO Pharmacy | Virginia | UU: 0 urls
+2026-07-21 17:58:59,962 INFO Pharmacy | Virginia | UV: 17 new urls (339 total saved to dhp_detail_urls.txt)
+2026-07-21 18:00:11,440 INFO Pharmacy | Virginia | UW: 0 urls
+2026-07-21 18:01:13,503 INFO Pharmacy | Virginia | UX: 0 urls
+2026-07-21 18:03:21,574 ERROR ERROR on Pharmacy / Virginia / UY: HTTPConnectionPool(host='localhost', port=50064): Read timed out. (read timeout=120)
+2026-07-21 18:04:49,019 INFO Pharmacy | Virginia | UZ: 0 urls
+2026-07-21 18:05:26,947 INFO Pharmacy | Virginia | VA: 4 new urls (343 total saved to dhp_detail_urls.txt)
+2026-07-21 18:06:24,729 INFO Pharmacy | Virginia | VB: 0 urls
+2026-07-21 18:07:08,638 INFO Pharmacy | Virginia | VC: 11 new urls (354 total saved to dhp_detail_urls.txt)
+2026-07-21 18:08:09,760 INFO Pharmacy | Virginia | VD: 0 urls
+2026-07-21 18:10:16,085 ERROR ERROR on Pharmacy / Virginia / VE: HTTPConnectionPool(host='localhost', port=4697): Read timed out. (read timeout=120)
+2026-07-21 18:11:20,463 INFO Pharmacy | Virginia | VF: 0 urls
+2026-07-21 18:12:23,924 INFO Pharmacy | Virginia | VG: 0 urls
+2026-07-21 18:13:07,597 INFO Pharmacy | Virginia | VH: 1 new urls (355 total saved to dhp_detail_urls.txt)
+2026-07-21 18:13:54,689 INFO Pharmacy | Virginia | VI: 17 new urls (372 total saved to dhp_detail_urls.txt)
+2026-07-21 18:15:01,349 INFO Pharmacy | Virginia | VJ: 0 urls
+2026-07-21 18:15:58,437 INFO Pharmacy | Virginia | VK: 0 urls
+2026-07-21 18:16:37,809 INFO Pharmacy | Virginia | VL: 1 new urls (373 total saved to dhp_detail_urls.txt)
+2026-07-21 18:17:48,114 INFO Pharmacy | Virginia | VM: 0 urls
+2026-07-21 18:18:45,119 INFO Pharmacy | Virginia | VN: 0 urls
+2026-07-21 18:19:41,931 INFO Pharmacy | Virginia | VO: 0 urls
+2026-07-21 18:21:49,953 ERROR ERROR on Pharmacy / Virginia / VP: HTTPConnectionPool(host='localhost', port=65307): Read timed out. (read timeout=120)
+2026-07-21 18:23:28,732 INFO Pharmacy | Virginia | VQ: 0 urls
+2026-07-21 18:25:16,755 INFO Pharmacy | Virginia | VR: 0 urls
+2026-07-21 18:26:28,723 INFO Pharmacy | Virginia | VS: 0 urls
+2026-07-21 18:27:36,433 INFO Pharmacy | Virginia | VT: 0 urls
+2026-07-21 18:28:43,730 INFO Pharmacy | Virginia | VU: 0 urls
+2026-07-21 18:29:46,202 INFO Pharmacy | Virginia | VV: 0 urls
+2026-07-21 18:30:54,124 INFO Pharmacy | Virginia | VW: 0 urls
+2026-07-21 18:32:05,872 INFO Pharmacy | Virginia | VX: 0 urls
+2026-07-21 18:33:18,085 INFO Pharmacy | Virginia | VY: 0 urls
+2026-07-21 18:34:25,099 INFO Pharmacy | Virginia | VZ: 0 urls
+2026-07-21 18:35:34,840 INFO Pharmacy | Virginia | WA: 0 urls
+2026-07-21 18:36:38,123 INFO Pharmacy | Virginia | WB: 0 urls
+2026-07-21 18:37:40,560 INFO Pharmacy | Virginia | WC: 0 urls
+2026-07-21 18:38:42,708 INFO Pharmacy | Virginia | WD: 0 urls
+2026-07-21 18:39:44,743 INFO Pharmacy | Virginia | WE: 0 urls
+2026-07-21 18:41:09,765 INFO Pharmacy | Virginia | WF: 0 urls
+2026-07-21 18:42:12,631 INFO Pharmacy | Virginia | WG: 0 urls
+2026-07-21 18:43:13,895 INFO Pharmacy | Virginia | WH: 0 urls
+2026-07-21 18:44:21,933 INFO Pharmacy | Virginia | WI: 0 urls
+2026-07-21 18:45:29,110 INFO Pharmacy | Virginia | WJ: 0 urls
+2026-07-21 18:46:40,645 INFO Pharmacy | Virginia | WK: 0 urls
+2026-07-21 18:47:51,517 INFO Pharmacy | Virginia | WL: 0 urls
+2026-07-21 18:49:05,992 INFO Pharmacy | Virginia | WM: 0 urls
+2026-07-21 18:50:08,820 INFO Pharmacy | Virginia | WN: 0 urls
+2026-07-21 18:51:19,335 INFO Pharmacy | Virginia | WO: 0 urls
+2026-07-21 18:52:34,284 INFO Pharmacy | Virginia | WP: 0 urls
+2026-07-21 18:53:44,422 INFO Pharmacy | Virginia | WQ: 0 urls
+2026-07-21 18:54:47,220 INFO Pharmacy | Virginia | WR: 0 urls
+2026-07-21 18:55:57,652 INFO Pharmacy | Virginia | WS: 0 urls
+2026-07-21 18:57:06,491 INFO Pharmacy | Virginia | WT: 0 urls
+2026-07-21 18:58:15,870 INFO Pharmacy | Virginia | WU: 0 urls
+2026-07-21 18:59:19,415 INFO Pharmacy | Virginia | WV: 0 urls
+2026-07-21 19:00:21,750 INFO Pharmacy | Virginia | WW: 0 urls
+2026-07-21 19:01:39,435 INFO Pharmacy | Virginia | WX: 0 urls
+2026-07-21 19:02:17,262 INFO Pharmacy | Virginia | WY: 1 new urls (374 total saved to dhp_detail_urls.txt)
+2026-07-21 19:03:14,795 INFO Pharmacy | Virginia | WZ: 0 urls
+2026-07-21 19:04:20,602 INFO Pharmacy | Virginia | XA: 0 urls
+2026-07-21 19:05:24,163 INFO Pharmacy | Virginia | XB: 0 urls
+2026-07-21 19:06:26,826 INFO Pharmacy | Virginia | XC: 0 urls
+2026-07-21 19:07:35,004 INFO Pharmacy | Virginia | XD: 0 urls
+2026-07-21 19:08:39,877 INFO Pharmacy | Virginia | XE: 0 urls
+2026-07-21 19:09:43,999 INFO Pharmacy | Virginia | XF: 0 urls
+2026-07-21 19:10:51,229 INFO Pharmacy | Virginia | XG: 0 urls
+2026-07-21 19:12:00,548 INFO Pharmacy | Virginia | XH: 0 urls
+2026-07-21 19:13:03,400 INFO Pharmacy | Virginia | XI: 0 urls
+2026-07-21 19:14:05,065 INFO Pharmacy | Virginia | XJ: 0 urls
+2026-07-21 19:15:07,806 INFO Pharmacy | Virginia | XK: 0 urls
+2026-07-21 19:16:11,172 INFO Pharmacy | Virginia | XL: 0 urls
+2026-07-21 19:17:12,408 INFO Pharmacy | Virginia | XM: 0 urls
+2026-07-21 19:18:13,305 INFO Pharmacy | Virginia | XN: 0 urls
+2026-07-21 19:19:23,209 INFO Pharmacy | Virginia | XO: 0 urls
+2026-07-21 19:20:15,617 INFO Pharmacy | Virginia | XP: 0 urls
+2026-07-21 19:21:25,812 INFO Pharmacy | Virginia | XQ: 0 urls
+2026-07-21 19:22:34,873 INFO Pharmacy | Virginia | XR: 0 urls
+2026-07-21 19:23:57,178 INFO Pharmacy | Virginia | XS: 0 urls
+2026-07-21 19:25:00,939 INFO Pharmacy | Virginia | XT: 0 urls
+2026-07-21 19:26:06,200 INFO Pharmacy | Virginia | XU: 0 urls
+2026-07-21 19:27:10,466 INFO Pharmacy | Virginia | XV: 0 urls
+2026-07-21 19:28:11,333 INFO Pharmacy | Virginia | XW: 0 urls
+2026-07-21 19:29:12,481 INFO Pharmacy | Virginia | XX: 0 urls
+2026-07-21 19:30:26,665 INFO Pharmacy | Virginia | XY: 0 urls
+2026-07-21 19:31:31,074 INFO Pharmacy | Virginia | XZ: 0 urls
+2026-07-21 19:32:46,145 INFO Pharmacy | Virginia | YA: 0 urls
+2026-07-21 19:33:53,039 INFO Pharmacy | Virginia | YB: 0 urls
+2026-07-21 19:34:57,946 INFO Pharmacy | Virginia | YC: 0 urls
+2026-07-21 19:36:06,926 INFO Pharmacy | Virginia | YD: 0 urls
+2026-07-21 19:37:21,362 INFO Pharmacy | Virginia | YE: 0 urls
+2026-07-21 19:38:22,218 INFO Pharmacy | Virginia | YF: 0 urls
+2026-07-21 19:39:22,049 INFO Pharmacy | Virginia | YG: 0 urls
+2026-07-21 19:40:23,411 INFO Pharmacy | Virginia | YH: 0 urls
+2026-07-21 19:41:28,160 INFO Pharmacy | Virginia | YI: 0 urls
+2026-07-21 19:42:21,392 INFO Pharmacy | Virginia | YJ: 0 urls
+2026-07-21 19:43:27,730 INFO Pharmacy | Virginia | YK: 0 urls
+2026-07-21 19:44:31,510 INFO Pharmacy | Virginia | YL: 0 urls
+2026-07-21 19:45:31,015 INFO Pharmacy | Virginia | YM: 0 urls
+2026-07-21 19:46:25,124 INFO Pharmacy | Virginia | YN: 0 urls
+2026-07-21 19:47:23,437 INFO Pharmacy | Virginia | YO: 0 urls
+2026-07-21 19:48:21,442 INFO Pharmacy | Virginia | YP: 0 urls
+2026-07-21 19:49:19,869 INFO Pharmacy | Virginia | YQ: 0 urls
+2026-07-21 19:50:12,983 INFO Pharmacy | Virginia | YR: 0 urls
+2026-07-21 19:51:23,713 INFO Pharmacy | Virginia | YS: 0 urls
+2026-07-21 19:52:24,910 INFO Pharmacy | Virginia | YT: 0 urls
+2026-07-21 19:53:33,805 INFO Pharmacy | Virginia | YU: 0 urls
+2026-07-21 19:54:32,950 INFO Pharmacy | Virginia | YV: 0 urls
+2026-07-21 19:55:37,017 INFO Pharmacy | Virginia | YW: 0 urls
+2026-07-21 19:56:40,096 INFO Pharmacy | Virginia | YX: 0 urls
+2026-07-21 19:57:44,911 INFO Pharmacy | Virginia | YY: 0 urls
+2026-07-21 19:58:50,182 INFO Pharmacy | Virginia | YZ: 0 urls
+2026-07-21 19:59:53,611 INFO Pharmacy | Virginia | ZA: 0 urls
+2026-07-21 20:01:05,487 INFO Pharmacy | Virginia | ZB: 0 urls
+2026-07-21 20:02:10,737 INFO Pharmacy | Virginia | ZC: 0 urls
+2026-07-21 20:03:11,781 INFO Pharmacy | Virginia | ZD: 0 urls
+2026-07-21 20:04:09,418 INFO Pharmacy | Virginia | ZE: 0 urls
+2026-07-21 20:05:12,333 INFO Pharmacy | Virginia | ZF: 0 urls
+2026-07-21 20:06:13,658 INFO Pharmacy | Virginia | ZG: 0 urls
+2026-07-21 20:07:11,994 INFO Pharmacy | Virginia | ZH: 0 urls
+2026-07-21 20:09:26,093 INFO Pharmacy | Virginia | ZI: 1 new urls (375 total saved to dhp_detail_urls.txt)
+2026-07-21 20:10:30,821 INFO Pharmacy | Virginia | ZJ: 0 urls
+2026-07-21 20:11:34,777 INFO Pharmacy | Virginia | ZK: 0 urls
+2026-07-21 20:12:33,064 INFO Pharmacy | Virginia | ZL: 0 urls
+2026-07-21 20:14:40,036 ERROR ERROR on Pharmacy / Virginia / ZM: HTTPConnectionPool(host='localhost', port=48682): Read timed out. (read timeout=120)
+2026-07-21 20:15:41,559 INFO Pharmacy | Virginia | ZN: 0 urls
+2026-07-21 20:16:43,042 INFO Pharmacy | Virginia | ZO: 0 urls
+2026-07-21 20:17:40,598 INFO Pharmacy | Virginia | ZP: 0 urls
+2026-07-21 20:19:48,310 ERROR ERROR on Pharmacy / Virginia / ZQ: HTTPConnectionPool(host='localhost', port=33334): Read timed out. (read timeout=120)
+2026-07-21 20:20:48,638 INFO Pharmacy | Virginia | ZR: 0 urls
+2026-07-21 20:21:56,286 INFO Pharmacy | Virginia | ZS: 0 urls
+2026-07-21 20:22:53,633 INFO Pharmacy | Virginia | ZT: 0 urls
+2026-07-21 20:24:42,730 INFO Pharmacy | Virginia | ZU: 0 urls
+2026-07-21 20:25:38,202 INFO Pharmacy | Virginia | ZV: 0 urls
+2026-07-21 20:27:34,713 INFO Pharmacy | Virginia | ZW: 0 urls
+2026-07-21 20:28:50,571 INFO Pharmacy | Virginia | ZX: 0 urls
+2026-07-21 20:30:01,334 INFO Pharmacy | Virginia | ZY: 0 urls
+2026-07-21 20:31:14,666 INFO Pharmacy | Virginia | ZZ: 0 urls
+2026-07-21 20:31:16,605 INFO Pharmacy: finished, 375 unique urls saved so far in dhp_detail_urls.txt
+2026-07-21 20:32:23,126 INFO Pharmacy Intern | Virginia | AA: 0 urls
+2026-07-21 20:33:32,901 INFO Pharmacy Intern | Virginia | AB: 0 urls
+2026-07-21 20:34:34,623 INFO Pharmacy Intern | Virginia | AC: 0 urls
+2026-07-21 20:35:32,385 INFO Pharmacy Intern | Virginia | AD: 0 urls
+2026-07-21 20:36:35,659 INFO Pharmacy Intern | Virginia | AE: 0 urls
+2026-07-21 20:37:34,126 INFO Pharmacy Intern | Virginia | AF: 0 urls
+2026-07-21 20:38:34,207 INFO Pharmacy Intern | Virginia | AG: 0 urls
+2026-07-21 20:39:28,373 INFO Pharmacy Intern | Virginia | AH: 0 urls
+2026-07-21 20:40:27,133 INFO Pharmacy Intern | Virginia | AI: 0 urls
+2026-07-21 20:41:26,261 INFO Pharmacy Intern | Virginia | AJ: 0 urls
+2026-07-21 20:42:20,534 INFO Pharmacy Intern | Virginia | AK: 0 urls
+2026-07-21 20:43:26,161 INFO Pharmacy Intern | Virginia | AL: 0 urls
+2026-07-21 20:44:26,628 INFO Pharmacy Intern | Virginia | AM: 0 urls
+2026-07-21 20:45:26,658 INFO Pharmacy Intern | Virginia | AN: 0 urls
+2026-07-21 20:46:33,640 INFO Pharmacy Intern | Virginia | AO: 0 urls
+2026-07-21 20:47:40,301 INFO Pharmacy Intern | Virginia | AP: 0 urls
+2026-07-21 20:48:38,644 INFO Pharmacy Intern | Virginia | AQ: 0 urls
+2026-07-21 20:49:41,325 INFO Pharmacy Intern | Virginia | AR: 0 urls
+2026-07-21 20:50:40,449 INFO Pharmacy Intern | Virginia | AS: 0 urls
+2026-07-21 20:51:38,721 INFO Pharmacy Intern | Virginia | AT: 0 urls
+2026-07-21 20:52:33,977 INFO Pharmacy Intern | Virginia | AU: 0 urls
+2026-07-21 20:53:51,081 INFO Pharmacy Intern | Virginia | AV: 0 urls
+2026-07-21 20:55:06,857 INFO Pharmacy Intern | Virginia | AW: 0 urls
+2026-07-21 20:56:12,774 INFO Pharmacy Intern | Virginia | AX: 0 urls
+2026-07-21 20:57:15,981 INFO Pharmacy Intern | Virginia | AY: 0 urls
+2026-07-21 20:58:16,848 INFO Pharmacy Intern | Virginia | AZ: 0 urls
+2026-07-21 20:59:21,713 INFO Pharmacy Intern | Virginia | BA: 0 urls
+2026-07-21 21:00:25,839 INFO Pharmacy Intern | Virginia | BB: 0 urls
+2026-07-21 21:01:20,136 INFO Pharmacy Intern | Virginia | BC: 0 urls
+2026-07-21 21:02:18,640 INFO Pharmacy Intern | Virginia | BD: 0 urls
+2026-07-21 21:03:24,360 INFO Pharmacy Intern | Virginia | BE: 0 urls
+2026-07-21 21:04:38,295 INFO Pharmacy Intern | Virginia | BF: 0 urls
+2026-07-21 21:05:47,630 INFO Pharmacy Intern | Virginia | BG: 0 urls
+2026-07-21 21:06:40,294 INFO Pharmacy Intern | Virginia | BH: 0 urls
+2026-07-21 21:07:39,455 INFO Pharmacy Intern | Virginia | BI: 0 urls
+2026-07-21 21:08:42,141 INFO Pharmacy Intern | Virginia | BJ: 0 urls
+2026-07-21 21:09:35,136 INFO Pharmacy Intern | Virginia | BK: 0 urls
+2026-07-21 21:10:41,058 INFO Pharmacy Intern | Virginia | BL: 0 urls
+2026-07-21 21:11:34,701 INFO Pharmacy Intern | Virginia | BM: 0 urls
+2026-07-21 21:12:36,240 INFO Pharmacy Intern | Virginia | BN: 0 urls
+2026-07-21 21:13:48,498 INFO Pharmacy Intern | Virginia | BO: 0 urls
+2026-07-21 21:14:47,346 INFO Pharmacy Intern | Virginia | BP: 0 urls
+2026-07-21 21:15:50,515 INFO Pharmacy Intern | Virginia | BQ: 0 urls
+2026-07-21 21:16:31,738 INFO Pharmacy Intern | Virginia | BR: 11 new urls (386 total saved to dhp_detail_urls.txt)
+2026-07-21 21:17:37,050 INFO Pharmacy Intern | Virginia | BS: 0 urls
+2026-07-21 21:18:34,868 INFO Pharmacy Intern | Virginia | BT: 0 urls
+2026-07-21 21:19:47,436 INFO Pharmacy Intern | Virginia | BU: 0 urls
+2026-07-21 21:20:46,802 INFO Pharmacy Intern | Virginia | BV: 0 urls
+2026-07-21 21:21:46,378 INFO Pharmacy Intern | Virginia | BW: 0 urls
+2026-07-21 21:22:49,246 INFO Pharmacy Intern | Virginia | BX: 0 urls
+2026-07-21 21:23:49,785 INFO Pharmacy Intern | Virginia | BY: 0 urls
+2026-07-21 21:24:52,897 INFO Pharmacy Intern | Virginia | BZ: 0 urls
+2026-07-21 21:25:54,359 INFO Pharmacy Intern | Virginia | CA: 0 urls
+2026-07-21 21:26:48,269 INFO Pharmacy Intern | Virginia | CB: 0 urls
+2026-07-21 21:28:04,179 INFO Pharmacy Intern | Virginia | CC: 0 urls
+2026-07-21 21:29:24,984 INFO Pharmacy Intern | Virginia | CD: 0 urls
+2026-07-21 21:30:21,029 INFO Pharmacy Intern | Virginia | CE: 0 urls
+2026-07-21 21:31:35,701 INFO Pharmacy Intern | Virginia | CF: 0 urls
+2026-07-21 21:32:41,712 INFO Pharmacy Intern | Virginia | CG: 0 urls
+2026-07-21 21:33:49,121 INFO Pharmacy Intern | Virginia | CH: 0 urls
+2026-07-21 21:35:01,850 INFO Pharmacy Intern | Virginia | CI: 0 urls
+2026-07-21 21:36:04,340 INFO Pharmacy Intern | Virginia | CJ: 0 urls
+2026-07-21 21:37:07,405 INFO Pharmacy Intern | Virginia | CK: 0 urls
+2026-07-21 21:38:24,297 INFO Pharmacy Intern | Virginia | CL: 0 urls
+2026-07-21 21:39:35,026 INFO Pharmacy Intern | Virginia | CM: 0 urls
+2026-07-21 21:40:35,865 INFO Pharmacy Intern | Virginia | CN: 0 urls
+2026-07-21 21:41:38,600 INFO Pharmacy Intern | Virginia | CO: 0 urls
+2026-07-21 21:42:46,894 INFO Pharmacy Intern | Virginia | CP: 0 urls
+2026-07-21 21:43:46,622 INFO Pharmacy Intern | Virginia | CQ: 0 urls
+2026-07-21 21:44:46,497 INFO Pharmacy Intern | Virginia | CR: 0 urls
+2026-07-21 21:45:45,811 INFO Pharmacy Intern | Virginia | CS: 0 urls
+2026-07-21 21:46:40,132 INFO Pharmacy Intern | Virginia | CT: 0 urls
+2026-07-21 21:47:48,071 INFO Pharmacy Intern | Virginia | CU: 0 urls
+2026-07-21 21:48:50,253 INFO Pharmacy Intern | Virginia | CV: 0 urls
+2026-07-21 21:50:04,742 INFO Pharmacy Intern | Virginia | CW: 0 urls
+2026-07-21 21:51:29,443 INFO Pharmacy Intern | Virginia | CX: 0 urls
+2026-07-21 21:52:46,416 INFO Pharmacy Intern | Virginia | CY: 0 urls
+2026-07-21 21:53:52,252 INFO Pharmacy Intern | Virginia | CZ: 0 urls
+2026-07-21 21:54:53,992 INFO Pharmacy Intern | Virginia | DA: 0 urls
+2026-07-21 21:55:53,050 INFO Pharmacy Intern | Virginia | DB: 0 urls
+2026-07-21 21:56:56,364 INFO Pharmacy Intern | Virginia | DC: 0 urls
+2026-07-21 21:58:00,009 INFO Pharmacy Intern | Virginia | DD: 0 urls
+2026-07-21 21:59:14,520 INFO Pharmacy Intern | Virginia | DE: 0 urls
+2026-07-21 22:00:29,862 INFO Pharmacy Intern | Virginia | DF: 0 urls
+2026-07-21 22:01:39,197 INFO Pharmacy Intern | Virginia | DG: 0 urls
+2026-07-21 22:02:51,386 INFO Pharmacy Intern | Virginia | DH: 0 urls
+2026-07-21 22:03:52,321 INFO Pharmacy Intern | Virginia | DI: 0 urls
+2026-07-21 22:04:54,670 INFO Pharmacy Intern | Virginia | DJ: 0 urls
+2026-07-21 22:05:48,481 INFO Pharmacy Intern | Virginia | DK: 0 urls
+2026-07-21 22:06:47,642 INFO Pharmacy Intern | Virginia | DL: 0 urls
+2026-07-21 22:07:51,763 INFO Pharmacy Intern | Virginia | DM: 0 urls
+2026-07-21 22:08:54,919 INFO Pharmacy Intern | Virginia | DN: 0 urls
+2026-07-21 22:09:55,307 INFO Pharmacy Intern | Virginia | DO: 0 urls
+2026-07-21 22:11:10,119 INFO Pharmacy Intern | Virginia | DP: 0 urls
+2026-07-21 22:12:12,588 INFO Pharmacy Intern | Virginia | DQ: 0 urls
+2026-07-21 22:13:16,529 INFO Pharmacy Intern | Virginia | DR: 0 urls
+2026-07-21 22:14:21,374 INFO Pharmacy Intern | Virginia | DS: 0 urls
+2026-07-21 22:15:24,306 INFO Pharmacy Intern | Virginia | DT: 0 urls
+2026-07-21 22:16:26,698 INFO Pharmacy Intern | Virginia | DU: 0 urls
+2026-07-21 22:17:33,010 INFO Pharmacy Intern | Virginia | DV: 0 urls
+2026-07-21 22:18:35,369 INFO Pharmacy Intern | Virginia | DW: 0 urls
+2026-07-21 22:19:39,590 INFO Pharmacy Intern | Virginia | DX: 0 urls
+2026-07-21 22:20:42,954 INFO Pharmacy Intern | Virginia | DY: 0 urls
+2026-07-21 22:21:46,530 INFO Pharmacy Intern | Virginia | DZ: 0 urls
+2026-07-21 22:22:54,959 INFO Pharmacy Intern | Virginia | EA: 0 urls
+2026-07-21 22:23:57,058 INFO Pharmacy Intern | Virginia | EB: 0 urls
+2026-07-21 22:24:52,859 INFO Pharmacy Intern | Virginia | EC: 0 urls
+2026-07-21 22:25:59,365 INFO Pharmacy Intern | Virginia | ED: 0 urls
+2026-07-21 22:27:03,162 INFO Pharmacy Intern | Virginia | EE: 0 urls
+2026-07-21 22:28:16,341 INFO Pharmacy Intern | Virginia | EF: 0 urls
+2026-07-21 22:29:25,674 INFO Pharmacy Intern | Virginia | EG: 0 urls
+2026-07-21 22:30:29,443 INFO Pharmacy Intern | Virginia | EH: 0 urls
+2026-07-21 22:31:41,779 INFO Pharmacy Intern | Virginia | EI: 0 urls
+2026-07-21 22:32:45,243 INFO Pharmacy Intern | Virginia | EJ: 0 urls
+2026-07-21 22:33:52,411 INFO Pharmacy Intern | Virginia | EK: 0 urls
+2026-07-21 22:34:55,450 INFO Pharmacy Intern | Virginia | EL: 0 urls
+2026-07-21 22:36:12,980 INFO Pharmacy Intern | Virginia | EM: 0 urls
+2026-07-21 22:37:16,264 INFO Pharmacy Intern | Virginia | EN: 0 urls
+2026-07-21 22:38:25,366 INFO Pharmacy Intern | Virginia | EO: 0 urls
+2026-07-21 22:39:19,671 INFO Pharmacy Intern | Virginia | EP: 0 urls
+2026-07-21 22:40:24,601 INFO Pharmacy Intern | Virginia | EQ: 0 urls
+2026-07-24 11:43:16,486 INFO Resuming URL collection from occupation #2, state #1, prefix #122 (386 existing urls loaded)
+2026-07-24 11:43:16,487 INFO Pharmacy: finished, 386 unique urls saved so far in dhp_detail_urls.txt
+2026-07-24 11:44:28,066 INFO Pharmacy Intern | Virginia | AA: 0 urls
+2026-07-24 11:45:38,245 INFO Pharmacy Intern | Virginia | AB: 0 urls
+2026-07-24 11:46:41,444 INFO Pharmacy Intern | Virginia | AC: 0 urls
+2026-07-24 11:47:44,745 INFO Pharmacy Intern | Virginia | AD: 0 urls
+2026-07-24 11:48:56,850 INFO Pharmacy Intern | Virginia | AE: 0 urls
+2026-07-24 11:50:05,990 INFO Pharmacy Intern | Virginia | AF: 0 urls
+2026-07-24 11:51:13,014 INFO Pharmacy Intern | Virginia | AG: 0 urls
+2026-07-24 11:52:20,956 INFO Pharmacy Intern | Virginia | AH: 0 urls
+2026-07-24 11:53:28,734 INFO Pharmacy Intern | Virginia | AI: 0 urls
+2026-07-24 11:54:42,277 INFO Pharmacy Intern | Virginia | AJ: 0 urls
+2026-07-24 11:55:49,555 INFO Pharmacy Intern | Virginia | AK: 0 urls
+2026-07-24 11:56:55,722 INFO Pharmacy Intern | Virginia | AL: 0 urls
+2026-07-24 11:58:09,990 INFO Pharmacy Intern | Virginia | AM: 0 urls
+2026-07-24 12:00:11,267 INFO Pharmacy Intern | Virginia | AN: 0 urls
+2026-07-24 12:01:20,078 INFO Pharmacy Intern | Virginia | AO: 0 urls
+2026-07-24 12:02:44,245 INFO Pharmacy Intern | Virginia | AP: 0 urls
+2026-07-24 12:03:55,653 INFO Pharmacy Intern | Virginia | AQ: 0 urls
+2026-07-24 12:04:51,710 INFO Pharmacy Intern | Virginia | AR: 3 new urls (389 total saved to dhp_detail_urls.txt)
+2026-07-24 12:06:04,505 INFO Pharmacy Intern | Virginia | AS: 9 new urls (398 total saved to dhp_detail_urls.txt)
+2026-07-24 12:07:12,288 INFO Pharmacy Intern | Virginia | AT: 0 urls
+2026-07-24 12:08:27,438 INFO Pharmacy Intern | Virginia | AU: 0 urls
+2026-07-24 12:09:34,239 INFO Pharmacy Intern | Virginia | AV: 0 urls
+2026-07-24 12:10:45,519 INFO Pharmacy Intern | Virginia | AW: 0 urls
+2026-07-24 12:11:52,449 INFO Pharmacy Intern | Virginia | AX: 0 urls
+2026-07-24 12:13:09,708 INFO Pharmacy Intern | Virginia | AY: 0 urls
+2026-07-24 12:14:23,232 INFO Pharmacy Intern | Virginia | AZ: 0 urls
+2026-07-24 12:15:26,945 INFO Pharmacy Intern | Virginia | BA: 0 urls
+2026-07-24 12:16:31,196 INFO Pharmacy Intern | Virginia | BB: 0 urls
+2026-07-24 12:17:25,663 INFO Pharmacy Intern | Virginia | BC: 0 urls
+2026-07-24 12:18:24,507 INFO Pharmacy Intern | Virginia | BD: 0 urls
+2026-07-24 12:19:19,169 INFO Pharmacy Intern | Virginia | BE: 0 urls
+2026-07-27 15:33:01,481 INFO Resuming URL collection from occupation #2, state #1, prefix #32 (398 existing urls loaded)
+2026-07-27 15:33:01,482 INFO Pharmacy: finished, 398 unique urls saved so far in dhp_detail_urls.txt
+2026-07-27 15:34:16,925 INFO Pharmacy Intern | Virginia | AA: 0 urls
+2026-07-27 15:35:55,702 INFO Pharmacy Intern | Virginia | AB: 7 new urls (405 total saved to dhp_detail_urls.txt)
+2026-07-27 15:36:54,184 INFO Pharmacy Intern | Virginia | AC: 0 urls
+2026-07-27 15:37:46,059 INFO Pharmacy Intern | Virginia | AD: 3 new urls (408 total saved to dhp_detail_urls.txt)
+2026-07-27 15:38:57,123 INFO Pharmacy Intern | Virginia | AE: 0 urls
+2026-07-27 15:40:40,188 INFO Pharmacy Intern | Virginia | AF: 2 new urls (410 total saved to dhp_detail_urls.txt)
+2026-07-27 15:41:44,824 INFO Pharmacy Intern | Virginia | AG: 0 urls
+2026-07-27 15:43:52,858 ERROR ERROR on Pharmacy Intern / Virginia / AH: HTTPConnectionPool(host='localhost', port=1167): Read timed out. (read timeout=120)
+2026-07-27 15:44:36,994 INFO Pharmacy Intern | Virginia | AI: 2 new urls (412 total saved to dhp_detail_urls.txt)
+2026-07-27 15:46:43,240 ERROR ERROR on Pharmacy Intern / Virginia / AJ: HTTPConnectionPool(host='localhost', port=47540): Read timed out. (read timeout=120)
+2026-07-27 15:47:28,819 INFO Pharmacy Intern | Virginia | AK: 3 new urls (415 total saved to dhp_detail_urls.txt)
+2026-07-27 15:48:23,264 INFO Pharmacy Intern | Virginia | AL: 19 new urls (434 total saved to dhp_detail_urls.txt)
+2026-07-27 15:49:06,189 INFO Pharmacy Intern | Virginia | AM: 8 new urls (442 total saved to dhp_detail_urls.txt)
+2026-07-27 15:49:58,656 INFO Pharmacy Intern | Virginia | AN: 19 new urls (461 total saved to dhp_detail_urls.txt)
+2026-07-27 15:51:00,583 INFO Pharmacy Intern | Virginia | AO: 0 urls
+2026-07-27 15:52:02,936 INFO Pharmacy Intern | Virginia | AP: 0 urls
+2026-07-27 15:53:01,940 INFO Pharmacy Intern | Virginia | AQ: 0 urls
+2026-07-27 15:54:25,466 INFO Pharmacy Intern | Virginia | AR: 0 urls
+2026-07-27 15:55:45,881 INFO Pharmacy Intern | Virginia | AS: 0 urls
+2026-07-27 15:56:41,961 INFO Pharmacy Intern | Virginia | AT: 0 urls
+2026-07-27 15:57:58,328 INFO Pharmacy Intern | Virginia | AU: 0 urls
+2026-07-27 15:58:57,126 INFO Pharmacy Intern | Virginia | AV: 0 urls
+2026-07-27 15:59:57,805 INFO Pharmacy Intern | Virginia | AW: 0 urls
+2026-07-27 16:00:57,725 INFO Pharmacy Intern | Virginia | AX: 0 urls
+2026-07-27 16:02:05,611 INFO Pharmacy Intern | Virginia | AY: 0 urls
+2026-07-27 16:03:25,621 INFO Pharmacy Intern | Virginia | AZ: 0 urls
+2026-07-27 16:04:37,491 INFO Pharmacy Intern | Virginia | BA: 0 urls
+2026-07-27 16:05:43,624 INFO Pharmacy Intern | Virginia | BB: 0 urls
+2026-07-27 16:06:44,370 INFO Pharmacy Intern | Virginia | BC: 0 urls
+2026-07-27 16:07:58,682 INFO Pharmacy Intern | Virginia | BD: 0 urls
+2026-07-27 16:09:04,041 INFO Pharmacy Intern | Virginia | BE: 0 urls
+2026-07-27 16:09:58,404 INFO Pharmacy Intern | Virginia | BF: 0 urls
+2026-07-27 16:10:52,402 INFO Pharmacy Intern | Virginia | BG: 0 urls
+2026-07-27 16:11:47,005 INFO Pharmacy Intern | Virginia | BH: 0 urls
+2026-07-27 16:12:47,516 INFO Pharmacy Intern | Virginia | BI: 0 urls
+2026-07-27 16:13:41,876 INFO Pharmacy Intern | Virginia | BJ: 0 urls
+2026-07-27 16:14:44,468 INFO Pharmacy Intern | Virginia | BK: 0 urls
+2026-07-27 16:15:50,771 INFO Pharmacy Intern | Virginia | BL: 0 urls
+2026-07-27 16:16:48,549 INFO Pharmacy Intern | Virginia | BM: 0 urls
+2026-07-27 16:17:49,101 INFO Pharmacy Intern | Virginia | BN: 0 urls
+2026-07-27 16:18:58,087 INFO Pharmacy Intern | Virginia | BO: 0 urls
+2026-07-27 16:19:59,708 INFO Pharmacy Intern | Virginia | BP: 0 urls
+2026-07-27 16:20:59,222 INFO Pharmacy Intern | Virginia | BQ: 0 urls
+2026-07-27 16:22:03,984 INFO Pharmacy Intern | Virginia | BR: 0 urls
+2026-07-27 16:23:00,287 INFO Pharmacy Intern | Virginia | BS: 0 urls
+2026-07-27 16:24:05,853 INFO Pharmacy Intern | Virginia | BT: 0 urls
+2026-07-27 16:25:07,631 INFO Pharmacy Intern | Virginia | BU: 0 urls
+2026-07-27 16:26:12,967 INFO Pharmacy Intern | Virginia | BV: 0 urls
+2026-07-27 16:27:35,465 INFO Pharmacy Intern | Virginia | BW: 0 urls
+2026-07-27 16:28:51,037 INFO Pharmacy Intern | Virginia | BX: 0 urls
+2026-07-27 16:30:23,928 INFO Pharmacy Intern | Virginia | BY: 0 urls
+2026-07-27 16:31:48,768 INFO Pharmacy Intern | Virginia | BZ: 0 urls
+2026-07-27 16:32:55,237 INFO Pharmacy Intern | Virginia | CA: 0 urls
+2026-07-27 16:33:55,400 INFO Pharmacy Intern | Virginia | CB: 0 urls
+2026-07-27 16:34:51,010 INFO Pharmacy Intern | Virginia | CC: 0 urls
+2026-07-27 16:35:53,820 INFO Pharmacy Intern | Virginia | CD: 0 urls
+2026-07-27 16:36:53,648 INFO Pharmacy Intern | Virginia | CE: 0 urls
+2026-07-27 16:37:55,956 INFO Pharmacy Intern | Virginia | CF: 0 urls
+2026-07-27 16:39:10,201 INFO Pharmacy Intern | Virginia | CG: 0 urls
+2026-07-27 16:40:12,228 INFO Pharmacy Intern | Virginia | CH: 0 urls
+2026-07-27 16:41:27,621 INFO Pharmacy Intern | Virginia | CI: 0 urls
+2026-07-27 16:42:30,993 INFO Pharmacy Intern | Virginia | CJ: 0 urls
+2026-07-27 16:43:36,500 INFO Pharmacy Intern | Virginia | CK: 0 urls
+2026-07-27 16:44:38,962 INFO Pharmacy Intern | Virginia | CL: 0 urls
+2026-07-27 16:45:41,136 INFO Pharmacy Intern | Virginia | CM: 0 urls
+2026-07-27 16:46:42,329 INFO Pharmacy Intern | Virginia | CN: 0 urls
+2026-07-27 16:47:50,031 INFO Pharmacy Intern | Virginia | CO: 0 urls
+2026-07-27 16:49:01,983 INFO Pharmacy Intern | Virginia | CP: 0 urls
+2026-07-27 16:50:19,166 INFO Pharmacy Intern | Virginia | CQ: 0 urls
+2026-07-27 16:51:23,157 INFO Pharmacy Intern | Virginia | CR: 0 urls
+2026-07-27 16:52:33,726 INFO Pharmacy Intern | Virginia | CS: 0 urls
+2026-07-27 16:53:48,060 INFO Pharmacy Intern | Virginia | CT: 0 urls
+2026-07-27 16:54:49,585 INFO Pharmacy Intern | Virginia | CU: 0 urls
+2026-07-27 16:55:45,466 INFO Pharmacy Intern | Virginia | CV: 0 urls
+2026-07-27 16:56:49,521 INFO Pharmacy Intern | Virginia | CW: 0 urls
+2026-07-27 16:58:15,723 INFO Pharmacy Intern | Virginia | CX: 0 urls
+2026-07-27 16:59:26,272 INFO Pharmacy Intern | Virginia | CY: 0 urls
+2026-07-27 17:00:37,400 INFO Pharmacy Intern | Virginia | CZ: 0 urls
+2026-07-27 17:01:50,251 INFO Pharmacy Intern | Virginia | DA: 0 urls
+2026-07-27 17:02:58,549 INFO Pharmacy Intern | Virginia | DB: 0 urls
+2026-07-27 17:04:16,558 INFO Pharmacy Intern | Virginia | DC: 0 urls
+2026-07-27 17:05:26,525 INFO Pharmacy Intern | Virginia | DD: 0 urls
+2026-07-27 17:06:43,655 INFO Pharmacy Intern | Virginia | DE: 0 urls
+2026-07-27 17:07:53,815 INFO Pharmacy Intern | Virginia | DF: 0 urls
+2026-07-27 17:09:11,904 INFO Pharmacy Intern | Virginia | DG: 0 urls
+2026-07-27 17:10:20,431 INFO Pharmacy Intern | Virginia | DH: 0 urls
+2026-07-27 17:11:25,827 INFO Pharmacy Intern | Virginia | DI: 0 urls
+2026-07-27 17:12:27,163 INFO Pharmacy Intern | Virginia | DJ: 0 urls
+2026-07-27 17:13:28,012 INFO Pharmacy Intern | Virginia | DK: 0 urls
+2026-07-27 17:14:56,291 INFO Pharmacy Intern | Virginia | DL: 0 urls
+2026-07-27 17:16:05,487 INFO Pharmacy Intern | Virginia | DM: 0 urls
+2026-07-27 17:17:13,722 INFO Pharmacy Intern | Virginia | DN: 0 urls
+2026-07-27 17:18:22,232 INFO Pharmacy Intern | Virginia | DO: 0 urls
+2026-07-27 17:19:28,208 INFO Pharmacy Intern | Virginia | DP: 0 urls
+2026-07-27 17:20:39,742 INFO Pharmacy Intern | Virginia | DQ: 0 urls
+2026-07-27 17:21:37,265 INFO Pharmacy Intern | Virginia | DR: 0 urls
+2026-07-27 17:22:46,112 INFO Pharmacy Intern | Virginia | DS: 0 urls
+2026-07-27 17:24:02,508 INFO Pharmacy Intern | Virginia | DT: 0 urls
+2026-07-27 17:25:16,533 INFO Pharmacy Intern | Virginia | DU: 0 urls
+2026-07-27 17:26:38,476 INFO Pharmacy Intern | Virginia | DV: 0 urls
+2026-07-27 17:27:53,044 INFO Pharmacy Intern | Virginia | DW: 0 urls
+2026-07-27 17:28:53,818 INFO Pharmacy Intern | Virginia | DX: 0 urls
+2026-07-27 17:30:14,414 INFO Pharmacy Intern | Virginia | DY: 0 urls
+2026-07-27 17:31:24,825 INFO Pharmacy Intern | Virginia | DZ: 0 urls
+2026-07-27 17:32:24,462 INFO Pharmacy Intern | Virginia | EA: 0 urls
+2026-07-27 17:33:25,030 INFO Pharmacy Intern | Virginia | EB: 0 urls
+2026-07-27 17:34:26,552 INFO Pharmacy Intern | Virginia | EC: 0 urls
+2026-07-27 17:35:34,973 INFO Pharmacy Intern | Virginia | ED: 0 urls
+2026-07-27 17:36:58,051 INFO Pharmacy Intern | Virginia | EE: 0 urls
+2026-07-27 17:38:03,283 INFO Pharmacy Intern | Virginia | EF: 0 urls
+2026-07-27 17:39:07,858 INFO Pharmacy Intern | Virginia | EG: 0 urls
+2026-07-27 17:40:10,646 INFO Pharmacy Intern | Virginia | EH: 0 urls
+2026-07-27 17:41:13,431 INFO Pharmacy Intern | Virginia | EI: 0 urls
+2026-07-27 17:42:29,819 INFO Pharmacy Intern | Virginia | EJ: 0 urls
+2026-07-27 17:43:36,622 INFO Pharmacy Intern | Virginia | EK: 0 urls
+2026-07-27 17:44:51,345 INFO Pharmacy Intern | Virginia | EL: 0 urls
+2026-07-27 17:45:57,490 INFO Pharmacy Intern | Virginia | EM: 0 urls
+2026-07-27 17:47:08,805 INFO Pharmacy Intern | Virginia | EN: 0 urls
+2026-07-27 17:48:16,496 INFO Pharmacy Intern | Virginia | EO: 0 urls
+2026-07-27 17:49:14,105 INFO Pharmacy Intern | Virginia | EP: 0 urls
+2026-07-27 17:50:32,850 INFO Pharmacy Intern | Virginia | EQ: 0 urls
+2026-07-27 17:51:37,913 INFO Pharmacy Intern | Virginia | ER: 0 urls
+2026-07-27 17:52:27,174 INFO Pharmacy Intern | Virginia | ES: 1 new urls (462 total saved to dhp_detail_urls.txt)
+2026-07-27 17:53:07,925 ERROR Automatic Search click failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-27 17:53:07,926 WARNING Please click Search manually in the browser, then press Enter here.
+2026-07-27 17:53:58,597 INFO Resuming URL collection from occupation #2, state #1, prefix #124 (462 existing urls loaded)
+2026-07-27 17:53:58,597 INFO Registered Nurse: finished, 462 unique urls saved so far in dhp_detail_urls.txt
+2026-07-27 17:54:46,835 INFO Respiratory Therapist | Virginia | AA: 1 new urls (463 total saved to dhp_detail_urls.txt)
+2026-07-27 17:55:35,704 INFO Respiratory Therapist | Virginia | AB: 8 new urls (471 total saved to dhp_detail_urls.txt)
+2026-07-27 17:55:56,564 ERROR ERROR on Respiratory Therapist / Virginia / AC: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-27 17:56:19,471 INFO Resuming URL collection from occupation #2, state #1, prefix #3 (471 existing urls loaded)
+2026-07-27 17:56:19,471 INFO Radiologist Assistant: finished, 471 unique urls saved so far in dhp_detail_urls.txt
+2026-07-27 17:57:44,026 INFO Registered Nurse | Virginia | AA: 0 urls
+2026-07-27 17:59:22,263 INFO Registered Nurse | Virginia | AB: 0 urls
+2026-07-27 18:00:29,382 INFO Registered Nurse | Virginia | AC: 11 new urls (482 total saved to dhp_detail_urls.txt)
+2026-07-27 18:01:43,419 INFO Registered Nurse | Virginia | AD: 0 urls
+2026-07-27 18:03:45,722 INFO Registered Nurse | Virginia | AE: 10 new urls (492 total saved to dhp_detail_urls.txt)
+2026-07-27 18:05:04,046 INFO Registered Nurse | Virginia | AF: 0 urls
+2026-07-27 18:06:42,149 INFO Registered Nurse | Virginia | AG: 0 urls
+2026-07-27 18:08:14,319 INFO Registered Nurse | Virginia | AH: 23 new urls (515 total saved to dhp_detail_urls.txt)
+2026-07-27 18:09:31,960 INFO Registered Nurse | Virginia | AI: 0 urls
+2026-07-27 18:10:42,963 INFO Registered Nurse | Virginia | AJ: 0 urls
+2026-07-27 18:12:47,707 INFO Registered Nurse | Virginia | AK: 46 new urls (561 total saved to dhp_detail_urls.txt)
+2026-07-27 18:15:48,725 INFO Registered Nurse | Virginia | AL: 0 urls
+2026-07-27 18:17:12,992 INFO Registered Nurse | Virginia | AM: 0 urls
+2026-07-27 18:18:18,724 INFO Registered Nurse | Virginia | AN: 0 urls
+2026-07-27 18:19:30,168 INFO Registered Nurse | Virginia | AO: 0 urls
+2026-07-27 18:22:34,873 INFO Registered Nurse | Virginia | AP: 0 urls
+2026-07-27 18:24:45,637 INFO Registered Nurse | Virginia | AQ: 6 new urls (567 total saved to dhp_detail_urls.txt)
+2026-07-27 18:26:54,480 INFO Registered Nurse | Virginia | AR: 0 urls
+2026-07-27 18:29:34,071 INFO Registered Nurse | Virginia | AS: 0 urls
+2026-07-27 18:30:40,236 INFO Registered Nurse | Virginia | AT: 28 new urls (595 total saved to dhp_detail_urls.txt)
+2026-07-27 18:32:19,078 INFO Registered Nurse | Virginia | AU: 0 urls
+2026-07-27 18:33:52,943 INFO Registered Nurse | Virginia | AV: 74 new urls (669 total saved to dhp_detail_urls.txt)
+2026-07-27 18:34:56,806 INFO Registered Nurse | Virginia | AW: 5 new urls (674 total saved to dhp_detail_urls.txt)
+2026-07-27 18:35:50,137 INFO Registered Nurse | Virginia | AX: 1 new urls (675 total saved to dhp_detail_urls.txt)
+2026-07-27 19:05:50,818 INFO Registered Nurse | Virginia | AY: 88 new urls (763 total saved to dhp_detail_urls.txt)
+2026-07-27 19:06:58,091 INFO Registered Nurse | Virginia | AZ: 45 new urls (808 total saved to dhp_detail_urls.txt)
+2026-07-27 19:09:40,357 INFO Registered Nurse | Virginia | BA: 0 urls
+2026-07-27 19:11:04,040 INFO Registered Nurse | Virginia | BB: 0 urls
+2026-07-27 19:12:12,909 INFO Registered Nurse | Virginia | BC: 0 urls
+2026-07-27 19:13:25,336 INFO Registered Nurse | Virginia | BD: 0 urls
+2026-07-27 19:17:20,222 INFO Registered Nurse | Virginia | BE: 0 urls
+2026-07-27 19:18:23,865 INFO Registered Nurse | Virginia | BF: 0 urls
+2026-07-27 19:19:27,310 INFO Registered Nurse | Virginia | BG: 0 urls
+2026-07-27 19:20:35,123 INFO Registered Nurse | Virginia | BH: 0 urls
+2026-07-27 19:21:45,183 INFO Registered Nurse | Virginia | BI: 0 urls
+2026-07-27 19:22:49,433 INFO Registered Nurse | Virginia | BJ: 0 urls
+2026-07-27 19:23:52,817 INFO Registered Nurse | Virginia | BK: 0 urls
+2026-07-27 19:25:00,167 INFO Registered Nurse | Virginia | BL: 0 urls
+2026-07-27 19:26:04,371 INFO Registered Nurse | Virginia | BM: 0 urls
+2026-07-27 19:28:43,410 INFO Registered Nurse | Virginia | BN: 0 urls
+2026-07-27 19:30:04,976 INFO Registered Nurse | Virginia | BO: 0 urls
+2026-07-27 19:31:15,031 INFO Registered Nurse | Virginia | BP: 0 urls
+2026-07-27 19:32:41,017 INFO Registered Nurse | Virginia | BQ: 0 urls
+2026-07-27 19:33:46,039 INFO Registered Nurse | Virginia | BR: 0 urls
+2026-07-27 19:34:58,909 INFO Registered Nurse | Virginia | BS: 0 urls
+2026-07-27 19:36:07,873 INFO Registered Nurse | Virginia | BT: 0 urls
+2026-07-27 19:37:10,165 INFO Registered Nurse | Virginia | BU: 0 urls
+2026-07-27 19:38:12,974 INFO Registered Nurse | Virginia | BV: 0 urls
+2026-07-27 19:39:09,469 INFO Registered Nurse | Virginia | BW: 0 urls
+2026-07-27 19:40:18,980 INFO Registered Nurse | Virginia | BX: 0 urls
+2026-07-27 19:41:27,079 INFO Registered Nurse | Virginia | BY: 0 urls
+2026-07-27 19:42:38,033 INFO Registered Nurse | Virginia | BZ: 0 urls
+2026-07-27 19:43:55,816 INFO Registered Nurse | Virginia | CA: 0 urls
+2026-07-27 19:44:58,445 INFO Registered Nurse | Virginia | CB: 0 urls
+2026-07-27 19:46:04,222 INFO Registered Nurse | Virginia | CC: 0 urls
+2026-07-27 19:47:05,864 INFO Registered Nurse | Virginia | CD: 0 urls
+2026-07-27 19:48:10,129 INFO Registered Nurse | Virginia | CE: 0 urls
+2026-07-27 19:49:16,084 INFO Registered Nurse | Virginia | CF: 0 urls
+2026-07-27 19:50:22,938 INFO Registered Nurse | Virginia | CG: 0 urls
+2026-07-27 19:51:29,998 INFO Registered Nurse | Virginia | CH: 0 urls
+2026-07-27 19:52:37,191 INFO Registered Nurse | Virginia | CI: 0 urls
+2026-07-27 19:53:53,248 INFO Registered Nurse | Virginia | CJ: 0 urls
+2026-07-27 19:55:18,957 INFO Registered Nurse | Virginia | CK: 0 urls
+2026-07-27 19:56:32,884 INFO Registered Nurse | Virginia | CL: 0 urls
+2026-07-27 19:57:38,044 INFO Registered Nurse | Virginia | CM: 0 urls
+2026-07-27 19:58:37,613 INFO Registered Nurse | Virginia | CN: 0 urls
+2026-07-27 19:59:43,614 INFO Registered Nurse | Virginia | CO: 0 urls
+2026-07-27 20:00:54,510 INFO Registered Nurse | Virginia | CP: 0 urls
+2026-07-27 20:02:08,591 INFO Registered Nurse | Virginia | CQ: 0 urls
+2026-07-27 20:03:13,138 INFO Registered Nurse | Virginia | CR: 0 urls
+2026-07-27 20:04:30,908 INFO Registered Nurse | Virginia | CS: 0 urls
+2026-07-27 20:05:32,711 INFO Registered Nurse | Virginia | CT: 0 urls
+2026-07-27 20:06:25,880 INFO Registered Nurse | Virginia | CU: 22 new urls (830 total saved to dhp_detail_urls.txt)
+2026-07-27 20:07:22,560 INFO Registered Nurse | Virginia | CV: 0 urls
+2026-07-27 20:08:25,879 INFO Registered Nurse | Virginia | CW: 0 urls
+2026-07-27 20:09:23,300 INFO Registered Nurse | Virginia | CX: 0 urls
+2026-07-27 20:11:40,675 INFO Registered Nurse | Virginia | CY: 0 urls
+2026-07-27 20:12:46,242 INFO Registered Nurse | Virginia | CZ: 0 urls
+2026-07-27 20:13:59,054 INFO Registered Nurse | Virginia | DA: 0 urls
+2026-07-27 20:15:01,888 INFO Registered Nurse | Virginia | DB: 0 urls
+2026-07-27 20:16:13,582 INFO Registered Nurse | Virginia | DC: 0 urls
+2026-07-27 20:17:27,894 INFO Registered Nurse | Virginia | DD: 0 urls
+2026-07-27 20:19:51,282 INFO Registered Nurse | Virginia | DE: 0 urls
+2026-07-27 20:21:05,154 INFO Registered Nurse | Virginia | DF: 0 urls
+2026-07-27 20:22:10,300 INFO Registered Nurse | Virginia | DG: 0 urls
+2026-07-27 20:22:53,861 INFO Registered Nurse | Virginia | DH: 8 new urls (838 total saved to dhp_detail_urls.txt)
+2026-07-27 20:25:33,230 INFO Registered Nurse | Virginia | DI: 0 urls
+2026-07-27 20:26:32,062 INFO Registered Nurse | Virginia | DJ: 6 new urls (844 total saved to dhp_detail_urls.txt)
+2026-07-27 20:27:31,822 INFO Registered Nurse | Virginia | DK: 0 urls
+2026-07-27 20:28:30,829 INFO Registered Nurse | Virginia | DL: 0 urls
+2026-07-27 20:29:10,380 INFO Registered Nurse | Virginia | DM: 1 new urls (845 total saved to dhp_detail_urls.txt)
+2026-07-27 20:30:08,232 INFO Registered Nurse | Virginia | DN: 0 urls
+2026-07-27 20:32:43,577 INFO Registered Nurse | Virginia | DO: 0 urls
+2026-07-27 20:33:41,941 INFO Registered Nurse | Virginia | DP: 0 urls
+2026-07-27 20:34:39,205 INFO Registered Nurse | Virginia | DQ: 0 urls
+2026-07-27 20:35:27,521 INFO Registered Nurse | Virginia | DR: 34 new urls (879 total saved to dhp_detail_urls.txt)
+2026-07-27 20:36:26,097 INFO Registered Nurse | Virginia | DS: 0 urls
+2026-07-27 20:37:30,659 INFO Registered Nurse | Virginia | DT: 0 urls
+2026-07-27 20:38:47,074 INFO Registered Nurse | Virginia | DU: 62 new urls (941 total saved to dhp_detail_urls.txt)
+2026-07-27 20:39:51,444 INFO Registered Nurse | Virginia | DV: 0 urls
+2026-07-27 20:40:52,298 INFO Registered Nurse | Virginia | DW: 19 new urls (960 total saved to dhp_detail_urls.txt)
+2026-07-27 20:41:47,148 INFO Registered Nurse | Virginia | DX: 0 urls
+2026-07-27 20:42:46,798 INFO Registered Nurse | Virginia | DY: 37 new urls (997 total saved to dhp_detail_urls.txt)
+2026-07-27 20:43:23,637 INFO Registered Nurse | Virginia | DZ: 3 new urls (1000 total saved to dhp_detail_urls.txt)
+2026-07-27 20:44:12,760 INFO Registered Nurse | Virginia | EA: 22 new urls (1022 total saved to dhp_detail_urls.txt)
+2026-07-27 20:46:01,646 INFO Registered Nurse | Virginia | EB: 68 new urls (1090 total saved to dhp_detail_urls.txt)
+2026-07-27 20:46:45,715 INFO Registered Nurse | Virginia | EC: 3 new urls (1093 total saved to dhp_detail_urls.txt)
+2026-07-27 20:49:14,753 INFO Registered Nurse | Virginia | ED: 0 urls
+2026-07-27 20:49:53,981 INFO Registered Nurse | Virginia | EE: 2 new urls (1095 total saved to dhp_detail_urls.txt)
+2026-07-27 20:50:45,956 INFO Registered Nurse | Virginia | EF: 19 new urls (1114 total saved to dhp_detail_urls.txt)
+2026-07-27 20:51:25,927 INFO Registered Nurse | Virginia | EG: 2 new urls (1116 total saved to dhp_detail_urls.txt)
+2026-07-27 20:52:05,231 INFO Registered Nurse | Virginia | EH: 2 new urls (1118 total saved to dhp_detail_urls.txt)
+2026-07-27 20:53:39,894 INFO Registered Nurse | Virginia | EI: 93 new urls (1211 total saved to dhp_detail_urls.txt)
+2026-07-27 20:54:21,987 INFO Registered Nurse | Virginia | EJ: 1 new urls (1212 total saved to dhp_detail_urls.txt)
+2026-07-27 20:55:09,325 INFO Registered Nurse | Virginia | EK: 16 new urls (1228 total saved to dhp_detail_urls.txt)
+2026-07-27 20:57:46,609 INFO Registered Nurse | Virginia | EL: 0 urls
+2026-07-27 21:00:22,040 INFO Registered Nurse | Virginia | EM: 0 urls
+2026-07-27 21:01:17,159 INFO Registered Nurse | Virginia | EN: 39 new urls (1267 total saved to dhp_detail_urls.txt)
+2026-07-27 21:02:15,725 INFO Registered Nurse | Virginia | EO: 0 urls
+2026-07-27 21:03:03,633 INFO Registered Nurse | Virginia | EP: 3 new urls (1270 total saved to dhp_detail_urls.txt)
+2026-07-27 21:04:53,489 INFO Registered Nurse | Virginia | EQ: 0 urls
+2026-07-27 21:07:29,997 INFO Registered Nurse | Virginia | ER: 0 urls
+2026-07-27 21:09:18,397 INFO Registered Nurse | Virginia | ES: 0 urls
+2026-07-27 21:10:38,416 INFO Registered Nurse | Virginia | ET: 69 new urls (1339 total saved to dhp_detail_urls.txt)
+2026-07-27 21:12:08,026 INFO Registered Nurse | Virginia | EU: 0 urls
+2026-07-27 21:13:10,203 INFO Registered Nurse | Virginia | EV: 0 urls
+2026-07-27 21:14:08,395 ERROR ERROR on Registered Nurse / Virginia / EW: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-28 10:29:38,850 INFO Resuming URL collection from occupation #2, state #1, prefix #127 (1339 existing urls loaded)
+2026-07-28 10:29:38,859 INFO Radiologist Assistant: finished, 1339 unique urls saved so far in dhp_detail_urls.txt
+2026-07-28 10:30:18,618 INFO Resuming URL collection from occupation #2, state #1, prefix #1 (1339 existing urls loaded)
+2026-07-28 10:30:18,618 INFO Radiologist Assistant: finished, 1339 unique urls saved so far in dhp_detail_urls.txt
+2026-07-28 10:32:20,235 INFO Registered Nurse | Virginia | AA: 0 urls
+2026-07-28 10:34:25,053 ERROR ERROR on Registered Nurse / Virginia / AB: HTTPConnectionPool(host='localhost', port=9987): Read timed out. (read timeout=120)
+2026-07-28 10:36:29,390 ERROR ERROR on Registered Nurse / Virginia / AC: HTTPConnectionPool(host='localhost', port=38283): Read timed out. (read timeout=120)
+2026-07-28 10:38:33,445 ERROR ERROR on Registered Nurse / Virginia / AD: HTTPConnectionPool(host='localhost', port=28200): Read timed out. (read timeout=120)
+2026-07-28 10:40:37,641 ERROR ERROR on Registered Nurse / Virginia / AE: HTTPConnectionPool(host='localhost', port=52944): Read timed out. (read timeout=120)
+2026-07-28 10:43:30,011 INFO Registered Nurse | Virginia | AF: 41 new urls (1380 total saved to dhp_detail_urls.txt)
+2026-07-28 10:46:12,543 INFO Registered Nurse | Virginia | AG: 50 new urls (1430 total saved to dhp_detail_urls.txt)
+2026-07-28 10:48:26,177 INFO Registered Nurse | Virginia | AH: 0 new urls (1430 total saved to dhp_detail_urls.txt)
+2026-07-28 10:50:27,269 INFO Registered Nurse | Virginia | AI: 0 urls
+2026-07-28 10:52:24,900 INFO Registered Nurse | Virginia | AJ: 17 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 10:54:44,050 INFO Registered Nurse | Virginia | AK: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 10:56:14,007 INFO Registered Nurse | Virginia | AL: 0 urls
+2026-07-28 10:57:47,640 INFO Registered Nurse | Virginia | AM: 0 urls
+2026-07-28 10:58:49,370 INFO Registered Nurse | Virginia | AN: 0 urls
+2026-07-28 11:00:12,957 INFO Registered Nurse | Virginia | AO: 0 urls
+2026-07-28 11:01:31,994 INFO Registered Nurse | Virginia | AP: 0 urls
+2026-07-28 11:02:15,386 INFO Registered Nurse | Virginia | AQ: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:03:38,160 INFO Registered Nurse | Virginia | AR: 0 urls
+2026-07-28 11:04:44,462 INFO Registered Nurse | Virginia | AS: 0 urls
+2026-07-28 11:05:42,105 INFO Registered Nurse | Virginia | AT: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:06:47,163 INFO Registered Nurse | Virginia | AU: 0 urls
+2026-07-28 11:08:00,529 INFO Registered Nurse | Virginia | AV: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:08:52,942 INFO Registered Nurse | Virginia | AW: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:09:30,120 INFO Registered Nurse | Virginia | AX: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:10:50,326 INFO Registered Nurse | Virginia | AY: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:11:49,733 INFO Registered Nurse | Virginia | AZ: 0 new urls (1447 total saved to dhp_detail_urls.txt)
+2026-07-28 11:13:08,757 INFO Registered Nurse | Virginia | BA: 0 urls
+2026-07-28 11:14:03,757 INFO Registered Nurse | Virginia | BB: 0 urls
+2026-07-28 11:15:02,673 INFO Registered Nurse | Virginia | BC: 0 urls
+2026-07-28 11:16:12,874 INFO Registered Nurse | Virginia | BD: 0 urls
+2026-07-28 11:17:22,656 INFO Registered Nurse | Virginia | BE: 0 urls
+2026-07-28 11:18:28,599 INFO Registered Nurse | Virginia | BF: 0 urls
+2026-07-28 11:19:35,450 INFO Registered Nurse | Virginia | BG: 0 urls
+2026-07-28 11:20:26,323 INFO Registered Nurse | Virginia | BH: 14 new urls (1461 total saved to dhp_detail_urls.txt)
+2026-07-28 11:21:42,830 INFO Registered Nurse | Virginia | BI: 0 urls
+2026-07-28 11:22:49,437 INFO Registered Nurse | Virginia | BJ: 1 new urls (1462 total saved to dhp_detail_urls.txt)
+2026-07-28 11:23:52,621 INFO Registered Nurse | Virginia | BK: 0 urls
+2026-07-28 11:24:57,835 INFO Registered Nurse | Virginia | BL: 0 urls
+2026-07-28 11:25:57,854 INFO Registered Nurse | Virginia | BM: 0 urls
+2026-07-28 11:27:15,664 INFO Registered Nurse | Virginia | BN: 0 urls
+2026-07-28 11:28:43,783 INFO Registered Nurse | Virginia | BO: 0 urls
+2026-07-28 11:29:48,314 INFO Registered Nurse | Virginia | BP: 0 urls
+2026-07-28 11:30:54,182 INFO Registered Nurse | Virginia | BQ: 0 urls
+2026-07-28 11:32:17,398 INFO Registered Nurse | Virginia | BR: 0 urls
+2026-07-28 11:33:22,340 INFO Registered Nurse | Virginia | BS: 0 urls
+2026-07-28 11:34:24,900 INFO Registered Nurse | Virginia | BT: 0 urls
+2026-07-28 11:35:21,566 INFO Registered Nurse | Virginia | BU: 26 new urls (1488 total saved to dhp_detail_urls.txt)
+2026-07-28 11:36:40,708 INFO Registered Nurse | Virginia | BV: 0 urls
+2026-07-28 11:37:48,356 INFO Registered Nurse | Virginia | BW: 0 urls
+2026-07-28 11:38:50,741 INFO Registered Nurse | Virginia | BX: 0 urls
+2026-07-28 11:39:32,331 INFO Registered Nurse | Virginia | BY: 3 new urls (1491 total saved to dhp_detail_urls.txt)
+2026-07-28 11:40:35,740 INFO Registered Nurse | Virginia | BZ: 0 urls
+2026-07-28 11:41:58,878 INFO Registered Nurse | Virginia | CA: 0 urls
+2026-07-28 11:43:01,945 INFO Registered Nurse | Virginia | CB: 0 urls
+2026-07-28 11:43:45,210 INFO Registered Nurse | Virginia | CC: 1 new urls (1492 total saved to dhp_detail_urls.txt)
+2026-07-28 11:44:56,888 INFO Registered Nurse | Virginia | CD: 0 urls
+2026-07-28 11:46:13,854 INFO Registered Nurse | Virginia | CE: 0 urls
+2026-07-28 11:47:20,031 INFO Registered Nurse | Virginia | CF: 0 urls
+2026-07-28 11:48:21,231 INFO Registered Nurse | Virginia | CG: 0 urls
+2026-07-28 11:49:53,352 INFO Registered Nurse | Virginia | CH: 0 urls
+2026-07-28 11:50:59,730 INFO Registered Nurse | Virginia | CI: 0 urls
+2026-07-28 11:52:02,663 INFO Registered Nurse | Virginia | CJ: 0 urls
+2026-07-28 11:53:09,598 INFO Registered Nurse | Virginia | CK: 0 urls
+2026-07-28 11:54:37,297 INFO Registered Nurse | Virginia | CL: 0 urls
+2026-07-28 11:55:38,114 INFO Registered Nurse | Virginia | CM: 0 urls
+2026-07-28 11:56:37,287 INFO Registered Nurse | Virginia | CN: 0 urls
+2026-07-28 11:57:42,711 INFO Registered Nurse | Virginia | CO: 0 urls
+2026-07-28 11:58:38,065 INFO Registered Nurse | Virginia | CP: 0 urls
+2026-07-28 11:59:52,266 INFO Registered Nurse | Virginia | CQ: 0 urls
+2026-07-28 12:01:02,364 INFO Registered Nurse | Virginia | CR: 0 urls
+2026-07-28 12:02:09,520 INFO Registered Nurse | Virginia | CS: 0 urls
+2026-07-28 12:03:11,115 INFO Registered Nurse | Virginia | CT: 0 urls
+2026-07-28 12:03:56,465 INFO Registered Nurse | Virginia | CU: 0 new urls (1492 total saved to dhp_detail_urls.txt)
+2026-07-28 12:04:57,262 INFO Registered Nurse | Virginia | CV: 0 urls
+2026-07-28 12:05:57,297 INFO Registered Nurse | Virginia | CW: 0 urls
+2026-07-28 12:06:55,199 INFO Registered Nurse | Virginia | CX: 0 urls
+2026-07-28 12:08:16,563 INFO Registered Nurse | Virginia | CY: 0 urls
+2026-07-28 12:08:57,981 INFO Registered Nurse | Virginia | CZ: 2 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:10:14,292 INFO Registered Nurse | Virginia | DA: 0 urls
+2026-07-28 12:11:10,002 INFO Registered Nurse | Virginia | DB: 0 urls
+2026-07-28 12:12:17,129 INFO Registered Nurse | Virginia | DC: 0 urls
+2026-07-28 12:13:37,076 INFO Registered Nurse | Virginia | DD: 0 urls
+2026-07-28 12:15:20,553 INFO Registered Nurse | Virginia | DE: 0 urls
+2026-07-28 12:16:23,203 INFO Registered Nurse | Virginia | DF: 0 urls
+2026-07-28 12:17:27,320 INFO Registered Nurse | Virginia | DG: 0 urls
+2026-07-28 12:18:07,830 INFO Registered Nurse | Virginia | DH: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:19:49,796 INFO Registered Nurse | Virginia | DI: 0 urls
+2026-07-28 12:20:27,230 INFO Registered Nurse | Virginia | DJ: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:21:33,615 INFO Registered Nurse | Virginia | DK: 0 urls
+2026-07-28 12:22:33,242 INFO Registered Nurse | Virginia | DL: 0 urls
+2026-07-28 12:23:13,556 INFO Registered Nurse | Virginia | DM: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:24:14,563 INFO Registered Nurse | Virginia | DN: 0 urls
+2026-07-28 12:25:22,194 INFO Registered Nurse | Virginia | DO: 0 urls
+2026-07-28 12:26:34,811 INFO Registered Nurse | Virginia | DP: 0 urls
+2026-07-28 12:27:54,719 INFO Registered Nurse | Virginia | DQ: 0 urls
+2026-07-28 12:28:55,954 INFO Registered Nurse | Virginia | DR: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:30:10,758 INFO Registered Nurse | Virginia | DS: 0 urls
+2026-07-28 12:31:18,255 INFO Registered Nurse | Virginia | DT: 0 urls
+2026-07-28 12:32:18,417 INFO Registered Nurse | Virginia | DU: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:33:26,409 INFO Registered Nurse | Virginia | DV: 0 urls
+2026-07-28 12:34:19,463 INFO Registered Nurse | Virginia | DW: 0 new urls (1494 total saved to dhp_detail_urls.txt)
+2026-07-28 12:35:20,150 INFO Registered Nurse | Virginia | DX: 0 urls
+2026-07-28 12:36:20,215 INFO Registered Nurse | Virginia | DY: 0 urls
+2026-07-28 12:37:14,305 INFO Registered Nurse | Virginia | DZ: 0 urls
+2026-07-28 12:38:09,512 INFO Registered Nurse | Virginia | EA: 0 urls
+2026-07-28 12:39:02,251 INFO Registered Nurse | Virginia | EB: 0 urls
+2026-07-28 12:39:57,106 INFO Registered Nurse | Virginia | EC: 0 urls
+2026-07-28 12:40:57,042 INFO Registered Nurse | Virginia | ED: 0 urls
+2026-07-28 12:41:52,246 INFO Registered Nurse | Virginia | EE: 0 urls
+2026-07-28 12:42:46,315 INFO Registered Nurse | Virginia | EF: 0 urls
+2026-07-28 12:43:52,120 INFO Registered Nurse | Virginia | EG: 0 urls
+2026-07-28 12:44:50,978 INFO Registered Nurse | Virginia | EH: 0 urls
+2026-07-28 12:45:53,097 INFO Registered Nurse | Virginia | EI: 0 urls
+2026-07-28 12:46:47,075 INFO Registered Nurse | Virginia | EJ: 0 urls
+2026-07-28 12:47:51,221 INFO Registered Nurse | Virginia | EK: 0 urls
+2026-07-28 12:48:46,254 INFO Registered Nurse | Virginia | EL: 0 urls
+2026-07-28 12:49:42,163 INFO Registered Nurse | Virginia | EM: 0 urls
+2026-07-28 12:50:37,864 INFO Registered Nurse | Virginia | EN: 0 urls
+2026-07-28 12:51:42,268 INFO Registered Nurse | Virginia | EO: 0 urls
+2026-07-28 12:52:36,685 INFO Registered Nurse | Virginia | EP: 0 urls
+2026-07-28 12:53:38,361 INFO Registered Nurse | Virginia | EQ: 0 urls
+2026-07-28 12:54:31,731 INFO Registered Nurse | Virginia | ER: 0 urls
+2026-07-28 12:55:28,195 INFO Registered Nurse | Virginia | ES: 0 urls
+2026-07-28 12:56:22,215 INFO Registered Nurse | Virginia | ET: 0 urls
+2026-07-28 12:57:18,247 INFO Registered Nurse | Virginia | EU: 0 urls
+2026-07-28 12:58:17,757 INFO Registered Nurse | Virginia | EV: 0 urls
+2026-07-28 12:59:12,829 INFO Registered Nurse | Virginia | EW: 0 urls
+2026-07-28 13:00:08,700 INFO Registered Nurse | Virginia | EX: 0 urls
+2026-07-28 13:01:05,622 INFO Registered Nurse | Virginia | EY: 0 urls
+2026-07-28 13:02:02,507 INFO Registered Nurse | Virginia | EZ: 0 urls
+2026-07-28 13:02:57,929 INFO Registered Nurse | Virginia | FA: 0 urls
+2026-07-28 13:04:02,231 INFO Registered Nurse | Virginia | FB: 0 urls
+2026-07-28 13:04:55,084 INFO Registered Nurse | Virginia | FC: 0 urls
+2026-07-28 13:05:48,362 INFO Registered Nurse | Virginia | FD: 0 urls
+2026-07-28 13:06:59,035 INFO Registered Nurse | Virginia | FE: 0 urls
+2026-07-28 13:08:10,589 INFO Registered Nurse | Virginia | FF: 0 urls
+2026-07-28 13:09:04,865 INFO Registered Nurse | Virginia | FG: 0 urls
+2026-07-28 13:09:58,300 INFO Registered Nurse | Virginia | FH: 0 urls

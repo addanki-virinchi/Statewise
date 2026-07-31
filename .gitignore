@@ -1,3 +1,10 @@
 __pycache__/
 chrome_profile/
 node_modules/
+downloads/
+swamy/
+*.csv
+facebook.py
+*.json
+error.log
+*.txt

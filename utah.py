@@ -5,13 +5,7 @@ import re
 import string
 import time
 
-try:
-	from selenium_recaptcha_solver import RecaptchaException, RecaptchaSolver
-except ImportError as exc:
-	raise RuntimeError(
-		"selenium-recaptcha-solver is required. Install it with "
-		"`python -m pip install selenium-recaptcha-solver`."
-	) from exc
+import nopecha_1
 
 from selenium import webdriver
 from selenium.common.exceptions import (
@@ -29,19 +23,43 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 SEARCH_URL = "https://secure.utah.gov/llv/search/index.html"
-OUTPUT_FILE = "utah.csv"
-WAIT_SECONDS = 30
-SEARCH_RESULT_WAIT_SECONDS = 60
+OUTPUT_FILE = "utah_1.csv"
+WAIT_SECONDS = 10
+SEARCH_RESULT_WAIT_SECONDS = 10
 CAPTCHA_RETRIES = 3
 HEADLESS = False  # keep False: reCAPTCHA v3 scores headless browsers poorly
 START_PREFIX = "ab"
+
+# A fresh search page shows no captcha. Clicking Search runs an invisible v3
+# that scores low, so the server re-renders the form with a reCAPTCHA v2
+# checkbox; we solve THAT via NopeCHA and resubmit.
+CAPTCHA_SOLVE_TIMEOUT = 60  # seconds to wait for a NopeCHA solve (real solves take ~20-30s)
 
 # Profession checkboxes to tick, matched against the label text next to each
 # input.licenseType checkbox (case-insensitive). Matching a category header
 # (e.g. "NURSE") also ticks every license type nested under it.
 TARGET_PROFESSIONS = [
-	"Certified Public Accountant",
-	"Nurse",
+    "ANESTHESIOLOGIST",
+    "BEHAVIORAL HEALTH",
+    "CLINICAL MENTAL HEALTH",
+    "DENTAL",
+    "HEARING INSTRUMENT",
+    "MARRIAGE & FAMILY THERAPY",
+    "MASSAGE",
+    # "MUSIC THERAPY",
+    # "NURSE",
+    # "OCCUPATIONAL THERAPY",
+    # "OPTOMETRIST",
+    # "OSTEOPATHIC PHYSICIAN",
+    # "PHARMACY",
+    # "PHYSICAL THERAPY",
+    # "PHYSICIAN",
+    # "PHYSICIAN ASSISTANT",
+    # "PODIATRY",
+    # "PSYCHOLOGY",
+    # "RADIOLOGIC TECHNOLOGY",
+    # "RESPIRATORY CARE",
+    # "SPEECH-LANGUAGE PATHOLOGY",
 ]
 
 FIELDNAMES = [
@@ -75,6 +93,8 @@ def build_driver():
 
 def open_search_page(driver, wait):
 	driver.get(SEARCH_URL)
+	wait.until(EC.presence_of_element_located((By.ID, "fullName")))
+	driver.refresh()
 	wait.until(EC.presence_of_element_located((By.ID, "fullName")))
 
 
@@ -188,27 +208,38 @@ def get_v2_sitekey(driver):
 	return (key or "").strip()
 
 
-def v2_challenge_present(driver):
-    """True once the post-search reCAPTCHA v2 checkbox is on the page.
-
-    A fresh form has no `.g-recaptcha` div (v3 renders only an invisible badge);
-    the checkbox appears only after the server challenges a low-score search, so
-    its presence is a reliable 'solve me before you get results' signal."""
-    try:
-        return bool(get_v2_sitekey(driver))
-    except WebDriverException:
-        return False
-
-
-def get_recaptcha_iframe(driver):
-	try:
-		return driver.find_element(By.XPATH, '//iframe[@title="reCAPTCHA"]')
-	except NoSuchElementException:
-		pass
-	try:
-		return driver.find_element(By.XPATH, '//iframe[contains(@src, "recaptcha")]')
-	except NoSuchElementException:
-		return None
+def inject_v2_token(driver, token):
+	"""Write a solved reCAPTCHA v2 token into every g-recaptcha-response field and
+	fire the widget callback so any JS listening on the checkbox treats it as
+	passed. The token in the textarea is what the server actually reads on POST."""
+	driver.execute_script(
+		"""
+		var token = arguments[0];
+		document.querySelectorAll("textarea[name='g-recaptcha-response']").forEach(
+			function (t) { t.value = token; t.innerHTML = token; }
+		);
+		try {
+			var cfg = window.___grecaptcha_cfg;
+			if (cfg && cfg.clients) {
+				for (var cid in cfg.clients) {
+					var client = cfg.clients[cid];
+					for (var ck in client) {
+						var obj = client[ck];
+						if (obj && typeof obj === 'object') {
+							for (var k in obj) {
+								var leaf = obj[k];
+								if (leaf && typeof leaf.callback === 'function') {
+									leaf.callback(token);
+								}
+							}
+						}
+					}
+				}
+			}
+		} catch (e) { /* token in the textarea is enough for the POST */ }
+		""",
+		token,
+	)
 
 
 def solve_v2_challenge(driver, prefix):
@@ -216,34 +247,93 @@ def solve_v2_challenge(driver, prefix):
 
 	Flow: the fresh page has no captcha, so we click Search (v3 runs invisibly,
 	scores low), the server re-renders the form with a v2 checkbox, and THEN we
-	solve it through selenium-recaptcha-solver. After the solver completes, we
-	re-fill the search fields and submit natively.
+	solve it. We fetch a v2 token from NopeCHA, write it into every
+	`g-recaptcha-response` textarea, re-fill the search fields (the re-rendered
+	form may have dropped them), and submit natively via ``form.submit()``. On the
+	challenge page the v3 hidden field is gone, so no fresh low-score token can
+	overwrite ours -- and native submit avoids re-running the Search button's
+	onclick, which would trigger v3 again.
 
-	Returns True if the challenge was solved and the form submitted, else False."""
-	if not v2_challenge_present(driver):
+	Returns True if a token was obtained and the form submitted, else False so the
+	caller can fall back to a manual solve."""
+	sitekey = get_v2_sitekey(driver)
+	if not sitekey:
 		return False
-	iframe = get_recaptcha_iframe(driver)
-	if iframe is None:
-		return False
-	print("[captcha] solving reCAPTCHA v2 challenge via selenium-recaptcha-solver...")
+	print(f"[captcha] solving reCAPTCHA v2 challenge for {prefix} via NopeCHA...")
 	try:
-		solver = RecaptchaSolver(driver=driver)
-		solver.click_recaptcha_v2(iframe=iframe)
-	except Exception as exc:
-		print(f"[captcha] selenium-recaptcha-solver failed ({exc})")
+		token = nopecha_1.solve_recaptcha_v2(
+			sitekey,
+			driver.current_url,
+			timeout=CAPTCHA_SOLVE_TIMEOUT,
+		)
+	except nopecha_1.NopechaError as exc:
+		print(f"[captcha] NopeCHA v2 failed ({exc}); falling back to manual.")
 		return False
-	finally:
-		try:
-			driver.switch_to.default_content()
-		except WebDriverException:
-			pass
+	if not token:
+		return False
+
+	inject_v2_token(driver, token)
 
 	# Re-fill name + professions (the challenge re-render may have cleared them),
-	# then submit the form natively.
+	# then submit the form natively -- the challenge page has no v3 hidden field,
+	# so this simply POSTs our v2 token with the search criteria.
 	prepare_form(driver, prefix)
-	driver.execute_script(
-		"var f = document.getElementById('searchByNameForm'); if (f) { f.submit(); }"
+	form = driver.find_element(By.ID, "searchByNameForm")
+	driver.execute_script("arguments[0].submit();", form)
+	# Wait for the POST to actually navigate away before returning, so the caller
+	# doesn't read the stale challenge DOM (v2 widget still present) and mistake a
+	# successful solve for an unsolved page.
+	try:
+		WebDriverWait(driver, WAIT_SECONDS).until(EC.staleness_of(form))
+	except TimeoutException:
+		pass
+	return True
+
+
+def v2_challenge_present(driver):
+	"""True once the post-search reCAPTCHA v2 checkbox is on the page.
+
+	A fresh form has no `.g-recaptcha` div (v3 renders only an invisible badge);
+	the checkbox appears only after the server challenges a low-score search, so
+	its presence is a reliable 'solve me before you get results' signal."""
+	try:
+		return bool(get_v2_sitekey(driver))
+	except WebDriverException:
+		return False
+
+
+def wait_for_manual_captcha_clear(driver, wait, prefix):
+	"""Pause when the site shows a CAPTCHA and wait for a human to clear it.
+
+	This keeps the automation compliant: the script does not try to solve or
+	bypass the challenge. It simply waits until the page advances or the visible
+	challenge disappears after a manual solve in the browser."""
+	if not v2_challenge_present(driver):
+		return False
+
+	print(
+		f"[captcha] reCAPTCHA challenge detected for {prefix}. "
+		"Solve it in the browser window, then press Enter here to continue."
 	)
+	try:
+		input("[captcha] Press Enter after you finish the challenge...")
+	except EOFError:
+		pass
+
+	def cleared(current_driver):
+		try:
+			if get_results_table(current_driver) is not None:
+				return True
+			if no_records_present(current_driver):
+				return True
+			return not v2_challenge_present(current_driver)
+		except WebDriverException:
+			return False
+
+	try:
+		wait.until(cleared)
+	except TimeoutException:
+		return False
 	return True
 
 
@@ -275,14 +365,14 @@ def wait_for_search_outcome(driver, wait):
 	"""After clicking Search the page JS runs the invisible v3 and does a full-page
 	POST. Wait until we can tell what happened:
 
-	  'challenge' - server re-rendered the form with a v2 checkbox to solve
+	  'challenge' - server re-rendered the form with a visible challenge
 	  'captcha'   - server rejected outright, back on the form with ?message=error.captcha
 	  'results'   - a results table is on screen
 	  'empty'     - a no-records message is on screen
 
 	'challenge' is checked first: on that page a stray table header could otherwise
-	look like results, but the visible v2 checkbox means we must solve before the
-	real results appear.
+	look like results, but the visible v2 checkbox means the form is waiting for
+	a manual solve before the real results appear.
 	"""
 
 	def outcome(current_driver):
@@ -345,7 +435,7 @@ def get_next_page_link(driver):
 		(By.ID, "pagination-next"),
 		(By.CSS_SELECTOR, "a[rel='next']"),
 		(By.XPATH, "//a[starts-with(normalize-space(), 'Next')]"),
-		(By.XPATH, "//a[normalize-space()='>' or normalize-space()='>>' or normalize-space()='›']"),
+		(By.XPATH, "//a[normalize-space()='>' or normalize-space()='>>']"),
 	]
 	for by, selector in candidates:
 		try:
@@ -449,12 +539,12 @@ def generate_prefixes():
 
 
 def run_search(driver, wait, result_wait, prefix, first_run):
-	"""Load the form, fill it, search, and clear the v2 captcha it triggers.
+	"""Load the form, fill it, search, and handle any CAPTCHA that appears.
 
 	The fresh page has no visible captcha, so we click Search directly. The
 	invisible v3 scores low and the server re-renders the form with a v2 checkbox;
-	we then solve that with selenium-recaptcha-solver and resubmit. Returns the
-	outcome string."""
+	we then solve that via NopeCHA and resubmit. If NopeCHA can't clear it we
+	fall back to a manual solve. Returns the outcome string."""
 	for attempt in range(1, CAPTCHA_RETRIES + 1):
 		open_search_page(driver, wait)
 		prepare_form(driver, prefix, verbose=first_run and attempt == 1)
@@ -466,23 +556,25 @@ def run_search(driver, wait, result_wait, prefix, first_run):
 			print(f"[{prefix}] no response after search (attempt {attempt}), retrying")
 			continue
 
-		# A v2 checkbox appeared: solve it, resubmit, then read the real outcome.
+		# A v2 checkbox appeared: solve it via NopeCHA and resubmit; if the service
+		# fails, fall back to a manual solve, then read the real outcome.
 		if outcome == "challenge":
 			if not solve_v2_challenge(driver, prefix):
-				print(f"[{prefix}] could not solve v2 captcha (attempt {attempt}), retrying")
-				time.sleep(2 * attempt)
-				continue
+				if not wait_for_manual_captcha_clear(driver, result_wait, prefix):
+					print(f"[{prefix}] captcha was not cleared (attempt {attempt}), retrying")
+					time.sleep(2 * attempt)
+					continue
 			try:
 				outcome = wait_for_search_outcome(driver, result_wait)
 			except TimeoutException:
-				print(f"[{prefix}] no response after captcha (attempt {attempt}), retrying")
+				print(f"[{prefix}] no response after captcha solve (attempt {attempt}), retrying")
 				continue
 
 		if outcome in ("results", "empty"):
 			return outcome
 
 		# Still challenged or rejected -- retry with a fresh page.
-		print(f"[{prefix}] captcha not cleared (attempt {attempt}), retrying")
+		print(f"[{prefix}] challenge not cleared (attempt {attempt}), retrying")
 		time.sleep(2 * attempt)
 
 	return "failed"
@@ -498,9 +590,7 @@ def run():
 		prefixes = generate_prefixes()
 		for index, prefix in enumerate(prefixes):
 			print(f"Running prefix: {prefix}")
-			outcome = run_search(
-				driver, wait, result_wait, prefix, first_run=index == 0
-			)
+			outcome = run_search(driver, wait, result_wait, prefix, first_run=index == 0)
 
 			if outcome == "results":
 				records = scrape_all_pages(driver, wait, prefix)

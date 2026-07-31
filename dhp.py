@@ -1,4 +1,5 @@
 import csv
+import json
 import logging
 import os
 import random
@@ -30,6 +31,7 @@ SEARCH_URL = "https://dhp.virginiainteractive.org/Lookup/Index"
 URLS_FILE = "dhp_detail_urls.txt"
 OUTPUT_FILE = "dhp_details.csv"
 LOG_FILE = "dhp.log"
+CHECKPOINT_FILE = "dhp_checkpoint.json"
 
 WAIT_SECONDS = 180
 PAGE_LOAD_SLEEP = 1.0
@@ -37,8 +39,8 @@ RESULT_WAIT_SECONDS = 20
 HEADLESS = False
 PAGE_LOAD_TIMEOUT = 300
 SEARCH_BUTTON_WAIT_SECONDS = 180
-CHROME_VERSION_MAIN = 148
-CHROME_DRIVER_VERSION = "148.0.7778.179"
+CHROME_VERSION_MAIN = 150
+CHROME_DRIVER_VERSION = "150"
 
 # Human-mimic timing ranges (seconds). Kept randomized/jittered rather than
 # fixed so request cadence doesn't look robotic.
@@ -48,15 +50,15 @@ BETWEEN_SEARCH_RANGE = (0.9, 2.4)
 BETWEEN_PAGE_RANGE = (0.6, 1.5)
 LONG_BREAK_EVERY = 40          # take a longer pause every N searches
 LONG_BREAK_RANGE = (5.0, 12.0)
-
+#Your search returned too many records. Please refine your search and try again. -AB registered nurse
+#AV -registered nurse
 KEYWORDS = [
-    "Pharmacy",
-    "Pharmacy Intern",
-    "Pharmacy Technician",
-    "Radiologist Assistant",
+    # "Pharmacy", #completed
+    # "Pharmacy Intern", #runiing
+    # "Pharmacy Technician",
+     "Radiologist Assistant",
     "Registered Nurse",
     "Respiratory Therapist",
-    "Licensed Clinical Social Worker",
     "Speech-Language Pathologist",
     "Polysomnographic Technologist",
     "Provisional Audiologist",
@@ -176,11 +178,13 @@ def build_driver():
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-infobars")
     options.add_argument("--disable-notifications")
     options.add_argument("--disable-application-cache")
     options.add_argument("--disk-cache-size=0")
     options.add_argument("--media-cache-size=0")
     options.add_argument("--disable-cache")
+    options.add_argument("--lang=en-US,en")
     options.add_argument(f"--user-data-dir={profile_dir}")
     # options.add_experimental_option("excludeSwitches", ["enable-automation"])
     # options.add_experimental_option("useAutomationExtension", False)
@@ -197,7 +201,32 @@ def build_driver():
     )
     driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
     driver._dhp_profile_dir = profile_dir
+    apply_browser_fingerprint_patches(driver)
     return driver
+
+
+def apply_browser_fingerprint_patches(driver):
+    """Apply lightweight browser patches before any site page is loaded."""
+    try:
+        driver.execute_cdp_cmd(
+            "Page.addScriptToEvaluateOnNewDocument",
+            {
+                "source": """
+                    Object.defineProperty(navigator, 'webdriver', {
+                        get: () => undefined
+                    });
+                    Object.defineProperty(navigator, 'languages', {
+                        get: () => ['en-US', 'en']
+                    });
+                    Object.defineProperty(navigator, 'plugins', {
+                        get: () => [1, 2, 3, 4, 5]
+                    });
+                    window.chrome = window.chrome || { runtime: {} };
+                """,
+            },
+        )
+    except Exception as exc:
+        LOGGER.debug("Browser fingerprint patch skipped: %s", exc)
 
 
 def close_driver(driver):
@@ -491,79 +520,183 @@ def read_lines(path):
         return [line.strip() for line in handle if line.strip()]
 
 
+def checkpoint_path():
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), CHECKPOINT_FILE)
+
+
+def load_checkpoint():
+    path = checkpoint_path()
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        occupation_index = int(data.get("occupation_index", 0))
+        state_index = int(data.get("state_index", 0))
+        prefix_index = int(data.get("prefix_index", 0))
+        return {
+            "occupation_index": max(0, occupation_index),
+            "state_index": max(0, state_index),
+            "prefix_index": max(0, prefix_index),
+            "reason": data.get("reason", ""),
+            "updated_at": data.get("updated_at", ""),
+        }
+    except Exception as exc:
+        LOGGER.warning("Could not read checkpoint %s: %s", CHECKPOINT_FILE, exc)
+        return {}
+
+
+def save_checkpoint(occupation_index, state_index, prefix_index, reason="in_progress"):
+    data = {
+        "occupation_index": max(0, int(occupation_index)),
+        "state_index": max(0, int(state_index)),
+        "prefix_index": max(0, int(prefix_index)),
+        "reason": reason,
+        "updated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+    }
+    with open(checkpoint_path(), "w", encoding="utf-8") as handle:
+        json.dump(data, handle, indent=2)
+
+
+def clear_checkpoint():
+    path = checkpoint_path()
+    if os.path.exists(path):
+        os.remove(path)
+
+
+def load_existing_urls(path):
+    if not os.path.exists(path):
+        return [], set()
+    urls = read_lines(path)
+    return urls, set(urls)
+
+
+def append_new_urls(path, urls):
+    if not urls:
+        return
+    with open(path, "a", encoding="utf-8") as handle:
+        for url in urls:
+            handle.write(url.rstrip() + "\n")
+
+
+def save_next_checkpoint(occupation_index, state_index, prefix_index):
+    next_prefix_index = prefix_index + 1
+    next_state_index = state_index
+    next_occupation_index = occupation_index
+
+    if next_prefix_index >= len(FIRST_NAME_PREFIXES):
+        next_prefix_index = 0
+        next_state_index += 1
+    if next_state_index >= len(STATES):
+        next_state_index = 0
+        next_occupation_index += 1
+
+    if next_occupation_index >= len(KEYWORDS):
+        clear_checkpoint()
+        return
+
+    save_checkpoint(
+        next_occupation_index,
+        next_state_index,
+        next_prefix_index,
+        reason="ready_for_next_search",
+    )
+
+
 def collect_urls_by_keyword():
-    all_urls = []
-    seen = set()
+    all_urls, seen = load_existing_urls(URLS_FILE)
     keyword_batches = []
     search_count = 0
+    checkpoint = load_checkpoint()
+    resume_occupation = checkpoint.get("occupation_index", 0)
+    resume_state = checkpoint.get("state_index", 0)
+    resume_prefix = checkpoint.get("prefix_index", 0)
 
-    for occupation in KEYWORDS:
-        driver = build_driver()
-        wait = WebDriverWait(driver, WAIT_SECONDS)
+    if checkpoint:
+        LOGGER.info(
+            "Resuming URL collection from occupation #%s, state #%s, prefix #%s (%s existing urls loaded)",
+            resume_occupation + 1,
+            resume_state + 1,
+            resume_prefix + 1,
+            len(all_urls),
+        )
+
+    for occupation_index, occupation in enumerate(KEYWORDS):
         keyword_urls = []
-        try:
-            for state_name in STATES:
-                for prefix in FIRST_NAME_PREFIXES:
-                    try:
-                        open_search_page(driver, wait)
-                        human_mouse_move(driver)
-                        select_occupation(driver, occupation)
-                        set_first_name_prefix(driver, prefix)
-                        select_state(driver, state_name)
-                        select_current_licensees(driver)
-                        if not click_search(driver, wait):
-                            LOGGER.warning(
-                                "%s | %s | %s: skipped because Search could not be submitted",
-                                occupation,
-                                state_name,
-                                prefix,
-                            )
-                            continue
+        for state_index, state_name in enumerate(STATES):
+            for prefix_index, prefix in enumerate(FIRST_NAME_PREFIXES):
+                if occupation_index < resume_occupation:
+                    continue
+                if occupation_index == resume_occupation and state_index < resume_state:
+                    continue
+                if (
+                    occupation_index == resume_occupation
+                    and state_index == resume_state
+                    and prefix_index < resume_prefix
+                ):
+                    continue
 
-                        if not wait_for_results_or_empty(driver):
-                            LOGGER.info("%s | %s | %s: 0 urls", occupation, state_name, prefix)
-                            write_lines(URLS_FILE, all_urls)
-                            continue
-
-                        page_urls = scrape_all_urls(driver, wait)
-                        new_urls = 0
-                        for url in page_urls:
-                            if url not in seen:
-                                seen.add(url)
-                                all_urls.append(url)
-                                keyword_urls.append(url)
-                                new_urls += 1
-
-                        # Persist after every single search so progress
-                        # survives a crash/restart instead of only being
-                        # written once the whole occupation/state finishes.
-                        write_lines(URLS_FILE, all_urls)
-                        LOGGER.info(
-                            "%s | %s | %s: %s new urls (%s total saved to %s)",
+                save_checkpoint(occupation_index, state_index, prefix_index)
+                driver = None
+                try:
+                    driver = build_driver()
+                    wait = WebDriverWait(driver, WAIT_SECONDS)
+                    open_search_page(driver, wait)
+                    human_mouse_move(driver)
+                    select_occupation(driver, occupation)
+                    set_first_name_prefix(driver, prefix)
+                    select_state(driver, state_name)
+                    select_current_licensees(driver)
+                    if not click_search(driver, wait):
+                        LOGGER.warning(
+                            "%s | %s | %s: skipped because Search could not be submitted",
                             occupation,
                             state_name,
                             prefix,
-                            new_urls,
-                            len(all_urls),
-                            URLS_FILE,
                         )
-                    except Exception as exc:
-                        LOGGER.error(
-                            "ERROR on %s / %s / %s: %s",
-                            occupation,
-                            state_name,
-                            prefix,
-                            exc,
-                        )
-                        write_lines(URLS_FILE, all_urls)
-                    finally:
-                        search_count += 1
-                        if search_count % LONG_BREAK_EVERY == 0:
-                            human_sleep(*LONG_BREAK_RANGE)
-                        else:
-                            human_sleep(*BETWEEN_SEARCH_RANGE)
-        finally:
-            close_driver(driver)
+                        continue
+
+                    if not wait_for_results_or_empty(driver):
+                        LOGGER.info("%s | %s | %s: 0 urls", occupation, state_name, prefix)
+                        save_next_checkpoint(occupation_index, state_index, prefix_index)
+                        continue
+
+                    page_urls = scrape_all_urls(driver, wait)
+                    new_page_urls = []
+                    for url in page_urls:
+                        if url not in seen:
+                            seen.add(url)
+                            all_urls.append(url)
+                            keyword_urls.append(url)
+                            new_page_urls.append(url)
+
+                    append_new_urls(URLS_FILE, new_page_urls)
+                    LOGGER.info(
+                        "%s | %s | %s: %s new urls (%s total saved to %s)",
+                        occupation,
+                        state_name,
+                        prefix,
+                        len(new_page_urls),
+                        len(all_urls),
+                        URLS_FILE,
+                    )
+                    save_next_checkpoint(occupation_index, state_index, prefix_index)
+                except Exception as exc:
+                    LOGGER.error(
+                        "ERROR on %s / %s / %s: %s",
+                        occupation,
+                        state_name,
+                        prefix,
+                        exc,
+                    )
+                finally:
+                    if driver is not None:
+                        close_driver(driver)
+                    search_count += 1
+                    if search_count % LONG_BREAK_EVERY == 0:
+                        human_sleep(*LONG_BREAK_RANGE)
+                    else:
+                        human_sleep(*BETWEEN_SEARCH_RANGE)
 
         LOGGER.info(
             "%s: finished, %s unique urls saved so far in %s",
@@ -573,7 +706,10 @@ def collect_urls_by_keyword():
         )
         if keyword_urls:
             keyword_batches.append((occupation, keyword_urls))
+        resume_state = 0
+        resume_prefix = 0
 
+    clear_checkpoint()
     return keyword_batches
 
 

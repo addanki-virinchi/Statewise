@@ -1,4 +1,6 @@
 import csv
+import logging
+import os
 import re
 import time
 from typing import Iterable, List, Optional, Sequence
@@ -22,20 +24,48 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 SEARCH_URL = "https://elicense.ohio.gov/oh_verifylicense"
 OUTPUT_FILE = "ohio_license_search.csv"
+PROGRESS_FILE = "ohio_progress.txt"
+LOG_FILE = "ohio.log"
 WAIT_SECONDS = 30
 PAGE_LOAD_SLEEP = 1.2
 HEADLESS = False
 
+CSV_FIELDNAMES = [
+    "Filter State",
+    "Filter Board",
+    "Filter License Type",
+    "Name",
+    "Board",
+    "Application/License/Endorsement #",
+    "Type",
+    "Status",
+    "Sub Status",
+    "Sub Category",
+    "Board Action?",
+    "City",
+    "State",
+    "County",
+    "Zip Code",
+    "Compact/Multi-State Eligible",
+    "Detail URL",
+]
+
 #TARGET_STATES = ["OH", "KY", "VT", "NY", "LA", "NH", "CA", "IN"]
 TARGET_STATES = [
     "OH", "AA", "AB", "AE", "AK", "AL", "AP", "AR", "AZ",
-    "BC", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU",
-    "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA",
-    "MB", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NB",
-    "NC", "ND", "NE", "NH", "NJ", "NL", "NM", "NS", "NT",
+    "BC", "CA", 
+    "CO", "CT", "DC", "DE", "FL", "GA", "GU",
+    "HI", "IA", "ID",
+      "IL", "IN", "KS", "KY", "LA", "MA",
+    "MB", "MD", "ME", "MI", 
+    "MN", "MO", "MS", 
+    "MT", "NB",
+    "NC", "ND", "NE", "NH", "NJ", "NL", 
+    "NM", "NS", "NT",
     "NU", "NV", "NY", "OK", "ON", "OR", "PA", "PE", "PR",
-    "QC", "RI", "SC", "SD", "SK", "TN", "TX", "UT", "VA",
-    "VT", "WA", "WI", "WV", "WY", "YT", "AS", "MP", "VI",
+    "QC", "RI", "SC", "SD", "SK", "TN", "TX", "UT", 
+    "VA","VT", "WA", "WI", "WV", 
+    "WY", "YT", "AS", "MP", "VI",
     "MH", "NF", "PQ", "UK"
 ]
 TARGET_BOARDS = [
@@ -46,6 +76,30 @@ TARGET_BOARDS = [
     "Board of Pharmacy",
     "Department of Behavioral Health",
 ]
+
+
+def setup_logger() -> logging.Logger:
+    logger = logging.getLogger("ohio_scraper")
+    if logger.handlers:
+        return logger
+
+    logger.setLevel(logging.INFO)
+    logger.propagate = False
+
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+
+    file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+    logger.addHandler(stream_handler)
+
+    return logger
+
+
+LOGGER = setup_logger()
 
 
 def normalize(text: str) -> str:
@@ -288,79 +342,108 @@ def has_no_results(driver) -> bool:
         try:
             if driver.find_element(by, value).is_displayed():
                 return True
-        except NoSuchElementException:
+        except (NoSuchElementException, StaleElementReferenceException):
             continue
-    return len(get_result_rows(driver)) == 0
+    return len(_read_page_rows(driver)) == 0
 
 
-def get_result_rows(driver):
-    try:
-        table = driver.find_element(By.ID, "results")
-    except NoSuchElementException:
-        return []
-
-    rows = table.find_elements(By.CSS_SELECTOR, "tbody tr")
-    valid_rows = []
-    for row in rows:
-        cells = row.find_elements(By.TAG_NAME, "td")
-        if len(cells) >= 13 and "dataTables_empty" not in (row.get_attribute("class") or ""):
-            valid_rows.append(row)
-    return valid_rows
+def _read_page_rows(driver, retries: int = 4):
+    # Extract every row of the current page in a single JS call. Doing the read
+    # atomically avoids StaleElementReferenceException when DataTables redraws
+    # the table between locating a row and reading its cells.
+    script = """
+        const table = document.getElementById('results');
+        if (!table) return [];
+        const rows = table.querySelectorAll('tbody tr');
+        const out = [];
+        rows.forEach(row => {
+            if (row.className && row.className.indexOf('dataTables_empty') !== -1) return;
+            const cells = row.querySelectorAll('td');
+            if (cells.length < 13) return;
+            const texts = Array.from(cells).map(c => (c.textContent || '').trim());
+            const link = row.querySelector('a.btn-view-more');
+            out.push({cells: texts, detail: link ? (link.getAttribute('href') || '').trim() : ''});
+        });
+        return out;
+    """
+    for _ in range(retries):
+        try:
+            return driver.execute_script(script) or []
+        except (StaleElementReferenceException, WebDriverException):
+            time.sleep(0.3)
+    return []
 
 
 def parse_current_page(driver, state_code: str, board_name: str, license_type_name: str):
     records = []
-    for row in get_result_rows(driver):
-        try:
-            cells = row.find_elements(By.TAG_NAME, "td")
-            if len(cells) < 14:
-                continue
-
-            view_links = row.find_elements(By.CSS_SELECTOR, "a.btn-view-more")
-            detail_url = view_links[0].get_attribute("href").strip() if view_links else ""
-
-            records.append(
-                {
-                    "Filter State": state_code,
-                    "Filter Board": board_name,
-                    "Filter License Type": license_type_name,
-                    "Name": cells[0].text.strip(),
-                    "Board": cells[1].text.strip(),
-                    "Application/License/Endorsement #": cells[2].text.strip(),
-                    "Type": cells[3].text.strip(),
-                    "Status": cells[4].text.strip(),
-                    "Sub Status": cells[5].text.strip(),
-                    "Sub Category": cells[6].text.strip(),
-                    "Board Action?": cells[7].text.strip(),
-                    "City": cells[8].text.strip(),
-                    "State": cells[9].text.strip(),
-                    "County": cells[10].text.strip(),
-                    "Zip Code": cells[11].text.strip(),
-                    "Compact/Multi-State Eligible": cells[12].text.strip(),
-                    "Detail URL": detail_url,
-                }
-            )
-        except StaleElementReferenceException:
+    for row in _read_page_rows(driver):
+        cells = row.get("cells") or []
+        if len(cells) < 13:
             continue
+
+        records.append(
+            {
+                "Filter State": state_code,
+                "Filter Board": board_name,
+                "Filter License Type": license_type_name,
+                "Name": cells[0],
+                "Board": cells[1],
+                "Application/License/Endorsement #": cells[2],
+                "Type": cells[3],
+                "Status": cells[4],
+                "Sub Status": cells[5],
+                "Sub Category": cells[6],
+                "Board Action?": cells[7],
+                "City": cells[8],
+                "State": cells[9],
+                "County": cells[10],
+                "Zip Code": cells[11],
+                "Compact/Multi-State Eligible": cells[12],
+                "Detail URL": row.get("detail", ""),
+            }
+        )
     return records
 
 
-def next_page_available(driver) -> bool:
-    try:
-        next_button = driver.find_element(By.ID, "results_next")
-    except NoSuchElementException:
-        return False
-
-    class_name = (next_button.get_attribute("class") or "").lower()
-    aria_disabled = (next_button.get_attribute("aria-disabled") or "").lower()
-    return "disabled" not in class_name and aria_disabled != "true"
+def next_page_available(driver, retries: int = 4) -> bool:
+    # Read the button's state in a single JS call so the element cannot go
+    # stale between locating it and reading its attributes (DataTables redraws
+    # the pagination controls via AJAX, which invalidates cached references).
+    script = """
+        const btn = document.getElementById('results_next');
+        if (!btn) return null;
+        const cls = (btn.className || '').toLowerCase();
+        const aria = (btn.getAttribute('aria-disabled') || '').toLowerCase();
+        return cls.indexOf('disabled') === -1 && aria !== 'true';
+    """
+    for _ in range(retries):
+        try:
+            result = driver.execute_script(script)
+            if result is None:
+                return False
+            return bool(result)
+        except (StaleElementReferenceException, WebDriverException):
+            time.sleep(0.3)
+    return False
 
 
 def click_next_page(driver, wait):
     before = capture_results_signature(driver)
-    safe_click(driver, wait, By.ID, "results_next")
-    wait.until(lambda d: capture_results_signature(d) != before)
+    try:
+        safe_click(driver, wait, By.ID, "results_next", timeout=10)
+    except TimeoutException:
+        # On the last page the "next" button is disabled and never becomes
+        # clickable. Treat this as "no more pages" instead of crashing.
+        return False
+
+    try:
+        wait.until(lambda d: capture_results_signature(d) != before)
+    except TimeoutException:
+        # The signature never changed: we were already on the last page.
+        return False
+
     wait_for_ajax_idle(driver, wait)
+    return True
 
 
 def scrape_all_pages(driver, wait, state_code: str, board_name: str, license_type_name: str):
@@ -386,7 +469,8 @@ def scrape_all_pages(driver, wait, state_code: str, board_name: str, license_typ
         if not next_page_available(driver):
             break
 
-        click_next_page(driver, wait)
+        if not click_next_page(driver, wait):
+            break
 
     return records
 
@@ -417,7 +501,7 @@ def set_license_type(driver, wait, license_type_name: str, retries: int = 3) -> 
             wait_for_license_types_refresh(driver, wait, retries=2)
             time.sleep(0.6)
 
-    print(f"    Skipping license type '{license_type_name}' (not found after refresh)")
+    LOGGER.warning("    Skipping license type '%s' (not found after refresh)", license_type_name)
     if last_error:
         return False
     return False
@@ -438,120 +522,143 @@ def wait_for_license_types_refresh(driver, wait, retries: int = 5):
         raise last_error
 
 
-def write_csv(path: str, records: Sequence[dict]):
-    fieldnames = [
-        "Filter State",
-        "Filter Board",
-        "Filter License Type",
-        "Name",
-        "Board",
-        "Application/License/Endorsement #",
-        "Type",
-        "Status",
-        "Sub Status",
-        "Sub Category",
-        "Board Action?",
-        "City",
-        "State",
-        "County",
-        "Zip Code",
-        "Compact/Multi-State Eligible",
-        "Detail URL",
-    ]
-    with open(path, "w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(records)
+def append_csv(path: str, records: Sequence[dict]):
+    """Append records to the CSV, writing the header only when the file is new.
 
+    Always opens in append mode so reruns preserve previously collected rows.
+    The header is emitted only when the file does not yet exist (or is empty).
+    """
+    if not records:
+        return
 
-def append_csv(path: str, records: Sequence[dict], write_header: bool):
-    fieldnames = [
-        "Filter State",
-        "Filter Board",
-        "Filter License Type",
-        "Name",
-        "Board",
-        "Application/License/Endorsement #",
-        "Type",
-        "Status",
-        "Sub Status",
-        "Sub Category",
-        "Board Action?",
-        "City",
-        "State",
-        "County",
-        "Zip Code",
-        "Compact/Multi-State Eligible",
-        "Detail URL",
-    ]
-    mode = "w" if write_header else "a"
-    with open(path, mode, newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+    write_header = not os.path.exists(path) or os.path.getsize(path) == 0
+    with open(path, "a", newline="", encoding="utf-8-sig") as handle:
+        writer = csv.DictWriter(handle, fieldnames=CSV_FIELDNAMES)
         if write_header:
             writer.writeheader()
         writer.writerows(records)
 
 
-def run_scraper(
-    target_states: Optional[Sequence[str]] = None,
-    target_boards: Optional[Sequence[str]] = None,
-    fixed_license_types: Optional[Sequence[str]] = None,
-    output_file: str = OUTPUT_FILE,
-):
-    target_states = list(target_states or TARGET_STATES)
-    target_boards = list(target_boards or TARGET_BOARDS)
-    fixed_license_types = list(fixed_license_types or [])
+def progress_key(board_name: str, state_code: str) -> str:
+    return f"{board_name}||{state_code}"
 
+
+def load_completed_keys(path: str) -> set:
+    """Return the set of (board, state) jobs already finished in prior runs."""
+    completed = set()
+    if not os.path.exists(path):
+        return completed
+    with open(path, "r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if line:
+                completed.add(line)
+    return completed
+
+
+def mark_completed(path: str, key: str):
+    """Record a finished (board, state) job so a rerun can skip it."""
+    with open(path, "a", encoding="utf-8") as handle:
+        handle.write(key + "\n")
+        handle.flush()
+
+
+def chunked(items: Sequence[str], size: int) -> List[List[str]]:
+    return [list(items[index : index + size]) for index in range(0, len(items), size)]
+
+
+def process_board_states(
+    board_name: str,
+    states: Sequence[str],
+    output_file: str,
+    completed_keys: set,
+    progress_file: str,
+) -> int:
+    written = 0
     driver = build_driver()
     wait = WebDriverWait(driver, WAIT_SECONDS)
-    all_records = []
-    header_written = False
-
     try:
         click_continue_if_present(driver, wait)
 
-        for state_code in target_states:
-            print(f"Selecting state: {state_code}")
-            set_state(driver, wait, state_code)
-
-            board_options = list_select_options(driver, wait, get_board_select)
-            boards_to_run = find_matching_options(target_boards, board_options)
-            if not boards_to_run:
-                print(f"No matching boards found for state {state_code}.")
+        for state_code in states:
+            key = progress_key(board_name, state_code)
+            if key in completed_keys:
+                LOGGER.info("Skipping already-completed %s / %s", board_name, state_code)
                 continue
 
-            for board_name in boards_to_run:
-                print(f"  Board: {board_name}")
+            try:
+                LOGGER.info("Selecting state: %s", state_code)
+                set_state(driver, wait, state_code)
                 set_board(driver, wait, board_name)
 
-                available_license_types = list_select_options(driver, wait, get_license_type_select)
-                if fixed_license_types:
-                    license_types_to_run = find_matching_options(fixed_license_types, available_license_types)
-                else:
-                    license_types_to_run = available_license_types
+                click_search(driver, wait)
+                records = scrape_all_pages(driver, wait, state_code, board_name, "")
+                LOGGER.info("      Records collected: %s", len(records))
 
-                if not license_types_to_run:
-                    print(f"    No matching license types for board {board_name}.")
-                    continue
+                # Persist immediately so a crash later in the batch never loses
+                # this state's data, then mark the job done so reruns skip it.
+                append_csv(output_file, records)
+                mark_completed(progress_file, key)
+                completed_keys.add(key)
+                written += len(records)
+            except Exception as exc:  # noqa: BLE001 - keep the run going
+                LOGGER.exception(
+                    "Failed on %s / %s (will retry on next run): %s",
+                    board_name,
+                    state_code,
+                    exc,
+                )
+                # Reset the page so a transient failure doesn't poison the
+                # remaining states in this batch. Rebuild the driver if the
+                # page can no longer be reset.
+                try:
+                    click_continue_if_present(driver, wait)
+                except Exception:
+                    LOGGER.exception("Could not reset page; rebuilding driver")
+                    try:
+                        driver.quit()
+                    except Exception:
+                        pass
+                    driver = build_driver()
+                    wait = WebDriverWait(driver, WAIT_SECONDS)
+                    click_continue_if_present(driver, wait)
 
-                for license_type_name in license_types_to_run:
-                    print(f"    License type: {license_type_name}")
-                    if not set_license_type(driver, wait, license_type_name):
-                        continue
-                    click_search(driver, wait)
-                    records = scrape_all_pages(driver, wait, state_code, board_name, license_type_name)
-                    print(f"      Records collected: {len(records)}")
-                    if records:
-                        append_csv(output_file, records, write_header=not header_written)
-                        header_written = True
-                        all_records.extend(records)
-
-        if all_records:
-            print(f"Finished. Wrote {len(all_records)} rows to {output_file}")
-        else:
-            print("Finished. No rows collected.")
+        return written
     finally:
-        driver.quit()
+        try:
+            driver.quit()
+        except Exception:
+            pass
+
+
+def run_scraper(
+    target_states: Optional[Sequence[str]] = None,
+    target_boards: Optional[Sequence[str]] = None,
+    output_file: str = OUTPUT_FILE,
+    progress_file: str = PROGRESS_FILE,
+):
+    target_states = list(target_states or TARGET_STATES)
+    target_boards = list(target_boards or TARGET_BOARDS)
+
+    completed_keys = load_completed_keys(progress_file)
+    if completed_keys:
+        LOGGER.info("Resuming: %s (board, state) jobs already completed will be skipped", len(completed_keys))
+
+    total_written = 0
+    for board_name in target_boards:
+        board_states = chunked(target_states, 4)
+        LOGGER.info("  Board: %s", board_name)
+        for batch_number, state_batch in enumerate(board_states, start=1):
+            LOGGER.info("Processing states batch %s for %s: %s", batch_number, board_name, ", ".join(state_batch))
+            total_written += process_board_states(
+                board_name=board_name,
+                states=state_batch,
+                output_file=output_file,
+                completed_keys=completed_keys,
+                progress_file=progress_file,
+            )
+
+    LOGGER.info("Finished. Wrote %s new rows to %s this run.", total_written, output_file)
 
 
 if __name__ == "__main__":

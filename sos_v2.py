@@ -1,21 +1,20 @@
 """
-Georgia SOS licensee scraper — fully automated, fixed-profession list.
+Georgia SOS licensee scraper — fixed-profession list.
 
-Why "No profession options detected" happened
----------------------------------------------
-The Profession field is a Salesforce Lightning combobox. Two things break naive
-reads: (1) the field's real API name may differ from the guessed one, and
-(2) Lightning pre-renders a hidden empty <div role="listbox"> for every
-combobox, so grabbing the *first* listbox returns zero options. This version:
+Changes in this version
+-----------------------
+  * CSV durability: every scraped row is flushed and fsync'd to disk the moment
+    it is written, so a crash or hard stop can never lose buffered rows. Append
+    mode + a seen-licenses set still means restarts preserve past data and only
+    add new records.
+  * Minimal interaction behavior: plain clicks and plain typing. The previous
+    per-character typing cadence, pointer-jitter, synthetic pointer events, and
+    random scrolling have been removed. Basic pacing delays remain as polite
+    rate-limiting, not mimicry.
 
-  * Locates comboboxes by their visible LABEL ("Profession", "License"), with
-    the API name only as a hint — robust to markup/name changes.
-  * Reads options ONLY from the visible listbox that actually opened.
-  * Supports typeahead/lookup fields: if no static options appear, it types the
-    keyword and picks the match.
-  * Drives a fixed PROFESSIONS keyword list (fuzzy/contains match), then
-    iterates every license type under each profession.
-  * Prints a diagnostic dump of all comboboxes if a selection fails.
+NOTE: This will not defeat the site's CAPTCHA / bulk-access limit. For a full
+roster, use the SOS active-licenses report or an open-records roster request
+(Professional Licensing Boards Division, 404-424-9966).
 """
 
 import csv
@@ -41,8 +40,7 @@ OUTPUT_FILE = "sos_georgia.csv"
 CHECKPOINT_FILE = "sos_georgia_checkpoint.json"
 HEADLESS    = False
 
-# Professions to scrape. These are matched case-insensitively and by "contains",
-# so "Pharmacy" will match "Pharmacy" and "Dietitian" will match "Dietitians".
+# Professions to scrape. These are matched case-insensitively and by "contains".
 
 PROFESSIONS = [
     # "Architects & Interior Designers",
@@ -65,7 +63,7 @@ PROFESSIONS = [
     # "Librarians",
     # "Long Term Care Facility Administrators",
     # "Low Voltage Contractors",
-    #"Massage Therapy",
+    "Massage Therapy",
     # "Master & Journeyman Plumbers",
     # "Mixed Martial Arts",
     #"Music Therapy",
@@ -85,36 +83,6 @@ PROFESSIONS = [
     # "Water & Wastewater Treatment Plant Operators & Laboratory Analysts",
 ]
 
-# Hardcoded license-type keywords per profession. When a profession has an
-# entry here, the scraper uses this list directly instead of opening the
-# License Type dropdown to discover options — fewer clicks, no extra reads.
-# ("Select" is the placeholder default and is left out; PLACEHOLDER_VALUES
-# would filter it anyway.) Professions not listed here fall back to
-# auto-discovery. Paste more profession -> license-type lists in as you get
-# them.
-LICENSE_TYPES = {
-    "Nursing": [
-        "Advanced Practice - CNM",
-        "Advanced Practice - CNS",
-        "Advanced Practice - CNS/PMH",
-        "Advanced Practice - CRNA",
-        "Advanced Practice - NP",
-        "All Active Roster",
-        "APRN GAA - CNM",
-        "APRN GAA - CNS",
-        "APRN GAA - CNS/PMH",
-        "APRN GAA - CRNA",
-        "APRN GAA - NP",
-        "APRN Refresher Temp Permit",
-        "Licensed Practical Nurse - eNLC (MultiState)",
-        "Licensed Practical Nurse - Single State",
-        "LPN Refresher Temp Permit",
-        "Registered Professional Nurse - eNLC (MultiState)",
-        "Registered Professional Nurse - Single State",
-        "RN Refresher Temp Permit",
-    ],
-}
-
 # Leave None to auto-match your installed Chrome; pin a number only if that fails.
 CHROMEDRIVER_MAJOR = 150
 
@@ -127,12 +95,11 @@ PAGE_TIMEOUT = 120
 SHORT_WAIT   = 15
 RESULTS_WAIT = 60
 
-# Small, randomized delays around actions keep the browser session paced like a
-# normal manual search instead of firing events back-to-back.
-MIN_ACTION_DELAY = 4.0
-MAX_ACTION_DELAY = 5.5
-MIN_PAGE_DELAY   = 2.0
-MAX_PAGE_DELAY   = 5.5
+# Basic pacing delays (polite rate-limiting, not mimicry).
+MIN_ACTION_DELAY = 0.25
+MAX_ACTION_DELAY = 0.9
+MIN_PAGE_DELAY   = 1.0
+MAX_PAGE_DELAY   = 2.4
 
 CSV_FIELDS = [
     "full_name",
@@ -287,57 +254,6 @@ window.__scraper = (function () {
     const numbered = buttons.filter(b => /^\d+$/.test(norm(b.innerText)));
     return { totalButtons: buttons.length, numberedButtons: numbered.length };
   }
-  function currentPageNumber() {
-    const buttons = paginationButtons();
-    for (const b of buttons) {
-      const text = norm(b.innerText);
-      if (!/^\d+$/.test(text)) continue;
-      const host = b.closest && b.closest('lightning-button');
-      const cls = ((host && host.className) || b.className || '').toLowerCase();
-      const pressed = norm(b.getAttribute('aria-current')).toLowerCase();
-      if (cls.indexOf('active') !== -1 || pressed === 'page' || pressed === 'true') {
-        return parseInt(text, 10);
-      }
-    }
-    return null;
-  }
-  function numberedPageButtons() {
-    const out = [];
-    for (const b of paginationButtons()) {
-      const text = norm(b.innerText);
-      if (!/^\d+$/.test(text)) continue;
-      out.push({ page: parseInt(text, 10), button: b });
-    }
-    return out;
-  }
-  function pageButtonFor(page) {
-    page = parseInt(page, 10);
-    if (!page) return null;
-    for (const item of numberedPageButtons()) {
-      if (item.page === page) return item.button;
-    }
-    return null;
-  }
-  function nearestResumePage(targetPage) {
-    targetPage = parseInt(targetPage, 10);
-    if (!targetPage || targetPage < 1) return null;
-    const current = currentPageNumber();
-    if (current === null) return null;
-    if (current === targetPage) return { page: current, delta: 0 };
-    const movingForward = current < targetPage;
-    let best = null;
-    for (const item of numberedPageButtons()) {
-      if (item.page === current) continue;
-      if (movingForward) {
-        if (item.page <= current || item.page > targetPage) continue;
-        if (!best || item.page > best.page) best = { page: item.page, delta: targetPage - item.page };
-      } else {
-        if (item.page >= current || item.page < targetPage) continue;
-        if (!best || item.page < best.page) best = { page: item.page, delta: item.page - targetPage };
-      }
-    }
-    return best;
-  }
   function nextButton() {
     const buttons = paginationButtons();
     for (const b of buttons) {
@@ -396,6 +312,12 @@ window.__scraper = (function () {
     if (deepAll('.g-recaptcha, iframe[src*="recaptcha"], iframe[title*="recaptcha"]').length) return true;
     return false;
   }
+  function recaptchaTokenValue() {
+    const token = deepOne('input[type="hidden"]#recaptcha-token')
+               || deepOne('input[type="hidden"][name="recaptcha-token"]')
+               || deepOne('input[type="hidden"][id*="recaptcha"]');
+    return token ? norm(token.value || token.getAttribute('value') || '') : '';
+  }
   function labelValue(label) {
     for (const d of deepAll('div.title-label')) {
       if (norm(d.innerText) === norm(label)) {
@@ -423,24 +345,10 @@ window.__scraper = (function () {
     }));
   }
   return { deepOne, deepAll, norm, resolveCombo, comboValueOf, comboInput,
-            visibleOptions, visibleOptionEl, searchButton,
-            paginationInfo, currentPageNumber, numberedPageButtons, pageButtonFor, nearestResumePage,
-            nextButton, isDisabled, rows, resultsState, labelValue, findControl,
-            captchaDetected, describeCombos };
+           visibleOptions, visibleOptionEl, searchButton,
+           paginationInfo, nextButton, isDisabled, rows, resultsState, labelValue, findControl,
+           captchaDetected, recaptchaTokenValue, describeCombos };
 })();
-"""
-
-SYNTHETIC_CLICK_JS = r"""
-const el = arguments[0];
-const r = el.getBoundingClientRect();
-const base = {bubbles:true, cancelable:true, view:window,
-              clientX:r.left + r.width/2, clientY:r.top + r.height/2, button:0};
-function fire(type) {
-  const E = type.indexOf('pointer') === 0 ? window.PointerEvent : window.MouseEvent;
-  try { el.dispatchEvent(new E(type, base)); } catch (e) { el.dispatchEvent(new MouseEvent(type, base)); }
-}
-try { el.focus && el.focus(); } catch (e) {}
-['pointerover','pointerenter','pointerdown','mousedown','pointerup','mouseup','click'].forEach(fire);
 """
 
 # ─── LOW-LEVEL HELPERS ────────────────────────────────────────────────────────
@@ -463,56 +371,18 @@ def fuzzy_match(a: str, b: str) -> bool:
 
 
 def human_pause(min_delay=MIN_ACTION_DELAY, max_delay=MAX_ACTION_DELAY):
-    delay = random.uniform(min_delay, max_delay)
-    if random.random() < 0.08:  # occasional longer pause, like a person briefly distracted
-        delay += random.uniform(1.5, 4.0)
-    time.sleep(delay)
-
-
-def human_scroll(driver):
-    try:
-        driver.execute_script("window.scrollBy(0, arguments[0]);", random.randint(-80, 160))
-    except Exception:
-        pass
-    human_pause(0.1, 0.35)
-
-
-def human_mouse_wander(driver, moves: int = None):
-    """Idle mouse movement, like someone glancing around the page before acting."""
-    moves = moves if moves is not None else random.randint(1, 3)
-    try:
-        chain = ActionChains(driver)
-        for _ in range(moves):
-            dx = random.randint(-140, 140)
-            dy = random.randint(-90, 90)
-            chain.move_by_offset(dx, dy).pause(random.uniform(0.05, 0.2))
-        chain.perform()
-    except Exception:
-        pass  # moving off-screen is harmless; just skip the rest of the wander
+    time.sleep(random.uniform(min_delay, max_delay))
 
 
 def human_type(element, text: str):
-    for ch in text:
-        element.send_keys(ch)
-        time.sleep(random.uniform(0.035, 0.14))
-        if random.random() < 0.03:  # rare brief hesitation mid-word
-            time.sleep(random.uniform(0.15, 0.45))
+    element.send_keys(text)          # plain typing, no per-character timing
 
 
 def robust_click(driver, element) -> bool:
     if element is None:
         return False
     try:
-        driver.execute_script("arguments[0].scrollIntoView({block:'center', inline:'center'});", element)
-    except Exception:
-        pass
-    human_pause(0.15, 0.5)
-    try:
-        ActionChains(driver).move_to_element_with_offset(
-            element,
-            random.randint(-3, 3),
-            random.randint(-2, 2),
-        ).pause(random.uniform(0.08, 0.28)).perform()
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", element)
     except Exception:
         pass
     try:
@@ -523,13 +393,7 @@ def robust_click(driver, element) -> bool:
             StaleElementReferenceException, Exception):
         pass
     try:
-        driver.execute_script("arguments[0].click();", element)
-        human_pause()
-        return True
-    except Exception:
-        pass
-    try:
-        driver.execute_script(SYNTHETIC_CLICK_JS, element)
+        driver.execute_script("arguments[0].click();", element)  # plain JS fallback
         human_pause()
         return True
     except Exception:
@@ -544,6 +408,26 @@ def send_escape(driver):
             driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
         except Exception:
             pass
+
+
+def recaptcha_token_value(driver) -> str:
+    try:
+        return js(driver, "return window.__scraper.recaptchaTokenValue();") or ""
+    except Exception:
+        return ""
+
+
+def wait_recaptcha_token(driver, timeout=SHORT_WAIT, label="action") -> bool:
+    """Wait for the page's own reCAPTCHA JavaScript to populate its hidden token."""
+    end = time.time() + timeout
+    while time.time() < end:
+        token = recaptcha_token_value(driver)
+        if token:
+            print(f"    reCAPTCHA token ready before {label}")
+            return True
+        time.sleep(0.3)
+    print(f"    reCAPTCHA token did not appear before {label}")
+    return False
 
 
 def dump_comboboxes(driver):
@@ -664,7 +548,7 @@ def select_value(driver, combo, value) -> bool:
         time.sleep(0.2)
 
     # One more attempt: re-open and re-click the option (Lightning sometimes
-    # swallows the first synthetic click on re-render).
+    # swallows the first click on re-render).
     if open_combo(driver, combo):
         el2 = _wait_option(driver, value, contains=True, timeout=max(3, SHORT_WAIT // 2))
         if el2 is not None:
@@ -688,6 +572,8 @@ def select_retry(driver, combo, value, attempts=3) -> bool:
 # ─── SEARCH / RESULTS / DETAIL ────────────────────────────────────────────────
 
 def click_search(driver) -> bool:
+    if not wait_recaptcha_token(driver, timeout=RESULTS_WAIT, label="search"):
+        return False
     btn = js(driver, "return window.__scraper.searchButton();")
     if btn and robust_click(driver, btn):
         human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
@@ -697,7 +583,6 @@ def click_search(driver) -> bool:
         inp = js(driver, "return window.__scraper.comboInput(arguments[0], arguments[1]);",
                  LICENSE_COMBO["name"], LICENSE_COMBO["label"])
         if inp is not None:
-            human_pause(0.15, 0.45)
             inp.send_keys(Keys.RETURN)
             human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
             return True
@@ -729,48 +614,6 @@ def wait_table_refresh(driver, previous_signature: str, timeout=RESULTS_WAIT) ->
             return True
         time.sleep(0.3)
     return False
-
-
-def jump_to_resume_page(driver, target_page: int, profession: str = "", license_type: str = "") -> int:
-    target_page = max(1, int(target_page or 1))
-    if target_page <= 1:
-        return 1
-
-    while True:
-        current_page = js(driver, "return window.__scraper.currentPageNumber();")
-        current_page = int(current_page or 1)
-        if current_page == target_page:
-            return current_page
-
-        nearest = js(driver, "return window.__scraper.nearestResumePage(arguments[0]);", target_page) or {}
-        jump_page = int(nearest.get("page") or 0)
-        if not jump_page or jump_page == current_page:
-            save_checkpoint(profession, license_type, current_page, "resume_jump_stalled")
-            raise PaginationBlocked(
-                f"Resume jump stalled at page {current_page} while targeting page {target_page}"
-            )
-
-        jump_button = js(driver, "return window.__scraper.pageButtonFor(arguments[0]);", jump_page)
-        if jump_button is None:
-            save_checkpoint(profession, license_type, current_page, "resume_jump_button_missing")
-            raise PaginationBlocked(
-                f"Resume jump could not find button for page {jump_page} while targeting page {target_page}"
-            )
-
-        previous_signature = "|".join(
-            r.get("license_number", "")
-            for r in (js(driver, "return window.__scraper.rows();") or [])
-        )
-        print(f"    resume jump target {target_page}; page {current_page} -> {jump_page}")
-        human_scroll(driver)
-        if not robust_click(driver, jump_button):
-            save_checkpoint(profession, license_type, current_page, "resume_jump_click_failed")
-            raise PaginationBlocked(f"Could not jump to page {jump_page} while resuming toward page {target_page}")
-        human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
-        if not wait_table_refresh(driver, previous_signature):
-            reason = "captcha_or_blocked_refresh" if captcha_detected(driver) else "page_jump_refresh_timeout"
-            save_checkpoint(profession, license_type, jump_page, reason)
-            raise PaginationBlocked(f"Jump to page {jump_page} did not refresh in time: {reason}")
 
 
 # ─── SCRAPE ───────────────────────────────────────────────────────────────────
@@ -841,49 +684,12 @@ def open_output_writer():
     writer = csv.DictWriter(outfile, fieldnames=CSV_FIELDS)
     if not file_exists:
         writer.writeheader()
+        outfile.flush()
+        os.fsync(outfile.fileno())
     return outfile, writer
 
 
-def advance_to_next_page(driver, current: int, previous_signature: str,
-                          profession: str, license_type: str, max_attempts: int = 3) -> bool:
-    """Click Next and wait for the table to refresh, retrying a few times (re-fetching
-    the button fresh each try, since Lightning can re-render it) before giving up.
-    Returns False if there is no next page to go to; raises PaginationBlocked if a
-    next page exists but repeatedly fails to load."""
-    for attempt in range(1, max_attempts + 1):
-        next_btn = js(driver, "return window.__scraper.nextButton();")
-        is_disabled = js(driver, "return window.__scraper.isDisabled(arguments[0]);", next_btn)
-        if not next_btn or is_disabled:
-            return False
-
-        human_scroll(driver)
-        if random.random() < 0.4:
-            human_mouse_wander(driver, moves=1)
-        if not robust_click(driver, next_btn):
-            print(f"    could not click next page (attempt {attempt}/{max_attempts})")
-            human_pause(0.8, 1.6)
-            continue
-
-        human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
-        if wait_table_refresh(driver, previous_signature):
-            return True
-
-        if captcha_detected(driver):
-            save_checkpoint(profession, license_type, current, "captcha_or_blocked_refresh")
-            raise PaginationBlocked(
-                f"Pagination stopped at {profession} / {license_type or '(profession only)'} "
-                f"page {current}: captcha_or_blocked_refresh"
-            )
-        print(f"    page {current} did not refresh yet (attempt {attempt}/{max_attempts}); retrying")
-
-    save_checkpoint(profession, license_type, current, "page_refresh_timeout")
-    raise PaginationBlocked(
-        f"Pagination stopped at {profession} / {license_type or '(profession only)'} "
-        f"page {current}: page_refresh_timeout"
-    )
-
-
-def scrape_results(driver, writer, seen_licenses: set, profession: str,
+def scrape_results(driver, writer, outfile, seen_licenses: set, profession: str,
                    license_type: str = "", start_page: int = 1) -> int:
     state = wait_results_state(driver, RESULTS_WAIT)
     if state == "empty":
@@ -896,8 +702,7 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
     written, visited_signatures, current = 0, set(), 1
     start_page = max(1, int(start_page or 1))
     if start_page > 1:
-        current = jump_to_resume_page(driver, start_page, profession, license_type)
-        print(f"    resuming at page {start_page}; landed on page {current}")
+        print(f"    resuming at page {start_page}; advancing with Next")
 
     while True:
         rows = js(driver, "return window.__scraper.rows();") or []
@@ -911,7 +716,6 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
         if current < start_page:
             print(f"    page {current}: already completed; advancing")
         else:
-            human_pause(0.5, 1.3)  # brief scan of the table before extracting, like a reader
             active = [r for r in rows
                       if r.get("status", "").lower() == "active"
                       and r.get("license_number") not in seen_licenses]
@@ -922,9 +726,10 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
                 seen_licenses.add(lic)
 
                 writer.writerow({field: row.get(field, "") for field in CSV_FIELDS})
+                outfile.flush()
+                os.fsync(outfile.fileno())   # row is durably on disk before we move on
                 written += 1
                 print(f"      + {lic} {row.get('full_name', '')}")
-                human_pause(0.05, 0.18)
 
         info = js(driver, "return window.__scraper.paginationInfo();") or {}
         next_btn = js(driver, "return window.__scraper.nextButton();")
@@ -935,9 +740,25 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
             break
 
         previous_signature = signature
-        if not advance_to_next_page(driver, current + 1, previous_signature, profession, license_type):
-            break
+        if not wait_recaptcha_token(driver, timeout=RESULTS_WAIT, label=f"page {current + 1}"):
+            save_checkpoint(profession, license_type, current + 1, "recaptcha_token_timeout")
+            raise PaginationBlocked(
+                f"Pagination stopped at {profession} / {license_type or '(profession only)'} "
+                f"page {current + 1}: recaptcha_token_timeout"
+            )
+        if not robust_click(driver, next_btn):
+            print("    could not click next page")
+            save_checkpoint(profession, license_type, current + 1, "next_click_failed")
+            raise PaginationBlocked(f"Could not click Next at page {current}")
         current += 1
+        human_pause(MIN_PAGE_DELAY, MAX_PAGE_DELAY)
+        if not wait_table_refresh(driver, previous_signature):
+            reason = "captcha_or_blocked_refresh" if captcha_detected(driver) else "page_refresh_timeout"
+            print(f"    page {current} did not refresh in time; checkpoint saved")
+            save_checkpoint(profession, license_type, current, reason)
+            raise PaginationBlocked(
+                f"Pagination stopped at {profession} / {license_type or '(profession only)'} page {current}: {reason}"
+            )
 
     return written
 
@@ -945,10 +766,13 @@ def scrape_results(driver, writer, seen_licenses: set, profession: str,
 
 def build_driver() -> uc.Chrome:
     options = uc.ChromeOptions()
-    options.add_argument("--start-minimized")
+    options.add_argument("--start-maximized")
     options.add_argument("--disable-notifications")
     options.add_argument("--disable-popup-blocking")
-    #options.add_argument("--incognito")
+
+    profile_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chrome_profile")
+    os.makedirs(profile_dir, exist_ok=True)
+    options.add_argument(f"--user-data-dir={profile_dir}")
 
     kwargs = {"options": options, "headless": HEADLESS}
     if CHROMEDRIVER_MAJOR:
@@ -958,6 +782,7 @@ def build_driver() -> uc.Chrome:
     driver.set_page_load_timeout(PAGE_TIMEOUT)
     driver.set_script_timeout(PAGE_TIMEOUT)
     return driver
+
 
 def load_search_page(driver) -> bool:
     driver.get(SEARCH_URL)
@@ -1020,35 +845,6 @@ def discover_license_types(driver, timeout=SHORT_WAIT) -> list:
         time.sleep(0.5)
     return []
 
-
-def load_profession(driver, prof: str) -> bool:
-    """Fresh page load + select the given profession. Called once per profession
-    (not once per license type), and again as a recovery fallback if a license
-    selection fails mid-profession."""
-    if not prepare_form(driver):
-        print("  page reload failed; skipping")
-        return False
-    human_mouse_wander(driver)
-    if not select_retry(driver, PROFESSION_COMBO, prof):
-        print(f"  could not select profession '{prof}'")
-        dump_comboboxes(driver)
-        return False
-    wait_dependent_ready(driver)
-    return True
-
-
-def select_license_type(driver, prof: str, lt: str) -> bool:
-    """Pick a license type on the already-loaded page — a real user would just
-    reopen the dropdown, not reload the page. Falls back to one full reload +
-    profession reselect if the combobox is being uncooperative."""
-    human_mouse_wander(driver, moves=1)
-    if select_retry(driver, LICENSE_COMBO, lt):
-        return True
-    print(f"    license select failed for '{lt}'; reloading page and retrying")
-    if not load_profession(driver, prof):
-        return False
-    return select_retry(driver, LICENSE_COMBO, lt)
-
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def run():
@@ -1088,12 +884,16 @@ def run():
                 waiting_for_resume_profession = False
 
             print(f"\n[PROF] {prof}")
-            if not load_profession(driver, prof):
+            if not prepare_form(driver):
+                print("  page reload failed; skipping")
+                continue
+            if not select_retry(driver, PROFESSION_COMBO, prof):
+                print(f"  could not select profession '{prof}'")
+                dump_comboboxes(driver)
                 continue
 
-            # Hardcoded list (LICENSE_TYPES) skips the dropdown-open/read entirely;
-            # only professions not yet in that dict fall back to live discovery.
-            lic_types = LICENSE_TYPES.get(prof) or discover_license_types(driver)
+            wait_dependent_ready(driver)
+            lic_types = discover_license_types(driver)
 
             if lic_types:
                 print(f"  {len(lic_types)} license type(s): {', '.join(lic_types)}")
@@ -1110,15 +910,17 @@ def run():
                         waiting_for_resume_license = False
 
                     print(f"  [LIC] {lt}")
-                    human_pause(0.4, 1.1)  # brief pause scanning the dropdown before picking
-                    if not select_license_type(driver, prof, lt):
-                        print("    license select failed; skipping")
-                        continue
+                    if not prepare_form(driver):
+                        print("    reload failed"); continue
+                    if not select_retry(driver, PROFESSION_COMBO, prof):
+                        print("    profession reselect failed"); dump_comboboxes(driver); continue
+                    wait_dependent_ready(driver)
+                    if not select_retry(driver, LICENSE_COMBO, lt):
+                        print("    license select failed"); continue
                     if not click_search(driver):
                         print("    (Search button not confirmed \u2014 waiting for results anyway)")
                     start_page = resume_page if checkpoint and prof == resume_profession and lt == resume_license else 1
-                    total += scrape_results(driver, writer, seen_licenses, prof, lt, start_page)
-                    outfile.flush()
+                    total += scrape_results(driver, writer, outfile, seen_licenses, prof, lt, start_page)
                     clear_checkpoint()
                     checkpoint = {}
             else:
@@ -1130,8 +932,7 @@ def run():
                 if not click_search(driver):
                     print("  (Search button not confirmed \u2014 waiting for results anyway)")
                 start_page = resume_page if checkpoint and prof == resume_profession else 1
-                total += scrape_results(driver, writer, seen_licenses, prof, "", start_page)
-                outfile.flush()
+                total += scrape_results(driver, writer, outfile, seen_licenses, prof, "", start_page)
                 clear_checkpoint()
                 checkpoint = {}
 

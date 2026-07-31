@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from urllib.parse import urljoin
 
-start_url = "https://www.zipcode.com.ng/2022/06/list-of-california-zip-codes.html"
+start_url = "https://www.zipcode.com.ng/2022/06/list-of-washington-zip-codes.html"
 
 session = requests.Session()
 session.headers.update({
@@ -33,8 +33,9 @@ for page in range(1, 6):
             })
 
 pd.DataFrame(all_rows).to_csv(
-    "zip_codes_ca.csv",
+    "zip_codes_wh.csv",
     index=False
 )
 
-print("Done")
+print(f"Saved {len(all_rows)} rows to zip_codes_sc.csv")
+
